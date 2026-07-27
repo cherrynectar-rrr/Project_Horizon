@@ -1,6 +1,7 @@
 # Project Horizon: My Learning Journey
 
 ## Introduction
+Project Horizon is not just a programming repository. It is a long-term engineering project designed to build the skills, experience, and mindset needed to achieve a life of freedom, continuous growth, and meaningful creation.
 
 Project Horizon is my personal learning repository.
 
