@@ -80,4 +80,3 @@ Review this file when any thread reports:
 - `Needs Master Decision: Yes`.
 
 This file is a control summary, not a daily journal.
-
