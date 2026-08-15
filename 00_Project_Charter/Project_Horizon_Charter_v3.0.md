@@ -72,7 +72,7 @@ Project Horizon begins from the user's real context, but context must not become
 - Project Horizon is operating during the transition into sophomore year, with expected undergraduate graduation in 2029.
 - GPA, core academic performance and foundational courses remain strategically important.
 - Current technical exploration includes embodied AI, robotics systems, AI deployment and acceleration, embedded systems and hardware-software integration.
-- Physics, astronomy and understanding the universe are genuine interests that remain insufficiently tested as possible research directions.
+- Physics remains a genuine academic interest that may be explored through coursework and evidence.
 - International graduate study and work remain important options, subject to evidence, funding and future constraints.
 - Financial feasibility is a first-class constraint; expensive self-funded education or large debt must never be treated as the default path.
 
@@ -181,7 +181,7 @@ The exact sequence among ROS2, control, perception, embedded systems, deep learn
 
 Project Horizon must deliberately obtain enough research exposure to determine whether research should become a co-equal permanent pillar or remain an important option around an engineering-centered path.
 
-Physics and astronomy should neither be dismissed as hobbies nor promoted into career plans without evidence. They deserve appropriately sized experiments when capacity allows.
+Physics should neither be dismissed as a hobby nor promoted into a research direction without evidence. It deserves appropriately sized experiments when capacity allows.
 
 ---
 
