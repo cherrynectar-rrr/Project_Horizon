@@ -23,7 +23,9 @@ It is a long-term personal engineering project designed to build:
 
 ## Current Version
 
-- `Project_Horizon_Charter_v1.docx`
+- `Project_Horizon_Charter_v2.1.md` — current layered-governance edition
+
+Previous versions remain in this directory as historical records and must not be silently overwritten.
 
 ## Usage
 

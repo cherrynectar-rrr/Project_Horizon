@@ -45,8 +45,12 @@ Project Horizon follows several principles:
 
 ## Repository Structure
 
+~~~text
 Project_Horizon/
 ├── 00_Project_Charter/
+├── 00_Strategy/
+│   └── Voyage_Room/
+├── 00_Project_Control/
 ├── 01_Python/
 ├── 02_CPP/
 ├── 03_Linux/
@@ -58,12 +62,21 @@ Project_Horizon/
 ├── 09_Career/
 ├── 10_Graduate/
 └── 11_Investment/
+~~~
+
+The repository uses three governance layers:
+
+- **Strategic layer:** Voyage Room explores long-term direction and proposes recommendations.
+- **Control layer:** Project Control synthesizes evidence, makes cross-thread decisions and allocates resources.
+- **Execution layer:** Python, C++, Linux, Algorithm and other domain threads perform concrete learning and projects.
 
 ---
 
 ## Directory Responsibilities
 
 - `00_Project_Charter` — mission, vision, principles, and long-term strategy
+- `00_Strategy/Voyage_Room` — strategic exploration, scenarios, recommendations, open questions, and long-term direction
+- `00_Project_Control` — current priorities, cross-thread decisions, resource allocation, and status protocol
 - `01_Python` — Python fundamentals and practical projects
 - `02_CPP` — C++ foundations and engineering practice
 - `03_Linux` — Linux, shell, system tools, and development environment

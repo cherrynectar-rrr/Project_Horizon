@@ -1,14 +1,33 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-15
+Last Updated: 2026-08-16
 Status: Active
 Authority: Main control thread only
 
 ## Current Operating Model
 
-Project Horizon uses GitHub as the shared source of truth for current progress. Specialist threads report facts in their own `STATUS.md`; the main control thread owns cross-thread priorities and route decisions in this file.
+Project Horizon uses GitHub as the shared source of truth and now operates through three layers: the Voyage Room provides strategic exploration and recommendations; Project Control makes integrated judgments and allocates resources; specialist threads execute concrete learning and projects.
 
 See [THREAD_PROTOCOL.md](./THREAD_PROTOCOL.md) for the read/write and update rules.
+
+## Strategic Layer
+
+### Voyage Room / 远航室
+
+| Field | Value |
+| --- | --- |
+| Status | Active |
+| Location | [`00_Strategy/Voyage_Room/`](../00_Strategy/Voyage_Room/) |
+| Layer | Strategic |
+| Role | Explore long-term direction, analyze scenarios and trade-offs, and propose recommendations |
+| Decision Authority | Advisory only |
+| Decision Owner | Main control thread |
+| Voyage → Control | [`VOYAGE_TO_CONTROL.md`](../00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md) |
+| Control → Voyage | [`CONTROL_TO_VOYAGE.md`](./CONTROL_TO_VOYAGE.md) |
+
+The Voyage Room is not an execution thread and is not parallel to Python, C++, Linux, Algorithm or other technical domains. It may challenge assumptions and surface strategic options, but it cannot activate a route, change priorities, allocate time, or direct specialist work on its own.
+
+Project Control combines Voyage Room recommendations with current evidence, capacity and constraints before recording a decision or changing resource allocation.
 
 ## Current Priority Order
 
@@ -78,5 +97,6 @@ Review this file when any thread reports:
 - readiness to activate the algorithm line;
 - a competition result;
 - `Needs Master Decision: Yes`.
+- a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
 
 This file is a control summary, not a daily journal.
