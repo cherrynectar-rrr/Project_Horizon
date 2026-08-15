@@ -11,35 +11,108 @@ This is the Voyage Room's formal single-writer channel to Project Control. It ca
 
 Project Control and specialist threads must not edit this file. Feedback and decisions return through `00_Project_Control/CONTROL_TO_VOYAGE.md`.
 
+---
+
 ## Current Transmission
 
-No open strategic recommendation is recorded yet.
+### VTC-20260816-01 — Establish Long-Term Strategic Research Map
+
+- Date: 2026-08-16
+- Type: Strategic research / Route hypothesis
+- Decision horizon: Undergraduate years to early career transition
+- Related Charter principle: Preserve optionality, improve judgment quality, separate exploration from execution
+
+### Executive summary:
+
+The Voyage Room has created a first version of the long-term strategic map in `LONG_TERM_DIRECTION.md`.
+
+This is not a request to change Project Horizon's current execution route.
+It is a request for Project Control to acknowledge a clearer strategic exploration framework and use it when future major decisions arise.
+
+### Verified facts:
+
+- Project Horizon currently has an active Voyage Room communication structure.
+- Current execution remains controlled by Project Control and specialist threads.
+- The user's current technical exploration region includes embodied AI, robotics systems, AI deployment and hardware-software integration.
+- Financial feasibility is a major constraint for future international education decisions.
+
+### Assumptions:
+
+- Germany / Europe graduate study may be a strong candidate for an international platform because of potential alignment between cost, engineering ecosystem and career flexibility.
+- A future master's degree may serve multiple functions: specialization, international mobility, research preparation and career transition.
+- The current technical trunk of C++ + Linux + embedded/systems foundations may compound across future robotics and AI systems work.
+
+### Important unknowns:
+
+- Whether the user prefers engineering creation or research after real exposure.
+- Whether Germany remains the best international platform after future evidence is available.
+- Whether physics and astronomy remain intellectual interests or become research directions.
+- Which technical specialization produces the strongest intrinsic motivation.
+
+### Options considered:
+
+1. Continue broad exploration while strengthening execution foundations.
+2. Gradually research Germany / Europe graduate routes.
+3. Keep US research and industry mobility as later options.
+4. Maintain alternative domestic and international routes.
+
+### Trade-offs and opportunity costs:
+
+- Early specialization may increase efficiency but risks locking into an incorrect identity.
+- Excessive exploration may reduce execution depth.
+- International planning improves preparation but should not consume current academic and engineering priorities.
+
+### Recommendation:
+
+The Voyage Room recommends:
+
+1. Maintain current execution priorities.
+2. Treat Germany / Europe, US research, domestic opportunities and other international options as strategic scenarios rather than commitments.
+3. Use internships, projects, competitions and research exposure as evidence-generating experiments.
+4. Continue building transferable engineering ability before choosing narrow specialization.
+
+### Risks:
+
+- Mistaking interest for career fit.
+- Optimizing for prestige instead of capability and freedom.
+- Creating too many parallel execution tracks.
+
+### Reversibility / smallest useful experiment:
+
+- Research graduate programs without application commitment.
+- Build relevant projects.
+- Seek internships and research exposure.
+- Review strategic assumptions periodically.
+
+### Decision requested from Project Control:
+
+No route approval requested.
+
+Requested:
+- Acknowledge this strategic map as a reference framework.
+- Continue providing constraints and execution evidence through normal channels.
+
+### Confidence:
+
+Medium.
+
+### Evidence that would change this recommendation:
+
+- Strong internship or research results.
+- Major academic changes.
+- Funding or admission realities.
+- Durable changes in motivation or values.
+
+### Suggested review trigger:
+
+After significant sophomore-year academic, project, competition or research evidence.
+
+- Status: Open
+
+---
 
 ## Transmission Rules
 
 Update this file only when the analysis could materially affect direction, priorities, resource allocation or a major decision. Do not use it for brainstorming fragments, ordinary conversation, execution updates or diary entries.
 
 Keep verified facts separate from assumptions. Recommendations must state uncertainty, opportunity cost and what evidence could change the conclusion.
-
-## Transmission Template
-
-### VTC-YYYYMMDD-NN — Title
-
-- Date:
-- Type: Judgment / Route hypothesis / Recommendation / Risk / Question
-- Decision horizon:
-- Related Charter principle:
-- Executive summary:
-- Verified facts:
-- Assumptions:
-- Important unknowns:
-- Options considered:
-- Trade-offs and opportunity costs:
-- Recommendation:
-- Risks:
-- Reversibility / smallest useful experiment:
-- Decision requested from Project Control:
-- Confidence:
-- Evidence that would change this recommendation:
-- Suggested review trigger:
-- Status: Open / Superseded / Answered
