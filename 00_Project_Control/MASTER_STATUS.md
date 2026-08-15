@@ -44,6 +44,22 @@ Algorithm study is not yet a full independent line. It should activate after the
 | Physics theory competition | Secondary / interest validation | Participate as a secondary direction and use it to test sustained interest |
 | Lanqiao Cup campus selection | Baseline attempt | Sit the campus selection without dedicated preparation; record the result when available |
 
+## External Systems
+
+### Horizon Opportunity Radar
+
+| Field | Value |
+| --- | --- |
+| Status | Active |
+| Source | [`cherrynectar-rrr/Horizon_Opportunity_Radar`](https://github.com/cherrynectar-rrr/Horizon_Opportunity_Radar) |
+| Role | External opportunity intake / 外部机会入口 |
+| Cadence | GitHub Actions every 6 hours |
+| Decision Owner | Main control thread |
+
+When evaluating competitions, research, exchanges, scholarships, summer research, internships, or similar opportunities, the main control thread may read the Radar repository's `data/opportunities.json` and `data/opportunities.md` as needed.
+
+Opportunity Radar is responsible only for collecting, deduplicating, structuring, and presenting factual opportunity data. It cannot change the Project Horizon route or make the user's final `APPLY`, `WATCH`, `SKIP`, or `URGENT` decision.
+
 ## Cross-Thread Blockers
 
 None reported.
@@ -64,3 +80,4 @@ Review this file when any thread reports:
 - `Needs Master Decision: Yes`.
 
 This file is a control summary, not a daily journal.
+
