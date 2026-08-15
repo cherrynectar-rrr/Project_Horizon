@@ -1,0 +1,66 @@
+# Project Horizon — Master Status
+
+Last Updated: 2026-08-15
+Status: Active
+Authority: Main control thread only
+
+## Current Operating Model
+
+Project Horizon uses GitHub as the shared source of truth for current progress. Specialist threads report facts in their own `STATUS.md`; the main control thread owns cross-thread priorities and route decisions in this file.
+
+See [THREAD_PROTOCOL.md](./THREAD_PROTOCOL.md) for the read/write and update rules.
+
+## Current Priority Order
+
+1. Python — main line
+2. Linux — support line
+3. C++ — preheat line preparing for algorithms
+4. Algorithm — not fully activated
+
+## Track Overview
+
+| Track | Role | Current State | Next Gate |
+| --- | --- | --- | --- |
+| [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
+| [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Build practical command-line and development-environment skills that support current projects |
+| [C++](../02_CPP/STATUS.md) | Preheat | Week01 completed; continuing the C-to-C++ transition | Become comfortable with `string`, `vector`, references, `sort`, and basic STL |
+| [Algorithm](../05_Algorithm/STATUS.md) | Pending activation | Not fully activated | Activate structured algorithm study after the C++ readiness gate |
+
+## Current Main-Line Decision
+
+Python remains the main learning line. The immediate milestone is object-oriented programming through Student Manager V2.
+
+Linux is a support line and should be learned through real development needs rather than allowed to displace the Python main line.
+
+C++ remains in preheat. Its purpose is to establish enough language and STL fluency to make algorithm study productive.
+
+Algorithm study is not yet a full independent line. It should activate after the C++ readiness gate is met.
+
+## Competition Strategy
+
+| Competition | Position | Current Strategy |
+| --- | --- | --- |
+| Mathematics competition | Primary | Main competition focus |
+| Physics theory competition | Secondary / interest validation | Participate as a secondary direction and use it to test sustained interest |
+| Lanqiao Cup campus selection | Baseline attempt | Sit the campus selection without dedicated preparation; record the result when available |
+
+## Cross-Thread Blockers
+
+None reported.
+
+## Decisions Needed
+
+None currently.
+
+## Next Master Review
+
+Review this file when any thread reports:
+
+- a completed milestone;
+- a new or resolved blocker;
+- a route or priority change;
+- readiness to activate the algorithm line;
+- a competition result;
+- `Needs Master Decision: Yes`.
+
+This file is a control summary, not a daily journal.
