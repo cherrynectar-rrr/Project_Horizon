@@ -23,7 +23,8 @@ Engineering is the primary current vehicle, not a permanent identity constraint.
 - The user is an Electronic Information Engineering undergraduate in China, entering sophomore year, with expected graduation in 2029.
 - GPA, core academic performance and foundational courses are strategically important during the undergraduate stage.
 - Current technical interests include embodied AI, robotics systems, AI deployment and acceleration, and embedded hardware-software integration.
-- The user also has genuine interest in physics, astronomy and understanding the universe; this interest has not yet been tested through sustained research experience.
+- The user has a genuine interest in physics; it remains insufficiently tested as a possible research direction.
+- Astronomy is outside the current strategic route and should not influence academic, research, graduate-study or career planning unless the user explicitly reopens it in the future.
 - The family cannot safely treat an expensive self-funded US master's degree or large education debt as a default option.
 - Funding, total cost, downside risk and financial resilience must be first-class constraints in graduate-school decisions.
 - The user values long-term freedom, meaningful work, quality of life, economic independence and the ability to explore the world.
@@ -73,7 +74,7 @@ Potential value:
 
 ### Option E — Research-intensive route outside the current engineering default
 
-This includes the possibility that sustained exposure to physics, astronomy, controls, robotics research or another scientific field reveals a stronger research identity than currently expected.
+This includes the possibility that sustained exposure to physics, controls, robotics research or another scientific field reveals a stronger research identity than currently expected.
 
 No such shift should be declared from interest alone; it requires real evidence.
 
@@ -83,7 +84,8 @@ No such shift should be declared from interest alone; it requires real evidence.
 - Treat embodied AI / robotics / embedded / AI deployment as a productive technical exploration region, not a permanent life label.
 - Preserve Germany / Europe as a serious graduate-study hypothesis because it appears unusually compatible with financial constraints and engineering interests, but do not elevate it to an approved route before later evidence and Project Control review.
 - Preserve US PhD and US industry mobility as later-stage options rather than current execution targets.
-- Preserve physics and astronomy as strategically meaningful interests that deserve future validation rather than premature dismissal as hobbies or premature promotion into career plans.
+- Preserve physics as a strategically meaningful academic interest that may deserve future validation when capacity allows.
+- Do not use astronomy as a strategic planning factor unless the user explicitly reopens it in the future.
 - Prefer reversible experiments: relevant projects, internships, research exposure, competition participation, technical reading and conversations with real practitioners.
 - When two routes offer similar technical growth, give significant weight to financial safety, health, autonomy, geographic mobility, family considerations and quality of life.
 
@@ -92,7 +94,7 @@ No such shift should be declared from interest alone; it requires real evidence.
 1. Does the user genuinely enjoy the daily work of robotics / embedded / systems engineering, not only the idea of the field?
 2. Which part of the technical stack becomes most intrinsically rewarding: hardware, systems software, control, perception, algorithms, deployment or integration?
 3. Does real research experience create sustained motivation for research and PhD-level work?
-4. Are physics and astronomy enduring intellectual callings, complementary interests or future research directions?
+4. Is physics an enduring intellectual interest, a complementary foundation or a possible future research direction?
 5. What function should a master's degree serve: specialization, international mobility, research preparation, career transition, or some combination?
 6. Is Germany still the best first international platform once 2027–2028 academic results, finances, internships, language progress and current policies are known?
 7. Would a strong opportunity in China, another European country, Korea, Singapore, Japan or elsewhere dominate the Germany hypothesis under future conditions?
@@ -126,7 +128,8 @@ Review this document when:
 - financial or family constraints materially change;
 - a major country, visa, tuition or funding rule changes;
 - Project Control requests a focused strategic study;
-- the user develops a durable change in values or long-term motivation.
+- the user develops a durable change in values or long-term motivation;
+- astronomy is explicitly reopened by the user as a meaningful long-term interest.
 
 ## Boundary
 
