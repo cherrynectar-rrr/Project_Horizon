@@ -1,56 +1,79 @@
 # Project Horizon
 
-Project Horizon is a long-term personal engineering project.
+Project Horizon is a long-term personal development and engineering-capability system.
 
-It is not only a programming repository. It is a structured journey to build engineering ability, international competitiveness, meaningful project experience, and the freedom to choose where and how to live.
+Its purpose is not merely to complete courses or accumulate projects. It exists to build the engineering, research and judgment capability needed to create meaningful work and preserve long-term freedom over how to live, where to live and why to work.
 
-> The world is vast. I want to earn, through my own effort, the freedom to explore it, to keep creating, and to live the life I truly choose.
+> The world is vast. I want to earn, through my own effort, the freedom to explore it, to keep creating, to understand more deeply, and to live the life I truly choose.
 
 ---
 
 ## Mission
 
-Build strong engineering ability through long-term, project-driven learning.
+Build world-class engineering, research and judgment capability while preserving health, curiosity, financial resilience and long-term optionality.
 
-Use technology as a tool to create freedom of time, place, career, and life.
-
----
-
-## Current Direction
-
-- Electronic Information Engineering
-- Python and C++
-- Linux and engineering tools
-- Embedded systems
-- Algorithms and data structures
-- Artificial intelligence
-- Robotics and embodied AI
-- Graduate study abroad
-- International career development
+Project Horizon treats technical growth as a vehicle, not a permanent identity constraint. Current interests may evolve as real evidence accumulates.
 
 ---
 
-## Learning Philosophy
+## Governance Model
 
-Project Horizon follows several principles:
+Project Horizon uses three layers:
 
-- Learn by building
-- Prefer projects over passive theory
-- Use GitHub to record real progress
-- Build engineering habits early
-- Adjust short-term routes without abandoning the long-term direction
-- Technology should serve life, not consume it
+- **Strategic layer — Voyage Room / 远航室:** explores long-term direction, scenarios, risks, trade-offs and open questions.
+- **Control layer — Main Control / 主控:** decides current priorities, coordinates resources, resolves cross-thread conflicts and converts strategic exploration into executable plans.
+- **Execution layer — Specialist Threads / 专业线程:** performs concrete learning, projects and evidence production inside approved scopes.
+
+**Role summary:**
+
+- Voyage Room = Explore
+- Main Control = Decide & Coordinate
+- Specialist Threads = Execute
+
+The Voyage Room is not parallel to Python, C++, Linux or other technical threads. It has broad analytical freedom but no direct execution authority.
+
+---
+
+## Source of Truth
+
+GitHub is Project Horizon's formal shared state.
+
+Use the following order when navigating important questions:
+
+1. `00_Project_Charter/Project_Horizon_Charter_v3.0.md` — highest stable governance authority.
+2. `00_Project_Control/THREAD_PROTOCOL.md` — read/write and state-sync rules.
+3. `00_Project_Control/MASTER_STATUS.md` — current approved priorities, activation states and cross-thread decisions.
+4. `00_Strategy/Voyage_Room/` — strategic facts, hypotheses, options, recommendations and open questions.
+5. Relevant specialist `STATUS.md` — factual execution state inside one domain.
+6. Code, projects, experiments, results and other evidence.
+
+Chat memory is supporting context only. When chat memory conflicts with current formal GitHub state, GitHub governs.
 
 ---
 
 ## Repository Structure
 
-~~~text
+```text
 Project_Horizon/
 ├── 00_Project_Charter/
+│   ├── Project_Horizon_Charter_v3.0.md
+│   ├── Project_Horizon_Chat_Thread_Starter_Pack_v2.0.md
+│   └── historical Charter versions
+│
 ├── 00_Strategy/
 │   └── Voyage_Room/
+│       ├── LONG_TERM_DIRECTION.md
+│       ├── PERSONAL_PROFILE.md
+│       ├── OPEN_QUESTIONS.md
+│       ├── DECISION_LOG.md
+│       ├── VOYAGE_CHARTER.md
+│       └── VOYAGE_TO_CONTROL.md
+│
 ├── 00_Project_Control/
+│   ├── MASTER_STATUS.md
+│   ├── THREAD_PROTOCOL.md
+│   └── CONTROL_TO_VOYAGE.md
+│
 ├── 01_Python/
 ├── 02_CPP/
 ├── 03_Linux/
@@ -62,145 +85,137 @@ Project_Horizon/
 ├── 09_Career/
 ├── 10_Graduate/
 └── 11_Investment/
-~~~
+```
 
-The repository uses three governance layers:
-
-- **Strategic layer:** Voyage Room explores long-term direction and proposes recommendations.
-- **Control layer:** Project Control synthesizes evidence, makes cross-thread decisions and allocates resources.
-- **Execution layer:** Python, C++, Linux, Algorithm and other domain threads perform concrete learning and projects.
+Some execution directories may exist before they are formally activated. Directory existence does not itself grant execution priority.
 
 ---
 
-## Directory Responsibilities
+## Strategic Communication
 
-- `00_Project_Charter` — mission, vision, principles, and long-term strategy
-- `00_Strategy/Voyage_Room` — strategic exploration, scenarios, recommendations, open questions, and long-term direction
-- `00_Project_Control` — current priorities, cross-thread decisions, resource allocation, and status protocol
-- `01_Python` — Python fundamentals and practical projects
-- `02_CPP` — C++ foundations and engineering practice
-- `03_Linux` — Linux, shell, system tools, and development environment
-- `04_Embedded` — microcontrollers, embedded systems, and real-time systems
-- `05_Algorithm` — data structures, algorithms, and problem solving
-- `06_AI` — machine learning, deep learning, and model development
-- `07_Embodied_AI` — ROS2, robotics, simulation, perception, and deployment
-- `08_English` — technical English and language preparation
-- `09_Career` — internships, résumé, interviews, and career planning
-- `10_Graduate` — graduate applications, research, and school planning
-- `11_Investment` — long-term financial learning and asset-building records
+The Voyage Room and Main Control communicate through a deliberate asynchronous bridge:
+
+- Voyage → Control: `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`
+- Control → Voyage: `00_Project_Control/CONTROL_TO_VOYAGE.md`
+
+Each file has exactly one writer. Strategic recommendations become operational only after Main Control reviews them against current execution state, capacity and real-world constraints.
 
 ---
 
-## Current Progress
+## Learning and Evidence Philosophy
 
-### Python Foundation
+Project Horizon prefers:
 
-#### Week01
+- project-driven learning;
+- incremental progress;
+- minimum necessary theory before action;
+- debugging and explanation instead of blind replacement;
+- reusable and transferable capability;
+- real evidence over self-description;
+- sustainable depth over uncontrolled parallelism.
 
-Projects:
+Useful evidence includes:
 
-- Hello World
-- Age Calculator
-- BMI Calculator
-- Guess Number
-- Guess Number Pro
-- Guess Count
+- runnable code;
+- reproducible projects;
+- README and technical documentation;
+- meaningful Git history;
+- tests and experiment results;
+- hardware demonstrations;
+- competition outcomes with analysis;
+- research outputs;
+- internship outcomes;
+- strong academic performance;
+- recommendations earned through real work.
 
-Topics:
-
-- Variables
-- Input and output
-- Conditions
-- Loops
-- Random module
-
-#### Week02
-
-Project:
-
-- Modular Calculator
-
-Topics:
-
-- Functions
-- Modules
-- Import
-- Multi-file project structure
-
-#### Week03
-
-Projects:
-
-- Student Score Manager
-- String Tool
-- Random Picker
-- Phone Book
-- Student Manager V1
-
-Topics:
-
-- Lists
-- Dictionaries
-- Functions
-- CRUD operations
-- Modular programming
-- Basic project architecture
+Certificates, tutorial counts and artificial activity are not treated as capability by themselves.
 
 ---
 
-## Roadmap
+## Personal Route Principle
 
-Python
-↓
-C++
-↓
-Linux
-↓
-Data Structures and Algorithms
-↓
-Embedded Systems
-↓
-ROS2 and Robotics
-↓
-Computer Vision
-↓
-Deep Learning
-↓
-CUDA and Model Acceleration
-↓
-Embodied AI
+The university curriculum describes what the institution offers and requires. It does not automatically define the user's personal development route.
+
+Courses, competitions, certificates and projects are tools. Their value should be judged by factors such as:
+
+- long-term capability;
+- dependency value;
+- GPA impact;
+- engineering or research relevance;
+- evidence quality;
+- time and financial cost;
+- opportunity cost;
+- contribution to future optionality.
+
+Current interests in robotics, embodied AI, AI deployment, embedded systems, physics or astronomy remain exploration signals rather than fixed lifelong identities.
 
 ---
 
-## Long-Term Goal
+## Capacity Rule
 
-The long-term goal is not only to enter a famous company or earn a high salary.
+Execution resources are intentionally limited.
 
-The real goal is to gain the ability to:
+The default model is:
 
-- work on meaningful technical problems
-- live in a place that fits my values
-- maintain a healthy work-life balance
-- keep learning and creating
-- build financial independence
-- choose my own direction in life
+- one main technical line;
+- up to two support lines;
+- a small number of maintenance habits;
+- valuable but inactive directions kept in backlog or strategic exploration.
 
----
+Any new major task should answer:
 
-## Status
+> What will temporarily not be done if this is accepted?
 
-Current stage:
-
-Python Foundation
-
-Next milestone:
-
-Object-Oriented Programming and Student Manager V2
+Current priorities are **not** maintained in this README. Read `00_Project_Control/MASTER_STATUS.md` for the latest approved state.
 
 ---
 
-## Author
+## External Opportunity Intake
 
-Electronic Information Engineering student.
+Project Horizon may use external systems such as Horizon Opportunity Radar to collect and structure competitions, research opportunities, exchanges, scholarships, internships and similar information.
 
-Building Project Horizon one milestone at a time.
+External systems provide factual inputs. They do not own Project Horizon's final strategic decisions.
+
+Final decisions such as `APPLY`, `WATCH`, `SKIP` or `URGENT` belong to the user and Main Control.
+
+---
+
+## How to Start a New Chat Thread
+
+Use:
+
+`00_Project_Charter/Project_Horizon_Chat_Thread_Starter_Pack_v2.0.md`
+
+It contains startup rules for:
+
+- Main Control;
+- Voyage Room;
+- specialist execution threads.
+
+New threads must read current GitHub state instead of relying on hard-coded progress from the starter template.
+
+---
+
+## Current State
+
+This README intentionally does not record the current Python milestone, competition priority, country shortlist or active weekly plan.
+
+For current execution state, read:
+
+`00_Project_Control/MASTER_STATUS.md`
+
+For detailed execution state, read the relevant specialist `STATUS.md`.
+
+For current strategic exploration, read:
+
+`00_Strategy/Voyage_Room/`
+
+---
+
+## Core Loop
+
+Project Horizon follows an evidence-driven cycle:
+
+**Explore → Decide → Execute → Obtain real feedback → Re-explore**
+
+The mission is stable. The route is allowed to evolve.
