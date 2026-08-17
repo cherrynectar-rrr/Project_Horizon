@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-16
+Last Updated: 2026-08-18
 Status: Active
 Authority: Main control thread only
 
@@ -42,7 +42,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
 | [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Build practical command-line and development-environment skills that support current projects |
-| [C++](../02_CPP/STATUS.md) | Preheat | Week01 completed; continuing the C-to-C++ transition | Become comfortable with `string`, `vector`, references, `sort`, and basic STL |
+| [C++](../02_CPP/STATUS.md) | Preheat | Week01 completed; continuing the C-to-C++ transition | Pass the Algorithm Readiness Gate defined below |
 | [Algorithm](../05_Algorithm/STATUS.md) | Pending activation | Not fully activated | Activate structured algorithm study after the C++ readiness gate |
 
 ## Current Main-Line Decision
@@ -54,6 +54,43 @@ Linux is a support line and should be learned through real development needs rat
 C++ remains in preheat. Its purpose is to establish enough language and STL fluency to make algorithm study productive.
 
 Algorithm study is not yet a full independent line. It should activate after the C++ readiness gate is met.
+
+## Algorithm Activation Protocol
+
+Algorithm activation is controlled by a small C++ readiness gate rather than by completing a broad C++ curriculum.
+
+The C++ / joint preparation thread should transition the user to the Algorithm thread when the following are all demonstrated at a practical level:
+
+1. Comfortable use of `std::string` and `std::vector`.
+2. Understanding of references, including ordinary use of forms such as `const std::vector<int>&` in function parameters.
+3. Ability to use `std::sort`, including a simple custom comparator.
+4. Practical use of `vector`, `stack`, `queue`, and `pair`, with basic awareness of `set` and `map`.
+5. Ability to solve a simple array or string task without being blocked by C++ syntax or basic STL usage.
+
+Validation should be a small **Algorithm Readiness Test**, not a long C++ examination. Once this gate passes:
+
+- the Algorithm specialist thread may change its own status to Active;
+- C++ should shift from standalone preheat toward support for algorithm implementation;
+- the Algorithm thread should begin Block 01 below;
+- Python remains the Horizon main line unless Project Control later makes a separate priority decision.
+
+## Algorithm Learning Architecture
+
+The Algorithm thread should teach one block at a time. Each block should produce verifiable evidence such as code, solved problems, a small implementation task, README notes, or commits before moving on.
+
+| Block | Scope |
+| --- | --- |
+| Block 01 — Foundation | Complexity, arrays, strings, sorting, binary search, two pointers, prefix sums, basic algorithmic thinking |
+| Block 02 — Linear Structures | Linked lists, stacks, queues, deques, hash tables |
+| Block 03 — Search | Recursion, enumeration, DFS, BFS, backtracking, basic pruning |
+| Block 04 — Trees & Priority Structures | Binary trees, traversals, BST concepts, heap / `priority_queue`, disjoint set union |
+| Block 05 — Graphs | Graph representation, DFS/BFS, connectivity, topological sort, shortest paths, minimum spanning trees |
+| Block 06 — Greedy | Sorting-based greedy methods, intervals, proof intuition, common greedy patterns |
+| Block 07 — Dynamic Programming | State design, transitions, initialization, iteration order, 1D/2D DP, knapsack, sequence DP |
+| Block 08 — Toolbox | Bit operations, basic number theory, GCD, primes, fast power, monotonic stack/queue, Trie, KMP and other recurring tools |
+| Advanced — On Demand | Fenwick tree, segment tree, harder graph algorithms, advanced DP/string algorithms when evidence or competition needs justify them |
+
+School `数据结构与算法` coursework should feed this same route rather than creating a second parallel curriculum. Horizon should add implementation depth, problem-solving practice and evidence around school content instead of re-teaching the same material independently.
 
 ## Competition Strategy
 
@@ -96,7 +133,7 @@ Review this file when any thread reports:
 - a route or priority change;
 - readiness to activate the algorithm line;
 - a competition result;
-- `Needs Master Decision: Yes`.
+- `Needs Master Decision: Yes`;
 - a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
 
 This file is a control summary, not a daily journal.
