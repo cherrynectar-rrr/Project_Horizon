@@ -32,28 +32,28 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 ## Current Priority Order
 
 1. Python — main line
-2. Linux — support line
-3. C++ — preheat line preparing for algorithms
-4. Algorithm — not fully activated
+2. Algorithm — active structured line
+3. Linux — support line
+4. C++ — support for algorithm implementation
 
 ## Track Overview
 
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
+| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Activation approved after the C++ Algorithm Readiness Gate passed on 2026-08-18 | Begin Block 01 — Foundation and produce the first verifiable milestone |
 | [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Build practical command-line and development-environment skills that support current projects |
-| [C++](../02_CPP/STATUS.md) | Preheat | Week01 completed; continuing the C-to-C++ transition | Pass the Algorithm Readiness Gate defined below |
-| [Algorithm](../05_Algorithm/STATUS.md) | Pending activation | Not fully activated | Activate structured algorithm study after the C++ readiness gate |
+| [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
 
 ## Current Main-Line Decision
 
-Python remains the main learning line. The immediate milestone is object-oriented programming through Student Manager V2.
+Python remains the Horizon main learning line. The immediate milestone is object-oriented programming through Student Manager V2.
 
-Linux is a support line and should be learned through real development needs rather than allowed to displace the Python main line.
+Algorithm study is now activated as a structured line because the C++ readiness gate has been passed with repository evidence. It should proceed one block at a time and must not displace the Python main line without a separate Project Control decision.
 
-C++ remains in preheat. Its purpose is to establish enough language and STL fluency to make algorithm study productive.
+Linux remains a support line learned through real development needs.
 
-Algorithm study is not yet a full independent line. It should activate after the C++ readiness gate is met.
+C++ standalone preheat is complete. C++ now serves algorithm implementation and future system work rather than remaining an independent preparation track.
 
 ## Algorithm Activation Protocol
 
@@ -67,12 +67,9 @@ The C++ / joint preparation thread should transition the user to the Algorithm t
 4. Practical use of `vector`, `stack`, `queue`, and `pair`, with basic awareness of `set` and `map`.
 5. Ability to solve a simple array or string task without being blocked by C++ syntax or basic STL usage.
 
-Validation should be a small **Algorithm Readiness Test**, not a long C++ examination. Once this gate passes:
+Validation should be a small **Algorithm Readiness Test**, not a long C++ examination.
 
-- the Algorithm specialist thread may change its own status to Active;
-- C++ should shift from standalone preheat toward support for algorithm implementation;
-- the Algorithm thread should begin Block 01 below;
-- Python remains the Horizon main line unless Project Control later makes a separate priority decision.
+**Gate result: PASS — 2026-08-18.** The C++ specialist status records the gate as passed, and `02_CPP/Week02/readiness_test.cpp` provides direct implementation evidence. The Algorithm thread is therefore authorized to activate and begin Block 01. Its specialist `STATUS.md` should be synchronized by the Algorithm thread at the start of execution.
 
 ## Algorithm Learning Architecture
 
@@ -131,7 +128,7 @@ Review this file when any thread reports:
 - a completed milestone;
 - a new or resolved blocker;
 - a route or priority change;
-- readiness to activate the algorithm line;
+- an Algorithm block milestone;
 - a competition result;
 - `Needs Master Decision: Yes`;
 - a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
