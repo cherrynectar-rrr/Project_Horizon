@@ -42,7 +42,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; time/space complexity, arrays and strings completed; sorting is current | Complete the sorting milestone, then continue Block 01 one topic at a time |
-| [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Build practical command-line and development-environment skills that support current projects |
+| [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Complete one bounded practical Linux workflow milestone after Student Manager V2, or earlier only if a real programming need provides the entry point |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
 
 ## Current Main-Line Decision
@@ -54,6 +54,60 @@ Algorithm study is active as a structured line because the C++ readiness gate ha
 Linux remains a support line learned through real development needs.
 
 C++ standalone preheat is complete. C++ now serves algorithm implementation and future system work rather than remaining an independent preparation track.
+
+## First-Internship Readiness Framework
+
+Project Control adopts `VTC-20260820-02 — Internship-Aligned Capability Planning Review` as a **bounded planning framework**, not as a new execution line.
+
+The purpose is to make the existing technical lines compound toward a future first serious internship while preserving GPA, competition priorities, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
+
+### Application Ready Gate
+
+Before a serious first-internship application push, Project Control should look for approximately the following evidence:
+
+1. At least one presentable engineering project that runs, has a clear README, and can be explained in terms of design choices, debugging and limitations.
+2. C/C++ fluency sufficient for small modules and debugging without syntax or basic STL becoming the primary blocker.
+3. Verified practical Linux workflow evidence covering filesystem/CLI use, Git/tooling, compile/run/debug, environment/package use and basic shell work in a real task.
+4. Basic algorithm/data-structure competence from the approved Algorithm route, without opening a second high-volume interview-grinding roadmap.
+5. Ability to explain projects, reproduce bugs, document work and communicate technical decisions.
+6. A credible continuous availability window for the target internship period.
+
+This is an **Application Ready** gate, not a professional-engineer readiness claim.
+
+### Resource Decisions
+
+- **Python:** remains the main line through Student Manager V2. Internship planning does not replace the current OOP milestone.
+- **Algorithm:** continues the approved Block 01 → Block 08 route one topic at a time and remains the source of baseline screening readiness.
+- **C++:** remains implementation support. Do not restart a broad standalone C++ curriculum without evidence of a real gap.
+- **Linux:** is the clearest current support-evidence gap. The next explicit support milestone should be one bounded practical workflow milestone, preferably after Student Manager V2 unless a real Python/C++ task creates an earlier natural need. It must be integrated with real programming work rather than become an independent curriculum.
+- **Embedded:** remains dormant. Reconsider only after the current main-line milestone is completed or handed off, execution capacity is not under acute academic/competition pressure, and suitable hardware access or a concrete project/opportunity can justify one bounded hardware-software output.
+- **Career:** remains inactive. Review seasonal activation when early-2027 winter-break availability is known, when the Application Ready Gate is substantially satisfied, or when a concrete high-fit opportunity appears. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
+- **AI / Embodied AI:** remain strategic options and are not first-internship prerequisites.
+
+### Explicit Non-Goals
+
+This framework does **not** authorize:
+
+- opening multiple new technical lines at once;
+- ROS2 + STM32 + CUDA + OpenCV + advanced C++ in parallel;
+- a second LeetCode/interview-grinding roadmap;
+- treating internship job descriptions as a personal curriculum;
+- optimizing for employer prestige over real technical content;
+- allowing internship preparation to displace GPA/core coursework or the current mathematics competition priority without a separate Project Control decision.
+
+### Review Triggers
+
+Review the framework when any of the following occurs:
+
+- Student Manager V2 is completed;
+- the first verified Linux milestone is completed;
+- a presentable engineering project is available;
+- a major Algorithm block milestone is completed;
+- early-2027 winter-break availability is confirmed;
+- a concrete high-fit internship opportunity appears;
+- a relevant specialist thread reports `Needs Master Decision: Yes`.
+
+Formal response: `CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework` in `CONTROL_TO_VOYAGE.md`.
 
 ## Algorithm Activation Protocol
 
@@ -142,6 +196,8 @@ Review this file when any thread reports:
 - a route or priority change;
 - an Algorithm block milestone;
 - completion of Algorithm Block 03 or substantial completion of Block 07, for Lanqiao review gates;
+- completion of Student Manager V2, first verified Linux milestone, or a presentable engineering project, for internship-readiness review;
+- confirmation of early-2027 winter-break availability or discovery of a concrete high-fit internship opportunity;
 - a competition result;
 - `Needs Master Decision: Yes`;
 - a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
