@@ -89,13 +89,25 @@ The Algorithm thread should teach one block at a time. Each block should produce
 
 School `数据结构与算法` coursework should feed this same route rather than creating a second parallel curriculum. Horizon should add implementation depth, problem-solving practice and evidence around school content instead of re-teaching the same material independently.
 
+## Algorithm Practice Integration
+
+External problem sets are support material for the Algorithm thread, not a second independent roadmap.
+
+- Practice should follow the currently completed or in-progress topic. Do not jump ahead merely because a platform labels a problem as popular or important.
+- A small number of selected problems is preferred over large undirected volume. The aim is transfer, implementation fluency and error analysis rather than a raw solved-count metric.
+- LeetCode / AcWing / Luogu may be used when a problem directly reinforces the active topic; the Algorithm thread should choose the smallest useful set.
+- Lanqiao Cup problems may be used opportunistically when they only require material already learned. This counts as topic practice, not dedicated Lanqiao preparation.
+- After Block 03 is complete, Project Control should review whether systematic Lanqiao past-paper practice is justified.
+- After Block 07 is substantially complete, Project Control may review whether full 4-hour Lanqiao simulations are justified if the competition target has been upgraded.
+- Until Project Control explicitly changes the competition strategy, Lanqiao remains a baseline attempt and must not create a parallel high-intensity preparation line.
+
 ## Competition Strategy
 
 | Competition | Position | Current Strategy |
 | --- | --- | --- |
 | Mathematics competition | Primary | Main competition focus |
 | Physics theory competition | Secondary / interest validation | Participate as a secondary direction and use it to test sustained interest |
-| Lanqiao Cup campus selection | Baseline attempt | Sit the campus selection without dedicated preparation; record the result when available |
+| Lanqiao Cup campus selection | Baseline attempt | Sit the campus selection without dedicated preparation; allow only low-cost topic-aligned problem exposure until a later review gate |
 
 ## External Systems
 
@@ -129,6 +141,7 @@ Review this file when any thread reports:
 - a new or resolved blocker;
 - a route or priority change;
 - an Algorithm block milestone;
+- completion of Algorithm Block 03 or substantial completion of Block 07, for Lanqiao review gates;
 - a competition result;
 - `Needs Master Decision: Yes`;
 - a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
