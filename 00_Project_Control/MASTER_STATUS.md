@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-18
+Last Updated: 2026-08-20
 Status: Active
 Authority: Main control thread only
 
@@ -41,7 +41,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
-| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Activation approved after the C++ Algorithm Readiness Gate passed on 2026-08-18 | Begin Block 01 — Foundation and produce the first verifiable milestone |
+| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; time/space complexity, arrays and strings completed; sorting is current | Complete the sorting milestone, then continue Block 01 one topic at a time |
 | [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Build practical command-line and development-environment skills that support current projects |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
 
@@ -49,7 +49,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 
 Python remains the Horizon main learning line. The immediate milestone is object-oriented programming through Student Manager V2.
 
-Algorithm study is now activated as a structured line because the C++ readiness gate has been passed with repository evidence. It should proceed one block at a time and must not displace the Python main line without a separate Project Control decision.
+Algorithm study is active as a structured line because the C++ readiness gate has been passed with repository evidence. It is currently in Block 01 — Foundation. Time complexity, space complexity, arrays and strings have verifiable completion evidence; sorting is the current topic. Algorithm work should continue one topic at a time and must not displace the Python main line without a separate Project Control decision.
 
 Linux remains a support line learned through real development needs.
 
@@ -69,7 +69,7 @@ The C++ / joint preparation thread should transition the user to the Algorithm t
 
 Validation should be a small **Algorithm Readiness Test**, not a long C++ examination.
 
-**Gate result: PASS — 2026-08-18.** The C++ specialist status records the gate as passed, and `02_CPP/Week02/readiness_test.cpp` provides direct implementation evidence. The Algorithm thread is therefore authorized to activate and begin Block 01. Its specialist `STATUS.md` should be synchronized by the Algorithm thread at the start of execution.
+**Gate result: PASS — 2026-08-18.** The C++ specialist status records the gate as passed, and `02_CPP/Week02/readiness_test.cpp` provides direct implementation evidence. The Algorithm thread is therefore authorized to activate and begin Block 01.
 
 ## Algorithm Learning Architecture
 
