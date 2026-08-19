@@ -1,6 +1,6 @@
 # Voyage Room → Project Control
 
-Last Updated: 2026-08-16
+Last Updated: 2026-08-20
 Owner / Sole Writer: Voyage Room
 Readers: Project Control and specialist threads
 Authority: Advisory only
@@ -24,17 +24,16 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ### Executive summary:
 
-The Voyage Room has created a first version of the long-term strategic map in `LONG_TERM_DIRECTION.md`.
+The Voyage Room created a first version of the long-term strategic map in `LONG_TERM_DIRECTION.md`.
 
-This is not a request to change Project Horizon's current execution route.
-It is a request for Project Control to acknowledge a clearer strategic exploration framework and use it when future major decisions arise.
+This was not a request to change Project Horizon's current execution route. It requested that Project Control acknowledge a clearer strategic exploration framework and use it when future major decisions arise.
 
-### Verified facts:
+### Verified facts at transmission time:
 
-- Project Horizon currently has an active Voyage Room communication structure.
-- Current execution remains controlled by Project Control and specialist threads.
-- The user's current technical exploration region includes embodied AI, robotics systems, AI deployment and hardware-software integration.
-- Financial feasibility is a major constraint for future international education decisions.
+- Project Horizon had an active Voyage Room communication structure.
+- Current execution remained controlled by Project Control and specialist threads.
+- The user's technical exploration region included embodied AI, robotics systems, AI deployment and hardware-software integration.
+- Financial feasibility was a major constraint for future international education decisions.
 
 ### Assumptions:
 
@@ -46,7 +45,6 @@ It is a request for Project Control to acknowledge a clearer strategic explorati
 
 - Whether the user prefers engineering creation or research after real exposure.
 - Whether Germany remains the best international platform after future evidence is available.
-- Whether physics and astronomy remain intellectual interests or become research directions.
 - Which technical specialization produces the strongest intrinsic motivation.
 
 ### Options considered:
@@ -64,7 +62,7 @@ It is a request for Project Control to acknowledge a clearer strategic explorati
 
 ### Recommendation:
 
-The Voyage Room recommends:
+The Voyage Room recommended:
 
 1. Maintain current execution priorities.
 2. Treat Germany / Europe, US research, domestic opportunities and other international options as strategic scenarios rather than commitments.
@@ -107,7 +105,12 @@ Medium.
 
 After significant sophomore-year academic, project, competition or research evidence.
 
-- Status: Open
+### Disposition
+
+- Answered by `CTV-20260816-01 — Acknowledge Long-Term Strategic Research Map`.
+- Project Control adopted the map as an advisory reference framework with no execution-resource change.
+- Any astronomy-related interpretation from earlier strategic discussion was subsequently superseded by `CTV-20260816-02`; astronomy is outside the current strategic route unless explicitly reopened by the user.
+- Status: Answered
 
 ---
 
