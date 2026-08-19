@@ -23,7 +23,7 @@ Block 01 scope:
 - prefix sums;
 - basic algorithmic thinking.
 
-Time-complexity, space-complexity, and arrays foundations are complete; the current topic is strings.
+Time-complexity, space-complexity, arrays, and strings foundations are complete; the current topic is sorting.
 
 ## Completed
 
@@ -31,15 +31,16 @@ Time-complexity, space-complexity, and arrays foundations are complete; the curr
 - Time-complexity foundation completed on 2026-08-19: practical reasoning for `O(1)`, `O(log n)`, `O(n)`, `O(n log n)`, and `O(n^2)` with runnable code and concise README notes.
 - Space-complexity foundation completed on 2026-08-19: distinguished total storage from auxiliary space, recognized pass-by-value copies versus `const` references, and produced runnable code and README notes.
 - Arrays foundation completed on 2026-08-19: practiced indexed access and modification, linear search, insertion/deletion movement costs, and in-place reversal with `O(1)` auxiliary space.
+- Strings foundation completed on 2026-08-19: practiced indexed character access, full traversal, character counting, in-place reversal, and palindrome checking with correct time/auxiliary-space reasoning.
 
 ## In Progress
 
 - Block 01 — Foundation
-- Current topic: strings
+- Current topic: sorting
 
 ## Next Milestone
 
-Produce the first verifiable strings milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
+Produce the first verifiable sorting milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
 
 ## Evidence
 
@@ -55,6 +56,9 @@ Produce the first verifiable strings milestone through a small runnable exercise
 - `05_Algorithm/Block01/03_arrays/main.cpp`
 - `05_Algorithm/Block01/03_arrays/README.md`
 - Commit `7ebd1a8af2ac4c2b0c0cf579f5fd96edff27491c` — `algorithm: add arrays foundation`.
+- `05_Algorithm/Block01/04_strings/main.cpp`
+- `05_Algorithm/Block01/04_strings/README.md`
+- Commit `74dd4f60b3aab20e6639449c8306f7fdf89314fa` — `algorithm: add strings foundation`.
 
 ## Blockers
 
