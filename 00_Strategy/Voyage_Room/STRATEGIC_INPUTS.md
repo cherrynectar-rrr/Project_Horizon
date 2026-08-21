@@ -1,6 +1,6 @@
 # Strategic Input Ledger
 
-Last Updated: 2026-08-21
+Last Updated: 2026-08-22
 Owner: Voyage Room
 Status: Active strategic context; advisory only
 
@@ -30,6 +30,7 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - The long-term objective is not merely a job title or salary target. The user values freedom of time and place, meaningful work, financial independence, family resilience, world exploration, quality of life and the ability to keep changing course when better evidence appears.
 - Technical achievement is intended to expand life choices rather than reduce life to productivity.
 - The user expects major life decisions to improve iteratively as more real experience becomes available.
+- The user expressed a long-term aspiration that, after becoming financially capable, they want to “raise themselves again from beginning to end” (`以后有钱了想从头到尾把自己再养一遍`). Treat this as a durable life-design preference: future resources should create room to revisit and provide themselves with experiences, care and choices across life stages. The exact meaning should be refined through future conversation rather than over-specified now.
 
 ### Technical / academic direction
 
