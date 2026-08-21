@@ -1,6 +1,6 @@
 # Project Horizon — Voyage Room / 远航室
 
-Last Updated: 2026-08-16
+Last Updated: 2026-08-21
 Layer: Strategic
 Status: Active
 
@@ -10,13 +10,15 @@ The Voyage Room is Project Horizon's strategic exploration space. It studies lon
 
 It is **not** an execution thread. It is not parallel to Python, C++, Linux, Algorithm or other specialist domains, and it does not maintain a technical learning backlog.
 
+The Voyage Room also preserves durable strategic context that may emerge gradually across many conversations. Important fragments should be externalized to GitHub when they have plausible long-term decision value rather than relying on chat continuity alone.
+
 ## Responsibility Boundary
 
 The Voyage Room may:
 
 - explore technical, educational, career, international and life-direction questions;
 - compare scenarios, opportunity costs, risks and reversibility;
-- maintain long-term direction, verified personal context and open questions;
+- maintain long-term direction, verified personal context, durable strategic inputs and open questions;
 - recommend adoption, rejection, deferral or a bounded experiment.
 
 The Voyage Room may not:
@@ -32,8 +34,9 @@ Final synthesis and resource allocation belong to the main control thread.
 ## Documents
 
 - [VOYAGE_CHARTER.md](./VOYAGE_CHARTER.md) — mandate, principles and authority limits.
-- [LONG_TERM_DIRECTION.md](./LONG_TERM_DIRECTION.md) — durable direction and strategic hypotheses.
-- [PERSONAL_PROFILE.md](./PERSONAL_PROFILE.md) — verified context used in strategic reasoning.
+- [STRATEGIC_INPUTS.md](./STRATEGIC_INPUTS.md) — durable user-confirmed fragments that may later change the life / academic / career route.
+- [LONG_TERM_DIRECTION.md](./LONG_TERM_DIRECTION.md) — mature long-horizon direction and strategic hypotheses.
+- [PERSONAL_PROFILE.md](./PERSONAL_PROFILE.md) — verified durable context used in strategic reasoning.
 - [DECISION_LOG.md](./DECISION_LOG.md) — strategic recommendations and their final disposition.
 - [OPEN_QUESTIONS.md](./OPEN_QUESTIONS.md) — unresolved questions requiring research or experiments.
 - [VOYAGE_TO_CONTROL.md](./VOYAGE_TO_CONTROL.md) — the Voyage Room's single-writer channel for recommendations and questions to Project Control.
@@ -41,9 +44,9 @@ Final synthesis and resource allocation belong to the main control thread.
 
 ## Operating Flow
 
-1. Frame a strategic question.
-2. Separate verified facts, assumptions and unknowns.
-3. Compare options and opportunity costs.
-4. Recommend a decision, deferral or reversible experiment.
-5. Send the recommendation to Project Control.
-6. Record the adopted outcome in the decision log.
+1. Capture a durable strategic input when a conversation reveals a confirmed fact, preference, constraint, concern or important open question.
+2. Separate verified facts, assumptions and unknowns; do not promote every fragment into a route.
+3. Accumulate evidence and synthesize mature conclusions into the personal profile, long-term direction or open questions.
+4. Compare options and opportunity costs when a real strategic decision appears.
+5. Send route-changing recommendations to Project Control through `VOYAGE_TO_CONTROL.md`.
+6. Record adopted outcomes in the decision log when appropriate.
