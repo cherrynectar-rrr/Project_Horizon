@@ -15,6 +15,100 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
+### VTC-20260821-02 — Tuition-Free / Near-Zero Tuition as a Hard MSc Feasibility Constraint
+
+- Date: 2026-08-21
+- Type: Strategic constraint update / Graduate-study route correction
+- Trigger: User explicitly stated that tuition-free study is the key condition and that a master's route requiring substantial tuition is financially infeasible.
+- Decision horizon: 2028–2029 graduate-school target-pool construction and application strategy
+- Related Charter principles: Financial resilience; opportunity cost; preserve optionality; do not treat expensive self-funded routes as default
+- Status: Awaiting Control Response
+
+### Executive summary
+
+The Voyage Room recommends that Project Control treat **tuition-free or near-zero tuition** as a first-order feasibility filter for the user's future overseas master's target pool, not as a secondary preference.
+
+This materially changes the current interpretation of TUM. Under current 2026 rules, relevant TUM master's programs such as Electrical Engineering and Information Technology and Robotics, Cognition, Intelligence charge international students from non-EU/EEA third countries **€6,000 per semester**. TUM currently offers tuition-fee waiver scholarships based on financial need and later on strong TUM academic performance, but the number of waiver scholarships is limited and approval is not automatic.
+
+Therefore TUM should no longer be treated as the default financially viable core target under current rules. It should be treated as a **conditional target** whose feasibility depends on a confirmed tuition waiver / scholarship or a future policy change by the user's 2029 application cycle.
+
+### Verified current external evidence (2026)
+
+- TUM states that newly enrolling non-EU/EEA students generally pay tuition fees from Winter Semester 2024/25 onward.
+- TUM Electrical Engineering and Information Technology M.Sc. currently lists €6,000 tuition per semester for international students from third countries.
+- TUM Robotics, Cognition, Intelligence M.Sc. currently lists €6,000 tuition per semester for international students from third countries.
+- TUM offers a first-semester waiver scholarship based on financial need for bachelor's and master's applicants; successful recipients receive a tuition waiver for the standard duration of the degree, but the number of scholarships is limited and applications are individually reviewed.
+- Current German university policy is not uniform and is changing. Examples relevant to the engineering route include RWTH Aachen programs that currently state there are no tuition fees for international students apart from semester/social contributions, and TU Darmstadt programs that currently state there are no tuition fees apart from semester contributions. Conversely, FAU has announced non-EU tuition fees beginning with newly enrolled students from Summer Semester 2027.
+
+### Strategic interpretation
+
+The user's overseas-MSc objective remains open, but the correct optimization order should be:
+
+1. **Financial feasibility first:** tuition-free / near-zero tuition under the actual 2029 rules, or a secured waiver/scholarship that makes the tuition burden reliably manageable.
+2. **Academic / curricular fit:** electronic information engineering background should match program prerequisites strongly enough to avoid avoidable admissions risk.
+3. **Technical ecosystem:** robotics / embedded / systems / AI-deployment optionality, laboratories, industry links and real engineering exposure.
+4. **Career / research optionality:** internships, working-student roles, thesis/research opportunities, local employment and PhD exits.
+5. **Personal / geographic fit:** language, lifestyle, mobility and long-term life preferences.
+
+A prestigious program that fails the first feasibility filter should not dominate Horizon planning merely because it is academically attractive.
+
+### Recommendation for future university-pool design
+
+The Voyage Room recommends using three financial categories when graduate-school planning becomes active:
+
+- **Core / financially viable:** no tuition or only modest semester / administrative contributions under then-current rules.
+- **Conditional:** meaningful tuition exists, but a concrete, realistically obtainable waiver or external scholarship can remove most of the cost. Do not count the program as financially viable until the waiver/funding is actually secured.
+- **Infeasible under current constraint:** substantial self-funded tuition with no reliable full or near-full waiver path.
+
+Under current 2026 evidence, TUM should be placed in **Conditional**, not Core.
+
+Current examples worth future rechecking as potential tuition-free / near-zero-tuition engineering platforms include RWTH Aachen and TU Darmstadt. This is not yet a school-selection decision; 2029 policy, program fit, admissions rules and living costs must be reverified before application.
+
+### Important boundary
+
+“Tuition-free” does **not** mean “free to live abroad.” Even a zero-tuition route still requires a credible plan for living costs, health insurance, visa / blocked-account requirements, travel and emergency reserves. Future financial planning should therefore distinguish:
+
+- tuition burden;
+- mandatory semester contributions;
+- living costs;
+- visa / proof-of-funds requirements;
+- scholarships / paid student work;
+- family contribution and downside buffer.
+
+However, because the user has now stated that substantial tuition itself is infeasible, Horizon should not rely on part-time work or optimistic future earnings to justify a high-tuition master's route.
+
+### Decision requested from Project Control
+
+The Voyage Room asks Project Control to:
+
+1. Record tuition-free / near-zero tuition as a hard graduate-study feasibility constraint unless the user later explicitly revises it.
+2. Reclassify TUM from a presumed core Germany target to a **conditional target** under current fee rules.
+3. When graduate-school planning becomes active, require a financial-feasibility filter before academic prestige or program preference.
+4. Preserve Germany / Europe as an open strategic region, but research universities individually because tuition policy is institution- and state-dependent and can change before 2029.
+5. Avoid building current undergraduate execution around admission to one expensive university whose future waiver is uncertain.
+
+### Confidence
+
+High that this constraint materially changes target-pool design. Low confidence in any specific 2029 tuition rule because German university fee policies are currently changing and must be rechecked near the actual application cycle.
+
+### Evidence that would change this recommendation
+
+- The user explicitly revises the financial constraint.
+- TUM removes the relevant tuition fees by the 2029 cycle.
+- The user secures a reliable full / near-full tuition waiver or scholarship before enrollment.
+- Family finances or external funding change enough to make moderate tuition safely affordable without debt or fragility.
+- Another country's funded / low-tuition route becomes clearly superior on total cost and strategic value.
+
+### Suggested review trigger
+
+- Initial 2028 graduate-school target-pool construction.
+- Any material TUM tuition-policy or waiver-policy change.
+- Discovery of a strong tuition-free / funded engineering MSc program that materially improves the current Germany / Europe hypothesis.
+
+---
+
+## Prior Transmission
+
 ### VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence
 
 - Date: 2026-08-21
@@ -217,8 +311,6 @@ Confidence is lower on the exact output schema; Project Control may simplify the
 After the first 3–5 concrete internship opportunities have been processed through the Career thread, review whether the workflow is producing useful decisions and market evidence without creating excessive overhead.
 
 ---
-
-## Prior Transmission
 
 ### VTC-20260820-02 — Internship-Aligned Capability Planning Review
 
