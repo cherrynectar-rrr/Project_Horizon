@@ -15,300 +15,160 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260821-02 — Tuition-Free / Near-Zero Tuition as a Hard MSc Feasibility Constraint
+### VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability
 
 - Date: 2026-08-21
-- Type: Strategic constraint update / Graduate-study route correction
-- Trigger: User explicitly stated that tuition-free study is the key condition and that a master's route requiring substantial tuition is financially infeasible.
+- Type: Strategic constraint correction / Graduate-study route refinement
+- Trigger: User clarified that overseas study does **not** have to be in Germany and does **not** have to be literally tuition-free. The practical affordability target is approximately **RMB 100,000 per year in total cost** as a workable order of magnitude.
 - Decision horizon: 2028–2029 graduate-school target-pool construction and application strategy
-- Related Charter principles: Financial resilience; opportunity cost; preserve optionality; do not treat expensive self-funded routes as default
+- Related Charter principles: Financial resilience; preserve optionality; total-cost accounting; opportunity cost; evidence over prestige
 - Status: Awaiting Control Response
 
 ### Executive summary
 
-The Voyage Room recommends that Project Control treat **tuition-free or near-zero tuition** as a first-order feasibility filter for the user's future overseas master's target pool, not as a secondary preference.
+The prior transmission `VTC-20260821-02` interpreted tuition-free / near-zero tuition as a hard feasibility constraint. The user has now explicitly refined that statement.
 
-This materially changes the current interpretation of TUM. Under current 2026 rules, relevant TUM master's programs such as Electrical Engineering and Information Technology and Robotics, Cognition, Intelligence charge international students from non-EU/EEA third countries **€6,000 per semester**. TUM currently offers tuition-fee waiver scholarships based on financial need and later on strong TUM academic performance, but the number of waiver scholarships is limited and approval is not automatic.
+The better governing constraint is:
 
-Therefore TUM should no longer be treated as the default financially viable core target under current rules. It should be treated as a **conditional target** whose feasibility depends on a confirmed tuition waiver / scholarship or a future policy change by the user's 2029 application cycle.
+> **Overseas MSc is preferred; country remains open; a route is financially viable when its realistic all-in annual cost is around RMB 100,000 per year as an affordable order of magnitude, without requiring fragile debt or an unrealistic funding assumption.**
 
-### Verified current external evidence (2026)
+Therefore Horizon should **not** use “zero tuition” as the primary filter. It should use **total annual cost of attendance** and the reliability of the funding plan.
 
-- TUM states that newly enrolling non-EU/EEA students generally pay tuition fees from Winter Semester 2024/25 onward.
-- TUM Electrical Engineering and Information Technology M.Sc. currently lists €6,000 tuition per semester for international students from third countries.
-- TUM Robotics, Cognition, Intelligence M.Sc. currently lists €6,000 tuition per semester for international students from third countries.
-- TUM offers a first-semester waiver scholarship based on financial need for bachelor's and master's applicants; successful recipients receive a tuition waiver for the standard duration of the degree, but the number of scholarships is limited and applications are individually reviewed.
-- Current German university policy is not uniform and is changing. Examples relevant to the engineering route include RWTH Aachen programs that currently state there are no tuition fees for international students apart from semester/social contributions, and TU Darmstadt programs that currently state there are no tuition fees apart from semester contributions. Conversely, FAU has announced non-EU tuition fees beginning with newly enrolled students from Summer Semester 2027.
+This correction materially broadens the future country and university pool beyond Germany while preserving financial discipline.
 
-### Strategic interpretation
+### Working financial model
 
-The user's overseas-MSc objective remains open, but the correct optimization order should be:
+For future graduate-school comparisons, Project Control should require an all-in budget estimate that separates:
 
-1. **Financial feasibility first:** tuition-free / near-zero tuition under the actual 2029 rules, or a secured waiver/scholarship that makes the tuition burden reliably manageable.
-2. **Academic / curricular fit:** electronic information engineering background should match program prerequisites strongly enough to avoid avoidable admissions risk.
-3. **Technical ecosystem:** robotics / embedded / systems / AI-deployment optionality, laboratories, industry links and real engineering exposure.
-4. **Career / research optionality:** internships, working-student roles, thesis/research opportunities, local employment and PhD exits.
-5. **Personal / geographic fit:** language, lifestyle, mobility and long-term life preferences.
+- tuition and mandatory university fees;
+- housing;
+- food and daily living;
+- health insurance;
+- local transportation;
+- visa / residence / proof-of-funds requirements;
+- initial relocation costs and flights;
+- a modest emergency buffer;
+- scholarships, tuition waivers and guaranteed funding;
+- realistic student-work income only as a secondary offset, not as the assumption that makes an otherwise unaffordable route viable.
 
-A prestigious program that fails the first feasibility filter should not dominate Horizon planning merely because it is academically attractive.
+The current working affordability target is approximately **RMB 100,000 per year total**. This should be treated as a planning band rather than a precise yuan-level ceiling; the exact acceptable range should be re-confirmed when the 2028–2029 application pool is built.
 
-### Recommendation for future university-pool design
+### Strategic implications
 
-The Voyage Room recommends using three financial categories when graduate-school planning becomes active:
+1. **Germany remains attractive but is not privileged by default.**
+   - Low- or no-tuition German universities may still fit the budget well.
+   - TUM remains conditional under current 2026 international tuition rules because its tuition materially increases total cost unless a waiver / scholarship is secured.
 
-- **Core / financially viable:** no tuition or only modest semester / administrative contributions under then-current rules.
-- **Conditional:** meaningful tuition exists, but a concrete, realistically obtainable waiver or external scholarship can remove most of the cost. Do not count the program as financially viable until the waiver/funding is actually secured.
-- **Infeasible under current constraint:** substantial self-funded tuition with no reliable full or near-full waiver path.
+2. **Other countries should remain open.**
+   - A non-German program can be fully competitive if the combination of tuition, living cost, scholarship / waiver structure and program quality keeps the annual all-in cost near the user's feasible range.
+   - Country should be chosen after comparing financial feasibility, curricular fit, engineering / research ecosystem, career optionality and personal fit.
 
-Under current 2026 evidence, TUM should be placed in **Conditional**, not Core.
+3. **“Free tuition” and “cheap overall” are not the same thing.**
+   - A zero-tuition program in a very expensive city may be worse financially than a modest-tuition program in a cheaper city with stronger funding.
+   - Future comparisons must use total cost rather than tuition alone.
 
-Current examples worth future rechecking as potential tuition-free / near-zero-tuition engineering platforms include RWTH Aachen and TU Darmstadt. This is not yet a school-selection decision; 2029 policy, program fit, admissions rules and living costs must be reverified before application.
+4. **Prestige does not override affordability.**
+   - A prestigious offer that requires materially more than the feasible annual budget without reliable funding should be treated as financially non-executable.
 
-### Important boundary
+### Recommended future university-pool categories
 
-“Tuition-free” does **not** mean “free to live abroad.” Even a zero-tuition route still requires a credible plan for living costs, health insurance, visa / blocked-account requirements, travel and emergency reserves. Future financial planning should therefore distinguish:
+When graduate-school planning becomes active, classify each program using total annual cost rather than tuition alone:
 
-- tuition burden;
-- mandatory semester contributions;
-- living costs;
-- visa / proof-of-funds requirements;
-- scholarships / paid student work;
-- family contribution and downside buffer.
+- **Core / financially viable:** realistic all-in annual cost is around the user's feasible range under then-current rules, without relying on uncertain future income.
+- **Conditional:** all-in cost is above the comfortable range unless a specific scholarship / waiver / assistantship is secured.
+- **Infeasible:** expected self-funded total cost is materially above the user's safe range and no reliable funding path exists.
 
-However, because the user has now stated that substantial tuition itself is infeasible, Horizon should not rely on part-time work or optimistic future earnings to justify a high-tuition master's route.
+TUM should currently remain **Conditional**, not because tuition must be zero, but because under current rules its tuition plus Munich living costs are unlikely to fit the working annual budget without a waiver or other strong funding.
+
+### Country-level route interpretation
+
+The active strategic question is no longer “Germany or not Germany?” It is:
+
+> **Which overseas MSc platform gives the best combination of engineering / research quality, curricular fit, future mobility and life experience while keeping the total financial burden safely manageable?**
+
+Germany / Europe remains a strong hypothesis, but future research should also evaluate other countries where strong engineering programs and scholarship / public-university cost structures may fit the same total-cost envelope.
+
+No country should be promoted to a committed route before current 2028–2029 tuition, living-cost, visa, scholarship and work-right evidence is verified.
 
 ### Decision requested from Project Control
 
 The Voyage Room asks Project Control to:
 
-1. Record tuition-free / near-zero tuition as a hard graduate-study feasibility constraint unless the user later explicitly revises it.
-2. Reclassify TUM from a presumed core Germany target to a **conditional target** under current fee rules.
-3. When graduate-school planning becomes active, require a financial-feasibility filter before academic prestige or program preference.
-4. Preserve Germany / Europe as an open strategic region, but research universities individually because tuition policy is institution- and state-dependent and can change before 2029.
-5. Avoid building current undergraduate execution around admission to one expensive university whose future waiver is uncertain.
+1. Supersede the prior interpretation that tuition-free / near-zero tuition itself is a hard requirement.
+2. Record the current working constraint as **approximately RMB 100,000 per year in realistic all-in overseas MSc cost**, subject to later refinement.
+3. Keep the MSc country pool globally open rather than assuming Germany is mandatory.
+4. Require total-cost-of-attendance analysis for future school comparisons.
+5. Continue treating high-cost self-funded routes as non-default and require reliable funding before counting them as executable options.
+6. Keep TUM as a conditional target under current rules, while allowing other German and non-German programs to compete on equal strategic terms.
 
 ### Confidence
 
-High that this constraint materially changes target-pool design. Low confidence in any specific 2029 tuition rule because German university fee policies are currently changing and must be rechecked near the actual application cycle.
+High that this clarification materially improves the graduate-route model because it replaces an overly narrow tuition-only constraint with the user's actual affordability logic.
+
+Low confidence in any specific 2029 school cost today; tuition, exchange rates, housing, scholarships and visa policies must be rechecked near the actual application cycle.
 
 ### Evidence that would change this recommendation
 
-- The user explicitly revises the financial constraint.
-- TUM removes the relevant tuition fees by the 2029 cycle.
-- The user secures a reliable full / near-full tuition waiver or scholarship before enrollment.
-- Family finances or external funding change enough to make moderate tuition safely affordable without debt or fragility.
-- Another country's funded / low-tuition route becomes clearly superior on total cost and strategic value.
+- User later gives a different annual family-support ceiling or clarifies that the RMB 100,000 figure excludes a major cost category.
+- Family finances materially improve or worsen.
+- A reliable scholarship / assistantship changes the net cost of a high-value program.
+- 2029 tuition or living-cost policies materially change in candidate countries.
 
 ### Suggested review trigger
 
 - Initial 2028 graduate-school target-pool construction.
-- Any material TUM tuition-policy or waiver-policy change.
-- Discovery of a strong tuition-free / funded engineering MSc program that materially improves the current Germany / Europe hypothesis.
+- Any major change in family affordability or external funding.
+- Discovery of a strong overseas engineering MSc whose total cost / funding structure materially improves the current option set.
 
 ---
 
-## Prior Transmission
+## Prior Transmissions
+
+### VTC-20260821-02 — Tuition-Free / Near-Zero Tuition as a Hard MSc Feasibility Constraint
+
+- Date: 2026-08-21
+- Type: Strategic constraint update / Graduate-study route correction
+- Status: **Superseded by VTC-20260821-03**
+
+#### Summary
+
+This transmission interpreted the user's earlier statement as making tuition-free / near-zero tuition itself a hard feasibility filter. It reclassified TUM as conditional under current 2026 third-country tuition rules and emphasized financial feasibility before prestige.
+
+#### What remains valid
+
+- TUM is not automatically financially viable under current rules.
+- High self-funded tuition should not be justified by optimistic future part-time income.
+- Future applications require current tuition / waiver / living-cost verification.
+- Financial feasibility remains a first-order constraint.
+
+#### What is superseded
+
+- Zero / near-zero tuition is **not** itself the hard requirement.
+- The correct filter is realistic **all-in annual affordability**, currently around RMB 100,000 per year as a working planning band.
+
+---
 
 ### VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence
 
 - Date: 2026-08-21
 - Type: Strategic recommendation / Specialist-thread operating design
-- Trigger: Explicit user request that the dedicated internship branch should not only prepare applications, but repeatedly assess whether a concrete role fits the user and investigate the company deeply enough to support a high-quality APPLY / WATCH / SKIP judgment.
-- Decision horizon: Immediate Career-thread setup through first serious internship cycle
-- Related Charter principles: Evidence over imagined fit; opportunity cost; external information verification; specialist responsibility boundaries; real feedback loops
 - Status: Awaiting Control Response
 
-### Executive summary
+#### Summary
 
-Following `CTV-20260821-04`, the Career / Internship thread now exists in **Preheat / on-demand** state. The Voyage Room recommends that Project Control formalize one reusable operating workflow for concrete opportunities so the thread becomes the single place to answer four questions:
+Following creation of the Career / Internship Preheat thread, the Voyage Room recommended a reusable on-demand workflow for concrete internship opportunities:
 
-1. **What is this role really asking for?**
-2. **How well does it fit the user's current verified evidence?**
-3. **Is the company / team / internship credible and worth the user's time?**
-4. **What should Horizon do with the opportunity: PRIORITY APPLY, APPLY, WATCH, or SKIP?**
+1. Role Reality Check.
+2. User Fit Analysis against verified Horizon evidence.
+3. Lawful public-source Company & Team Due Diligence.
+4. Risk / Value Verdict using `PRIORITY APPLY / APPLY / WATCH / SKIP`.
+5. Application / interview feedback loop.
 
-This workflow should remain evaluative and execution-facing. It must **not** become a new technical curriculum or authorize the Career thread to redirect Python, C++, Linux, Algorithm, Embedded, AI or other specialist work.
+Career should report repeated technical gaps to Project Control rather than creating its own Python, C++, Linux, Algorithm, Embedded, AI, ROS2 or interview-grinding curricula.
 
-### Verified current state
+The due-diligence boundary is public, lawful, decision-relevant company intelligence; no doxxing, private-data gathering, access-control bypass or rumor-as-fact.
 
-- `CTV-20260820-03` adopted the bounded First-Internship Readiness Framework.
-- `CTV-20260821-04` formally established `09_Career/STATUS.md` in Preheat state.
-- Career may already evaluate concrete internship opportunities and report technical gaps to Project Control.
-- Career may not independently create technical learning roadmaps or change cross-thread priority.
-- User explicitly wants the Career branch to become the place where a posted role can be submitted for fit analysis and lawful public-source company investigation.
-
-### RECOMMENDATION — Standard Opportunity Review Workflow
-
-The Voyage Room recommends that Project Control require the Career thread to use a consistent review sequence for any concrete internship opportunity supplied by the user.
-
-#### Stage 1 — Role Reality Check
-
-Extract and separate:
-
-- job title versus actual daily work;
-- core responsibilities;
-- hard eligibility filters such as graduation year, degree level, location, on-site requirements, weekly days and minimum duration;
-- must-have skills versus preferred / bonus skills;
-- likely engineering environment and tools;
-- whether the role appears to produce real engineering evidence or mainly administrative / labeling / low-value work;
-- whether the stated role aligns with C++ / Linux / embedded / electronics / automation / robotics-adjacent / systems / hardware-software integration or another Horizon-relevant capability.
-
-Do not infer requirements that are not present in the JD or reliable external evidence.
-
-#### Stage 2 — User Fit Analysis
-
-Compare the role against **verified current Horizon evidence**, not optimistic self-description.
-
-Suggested dimensions:
-
-- eligibility fit;
-- technical fit;
-- project / portfolio fit;
-- algorithm / screening readiness;
-- Linux / tooling readiness;
-- communication / documentation readiness;
-- availability and geographic fit;
-- learning value;
-- long-term option value;
-- opportunity cost.
-
-The output should distinguish:
-
-- **Already demonstrated**
-- **Partially demonstrated**
-- **Missing but learnable on the job**
-- **Hard blocker**
-
-A numeric fit score may be used only as a compact summary; the evidence-based explanation is primary.
-
-#### Stage 3 — Company & Team Due Diligence
-
-Use lawful public sources to investigate enough of the company and specific team to make an internship-risk judgment.
-
-Recommended categories:
-
-- legal registration / active operating status;
-- founding date, registered capital and ownership where relevant and publicly available;
-- financing / investors when material;
-- main business, products and whether those products appear real and active;
-- known customers, partnerships, university / lab relationships or market position when verifiable;
-- office location and whether it matches the recruitment claim;
-- company size and hiring footprint;
-- technology / engineering evidence such as technical blogs, patents, papers, public repositories, product documentation or engineering job patterns;
-- recruitment history and whether the same internship appears permanently reposted;
-- public employee / candidate discussions, treated as anecdotal rather than fact unless independently corroborated;
-- litigation, administrative penalties, abnormal-operation records, wage-arrears allegations, mass-layoff signals or other material risks when publicly verifiable;
-- compensation, internship agreement, accommodation / benefits and any unusual payment or fee request;
-- whether the advertised team appears to be a core engineering function or peripheral work.
-
-Source discipline:
-
-- prefer official government / company / university / regulatory sources for factual claims;
-- use established recruitment platforms for JD details;
-- use forums / social media only as lower-confidence reputation evidence;
-- explicitly mark uncertainty and conflicting information;
-- never treat absence of negative search results as proof of safety.
-
-#### Stage 4 — Risk / Value Verdict
-
-Each opportunity should end with a concise Horizon verdict, for example:
-
-- **Company legitimacy:** High / Medium / Low confidence
-- **Technical-content quality:** Strong / Moderate / Weak
-- **Current fit:** Strong / Moderate / Weak
-- **Learning value:** High / Medium / Low
-- **Long-term alignment:** High / Medium / Low
-- **Time / location compatibility:** High / Medium / Low
-- **Material risk:** Low / Medium / High
-
-Final action category:
-
-- **PRIORITY APPLY** — unusually strong fit or evidence value; should receive prompt attention, subject to Project Control capacity constraints.
-- **APPLY** — worth a low-cost application or interview as an evidence experiment.
-- **WATCH** — potentially useful but timing/readiness/uncertainty is not yet favorable.
-- **SKIP** — low fit, hard eligibility mismatch, weak technical value, excessive opportunity cost or unacceptable risk.
-
-The Career thread may recommend an action category, but any application requiring meaningful new resource allocation remains subject to Project Control.
-
-#### Stage 5 — Application / Interview Feedback Loop
-
-If the user applies or interviews, Career should capture real market feedback:
-
-- resume screen result;
-- interview questions;
-- project questions;
-- technical failures or strengths;
-- employer concerns;
-- compensation / duration / location realities;
-- final outcome.
-
-Career should classify each gap as either:
-
-1. **Local application gap** — resume wording, project explanation, interview communication, company-specific preparation; Career may handle this within its scope.
-2. **Technical capability gap** — e.g. Linux debugging, C++ concurrency, embedded protocol work, algorithm foundation; Career reports this to Project Control rather than starting a curriculum itself.
-3. **Structural mismatch** — degree level, duration, geography, graduation year; do not waste technical resources trying to solve a non-technical constraint.
-
-If a technical gap is repeated across multiple high-fit opportunities or materially changes readiness, raise it to Project Control for resource judgment.
-
-### Privacy / ethics boundary
-
-The user's phrase “把公司所有的东西都扒出来” should be operationalized as **lawful public-source due diligence**, not intrusive personal investigation.
-
-Career should not:
-
-- seek private personal data about employees or founders;
-- doxx individuals;
-- bypass access controls;
-- obtain non-public credentials or documents;
-- treat rumor as verified fact.
-
-The goal is decision-quality company intelligence, not personal surveillance.
-
-### Opportunity cost / explicit non-goals
-
-Adopting this workflow should **not** mean:
-
-- browsing internships for hours every day;
-- treating every JD as a technical syllabus;
-- opening new technical study lines because one employer lists a technology;
-- replacing Student Manager V2, Algorithm, Linux support work or current competition priorities;
-- chasing employer prestige rather than technical content;
-- turning Career Preheat into a continuous high-intensity application line before a formal activation trigger.
-
-The desired operating mode is **on-demand deep evaluation of concrete opportunities**.
-
-### Suggested first bounded output
-
-The existing `Internship Readiness Baseline v1` should remain the Career thread's first setup output.
-
-After that baseline, the Voyage Room recommends one reusable **Opportunity Review / Company Due Diligence template** so future JD screenshots or links can be evaluated consistently without redesigning the process each time.
-
-### Decision requested from Project Control
-
-The Voyage Room asks Project Control to:
-
-1. Decide whether this Opportunity Review / Company Due Diligence workflow should become an explicit Career-thread responsibility.
-2. If adopted, encode the bounded workflow or its essential rules in `09_Career/STATUS.md` and/or an appropriate Career-owned operating document.
-3. Preserve Career as Preheat / on-demand unless a formal activation trigger occurs.
-4. Preserve the rule that Career reports technical gaps to Project Control instead of creating technical curricula.
-5. Define whether `PRIORITY APPLY / APPLY / WATCH / SKIP` should be the standard action vocabulary for concrete opportunities.
-
-### Confidence
-
-High that a dedicated evaluation workflow will improve decision quality at low execution cost, because the user is already encountering concrete opportunities and repeatedly needs the same role-fit and company-legitimacy analysis.
-
-Confidence is lower on the exact output schema; Project Control may simplify the template if maintaining it becomes bureaucratic.
-
-### Evidence that would change this recommendation
-
-- Career reviews become so rare that a dedicated workflow creates more overhead than value.
-- The Opportunity Radar or another system already provides equivalent verified company and role analysis.
-- Career Preheat begins consuming enough time to interfere with the active main/support lines.
-- Repeated use shows that a lighter template produces equally good decisions.
-
-### Suggested review trigger
-
-After the first 3–5 concrete internship opportunities have been processed through the Career thread, review whether the workflow is producing useful decisions and market evidence without creating excessive overhead.
+Review after the first 3–5 concrete opportunities to check whether the workflow improves decisions without creating excessive overhead.
 
 ---
 
@@ -316,24 +176,21 @@ After the first 3–5 concrete internship opportunities have been processed thro
 
 - Date: 2026-08-20
 - Type: Strategic recommendation / Resource-planning question
-- Decision horizon: Sophomore year through first serious internship window in 2027
-- Related Charter principles: Evidence over imagined fit; depth before uncontrolled breadth; reversible experiments; opportunity cost; internships as real feedback
 - Status: Answered
 
-### Executive summary
+#### Summary
 
-The Voyage Room recommended that Project Control use the first technical internship as a bounded evidence objective while protecting GPA, competitions, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
+The Voyage Room recommended using the first technical internship as a bounded evidence objective while protecting GPA, competitions, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
 
-The proposed first-internship readiness gate included a presentable engineering project, practical C/C++ fluency, verified Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and a credible availability window.
+The proposed readiness gate included a presentable engineering project, practical C/C++ fluency, verified Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and a credible availability window.
 
-The Voyage Room recommended keeping Python as the current main line, Algorithm structured, C++ as implementation support, Linux as the clearest support-evidence gap, Embedded dormant until a bounded trigger, and Career seasonal / bounded rather than a continuous high-intensity line.
+The recommendation kept Python as the main line, Algorithm structured, C++ as implementation support, Linux as the clearest support-evidence gap, Embedded dormant until a bounded trigger, and Career seasonal / bounded rather than continuous high intensity.
 
-### Disposition
+#### Disposition
 
 - Answered by `CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework`.
 - Project Control adopted the framework without changing the current main technical priority.
 - `CTV-20260821-04` subsequently established a dedicated Career / Internship thread in Preheat / on-demand state.
-- Status: Answered
 
 ---
 
@@ -341,27 +198,19 @@ The Voyage Room recommended keeping Python as the current main line, Algorithm s
 
 - Date: 2026-08-16
 - Type: Strategic research / Route hypothesis
-- Decision horizon: Undergraduate years to early career transition
-- Related Charter principle: Preserve optionality, improve judgment quality, separate exploration from execution
 - Status: Answered
 
-### Executive summary
+#### Summary
 
-The Voyage Room created the first long-term strategic map in `LONG_TERM_DIRECTION.md`, preserving multiple international, engineering and research options without requesting execution reallocation.
+The Voyage Room created the first long-term strategic map, preserving multiple international, engineering and research options without requesting execution reallocation.
 
-### Recommendation
+It recommended maintaining narrow current execution while preserving broad strategic exploration; treating Germany / Europe, US research, domestic opportunities and other international routes as hypotheses rather than commitments; and using projects, internships, competitions and research exposure as evidence-generating experiments.
 
-- Maintain narrow current execution while preserving broad strategic exploration.
-- Treat Germany / Europe, US research, domestic opportunities and other international routes as hypotheses rather than commitments.
-- Use projects, internships, competitions and research exposure as evidence-generating experiments.
-- Continue building transferable engineering capability before narrow specialization.
-
-### Disposition
+#### Disposition
 
 - Answered by `CTV-20260816-01 — Acknowledge Long-Term Strategic Research Map`.
 - Project Control adopted the map as an advisory reference framework with no execution-resource change.
 - Astronomy-related interpretations were later superseded by `CTV-20260816-02`; astronomy remains outside the current strategic route unless explicitly reopened by the user.
-- Status: Answered
 
 ---
 
