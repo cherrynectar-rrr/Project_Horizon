@@ -15,124 +15,104 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability
+### VTC-20260821-04 — Preserve Fragmented Strategic Inputs as a Durable Life-Route Ledger
 
 - Date: 2026-08-21
-- Type: Strategic constraint correction / Graduate-study route refinement
-- Trigger: User clarified that overseas study does **not** have to be in Germany and does **not** have to be literally tuition-free. The practical affordability target is approximately **RMB 100,000 per year in total cost** as a workable order of magnitude.
-- Decision horizon: 2028–2029 graduate-school target-pool construction and application strategy
-- Related Charter principles: Financial resilience; preserve optionality; total-cost accounting; opportunity cost; evidence over prestige
+- Type: Strategic continuity / governance refinement
+- Trigger: User explicitly stated that important life, study, career, graduate-school, financial and other considerations often emerge gradually and in fragmented conversations, and asked Horizon to preserve and synthesize them over time rather than expecting a complete life plan to be articulated at once.
+- Related Charter principles: evidence governance; GitHub as shared state; uncertainty may remain open; institutional paths are inputs; Explore → Decide → Execute → Learn
 - Status: Awaiting Control Response
 
 ### Executive summary
 
-The prior transmission `VTC-20260821-02` interpreted tuition-free / near-zero tuition as a hard feasibility constraint. The user has now explicitly refined that statement.
+The user wants Project Horizon to become progressively more complete by accumulating durable strategic inputs from many small conversations. This should not be implemented as unrestricted chat-memory dependence or as automatic conversion of every thought into an execution task.
 
-The better governing constraint is:
+Voyage Room has therefore created:
 
-> **Overseas MSc is preferred; country remains open; a route is financially viable when its realistic all-in annual cost is around RMB 100,000 per year as an affordable order of magnitude, without requiring fragile debt or an unrealistic funding assumption.**
+- `00_Strategy/Voyage_Room/STRATEGIC_INPUTS.md` — a durable ledger for user-confirmed strategic fragments;
+- an updated `PERSONAL_PROFILE.md` — durable verified context and decision preferences;
+- an updated `LONG_TERM_DIRECTION.md` — route-level synthesis of currently mature conclusions.
 
-Therefore Horizon should **not** use “zero tuition” as the primary filter. It should use **total annual cost of attendance** and the reliability of the funding plan.
+The intended flow is:
 
-This correction materially broadens the future country and university pool beyond Germany while preserving financial discipline.
+> conversation fragment → classify as fact / preference / concern / hypothesis / open question → persist if durable → synthesize when evidence accumulates → send route-changing conclusions to Project Control → only then consider execution changes.
 
-### Working financial model
+### Current route refinements captured
 
-For future graduate-school comparisons, Project Control should require an all-in budget estimate that separates:
+The latest synthesis now explicitly records, among other already discussed facts:
 
-- tuition and mandatory university fees;
-- housing;
-- food and daily living;
-- health insurance;
-- local transportation;
-- visa / residence / proof-of-funds requirements;
-- initial relocation costs and flights;
-- a modest emergency buffer;
-- scholarships, tuition waivers and guaranteed funding;
-- realistic student-work income only as a secondary offset, not as the assumption that makes an otherwise unaffordable route viable.
+- overseas MSc is currently preferred after the bachelor's degree; domestic MSc is not an active planned route at present;
+- country choice remains open and TUM is a benchmark / target rather than the sole school around which the undergraduate profile should be optimized;
+- the future goal is broad competitiveness across strong Robotics / Embodied AI / Intelligent Systems programs in the same broad direction;
+- approximately RMB 100,000 per year in realistic all-in MSc cost remains the current adopted affordability planning band;
+- the missing conventional Automatic Control / Modern Control Theory chain is a known curricular risk, but the user does not currently want a full Electrical Engineering minor merely to repair it;
+- demonstrated control ability and formal prerequisite credits must be treated as separate evidence channels;
+- mathematics competition remains a bounded foundation-strengthening / secondary-evidence activity, while physics competition remains lower-intensity exploration;
+- school curricula are external constraints / course-fact sources rather than Horizon's personal development mission, and the user's actual execution-plan screenshots take precedence when course timing conflicts with the training-plan PDF.
 
-The current working affordability target is approximately **RMB 100,000 per year total**. This should be treated as a planning band rather than a precise yuan-level ceiling; the exact acceptable range should be re-confirmed when the 2028–2029 application pool is built.
+### Recommended operating rule
 
-### Strategic implications
+For future major life-route, academic, graduate-study, career, country, financial or research decisions, Project Control should treat the Voyage Room's durable strategic documents as contextual evidence rather than relying on isolated recent chat statements.
 
-1. **Germany remains attractive but is not privileged by default.**
-   - Low- or no-tuition German universities may still fit the budget well.
-   - TUM remains conditional under current 2026 international tuition rules because its tuition materially increases total cost unless a waiver / scholarship is secured.
+At the same time:
 
-2. **Other countries should remain open.**
-   - A non-German program can be fully competitive if the combination of tuition, living cost, scholarship / waiver structure and program quality keeps the annual all-in cost near the user's feasible range.
-   - Country should be chosen after comparing financial feasibility, curricular fit, engineering / research ecosystem, career optionality and personal fit.
+- no single newly mentioned interest should automatically change priority;
+- conflicting user statements should be resolved by explicit clarification or marked as superseded / reviewable;
+- transient moods and ordinary study chatter should not be promoted into long-term strategy;
+- a durable new constraint may update the strategic ledger immediately, but execution changes still require Project Control judgment.
 
-3. **“Free tuition” and “cheap overall” are not the same thing.**
-   - A zero-tuition program in a very expensive city may be worse financially than a modest-tuition program in a cheaper city with stronger funding.
-   - Future comparisons must use total cost rather than tuition alone.
+### Resource / priority implication
 
-4. **Prestige does not override affordability.**
-   - A prestigious offer that requires materially more than the feasible annual budget without reliable funding should be treated as financially non-executable.
+None immediately.
 
-### Recommended future university-pool categories
-
-When graduate-school planning becomes active, classify each program using total annual cost rather than tuition alone:
-
-- **Core / financially viable:** realistic all-in annual cost is around the user's feasible range under then-current rules, without relying on uncertain future income.
-- **Conditional:** all-in cost is above the comfortable range unless a specific scholarship / waiver / assistantship is secured.
-- **Infeasible:** expected self-funded total cost is materially above the user's safe range and no reliable funding path exists.
-
-TUM should currently remain **Conditional**, not because tuition must be zero, but because under current rules its tuition plus Munich living costs are unlikely to fit the working annual budget without a waiver or other strong funding.
-
-### Country-level route interpretation
-
-The active strategic question is no longer “Germany or not Germany?” It is:
-
-> **Which overseas MSc platform gives the best combination of engineering / research quality, curricular fit, future mobility and life experience while keeping the total financial burden safely manageable?**
-
-Germany / Europe remains a strong hypothesis, but future research should also evaluate other countries where strong engineering programs and scholarship / public-university cost structures may fit the same total-cost envelope.
-
-No country should be promoted to a committed route before current 2028–2029 tuition, living-cost, visa, scholarship and work-right evidence is verified.
+This proposal changes how long-horizon context is preserved and synthesized; it does not activate a new technical line, modify `MASTER_STATUS.md`, change the current Python / Algorithm / Linux / C++ / Career priority order, or create a standing workload.
 
 ### Decision requested from Project Control
 
 The Voyage Room asks Project Control to:
 
-1. Supersede the prior interpretation that tuition-free / near-zero tuition itself is a hard requirement.
-2. Record the current working constraint as **approximately RMB 100,000 per year in realistic all-in overseas MSc cost**, subject to later refinement.
-3. Keep the MSc country pool globally open rather than assuming Germany is mandatory.
-4. Require total-cost-of-attendance analysis for future school comparisons.
-5. Continue treating high-cost self-funded routes as non-default and require reliable funding before counting them as executable options.
-6. Keep TUM as a conditional target under current rules, while allowing other German and non-German programs to compete on equal strategic terms.
+1. Acknowledge `STRATEGIC_INPUTS.md` as a durable advisory context source for future major Horizon decisions.
+2. Preserve the distinction between accumulating strategic context and changing execution priority.
+3. Use the latest synthesized profile / long-term direction when a major decision depends on the user's values, graduate-study preferences, financial constraints or life-route considerations.
+4. Continue requiring explicit Control judgment before accumulated strategic inputs alter `MASTER_STATUS.md` or specialist execution.
 
 ### Confidence
 
-High that this clarification materially improves the graduate-route model because it replaces an overly narrow tuition-only constraint with the user's actual affordability logic.
+High. This directly implements the user's explicit continuity preference while remaining consistent with the Charter's rule that GitHub, not chat memory alone, is the formal shared state.
 
-Low confidence in any specific 2029 school cost today; tuition, exchange rates, housing, scholarships and visa policies must be rechecked near the actual application cycle.
+### Review trigger
 
-### Evidence that would change this recommendation
-
-- User later gives a different annual family-support ceiling or clarifies that the RMB 100,000 figure excludes a major cost category.
-- Family finances materially improve or worsen.
-- A reliable scholarship / assistantship changes the net cost of a high-value program.
-- 2029 tuition or living-cost policies materially change in candidate countries.
-
-### Suggested review trigger
-
-- Initial 2028 graduate-school target-pool construction.
-- Any major change in family affordability or external funding.
-- Discovery of a strong overseas engineering MSc whose total cost / funding structure materially improves the current option set.
+- The accumulated ledger becomes too noisy or redundant.
+- A future user clarification materially contradicts the current route synthesis.
+- Project Control finds that an additional read rule or document structure is needed.
+- A major life-route decision is made using the accumulated context.
 
 ---
 
 ## Prior Transmissions
+
+### VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability
+
+- Date: 2026-08-21
+- Type: Strategic constraint correction / Graduate-study route refinement
+- Status: Answered
+
+#### Summary
+
+The user clarified that overseas study does not have to be in Germany and does not have to be literally tuition-free. The governing constraint is realistic all-in affordability, currently approximately RMB 100,000 per year as a planning band. Country remains open; high-cost self-funded routes remain non-default; TUM is conditional under current rules unless funding changes the net cost.
+
+#### Disposition
+
+- Adopted by `CTV-20260821-07 — Adopt Overseas MSc Total-Cost Affordability Constraint`.
+- No current execution-priority change.
+
+---
 
 ### VTC-20260821-02 — Tuition-Free / Near-Zero Tuition as a Hard MSc Feasibility Constraint
 
 - Date: 2026-08-21
 - Type: Strategic constraint update / Graduate-study route correction
 - Status: **Superseded by VTC-20260821-03**
-
-#### Summary
-
-This transmission interpreted the user's earlier statement as making tuition-free / near-zero tuition itself a hard feasibility filter. It reclassified TUM as conditional under current 2026 third-country tuition rules and emphasized financial feasibility before prestige.
 
 #### What remains valid
 
@@ -143,8 +123,8 @@ This transmission interpreted the user's earlier statement as making tuition-fre
 
 #### What is superseded
 
-- Zero / near-zero tuition is **not** itself the hard requirement.
-- The correct filter is realistic **all-in annual affordability**, currently around RMB 100,000 per year as a working planning band.
+- Zero / near-zero tuition is not itself the hard requirement.
+- The correct filter is realistic all-in annual affordability.
 
 ---
 
@@ -152,23 +132,16 @@ This transmission interpreted the user's earlier statement as making tuition-fre
 
 - Date: 2026-08-21
 - Type: Strategic recommendation / Specialist-thread operating design
-- Status: Awaiting Control Response
+- Status: Answered
 
 #### Summary
 
-Following creation of the Career / Internship Preheat thread, the Voyage Room recommended a reusable on-demand workflow for concrete internship opportunities:
+The Voyage Room recommended a reusable on-demand workflow for concrete internship opportunities: role reality check → verified user fit → lawful public-source company/team due diligence → risk/value verdict → application/interview feedback loop.
 
-1. Role Reality Check.
-2. User Fit Analysis against verified Horizon evidence.
-3. Lawful public-source Company & Team Due Diligence.
-4. Risk / Value Verdict using `PRIORITY APPLY / APPLY / WATCH / SKIP`.
-5. Application / interview feedback loop.
+#### Disposition
 
-Career should report repeated technical gaps to Project Control rather than creating its own Python, C++, Linux, Algorithm, Embedded, AI, ROS2 or interview-grinding curricula.
-
-The due-diligence boundary is public, lawful, decision-relevant company intelligence; no doxxing, private-data gathering, access-control bypass or rumor-as-fact.
-
-Review after the first 3–5 concrete opportunities to check whether the workflow improves decisions without creating excessive overhead.
+- Adopted by `CTV-20260821-05 — Adopt Career Opportunity Review & Company Due Diligence Workflow`.
+- Career was subsequently activated as bounded support by `CTV-20260821-06`.
 
 ---
 
@@ -182,15 +155,10 @@ Review after the first 3–5 concrete opportunities to check whether the workflo
 
 The Voyage Room recommended using the first technical internship as a bounded evidence objective while protecting GPA, competitions, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
 
-The proposed readiness gate included a presentable engineering project, practical C/C++ fluency, verified Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and a credible availability window.
-
-The recommendation kept Python as the main line, Algorithm structured, C++ as implementation support, Linux as the clearest support-evidence gap, Embedded dormant until a bounded trigger, and Career seasonal / bounded rather than continuous high intensity.
-
 #### Disposition
 
 - Answered by `CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework`.
 - Project Control adopted the framework without changing the current main technical priority.
-- `CTV-20260821-04` subsequently established a dedicated Career / Internship thread in Preheat / on-demand state.
 
 ---
 
@@ -204,12 +172,9 @@ The recommendation kept Python as the main line, Algorithm structured, C++ as im
 
 The Voyage Room created the first long-term strategic map, preserving multiple international, engineering and research options without requesting execution reallocation.
 
-It recommended maintaining narrow current execution while preserving broad strategic exploration; treating Germany / Europe, US research, domestic opportunities and other international routes as hypotheses rather than commitments; and using projects, internships, competitions and research exposure as evidence-generating experiments.
-
 #### Disposition
 
 - Answered by `CTV-20260816-01 — Acknowledge Long-Term Strategic Research Map`.
-- Project Control adopted the map as an advisory reference framework with no execution-resource change.
 - Astronomy-related interpretations were later superseded by `CTV-20260816-02`; astronomy remains outside the current strategic route unless explicitly reopened by the user.
 
 ---
