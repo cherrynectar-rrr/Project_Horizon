@@ -1,6 +1,6 @@
-# Project Control → Voyage Room
+# Project Horizon — Project Control → Voyage Room
 
-Last Updated: 2026-08-20
+Last Updated: 2026-08-21
 Owner / Sole Writer: Project Horizon main control thread
 Readers: Voyage Room and specialist threads
 Authority: Control-level decisions and research requests
@@ -13,16 +13,62 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `VTC-20260820-02 — Internship-Aligned Capability Planning Review` is adopted as a **bounded planning framework**, not as a new execution line.
-- Current execution priority remains unchanged: Python main line; Algorithm active structured line; Linux support; C++ support for algorithm implementation.
-- First-internship readiness will be treated as an evidence gate for a future application window, not as a reason to imitate every internship job description or activate multiple stacks.
-- Linux is the clearest current support-evidence gap. Project Control approves a future explicit bounded Linux milestone, preferably after the current Python OOP milestone unless a real Python/C++ development need provides an earlier natural entry point.
-- Embedded remains dormant. It may only be considered through a single bounded hardware-software evidence experiment after the trigger defined below is satisfied.
-- Career remains inactive for now. It may later activate as a seasonal, bounded execution line around an approved application window.
+- `VTC-20260820-02 — Internship-Aligned Capability Planning Review` remains adopted as a **bounded planning framework**, not as a new dominant execution line.
+- Following an explicit user request on 2026-08-21, Project Control has formally established `09_Career/STATUS.md` as a dedicated **Career / Internship Preheat thread**.
+- This changes Career from fully inactive to **Preheat / on-demand** only. It does not authorize a continuous application push or a second technical curriculum.
+- Current execution priority remains: Python main line; Algorithm active structured line; Linux support; C++ support for algorithm implementation. Career / Internship is a fifth listed branch only in Preheat state with no continuous execution allocation.
+- The Career / Internship thread's first bounded output is `Internship Readiness Baseline v1`; after that it should remain low-intensity until a formal activation trigger occurs.
+- Linux remains the clearest current support-evidence gap. Embedded remains dormant.
 - No ROS2, deep learning, CUDA, OpenCV, broad advanced-C++ curriculum, high-volume interview grinding, or other new technical roadmap is authorized by this decision.
 - Mathematics competition remains Primary; physics theory competition remains Secondary / interest validation; Lanqiao remains a baseline attempt.
 
 ## Decisions
+
+### CTV-20260821-04 — Establish Dedicated Career / Internship Preheat Thread
+
+- Date: 2026-08-21
+- Trigger: Explicit user request to open a dedicated internship branch.
+- Decision: Approve thread creation in **Preheat** state; do not activate a continuous high-intensity Career line.
+- Rationale:
+  - A dedicated thread gives internship readiness, concrete opportunity evaluation, resume/portfolio preparation and future application execution a clear responsibility boundary.
+  - The request can be satisfied without violating the one-main-line principle because Preheat carries no continuous execution allocation.
+  - Keeping technical curricula outside the Career thread prevents job descriptions from fragmenting Python, Algorithm, Linux, C++ or future Embedded work.
+  - A one-time readiness baseline is a low-cost coordination artifact that can expose real gaps without turning internship preparation into a parallel roadmap.
+- Evidence considered:
+  - `MASTER_STATUS.md`: Python remains main; Algorithm is active; Linux is support; C++ is support; the First-Internship Readiness Framework is already adopted.
+  - `09_Career/`: directory existed but had no `STATUS.md`, so Career was not yet a formally governed specialist thread.
+  - `VTC-20260820-02`: Voyage Room recommended eventual bounded Career activation around a real application window rather than continuous high-intensity preparation.
+  - User request: explicit desire for a dedicated internship branch.
+- Resource or priority implication:
+  - No change to Python, Algorithm, Linux or C++ priority.
+  - Create `09_Career/STATUS.md` with `Status: Preheat`.
+  - Allow one bounded setup output: `Internship Readiness Baseline v1`.
+  - After that output, Career / Internship remains on-demand until a formal trigger justifies seasonal activation.
+- Thread boundary:
+  - May assess readiness against the Application Ready Gate.
+  - May evaluate concrete internship opportunities and job descriptions.
+  - May prepare resume/portfolio/application strategy and interview execution when authorized.
+  - May report technical gaps to Project Control.
+  - May **not** create independent Python, C++, Linux, Algorithm, Embedded, AI, ROS2, CUDA, OpenCV or interview-grinding roadmaps.
+  - May not change cross-thread priority or activate other specialist lines.
+- Activation triggers:
+  - Student Manager V2 completion;
+  - first verified Linux milestone;
+  - a presentable engineering project;
+  - confirmation of early-2027 winter-break availability;
+  - a concrete high-fit internship opportunity;
+  - explicit Project Control authorization of a seasonal application window.
+- Relationship to `CTV-20260820-03`:
+  - The overall First-Internship Readiness Framework remains active.
+  - Only the prior statement that Career is fully inactive is superseded; Career is now Preheat / on-demand, not Active.
+- Constraints the Voyage Room must use:
+  - Treat the dedicated Career thread as an organizational boundary, not evidence that internship preparation has become a new main line.
+  - Do not infer that Embedded, AI or Embodied AI should now activate.
+  - Continue to surface concrete market evidence only when it materially changes readiness, timing or opportunity cost.
+- Further research question: None immediately.
+- Expected output: Career / Internship thread should produce its bounded readiness baseline, then remain low-intensity until a trigger occurs.
+- Review trigger or date: Completion of Internship Readiness Baseline v1 or any activation trigger above.
+- Status: Active
 
 ### CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework
 
@@ -47,7 +93,8 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
   - Algorithm continues its approved block route one topic at a time.
   - C++ remains support only.
   - Linux receives the next explicit support-milestone priority when capacity permits, but must be integrated with real programming work and must not become an independent curriculum.
-  - Embedded and Career receive no active execution resources now.
+  - Embedded receives no active execution resources now.
+  - Career's original fully inactive clause is superseded only by `CTV-20260821-04`, which establishes a Preheat / on-demand thread without continuous allocation.
 - Provisional **Application Ready Gate**:
   1. At least one presentable engineering project that runs, has a clear README, and can be explained in terms of design choices, debugging and limitations.
   2. C/C++ fluency sufficient for small modules and debugging without syntax/STL being the primary blocker.
@@ -64,8 +111,8 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
   - Reconsider only when the current main-line milestone has completed or handed off, execution capacity is not under acute academic/competition pressure, and there is either suitable hardware access or a concrete project/opportunity that can justify one bounded output.
   - Any activation must begin with one small hardware-software integration experiment and one verifiable deliverable, not a general STM32/MCU roadmap.
 - Career activation trigger:
-  - Do not activate Career continuously now.
-  - Review activation when winter-break availability for early 2027 is known, when the Application Ready Gate is substantially satisfied, or when a concrete high-fit opportunity appears.
+  - Career now exists in Preheat state under `CTV-20260821-04`.
+  - Review promotion to a bounded Active / Support role when winter-break availability for early 2027 is known, when the Application Ready Gate is substantially satisfied, or when a concrete high-fit opportunity appears.
   - A sophomore winter pilot may be used as a low-cost evidence experiment if readiness and availability support it.
   - Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 - Explicitly not authorized:
