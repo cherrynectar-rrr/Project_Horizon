@@ -13,16 +13,75 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `VTC-20260820-02 — Internship-Aligned Capability Planning Review` remains adopted as a **bounded planning framework**, not as a new dominant execution line.
-- Following an explicit user request on 2026-08-21, Project Control has formally established `09_Career/STATUS.md` as a dedicated **Career / Internship Preheat thread**.
-- This changes Career from fully inactive to **Preheat / on-demand** only. It does not authorize a continuous application push or a second technical curriculum.
-- Current execution priority remains: Python main line; Algorithm active structured line; Linux support; C++ support for algorithm implementation. Career / Internship is a fifth listed branch only in Preheat state with no continuous execution allocation.
-- The Career / Internship thread's first bounded output is `Internship Readiness Baseline v1`; after that it should remain low-intensity until a formal activation trigger occurs.
-- Linux remains the clearest current support-evidence gap. Embedded remains dormant.
-- No ROS2, deep learning, CUDA, OpenCV, broad advanced-C++ curriculum, high-volume interview grinding, or other new technical roadmap is authorized by this decision.
-- Mathematics competition remains Primary; physics theory competition remains Secondary / interest validation; Lanqiao remains a baseline attempt.
+- `VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence` is adopted with a lightweight, reusable workflow.
+- Career / Internship remains **Preheat / on-demand**. This decision expands its explicit evaluation responsibility but does not create continuous application workload or change technical priorities.
+- For concrete opportunities, Career should use a consistent sequence: role reality check → verified user-fit analysis → lawful public-source company/team due diligence → risk/value verdict → application/interview feedback loop.
+- Standard action vocabulary is **PRIORITY APPLY / APPLY / WATCH / SKIP**.
+- Career may handle local application gaps such as resume wording, project explanation and company-specific preparation. Technical capability gaps must be reported to Project Control rather than converted into new curricula.
+- The user's request to “扒公司” is formally interpreted as lawful public-source due diligence only; no private-person investigation, access-control bypass, doxxing or rumor-as-fact is permitted.
+- `Internship Readiness Baseline v1` remains the Career thread's first bounded setup output. The opportunity-review workflow becomes the reusable operating method after that baseline.
+- Current execution priority remains unchanged: Python main line; Algorithm active structured line; Linux support; C++ support for algorithm implementation; Career / Internship Preheat / on-demand.
+- Review this workflow after the first 3–5 concrete internship opportunities to ensure it improves decisions without creating excessive overhead.
 
 ## Decisions
+
+### CTV-20260821-05 — Adopt Career Opportunity Review & Company Due Diligence Workflow
+
+- Date: 2026-08-21
+- Responds to: `VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence`
+- Decision: Adopt with lightweight implementation
+- Rationale:
+  - The user explicitly wants the dedicated internship branch to repeatedly evaluate concrete roles and investigate companies deeply enough to support high-quality decisions.
+  - A reusable workflow reduces repeated ad-hoc analysis while keeping the Career thread focused on evaluation rather than technical curriculum creation.
+  - The workflow produces market evidence at low execution cost and fits the existing Preheat / on-demand role.
+  - Public-source company due diligence is useful for distinguishing technically valuable opportunities from weak, misleading or risky postings.
+- Evidence considered:
+  - `09_Career/STATUS.md`: Career already owns readiness assessment and concrete opportunity evaluation in Preheat state.
+  - `CTV-20260820-03`: First-Internship Readiness Framework remains active.
+  - `CTV-20260821-04`: Dedicated Career / Internship Preheat thread is formally established.
+  - `VTC-20260821-01`: Voyage Room proposes a bounded five-stage review process and explicit privacy/ethics boundary.
+  - User request: Career should assess whether a role fits and investigate the company sufficiently for a decision.
+- Standard opportunity-review sequence:
+  1. **Role Reality Check** — separate actual responsibilities, hard filters, must-haves, preferences, engineering environment and likely evidence value.
+  2. **Verified User Fit** — compare only against current Horizon evidence; classify each requirement as Already demonstrated / Partially demonstrated / Missing but learnable / Hard blocker.
+  3. **Company & Team Due Diligence** — use lawful public sources, prioritizing official, regulatory, company, university and established recruitment sources; treat forums and social media as lower-confidence reputation evidence.
+  4. **Risk / Value Verdict** — summarize legitimacy confidence, technical-content quality, current fit, learning value, long-term alignment, time/location compatibility and material risk.
+  5. **Feedback Loop** — after application/interview, record screening results, questions, employer concerns, practical constraints and outcomes.
+- Standard action vocabulary:
+  - **PRIORITY APPLY** — unusually strong fit or evidence value; deserves prompt attention subject to Project Control capacity.
+  - **APPLY** — worth a low-cost application or interview as an evidence experiment.
+  - **WATCH** — potentially useful but timing, readiness or uncertainty is not yet favorable.
+  - **SKIP** — hard mismatch, weak technical value, excessive opportunity cost or unacceptable risk.
+- Gap-routing rule:
+  - **Local application gap:** resume wording, project explanation, communication, company-specific preparation → Career may handle.
+  - **Technical capability gap:** Linux, C++, algorithms, embedded/system capability, etc. → report to Project Control; Career must not start a curriculum.
+  - **Structural mismatch:** degree level, graduation year, geography, duration or schedule → classify as structural; do not waste technical resources trying to solve it.
+  - Repeated technical gaps across multiple high-fit opportunities should be escalated to Project Control for resource review.
+- Privacy / ethics boundary:
+  - Company investigation means lawful public-source due diligence.
+  - Do not seek private personal data, doxx individuals, bypass access controls, obtain non-public credentials/documents, or present rumor as verified fact.
+  - Absence of negative search results is not proof of safety.
+- Resource or priority implication:
+  - No change to current technical priority order.
+  - Career remains Preheat / on-demand.
+  - No daily internship browsing quota or continuous application push is authorized.
+  - `Internship Readiness Baseline v1` remains the first bounded Career output.
+  - After the baseline, Career may use this workflow whenever the user supplies a concrete JD, screenshot, company or opportunity.
+- Explicit non-goals:
+  - no new technical curriculum from a single JD;
+  - no continuous high-intensity Career line before a formal activation trigger;
+  - no employer-prestige optimization over technical content;
+  - no displacement of Python, Algorithm, Linux support or current competition priorities;
+  - no intrusive personal investigation.
+- Constraints the Voyage Room must use:
+  - Treat Career as the single evaluation entry point for concrete internship opportunities, but not as the owner of technical learning priorities.
+  - Continue surfacing market evidence only when it materially affects readiness, timing, risk or opportunity cost.
+- Further research question: None immediately.
+- Expected output:
+  - Career should complete `Internship Readiness Baseline v1`, then use a lightweight reusable Opportunity Review / Company Due Diligence format for concrete opportunities.
+- Review trigger or date:
+  - After the first 3–5 concrete internship opportunities are processed through Career, or earlier if the workflow creates excessive overhead or repeated market evidence changes a technical readiness assumption.
+- Status: Active
 
 ### CTV-20260821-04 — Establish Dedicated Career / Internship Preheat Thread
 
