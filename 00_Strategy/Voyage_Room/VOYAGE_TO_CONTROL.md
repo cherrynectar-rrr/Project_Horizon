@@ -1,6 +1,6 @@
 # Voyage Room → Project Control
 
-Last Updated: 2026-08-20
+Last Updated: 2026-08-21
 Owner / Sole Writer: Voyage Room
 Readers: Project Control and specialist threads
 Authority: Advisory only
@@ -15,191 +15,235 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
+### VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence
+
+- Date: 2026-08-21
+- Type: Strategic recommendation / Specialist-thread operating design
+- Trigger: Explicit user request that the dedicated internship branch should not only prepare applications, but repeatedly assess whether a concrete role fits the user and investigate the company deeply enough to support a high-quality APPLY / WATCH / SKIP judgment.
+- Decision horizon: Immediate Career-thread setup through first serious internship cycle
+- Related Charter principles: Evidence over imagined fit; opportunity cost; external information verification; specialist responsibility boundaries; real feedback loops
+- Status: Awaiting Control Response
+
+### Executive summary
+
+Following `CTV-20260821-04`, the Career / Internship thread now exists in **Preheat / on-demand** state. The Voyage Room recommends that Project Control formalize one reusable operating workflow for concrete opportunities so the thread becomes the single place to answer four questions:
+
+1. **What is this role really asking for?**
+2. **How well does it fit the user's current verified evidence?**
+3. **Is the company / team / internship credible and worth the user's time?**
+4. **What should Horizon do with the opportunity: PRIORITY APPLY, APPLY, WATCH, or SKIP?**
+
+This workflow should remain evaluative and execution-facing. It must **not** become a new technical curriculum or authorize the Career thread to redirect Python, C++, Linux, Algorithm, Embedded, AI or other specialist work.
+
+### Verified current state
+
+- `CTV-20260820-03` adopted the bounded First-Internship Readiness Framework.
+- `CTV-20260821-04` formally established `09_Career/STATUS.md` in Preheat state.
+- Career may already evaluate concrete internship opportunities and report technical gaps to Project Control.
+- Career may not independently create technical learning roadmaps or change cross-thread priority.
+- User explicitly wants the Career branch to become the place where a posted role can be submitted for fit analysis and lawful public-source company investigation.
+
+### RECOMMENDATION — Standard Opportunity Review Workflow
+
+The Voyage Room recommends that Project Control require the Career thread to use a consistent review sequence for any concrete internship opportunity supplied by the user.
+
+#### Stage 1 — Role Reality Check
+
+Extract and separate:
+
+- job title versus actual daily work;
+- core responsibilities;
+- hard eligibility filters such as graduation year, degree level, location, on-site requirements, weekly days and minimum duration;
+- must-have skills versus preferred / bonus skills;
+- likely engineering environment and tools;
+- whether the role appears to produce real engineering evidence or mainly administrative / labeling / low-value work;
+- whether the stated role aligns with C++ / Linux / embedded / electronics / automation / robotics-adjacent / systems / hardware-software integration or another Horizon-relevant capability.
+
+Do not infer requirements that are not present in the JD or reliable external evidence.
+
+#### Stage 2 — User Fit Analysis
+
+Compare the role against **verified current Horizon evidence**, not optimistic self-description.
+
+Suggested dimensions:
+
+- eligibility fit;
+- technical fit;
+- project / portfolio fit;
+- algorithm / screening readiness;
+- Linux / tooling readiness;
+- communication / documentation readiness;
+- availability and geographic fit;
+- learning value;
+- long-term option value;
+- opportunity cost.
+
+The output should distinguish:
+
+- **Already demonstrated**
+- **Partially demonstrated**
+- **Missing but learnable on the job**
+- **Hard blocker**
+
+A numeric fit score may be used only as a compact summary; the evidence-based explanation is primary.
+
+#### Stage 3 — Company & Team Due Diligence
+
+Use lawful public sources to investigate enough of the company and specific team to make an internship-risk judgment.
+
+Recommended categories:
+
+- legal registration / active operating status;
+- founding date, registered capital and ownership where relevant and publicly available;
+- financing / investors when material;
+- main business, products and whether those products appear real and active;
+- known customers, partnerships, university / lab relationships or market position when verifiable;
+- office location and whether it matches the recruitment claim;
+- company size and hiring footprint;
+- technology / engineering evidence such as technical blogs, patents, papers, public repositories, product documentation or engineering job patterns;
+- recruitment history and whether the same internship appears permanently reposted;
+- public employee / candidate discussions, treated as anecdotal rather than fact unless independently corroborated;
+- litigation, administrative penalties, abnormal-operation records, wage-arrears allegations, mass-layoff signals or other material risks when publicly verifiable;
+- compensation, internship agreement, accommodation / benefits and any unusual payment or fee request;
+- whether the advertised team appears to be a core engineering function or peripheral work.
+
+Source discipline:
+
+- prefer official government / company / university / regulatory sources for factual claims;
+- use established recruitment platforms for JD details;
+- use forums / social media only as lower-confidence reputation evidence;
+- explicitly mark uncertainty and conflicting information;
+- never treat absence of negative search results as proof of safety.
+
+#### Stage 4 — Risk / Value Verdict
+
+Each opportunity should end with a concise Horizon verdict, for example:
+
+- **Company legitimacy:** High / Medium / Low confidence
+- **Technical-content quality:** Strong / Moderate / Weak
+- **Current fit:** Strong / Moderate / Weak
+- **Learning value:** High / Medium / Low
+- **Long-term alignment:** High / Medium / Low
+- **Time / location compatibility:** High / Medium / Low
+- **Material risk:** Low / Medium / High
+
+Final action category:
+
+- **PRIORITY APPLY** — unusually strong fit or evidence value; should receive prompt attention, subject to Project Control capacity constraints.
+- **APPLY** — worth a low-cost application or interview as an evidence experiment.
+- **WATCH** — potentially useful but timing/readiness/uncertainty is not yet favorable.
+- **SKIP** — low fit, hard eligibility mismatch, weak technical value, excessive opportunity cost or unacceptable risk.
+
+The Career thread may recommend an action category, but any application requiring meaningful new resource allocation remains subject to Project Control.
+
+#### Stage 5 — Application / Interview Feedback Loop
+
+If the user applies or interviews, Career should capture real market feedback:
+
+- resume screen result;
+- interview questions;
+- project questions;
+- technical failures or strengths;
+- employer concerns;
+- compensation / duration / location realities;
+- final outcome.
+
+Career should classify each gap as either:
+
+1. **Local application gap** — resume wording, project explanation, interview communication, company-specific preparation; Career may handle this within its scope.
+2. **Technical capability gap** — e.g. Linux debugging, C++ concurrency, embedded protocol work, algorithm foundation; Career reports this to Project Control rather than starting a curriculum itself.
+3. **Structural mismatch** — degree level, duration, geography, graduation year; do not waste technical resources trying to solve a non-technical constraint.
+
+If a technical gap is repeated across multiple high-fit opportunities or materially changes readiness, raise it to Project Control for resource judgment.
+
+### Privacy / ethics boundary
+
+The user's phrase “把公司所有的东西都扒出来” should be operationalized as **lawful public-source due diligence**, not intrusive personal investigation.
+
+Career should not:
+
+- seek private personal data about employees or founders;
+- doxx individuals;
+- bypass access controls;
+- obtain non-public credentials or documents;
+- treat rumor as verified fact.
+
+The goal is decision-quality company intelligence, not personal surveillance.
+
+### Opportunity cost / explicit non-goals
+
+Adopting this workflow should **not** mean:
+
+- browsing internships for hours every day;
+- treating every JD as a technical syllabus;
+- opening new technical study lines because one employer lists a technology;
+- replacing Student Manager V2, Algorithm, Linux support work or current competition priorities;
+- chasing employer prestige rather than technical content;
+- turning Career Preheat into a continuous high-intensity application line before a formal activation trigger.
+
+The desired operating mode is **on-demand deep evaluation of concrete opportunities**.
+
+### Suggested first bounded output
+
+The existing `Internship Readiness Baseline v1` should remain the Career thread's first setup output.
+
+After that baseline, the Voyage Room recommends one reusable **Opportunity Review / Company Due Diligence template** so future JD screenshots or links can be evaluated consistently without redesigning the process each time.
+
+### Decision requested from Project Control
+
+The Voyage Room asks Project Control to:
+
+1. Decide whether this Opportunity Review / Company Due Diligence workflow should become an explicit Career-thread responsibility.
+2. If adopted, encode the bounded workflow or its essential rules in `09_Career/STATUS.md` and/or an appropriate Career-owned operating document.
+3. Preserve Career as Preheat / on-demand unless a formal activation trigger occurs.
+4. Preserve the rule that Career reports technical gaps to Project Control instead of creating technical curricula.
+5. Define whether `PRIORITY APPLY / APPLY / WATCH / SKIP` should be the standard action vocabulary for concrete opportunities.
+
+### Confidence
+
+High that a dedicated evaluation workflow will improve decision quality at low execution cost, because the user is already encountering concrete opportunities and repeatedly needs the same role-fit and company-legitimacy analysis.
+
+Confidence is lower on the exact output schema; Project Control may simplify the template if maintaining it becomes bureaucratic.
+
+### Evidence that would change this recommendation
+
+- Career reviews become so rare that a dedicated workflow creates more overhead than value.
+- The Opportunity Radar or another system already provides equivalent verified company and role analysis.
+- Career Preheat begins consuming enough time to interfere with the active main/support lines.
+- Repeated use shows that a lighter template produces equally good decisions.
+
+### Suggested review trigger
+
+After the first 3–5 concrete internship opportunities have been processed through the Career thread, review whether the workflow is producing useful decisions and market evidence without creating excessive overhead.
+
+---
+
+## Prior Transmission
+
 ### VTC-20260820-02 — Internship-Aligned Capability Planning Review
 
 - Date: 2026-08-20
 - Type: Strategic recommendation / Resource-planning question
 - Decision horizon: Sophomore year through first serious internship window in 2027
 - Related Charter principles: Evidence over imagined fit; depth before uncontrolled breadth; reversible experiments; opportunity cost; internships as real feedback
-- Status: Awaiting Control Response
+- Status: Answered
 
 ### Executive summary
 
-The Voyage Room recommends that Project Control perform a bounded cross-thread planning review around one near-term evidence objective:
+The Voyage Room recommended that Project Control use the first technical internship as a bounded evidence objective while protecting GPA, competitions, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
 
-**Build enough integrated engineering evidence to make the user's first technical internship a realistic experiment, while preserving the longer-term robotics / embedded / systems / AI-deployment option set and protecting GPA, competitions and current execution depth.**
+The proposed first-internship readiness gate included a presentable engineering project, practical C/C++ fluency, verified Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and a credible availability window.
 
-This is **not** a recommendation to activate every technical direction or turn internship preparation into a new dominant main line.
+The Voyage Room recommended keeping Python as the current main line, Algorithm structured, C++ as implementation support, Linux as the clearest support-evidence gap, Embedded dormant until a bounded trigger, and Career seasonal / bounded rather than a continuous high-intensity line.
 
-The purpose is to make the existing lines reinforce one another and to identify which currently dormant or support capability should receive the next bounded increment of resources when capacity allows.
+### Disposition
 
-### Verified current state
-
-From `MASTER_STATUS.md` and current specialist status files:
-
-- Python remains the main line; the current milestone is OOP through Student Manager V2.
-- Algorithm is an active structured line; Block 01 is in progress and sorting is current.
-- C++ standalone preheat is complete; the Algorithm Readiness Gate has passed and C++ currently serves algorithm implementation.
-- Linux remains a support line and has no verified milestone recorded yet.
-- No cross-thread blockers are reported.
-- Career is not currently an activated execution line.
-- Mathematics competition remains Primary; physics theory competition remains Secondary / interest validation; Lanqiao remains a baseline attempt.
-
-### Strategic interpretation
-
-**HYPOTHESIS:** The first serious internship should be treated primarily as an evidence-generating engineering experiment, not as a prestige target.
-
-A technically real first role involving some combination of C/C++, Linux, embedded/electronics, automation, testing/debugging, robotics-adjacent integration or hardware-software work may have high strategic value even if the employer is not famous.
-
-The first internship can test several unresolved Horizon questions simultaneously:
-
-- Does the user actually enjoy real systems / embedded / robotics-adjacent engineering work?
-- Which layer of the stack is most engaging: software, hardware, integration, debugging, algorithms or deployment?
-- What work pace and environment are sustainable?
-- Which capability gaps are visible only in a real engineering team?
-
-### Proposed application-window hypothesis
-
-- **Sophomore winter break:** pilot application window if the user can offer sufficient continuous availability and has reached a minimum readiness gate.
-- **Summer 2027:** primary serious first-internship window unless stronger evidence or a concrete earlier opportunity changes the plan.
-
-The winter pilot should be low-cost and evidence-seeking. Failure to obtain an offer should still produce useful feedback if it reveals whether the limiting factor is portfolio quality, C++/Linux fluency, interview fundamentals, internship duration, geography or role mismatch.
-
-### Suggested Internship Readiness Gate for Control review
-
-The Voyage Room proposes that Project Control refine and approve or reject a gate roughly containing:
-
-1. At least one presentable engineering project that runs, has a clear README, and can be explained in terms of design decisions, debugging and limitations.
-2. C/C++ fluency sufficient to write and debug small modules without syntax/STL becoming the primary blocker.
-3. Practical Linux workflow evidence: filesystem, command line, Git/tooling, compile/run/debug, environment/package use, and basic shell fluency in real project work.
-4. Basic algorithm/data-structure competence sufficient for entry-level technical screening without creating an independent high-volume interview-grinding roadmap.
-5. Ability to explain projects, reproduce bugs, document work and communicate technical decisions.
-6. A known, credible availability window for the target internship period.
-
-This is an **Application Ready** gate, not a claim of professional-engineer readiness.
-
-### Cross-thread planning questions for Project Control
-
-The Voyage Room recommends that Main Control decide how each line contributes to the readiness gate without fragmenting execution.
-
-#### Python
-
-Potential role:
-- continue the current main-line milestone;
-- strengthen software structure, file handling, exceptions, modularity and project explanation;
-- produce engineering habits that transfer to later tools and automation.
-
-Recommendation:
-- do not replace the Python main line merely because internship postings mention C++/embedded skills;
-- complete the current OOP milestone and let Project Control decide the next handoff based on evidence.
-
-#### Algorithm
-
-Potential role:
-- strengthen problem decomposition, complexity reasoning and baseline interview readiness;
-- continue the approved structured route one topic at a time.
-
-Recommendation:
-- avoid a second interview-specific LeetCode roadmap at this stage;
-- use current Algorithm progress as the main source of screening readiness.
-
-#### C++
-
-Potential role:
-- remain the implementation language for Algorithm;
-- deepen only where real system/project/internship needs expose gaps;
-- later contribute directly to a systems/embedded/robotics-adjacent project.
-
-Recommendation:
-- avoid restarting a broad standalone C++ curriculum without evidence of need.
-
-#### Linux
-
-Potential role:
-- close one of the clearest current internship-readiness evidence gaps;
-- become the practical environment connecting programming, Git, compilation, debugging and future systems work.
-
-Recommendation:
-- Project Control should consider whether Linux needs a more deliberate bounded milestone soon, while keeping it a support line rather than allowing it to become an independent roadmap.
-
-#### Embedded / hardware-software integration
-
-Potential role:
-- provide a future project/evidence bridge between the user's Electronic Information Engineering background and the current robotics/systems exploration region.
-
-Recommendation:
-- do **not** activate Embedded simply because internship JDs list STM32, MCU, serial/CAN or hardware skills;
-- instead, determine a readiness trigger and the smallest bounded project/exposure that would create decision-quality evidence when capacity becomes available.
-
-#### Career
-
-Potential role:
-- convert technical evidence into a readiness package, targeted applications and interview feedback near an approved application window.
-
-Recommendation:
-- do not create a continuous high-intensity Career line now;
-- Main Control should decide whether Career should later activate as a seasonal / bounded execution line around the winter pilot or summer 2027 primary window.
-
-#### AI / Embodied AI
-
-Potential role:
-- remain long-term strategic options rather than first-internship requirements.
-
-Recommendation:
-- do not prematurely activate ROS2, deep learning, VLA/RL or other specialized stacks merely to imitate advanced robotics internship JDs;
-- allow later real projects and internships to determine whether these directions deserve execution resources.
-
-### Opportunity cost / what should temporarily NOT be done
-
-If Project Control adopts an internship-aligned capability plan, the Voyage Room specifically recommends **against**:
-
-- opening multiple new technical lines at once;
-- trying to learn ROS2 + STM32 + CUDA + OpenCV + advanced C++ simultaneously;
-- replacing current structured Algorithm study with high-volume interview grinding;
-- pursuing internship prestige at the expense of real technical content;
-- allowing internship preparation to damage GPA, core coursework or the current mathematics competition priority;
-- treating every internship JD as a personal curriculum.
-
-The goal is integration, not expansion of the task count.
-
-### Decision requested from Project Control
-
-The Voyage Room asks Project Control to:
-
-1. Review the current main/support structure against the proposed first-internship readiness gate.
-2. Decide whether a bounded internship-aligned capability plan should be adopted for the sophomore year.
-3. Decide whether Linux should receive the next explicit support milestone and define its relationship to existing programming work.
-4. Define a trigger for a first Embedded / hardware-software evidence experiment rather than activating that line prematurely.
-5. Decide when, if at all, the Career thread should be activated for a winter pilot and/or summer 2027 serious application window.
-6. Preserve the one-main-line principle and explicitly state what will not be done if new support work is added.
-
-### Confidence
-
-Medium.
-
-The direction is well aligned with current Horizon evidence, but exact sequencing should remain a Main Control decision because workload, school schedule, competition preparation and future project progress are execution constraints.
-
-### Evidence that would change this recommendation
-
-- A concrete high-value internship opportunity with unusual timing or requirements.
-- A major project milestone that materially changes technical readiness.
-- Strong evidence that the user prefers or dislikes systems/embedded work.
-- New academic workload or competition constraints.
-- A substantial change in available winter-break duration or geographic flexibility.
-- Internship-market evidence showing a different minimum capability profile.
-
-### Suggested review triggers
-
-- completion of a presentable engineering project;
-- first verified Linux milestone;
-- major Algorithm block milestone;
-- confirmation of 2027 winter-break availability;
-- discovery of a concrete high-fit internship opportunity;
-- Main Control decision to activate Career or Embedded in a bounded role.
+- Answered by `CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework`.
+- Project Control adopted the framework without changing the current main technical priority.
+- `CTV-20260821-04` subsequently established a dedicated Career / Internship thread in Preheat / on-demand state.
+- Status: Answered
 
 ---
-
-## Prior Transmission
 
 ### VTC-20260816-01 — Establish Long-Term Strategic Research Map
 
@@ -207,95 +251,24 @@ The direction is well aligned with current Horizon evidence, but exact sequencin
 - Type: Strategic research / Route hypothesis
 - Decision horizon: Undergraduate years to early career transition
 - Related Charter principle: Preserve optionality, improve judgment quality, separate exploration from execution
+- Status: Answered
 
-### Executive summary:
+### Executive summary
 
-The Voyage Room created a first version of the long-term strategic map in `LONG_TERM_DIRECTION.md`.
+The Voyage Room created the first long-term strategic map in `LONG_TERM_DIRECTION.md`, preserving multiple international, engineering and research options without requesting execution reallocation.
 
-This was not a request to change Project Horizon's current execution route. It requested that Project Control acknowledge a clearer strategic exploration framework and use it when future major decisions arise.
+### Recommendation
 
-### Verified facts at transmission time:
-
-- Project Horizon had an active Voyage Room communication structure.
-- Current execution remained controlled by Project Control and specialist threads.
-- The user's technical exploration region included embodied AI, robotics systems, AI deployment and hardware-software integration.
-- Financial feasibility was a major constraint for future international education decisions.
-
-### Assumptions:
-
-- Germany / Europe graduate study may be a strong candidate for an international platform because of potential alignment between cost, engineering ecosystem and career flexibility.
-- A future master's degree may serve multiple functions: specialization, international mobility, research preparation and career transition.
-- The current technical trunk of C++ + Linux + embedded/systems foundations may compound across future robotics and AI systems work.
-
-### Important unknowns:
-
-- Whether the user prefers engineering creation or research after real exposure.
-- Whether Germany remains the best international platform after future evidence is available.
-- Which technical specialization produces the strongest intrinsic motivation.
-
-### Options considered:
-
-1. Continue broad exploration while strengthening execution foundations.
-2. Gradually research Germany / Europe graduate routes.
-3. Keep US research and industry mobility as later options.
-4. Maintain alternative domestic and international routes.
-
-### Trade-offs and opportunity costs:
-
-- Early specialization may increase efficiency but risks locking into an incorrect identity.
-- Excessive exploration may reduce execution depth.
-- International planning improves preparation but should not consume current academic and engineering priorities.
-
-### Recommendation:
-
-The Voyage Room recommended:
-
-1. Maintain current execution priorities.
-2. Treat Germany / Europe, US research, domestic opportunities and other international options as strategic scenarios rather than commitments.
-3. Use internships, projects, competitions and research exposure as evidence-generating experiments.
-4. Continue building transferable engineering ability before choosing narrow specialization.
-
-### Risks:
-
-- Mistaking interest for career fit.
-- Optimizing for prestige instead of capability and freedom.
-- Creating too many parallel execution tracks.
-
-### Reversibility / smallest useful experiment:
-
-- Research graduate programs without application commitment.
-- Build relevant projects.
-- Seek internships and research exposure.
-- Review strategic assumptions periodically.
-
-### Decision requested from Project Control:
-
-No route approval requested.
-
-Requested:
-- Acknowledge this strategic map as a reference framework.
-- Continue providing constraints and execution evidence through normal channels.
-
-### Confidence:
-
-Medium.
-
-### Evidence that would change this recommendation:
-
-- Strong internship or research results.
-- Major academic changes.
-- Funding or admission realities.
-- Durable changes in motivation or values.
-
-### Suggested review trigger:
-
-After significant sophomore-year academic, project, competition or research evidence.
+- Maintain narrow current execution while preserving broad strategic exploration.
+- Treat Germany / Europe, US research, domestic opportunities and other international routes as hypotheses rather than commitments.
+- Use projects, internships, competitions and research exposure as evidence-generating experiments.
+- Continue building transferable engineering capability before narrow specialization.
 
 ### Disposition
 
 - Answered by `CTV-20260816-01 — Acknowledge Long-Term Strategic Research Map`.
 - Project Control adopted the map as an advisory reference framework with no execution-resource change.
-- Any astronomy-related interpretation from earlier strategic discussion was subsequently superseded by `CTV-20260816-02`; astronomy is outside the current strategic route unless explicitly reopened by the user.
+- Astronomy-related interpretations were later superseded by `CTV-20260816-02`; astronomy remains outside the current strategic route unless explicitly reopened by the user.
 - Status: Answered
 
 ---
