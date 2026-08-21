@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-20
+Last Updated: 2026-08-21
 Status: Active
 Authority: Main control thread only
 
@@ -35,6 +35,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 2. Algorithm — active structured line
 3. Linux — support line
 4. C++ — support for algorithm implementation
+5. Career / Internship — Preheat branch; on-demand only, no continuous execution allocation
 
 ## Track Overview
 
@@ -44,6 +45,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; time/space complexity, arrays and strings completed; sorting is current | Complete the sorting milestone, then continue Block 01 one topic at a time |
 | [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Complete one bounded practical Linux workflow milestone after Student Manager V2, or earlier only if a real programming need provides the entry point |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
+| [Career / Internship](../09_Career/STATUS.md) | Preheat | Dedicated internship thread formally established; no continuous application push is active | Produce Internship Readiness Baseline v1, then remain low-intensity until an activation trigger |
 
 ## Current Main-Line Decision
 
@@ -54,6 +56,8 @@ Algorithm study is active as a structured line because the C++ readiness gate ha
 Linux remains a support line learned through real development needs.
 
 C++ standalone preheat is complete. C++ now serves algorithm implementation and future system work rather than remaining an independent preparation track.
+
+Career / Internship now has a dedicated Preheat thread in `09_Career/STATUS.md`. This creates a clear place for internship readiness, concrete opportunity evaluation, resume/portfolio preparation, application-window planning and interview feedback, but it does not create a new technical curriculum or a continuous high-intensity execution line.
 
 ## First-Internship Readiness Framework
 
@@ -81,7 +85,7 @@ This is an **Application Ready** gate, not a professional-engineer readiness cla
 - **C++:** remains implementation support. Do not restart a broad standalone C++ curriculum without evidence of a real gap.
 - **Linux:** is the clearest current support-evidence gap. The next explicit support milestone should be one bounded practical workflow milestone, preferably after Student Manager V2 unless a real Python/C++ task creates an earlier natural need. It must be integrated with real programming work rather than become an independent curriculum.
 - **Embedded:** remains dormant. Reconsider only after the current main-line milestone is completed or handed off, execution capacity is not under acute academic/competition pressure, and suitable hardware access or a concrete project/opportunity can justify one bounded hardware-software output.
-- **Career:** remains inactive. Review seasonal activation when early-2027 winter-break availability is known, when the Application Ready Gate is substantially satisfied, or when a concrete high-fit opportunity appears. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
+- **Career / Internship:** is now formally established in **Preheat** state. Its first bounded output is Internship Readiness Baseline v1. After that, it remains low-intensity / on-demand until early-2027 winter-break availability is known, the Application Ready Gate is substantially satisfied, a concrete high-fit opportunity appears, or Project Control explicitly authorizes a seasonal application window. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 - **AI / Embodied AI:** remain strategic options and are not first-internship prerequisites.
 
 ### Explicit Non-Goals
@@ -103,6 +107,7 @@ Review the framework when any of the following occurs:
 - the first verified Linux milestone is completed;
 - a presentable engineering project is available;
 - a major Algorithm block milestone is completed;
+- Internship Readiness Baseline v1 identifies a gap that requires a control-level resource decision;
 - early-2027 winter-break availability is confirmed;
 - a concrete high-fit internship opportunity appears;
 - a relevant specialist thread reports `Needs Master Decision: Yes`.
@@ -196,7 +201,7 @@ Review this file when any thread reports:
 - a route or priority change;
 - an Algorithm block milestone;
 - completion of Algorithm Block 03 or substantial completion of Block 07, for Lanqiao review gates;
-- completion of Student Manager V2, first verified Linux milestone, or a presentable engineering project, for internship-readiness review;
+- completion of Student Manager V2, first verified Linux milestone, a presentable engineering project, or Internship Readiness Baseline v1 for internship-readiness review;
 - confirmation of early-2027 winter-break availability or discovery of a concrete high-fit internship opportunity;
 - a competition result;
 - `Needs Master Decision: Yes`;
