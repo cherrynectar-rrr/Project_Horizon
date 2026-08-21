@@ -13,17 +13,66 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- Career / Internship has been promoted from **Preheat / on-demand** to **Active — Bounded Support** by explicit user request and Project Control authorization on 2026-08-21.
-- This activation does **not** make Career a Horizon main line and does not authorize continuous daily browsing, high-volume applications or an independent technical curriculum.
-- Career may now actively complete `Internship Readiness Baseline v1`, evaluate concrete opportunities, perform lawful public-source company/team due diligence, handle local application gaps and capture application/interview feedback.
-- Standard concrete-opportunity workflow remains: role reality check → verified user fit → lawful public-source company/team due diligence → risk/value verdict → feedback loop.
-- Standard action vocabulary remains **PRIORITY APPLY / APPLY / WATCH / SKIP**.
-- Technical capability gaps must still be reported to Project Control rather than converted into Career-owned curricula.
-- Current technical priority remains unchanged: Python main line; Algorithm active structured line; Linux support; C++ support for algorithm implementation.
-- A larger seasonal application push still requires a later Project Control decision based on readiness, availability or a concrete high-fit opportunity.
-- Embedded remains dormant. AI / Embodied AI remain strategic options rather than first-internship prerequisites.
+- `VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability` is adopted.
+- Overseas MSc remains a preferred future option, but no country is privileged by default.
+- The current working affordability model is approximately **RMB 100,000 per year in realistic all-in cost** as a planning band, not a precise hard ceiling.
+- Future graduate-school comparisons must use total cost of attendance rather than tuition alone and must include tuition/fees, housing, living costs, insurance, transport, visa/proof-of-funds requirements, relocation/flights and a modest emergency buffer.
+- Scholarships, waivers and guaranteed funding may reduce net cost; uncertain future part-time income must not be the assumption that makes an otherwise unaffordable route executable.
+- High-cost self-funded routes remain non-default. Reliable funding is required before they are treated as financially executable.
+- Germany / Europe remains a strong hypothesis but not a mandatory route. TUM remains **Conditional** under current 2026 rules rather than automatically viable.
+- This strategic correction does **not** change current execution priority: Python main line; Algorithm active structured line; Linux support; C++ support; Career / Internship Active — Bounded Support.
+- Career / Internship remains active bounded support under `CTV-20260821-06`; its technical boundaries remain unchanged.
 
 ## Decisions
+
+### CTV-20260821-07 — Adopt Overseas MSc Total-Cost Affordability Constraint
+
+- Date: 2026-08-21
+- Responds to: `VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability`
+- Decision: **Adopt.** Supersede any control-level interpretation that tuition-free / near-zero tuition itself is a hard requirement.
+- Rationale:
+  - The user explicitly clarified that the real constraint is total affordability rather than literal zero tuition.
+  - Total annual cost is a better measure of financial feasibility than tuition alone because living cost, insurance, visa requirements and relocation can dominate the budget.
+  - Keeping the country pool open preserves strategic optionality while retaining financial discipline.
+  - The Charter requires high-cost self-funded routes and fragile debt assumptions to remain non-default.
+- Working financial constraint:
+  - approximately **RMB 100,000 per year all-in** as the current planning band;
+  - treat this as an order-of-magnitude affordability target, not a precise yuan-level ceiling;
+  - reconfirm the acceptable range when the 2028–2029 graduate target pool is built.
+- Required cost model for future school comparison:
+  - tuition and mandatory fees;
+  - housing;
+  - food and daily living;
+  - health insurance;
+  - local transportation;
+  - visa / residence / proof-of-funds requirements;
+  - initial relocation costs and flights;
+  - modest emergency buffer;
+  - scholarships, waivers and guaranteed funding as verified offsets.
+- Funding rule:
+  - uncertain student-work income is only a secondary offset and must not be used to make an otherwise unaffordable route appear viable;
+  - expensive self-funded routes require reliable funding before they count as executable options.
+- Country / school implication:
+  - keep the overseas MSc country pool globally open;
+  - Germany / Europe remains a strong hypothesis, not a commitment;
+  - compare German and non-German programs on equal terms using total cost, program fit, engineering/research quality, mobility and life fit;
+  - TUM remains **Conditional** under current 2026 third-country tuition and Munich living-cost conditions unless a waiver, scholarship or other reliable funding materially changes the net cost.
+- Resource or priority implication:
+  - none for current execution;
+  - no Graduate thread activation is authorized by this decision;
+  - no change to Python, Algorithm, Linux, C++, Career / Internship, competition or Embedded priorities.
+- Constraints the Voyage Room must use:
+  - do not treat zero tuition as a hard requirement;
+  - do not assume Germany is mandatory;
+  - use realistic all-in annual cost and funding reliability for future graduate-route analysis;
+  - verify then-current tuition, living costs, visa rules, scholarships and work rights before high-impact decisions.
+- Further research question: None immediately. Revisit when 2028 target-pool construction begins or a materially strong overseas MSc opportunity appears.
+- Review trigger:
+  - initial 2028 graduate-school target-pool construction;
+  - major change in family affordability;
+  - reliable scholarship / assistantship that changes the net cost of a high-value route;
+  - material policy or cost changes in candidate countries.
+- Status: Active strategic constraint
 
 ### CTV-20260821-06 — Activate Career / Internship as Bounded Support
 
