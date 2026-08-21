@@ -35,7 +35,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 2. Algorithm — active structured line
 3. Linux — support line
 4. C++ — support for algorithm implementation
-5. Career / Internship — Preheat branch; on-demand only, no continuous execution allocation
+5. Career / Internship — Active bounded support; event-driven, not a main technical line
 
 ## Track Overview
 
@@ -45,7 +45,7 @@ Project Control combines Voyage Room recommendations with current evidence, capa
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; time/space complexity, arrays and strings completed; sorting is current | Complete the sorting milestone, then continue Block 01 one topic at a time |
 | [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Complete one bounded practical Linux workflow milestone after Student Manager V2, or earlier only if a real programming need provides the entry point |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
-| [Career / Internship](../09_Career/STATUS.md) | Preheat | Dedicated internship thread formally established; no continuous application push is active | Produce Internship Readiness Baseline v1, then remain low-intensity until an activation trigger |
+| [Career / Internship](../09_Career/STATUS.md) | Bounded support | Active on 2026-08-21 by explicit user request; owns readiness, concrete opportunity review, public-source due diligence and application feedback without owning technical curricula | Complete Internship Readiness Baseline v1; then continue bounded on-demand opportunity work |
 
 ## Current Main-Line Decision
 
@@ -57,7 +57,7 @@ Linux remains a support line learned through real development needs.
 
 C++ standalone preheat is complete. C++ now serves algorithm implementation and future system work rather than remaining an independent preparation track.
 
-Career / Internship now has a dedicated Preheat thread in `09_Career/STATUS.md`. This creates a clear place for internship readiness, concrete opportunity evaluation, resume/portfolio preparation, application-window planning and interview feedback, but it does not create a new technical curriculum or a continuous high-intensity execution line.
+Career / Internship is now **Active — Bounded Support** following explicit user request and Project Control authorization on 2026-08-21. Activation permits Internship Readiness Baseline v1, concrete role evaluation, lawful public-source company/team due diligence, application-material work when relevant, and interview-feedback capture. It does not authorize a continuous application push, daily internship browsing, technical curriculum creation, or displacement of Python, Algorithm, Linux support, GPA/core coursework, or current competition priorities.
 
 ## First-Internship Readiness Framework
 
@@ -85,8 +85,27 @@ This is an **Application Ready** gate, not a professional-engineer readiness cla
 - **C++:** remains implementation support. Do not restart a broad standalone C++ curriculum without evidence of a real gap.
 - **Linux:** is the clearest current support-evidence gap. The next explicit support milestone should be one bounded practical workflow milestone, preferably after Student Manager V2 unless a real Python/C++ task creates an earlier natural need. It must be integrated with real programming work rather than become an independent curriculum.
 - **Embedded:** remains dormant. Reconsider only after the current main-line milestone is completed or handed off, execution capacity is not under acute academic/competition pressure, and suitable hardware access or a concrete project/opportunity can justify one bounded hardware-software output.
-- **Career / Internship:** is now formally established in **Preheat** state. Its first bounded output is Internship Readiness Baseline v1. After that, it remains low-intensity / on-demand until early-2027 winter-break availability is known, the Application Ready Gate is substantially satisfied, a concrete high-fit opportunity appears, or Project Control explicitly authorizes a seasonal application window. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
+- **Career / Internship:** is now **Active — Bounded Support**. It may complete Internship Readiness Baseline v1 and respond to concrete opportunities using the adopted role-fit / company-due-diligence workflow. It may handle local application gaps, but technical capability gaps must return to Project Control. A larger seasonal application push still requires a later control decision based on readiness, availability, or a concrete high-fit opportunity. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 - **AI / Embodied AI:** remain strategic options and are not first-internship prerequisites.
+
+### Career Opportunity Review Workflow
+
+For concrete internship opportunities, Career / Internship should use the lightweight standard sequence adopted in `CTV-20260821-05`:
+
+1. role reality check;
+2. verified user-fit analysis;
+3. lawful public-source company/team due diligence;
+4. risk/value verdict;
+5. application/interview feedback loop.
+
+Standard final action vocabulary:
+
+- `PRIORITY APPLY`
+- `APPLY`
+- `WATCH`
+- `SKIP`
+
+Career may resolve local application gaps directly. Technical capability gaps must be reported to Project Control rather than converted into new curricula. Structural mismatches such as graduation year, geography, duration or schedule should be classified as structural rather than treated as technical deficits.
 
 ### Explicit Non-Goals
 
@@ -97,6 +116,7 @@ This framework does **not** authorize:
 - a second LeetCode/interview-grinding roadmap;
 - treating internship job descriptions as a personal curriculum;
 - optimizing for employer prestige over real technical content;
+- continuous daily internship browsing or high-volume applications without a later seasonal activation decision;
 - allowing internship preparation to displace GPA/core coursework or the current mathematics competition priority without a separate Project Control decision.
 
 ### Review Triggers
@@ -110,9 +130,10 @@ Review the framework when any of the following occurs:
 - Internship Readiness Baseline v1 identifies a gap that requires a control-level resource decision;
 - early-2027 winter-break availability is confirmed;
 - a concrete high-fit internship opportunity appears;
+- the first 3–5 Career opportunity reviews reveal repeated market evidence or excessive overhead;
 - a relevant specialist thread reports `Needs Master Decision: Yes`.
 
-Formal response: `CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework` in `CONTROL_TO_VOYAGE.md`.
+Formal Career decisions are recorded in `CONTROL_TO_VOYAGE.md`.
 
 ## Algorithm Activation Protocol
 
@@ -203,6 +224,7 @@ Review this file when any thread reports:
 - completion of Algorithm Block 03 or substantial completion of Block 07, for Lanqiao review gates;
 - completion of Student Manager V2, first verified Linux milestone, a presentable engineering project, or Internship Readiness Baseline v1 for internship-readiness review;
 - confirmation of early-2027 winter-break availability or discovery of a concrete high-fit internship opportunity;
+- the first 3–5 Career opportunity reviews reveal repeated market evidence or excessive overhead;
 - a competition result;
 - `Needs Master Decision: Yes`;
 - a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
