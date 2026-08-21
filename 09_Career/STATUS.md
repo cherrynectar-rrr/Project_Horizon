@@ -1,64 +1,96 @@
 # Career / Internship Status
 
 Last Updated: 2026-08-21
-Status: Preheat
+Status: Active — Bounded Support
 
 ## Primary Responsibility
 
-Convert existing engineering capability and project evidence into first-internship readiness, role evaluation, application materials, targeted applications, and interview feedback when approved by Project Control.
+Convert existing engineering capability and project evidence into first-internship readiness, concrete role evaluation, lawful public-source company/team due diligence, application materials, targeted applications, and interview feedback under Project Control boundaries.
 
-This thread does **not** own technical curricula. It must not create independent Python, C++, Linux, Algorithm, Embedded, AI, ROS2, or interview-grinding roadmaps.
+This thread does **not** own technical curricula. It must not create independent Python, C++, Linux, Algorithm, Embedded, AI, ROS2, CUDA, OpenCV, or interview-grinding roadmaps.
 
 ## Current Goal
 
-Establish one bounded **Internship Readiness Baseline v1** from current Horizon evidence without taking continuous execution resources from the active technical lines.
+Complete **Internship Readiness Baseline v1**, then operate as the active but bounded internship-support entry point for concrete opportunities supplied by the user.
 
 ## Current Stage
 
-Dedicated internship thread formally established in **Preheat** state.
+Career / Internship is formally **Active — Bounded Support**.
 
-The thread may:
+Activation means the thread may now actively:
 
+- complete Internship Readiness Baseline v1;
 - assess current readiness against the approved Application Ready Gate;
-- evaluate concrete internship opportunities and job descriptions;
-- identify evidence gaps that should be reported to Project Control;
-- prepare application strategy, resume/portfolio work, and interview execution when the activation gate is reached.
+- evaluate concrete internship opportunities and job descriptions supplied by the user;
+- perform lawful public-source company and team due diligence;
+- issue the standard Horizon action verdict: `PRIORITY APPLY / APPLY / WATCH / SKIP`;
+- handle local application gaps such as resume wording, project explanation, communication, and company-specific preparation;
+- capture application and interview feedback as market evidence;
+- report repeated or material technical capability gaps to Project Control.
 
-The thread may not independently activate new technical learning lines or change cross-thread priority.
+Activation does **not** authorize:
+
+- continuous daily internship browsing or a high-volume application push;
+- displacement of Python, Algorithm, Linux support, GPA/core coursework, or current competition priorities;
+- independent activation of technical learning lines;
+- treating one job description as a personal curriculum.
 
 ## Completed
 
 - `CTV-20260820-03` adopted the bounded First-Internship Readiness Framework.
-- Project Control approved creation of a dedicated Career / Internship thread on 2026-08-21 in Preheat state.
+- `CTV-20260821-04` established the dedicated Career / Internship thread in Preheat state.
+- `CTV-20260821-05` adopted the Opportunity Review / Company Due Diligence workflow.
+- On 2026-08-21, the user explicitly requested Career / Internship activation and Project Control authorized promotion to **Active — Bounded Support**.
 
 ## In Progress
 
-- One-time setup task: Internship Readiness Baseline v1.
+- Internship Readiness Baseline v1.
+- Active on-demand evaluation capability for concrete internship opportunities.
 
 ## Next Milestone
 
-Produce a concise Internship Readiness Baseline v1 covering:
+Produce a concise **Internship Readiness Baseline v1** covering:
 
 1. current evidence against each Application Ready Gate item;
 2. strongest current internship-role hypotheses;
 3. the smallest important gaps;
 4. what should **not** be learned or added yet;
-5. the next activation trigger for a real application push.
+5. the next readiness or application trigger that would justify a larger seasonal push.
 
-After that baseline, remain low-intensity / on-demand until a formal activation trigger occurs.
+After the baseline, continue in bounded support mode rather than becoming a continuous high-intensity application line.
 
-## Activation Triggers
+## Standard Opportunity Review Workflow
 
-Review promotion from Preheat to a bounded Active / Support role when at least one of the following occurs:
+For each concrete opportunity, use:
 
-- Student Manager V2 is completed;
-- the first verified Linux milestone is completed;
-- a presentable engineering project is available;
-- early-2027 winter-break availability is confirmed;
-- a concrete high-fit internship opportunity appears;
-- Project Control explicitly authorizes a seasonal application window.
+1. **Role Reality Check** — actual responsibilities, hard filters, must-haves, preferences, engineering environment, likely evidence value.
+2. **Verified User Fit** — compare only against current Horizon evidence; classify requirements as Already demonstrated / Partially demonstrated / Missing but learnable / Hard blocker.
+3. **Company & Team Due Diligence** — lawful public-source investigation using reliable sources and explicit uncertainty labels.
+4. **Risk / Value Verdict** — legitimacy confidence, technical-content quality, current fit, learning value, long-term alignment, time/location compatibility, and material risk.
+5. **Feedback Loop** — record screening/interview questions, concerns, constraints, outcomes, and reusable market evidence.
 
-Summer 2027 remains the default primary serious first-internship window unless newer evidence changes the plan.
+Standard final action vocabulary:
+
+- `PRIORITY APPLY`
+- `APPLY`
+- `WATCH`
+- `SKIP`
+
+## Gap Routing Rule
+
+- **Local application gap** — resume wording, project explanation, communication, company-specific preparation: Career may handle directly.
+- **Technical capability gap** — Linux, C++, algorithms, embedded/systems, AI, etc.: report to Project Control; Career must not start a curriculum.
+- **Structural mismatch** — degree level, graduation year, geography, duration, schedule: classify as structural rather than spending technical resources trying to solve it.
+
+Repeated technical gaps across multiple high-fit opportunities should be escalated to Project Control for resource review.
+
+## Resource Boundary
+
+Career / Internship is active, but it is **not** a new Horizon main line.
+
+Current technical priority remains controlled by `MASTER_STATUS.md`. Career activity should be event-driven and bounded: baseline work, concrete opportunity reviews, application preparation when justified, and feedback capture.
+
+No daily search quota or continuous application workload is authorized unless Project Control later approves a seasonal application window.
 
 ## Evidence
 
@@ -72,7 +104,7 @@ Summer 2027 remains the default primary serious first-internship window unless n
 
 ## Blockers
 
-None reported. Full application execution is intentionally deferred until readiness and timing justify it.
+None reported.
 
 ## Needs Master Decision
 
