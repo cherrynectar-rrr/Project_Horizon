@@ -1,6 +1,6 @@
 # Project Horizon — Voyage Room / 远航室
 
-Last Updated: 2026-08-21
+Last Updated: 2026-08-22
 Layer: Strategic
 Status: Active
 
@@ -37,6 +37,7 @@ Final synthesis and resource allocation belong to the main control thread.
 - [STRATEGIC_INPUTS.md](./STRATEGIC_INPUTS.md) — durable user-confirmed fragments that may later change the life / academic / career route.
 - [LONG_TERM_DIRECTION.md](./LONG_TERM_DIRECTION.md) — mature long-horizon direction and strategic hypotheses.
 - [PERSONAL_PROFILE.md](./PERSONAL_PROFILE.md) — verified durable context used in strategic reasoning.
+- [GERMANY_MSC_APPLICATION_REFERENCE.md](./GERMANY_MSC_APPLICATION_REFERENCE.md) — audited secondary reference for the user-provided 2026 Germany MSc application guide; records verified claims, cautions, missing Horizon-specific layers and official source hierarchy.
 - [DECISION_LOG.md](./DECISION_LOG.md) — strategic recommendations and their final disposition.
 - [OPEN_QUESTIONS.md](./OPEN_QUESTIONS.md) — unresolved questions requiring research or experiments.
 - [VOYAGE_TO_CONTROL.md](./VOYAGE_TO_CONTROL.md) — the Voyage Room's single-writer channel for recommendations and questions to Project Control.
