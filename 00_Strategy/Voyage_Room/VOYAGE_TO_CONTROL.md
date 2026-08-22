@@ -15,175 +15,106 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260822-02 — Establish Financial Freedom / Capital Formation as a First-Order Horizon Pillar
+### VTC-20260822-03 — Evaluate Three-Year Early Graduation as a Strategic Option
 
 - Date: 2026-08-22
-- Type: Major life-route clarification / resource-allocation request
-- Trigger: User explicitly clarified that earning money, building capital and investing are not secondary side goals; financial independence and the ability to choose whether, where and why to work are among the most important reasons for the broader Horizon route. The user explicitly requested that investing become a continuously maintained major line and stated that, if forced to choose only one long-term line, wealth / investment would be the strongest priority.
-- Related Charter principles: freedom over single-metric optimization; financial resilience; long-term compounding; opportunity cost; technology serves life; one-main-line capacity rule
-- Status: **Needs Master Decision — Yes**
+- Type: Academic-route / graduate-timing / opportunity-cost decision
+- Trigger: User asked whether Qingdao Agricultural University's current rules permit early graduation and then requested a full three-year feasibility audit for the correct Electronic Information Engineering curriculum and the overseas MSc / robotics route.
+- Related Charter principles: academic optionality; evidence over imagined fit; opportunity cost; reversible experiments before irreversible commitments; international portability; sustainability
+- Status: **Needs Master Decision — Research Gate Before Decision**
 
 ### Executive summary
 
-This is a material refinement of Horizon's life-route model.
+Current official Qingdao Agricultural University rules permit undergraduates in four-year-or-longer programmes to apply for early graduation. The user's Electronic Information Engineering curriculum is 170 credits, standard duration 4 years and permitted duration 3–8 years, so summer-2028 graduation is structurally possible for a 2025 entrant.
 
-The user's clarified objective is not simply `become a strong engineer` or `get a well-paid job`. Engineering, graduate study, international mobility and employment are important partly because they create **earning power, investable surplus and geographic / career optionality**. The desired end state is financial autonomy: enough durable capital and flexibility to choose work, travel, rest, exploration and life direction without continuous dependence on an employer or immediate financial pressure.
+The current early-graduation application threshold is at least 60% of programme credits, average GPA above the stated 3.0 threshold and no failed courses, with application in the first week of a fall semester. For this programme, 60% is 102 credits.
 
-The user wants investment / capital allocation to be treated as an indispensable, continuously maintained part of Horizon rather than an occasional topic.
+A conservative audit of the user's normal S1–S4 curriculum plus user-confirmed S3 electives (Linux 2, MATLAB 3, Data Structures and Algorithms 3) gives approximately 100.5 credits by the end of S4 if only clearly completed/posted practice credits are counted. Adding a strategically useful S4 course such as Python Language Programming (3 credits) would plausibly create sufficient application margin (~103.5), subject to the actual posted transcript.
 
-Voyage Room has created:
+However, the **decisive feasibility gate is not the 102-credit threshold**. The normal curriculum places major mandatory practice and graduation components in S7/S8: Signal Processing and Transmission Practice (1), Professional Comprehensive Practice (5), Graduation Practice (4), and Graduation Thesis/Design (6), with Research Training (2) spanning S3–S7. These components must be formally advanced into S5/S6 for a three-year graduation. The published university rule confirms that an approved early-graduation student may enter graduation internship and thesis arrangements, but it does not publicly specify how this major's S7/S8 practice blocks are rescheduled.
 
-- `00_Strategy/Voyage_Room/WEALTH_AND_CAPITAL_STRATEGY.md`
+Voyage Room created:
 
-and updated `STRATEGIC_INPUTS.md` with the confirmed wealth / autonomy intent.
+- `00_Strategy/Voyage_Room/EARLY_GRADUATION_FEASIBILITY_AUDIT.md`
 
-### Important interpretation boundary
+### Curriculum / robotics preservation
 
-The user's request should **not** be automatically translated into `active trading becomes the second full-time main line`.
+A strict 30-credit professional-elective plan can be compressed into S3–S6 without abandoning the ECE → robotics bridge. The preferred accelerated version uses the user's fixed Linux / MATLAB / Data Structures choices, adds Python in S4, Information Theory in S5, Sensors / EDA / Digital Image Processing / Data Mining / Smart Agriculture in S6, and seeks to advance only one normally-S7 course: **Computer Control Technology**. This preserves the module minima while keeping formal sensing / perception / control evidence.
 
-The exact investing method is not yet established. Horizon must distinguish:
+If `Computer Control Technology` cannot be taken early, a graduation-compliant S3–S6 elective package is still possible, but the robotics / control prerequisite profile weakens and must be evaluated separately.
 
-- financial independence as an objective;
-- capital allocation / investment literacy as a durable capability;
-- passive diversified investing;
-- active investing / stock selection;
-- trading / speculation;
-- entrepreneurship / equity ownership.
+### Germany / MSc implication
 
-These are not interchangeable. The wealth objective is confirmed; the implementation method remains an evidence question.
+Three-year graduation and one-year-earlier Germany entry are separate gates.
 
-### Strategic model — two engines
+Current TUM rules demonstrate that some master's programmes accept applications before the bachelor degree is formally completed, but a 2028 immediate transition would still depend on then-current APS, VPD / uni-assist, programme deadlines, transcript maturity, prerequisite classification, language / GRE rules and funding.
 
-Voyage Room recommends treating long-term freedom as produced by two mutually reinforcing engines:
+Current APS guidance and temporary TestAS procedures are actively changing. Horizon must not assume that a nominal four-year Chinese bachelor's degree completed in three years will fit a same-summer 2028 APS/VPD/TUM timeline without written verification in the 2027–2028 cycle.
 
-1. **Human Capital & Cash-Flow Engine**
-   - engineering / research capability;
-   - GPA and graduate optionality;
-   - international mobility;
-   - internships / employment;
-   - career-market leverage;
-   - possible future entrepreneurship / ownership.
+### Opportunity-cost judgment
 
-2. **Capital Allocation & Compounding Engine**
-   - cash-flow / balance-sheet literacy;
-   - savings / investable surplus;
-   - diversification and asset allocation;
-   - risk, liquidity, fees, taxes, inflation and currency exposure;
-   - long-term compounding;
-   - behavioral discipline;
-   - capital preservation / avoidance of ruin;
-   - later cross-border investment and tax-residency considerations.
+Potential upside:
+- save up to one year of undergraduate time and living / opportunity cost;
+- potentially advance MSc, paid work, international transition and capital formation;
+- alternatively create a deliberate 2028–2029 gap year for research / engineering / application preparation.
 
-The correct long-term model is therefore not `career versus investing`, but:
+Potential downside:
+- high S5/S6 compression can damage GPA, prerequisite coverage, research depth, internship windows, recommendation quality, thesis quality, health and graduate-application preparation;
+- the university's >3.0 GPA rule is merely an administrative minimum and should not become Horizon's academic target;
+- if the fourth year would produce strong research, internship, thesis or recommendation evidence, graduating early can destroy more value than it saves.
 
-> capability / career / ownership → income and investable surplus → disciplined capital allocation → compounding → increasing freedom
+### Five implementation questions that must be answered before any workload change
 
-### Resource / opportunity-cost judgment
+1. How will S7/S8 mandatory practice, comprehensive practice, graduation practice and thesis be formally rescheduled into S5/S6 for a 2025-cohort EIE early graduate?
+2. Can an approved early-graduation student take normally-S7 professional electives with the senior cohort in S5, especially `Computer Control Technology`, and through what registration process?
+3. Can long-span credits such as Research Training, Second Classroom and Labor Education be completed and posted before the relevant audit dates?
+4. Are there semester-credit, limited-elective, timetable, prerequisite or practice-sequence caps specifically affecting early-graduation students?
+5. What exact date / standard is used for three-year graduation and degree audit, and must all 170 credits and all module minima be posted before that date?
 
-Voyage Room agrees with the user's request that **Financial Freedom / Capital Formation should become a co-equal strategic pillar**.
-
-However, Voyage Room does **not** recommend equal current time allocation during the undergraduate stage.
-
-Reason:
-
-- the user currently has much more human capital than financial capital to develop;
-- investment return compounds an existing capital base, while undergraduate choices can materially change future earning power and investable surplus;
-- damaging GPA, technical capability, graduate options or internship readiness in order to spend large amounts of time seeking exceptional market returns would undermine the principal-generation engine;
-- investment literacy and behavior compound strongly even when maintained at low weekly intensity.
-
-Recommended architecture:
-
-> **Strategically co-equal; operationally asymmetric by life stage.**
-
-During undergraduate years, Wealth / Investing should probably operate as a **standing maintenance / bounded learning line** with explicit continuity, while engineering / academics remain the dominant time consumer. The Wealth line can be promoted when real recurring income, investable capital or a concrete financial decision makes deeper work higher-value.
-
-This recommendation respects the Charter's one-main-technical-line rule while taking the user's financial objective seriously.
-
-### Proposed initial Wealth / Investment output
-
-If Project Control approves a dedicated thread or maintenance line, Voyage Room recommends an initial output such as:
-
-**Wealth & Investment Baseline v1**
-
-It should establish, before any aggressive real-money strategy:
-
-- the user's current financial situation and constraints at an appropriate privacy level;
-- definitions of investing vs trading vs speculation;
-- risk / return / liquidity / diversification foundations;
-- fees, taxes, inflation, currency and custody risk;
-- evidence on passive versus active investing;
-- basic behavioral-finance failure modes;
-- a rule for what money is never considered investment capital;
-- an initial personal capital policy / Investment Policy Statement when meaningful capital exists;
-- review triggers for increasing or decreasing execution intensity.
-
-No continuous market watching, stock-pick stream or speculative portfolio is implied by activation.
-
-### International-route implication
-
-Future graduate-school / country / career comparisons should eventually add a **wealth-formation lens** alongside academic and lifestyle fit, including:
-
-- realistic after-tax disposable income;
-- cost-of-living and housing burden;
-- investable surplus;
-- investment-market access;
-- taxes on investment income / gains;
-- currency / remittance constraints;
-- immigration and employer-switching flexibility;
-- retirement systems;
-- entrepreneurship / employee-equity / ownership opportunities;
-- long-term geographic and financial optionality.
-
-This does not imply choosing the highest gross salary automatically. The target is the strongest combined path toward capability, capital formation, legal stability, quality of life and freedom.
-
-### Risk guardrails recommended before deeper activation
-
-- no borrowed-money / leverage strategy merely to accelerate wealth;
-- no tuition, essential living money or future emergency reserves used as speculative capital;
-- no assumption that frequent trading is required for financial freedom;
-- no guaranteed-return narratives;
-- no concentration based only on FOMO / social-media narratives / recent performance;
-- no investment strategy whose plausible downside destroys academic, graduate, geographic or family options.
-
-These guardrails do not prohibit all future active investing or concentrated ownership; they require stronger evidence for larger downside risk.
+If the answer to Question 1 is negative or operationally unreasonable, Voyage Room recommends dropping the three-year option immediately rather than sacrificing GPA or route quality.
 
 ### Decision requested from Project Control
 
-Project Control is asked to decide:
+**Do not activate an accelerated three-year workload yet.**
 
-1. whether to formally recognize **Financial Freedom / Capital Formation** as a co-equal long-horizon strategic pillar;
-2. whether to create a dedicated Wealth / Investment specialist thread or another durable execution container;
-3. whether its undergraduate execution state should initially be `Active — Maintenance / Bounded Learning` rather than a second full-intensity main line;
-4. what current work, if any, should be reduced if Project Control instead grants it true main-line-level execution resources;
-5. whether `Wealth & Investment Baseline v1` is the correct first verifiable output.
+Project Control is asked to:
+
+1. acknowledge three-year graduation as a legitimate strategic option worth investigating;
+2. authorize only the bounded evidence-gathering step of obtaining authoritative college answers to the five implementation questions;
+3. defer any actual course-load / priority change until those answers are available;
+4. if the college path is real, later compare three scenarios: normal 2029 graduation; 2028 early graduation + immediate MSc; 2028 early graduation + deliberate gap year;
+5. require a separate 2027–2028 Germany immediate-entry audit before assuming early graduation yields one-year-earlier German enrolment.
 
 ### Voyage Room recommendation
 
-**Adopt the strategic pillar immediately; activate execution conservatively.**
-
-Suggested starting state:
-
-- Strategic importance: **Co-equal pillar**
-- Current execution intensity: **Standing maintenance / bounded learning**
-- First output: **Wealth & Investment Baseline v1**
-- Promotion triggers: meaningful recurring income; meaningful investable capital; cross-border move / tax-residency change; concrete portfolio decision; entrepreneurship / equity opportunity; or evidence that deeper finance work has unusually high expected value.
+**Preserve as an option; investigate now; do not commit yet.**
 
 ### Confidence
 
-High that the financial-freedom objective is durable and user-confirmed. Medium on the optimal execution architecture, because current capital, future income, risk tolerance, legal / tax residence and preferred investing method are not yet established.
+- High: current university policy permits early graduation in principle.
+- High: the 102-credit application threshold is numerically reachable by start of S5.
+- Medium: professional electives can be compressed to S3–S6 while retaining useful robotics alignment.
+- Low-to-medium: all S7/S8 practice / thesis components can be operationally advanced; college implementation is not sufficiently documented publicly.
+- Low-to-medium: immediate autumn-2028 Germany entry will be administratively feasible; APS / VPD / TUM requirements are time-sensitive.
 
 ### Review trigger
 
-- Project Control responds to this transmission;
-- the user begins earning meaningful recurring income;
-- a real investment account / portfolio becomes materially funded;
-- international relocation changes legal / tax / brokerage conditions;
-- financial-independence lifestyle requirements become quantifiable;
-- a concrete entrepreneurship / equity opportunity appears.
+- college / teaching secretary answers the five implementation questions;
+- the S4 transcript / posted-credit record becomes available;
+- 2027–2028 APS / uni-assist / target-MSc rules are published;
+- a major research / internship opportunity changes the value of keeping the fourth undergraduate year.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260822-02 — Establish Financial Freedom / Capital Formation as a First-Order Horizon Pillar
+
+- Date: 2026-08-22
+- Type: Major life-route clarification / resource-allocation request
+- Status: **Needs Master Decision — Yes**
+- Summary: The user clarified that financial independence, capital formation and investment are first-order life objectives because they create autonomy over work, travel, location and future choices. Voyage Room recommends treating Financial Freedom / Capital Formation as a co-equal long-horizon strategic pillar while keeping undergraduate execution intensity bounded and asymmetric because current human capital dominates financial capital. Detailed framework: `WEALTH_AND_CAPITAL_STRATEGY.md`. Proposed first output if approved: `Wealth & Investment Baseline v1`.
+- Decision requested: recognize the pillar; decide whether to create / activate a Wealth or Investment execution container; decide whether it begins as maintenance / bounded learning rather than a second full-intensity main line.
 
 ### VTC-20260822-01 — TUM RCI Control-Engineering Prerequisite Audit
 
