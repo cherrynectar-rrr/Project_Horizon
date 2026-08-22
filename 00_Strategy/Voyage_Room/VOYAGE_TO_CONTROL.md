@@ -1,6 +1,6 @@
 # Voyage Room → Project Control
 
-Last Updated: 2026-08-21
+Last Updated: 2026-08-22
 Owner / Sole Writer: Voyage Room
 Readers: Project Control and specialist threads
 Authority: Advisory only
@@ -14,6 +14,65 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 ---
 
 ## Current Transmission
+
+### VTC-20260822-01 — TUM RCI Has an Explicit Control-Engineering Prerequisite
+
+- Date: 2026-08-22
+- Type: Graduate-study prerequisite finding / future resource-planning question
+- Trigger: User identified TUM as a preferred future target and provided the current Electronic Information Engineering execution plan plus the university's Electrical Engineering and Automation curriculum for comparison.
+- Related Charter principles: evidence over imagined fit; academic optionality; institutional paths are inputs; reversible experiments before irreversible commitments; opportunity cost
+- Status: Awaiting Control Response
+
+### Executive summary
+
+Current official TUM regulations for the M.Sc. Robotics, Cognition, Intelligence (RCI), effective from 2024, explicitly require that applicants have completed **at least 5 ECTS in control engineering (`Regelungstechnik`) by the time of application**. The same rules permit applicants from Electrical Engineering and Information Technology, Informatics, Mathematics, Physics, Mechanical Engineering, Engineering Science or comparable backgrounds, with equivalence assessed against the relevant TUM bachelor's competencies.
+
+This turns the previously known general control-course concern into a concrete programme-specific admissions risk for TUM RCI.
+
+### Evidence
+
+- TUM RCI FPSO dated 30 January 2024, §36(2): applicants must have completed at least 5 credits in `Regelungstechnik` by application time.
+- TUM RCI currently requires a curricular analysis and the underlying curriculum / module descriptions; equivalence is assessed using the compulsory modules of the corresponding TUM bachelor's programmes.
+- The user's current Electronic Information Engineering execution-plan screenshots visibly contain substantial electronics, communications, signal-processing, embedded, programming and AI-related coursework, but no clearly identified formal course titled Automatic Control / Control Theory is visible in the supplied screenshots. This should be verified against the complete official transcript / curriculum before treating the gap as final.
+- The separately supplied Electrical Engineering and Automation curriculum is **not** the user's current degree curriculum. It includes `Principles of Automatic Control` (4.0 Chinese credits) and optional `Modern Control Theory` (2.5 Chinese credits), plus other control-oriented modules. These courses matter only if the user can officially complete relevant coursework and have it documented in an admissible transcript / certificate; the existence of another programme's curriculum itself provides no applicant credit.
+
+### Current strategic interpretation
+
+1. **TUM RCI remains plausible, not ruled out.** Electronic Information Engineering is within or close to the accepted Electrical / Information Technology family, subject to TUM's curricular-equivalence review.
+2. **Control is the clearest known formal prerequisite risk.** PLC, sensors, embedded systems or self-study must not automatically be assumed to satisfy `Regelungstechnik`.
+3. **Do not infer a fixed Chinese-credit → ECTS conversion.** The relevant course content, workload and TUM's curricular-analysis treatment must be checked.
+4. **Do not open a full Electrical Engineering minor solely for this one requirement without a control-level opportunity-cost decision.** A smaller, formally transcripted control-course solution may be strategically superior if the university permits it.
+5. **TUM should not be reduced to one programme.** TUM M.Sc. Electrical and Computer Engineering is also highly relevant: it accepts ECE / Informatics / Physics / similar backgrounds and offers an `Automation and Robotics` specialization. Its curricular analysis emphasizes higher mathematics, physical foundations and Electrical / Information Technology / Informatics knowledge, which may align more naturally with the user's Electronic Information Engineering curriculum.
+6. TUM Mechatronics, Robotics and Biomechanical Engineering is a separate option but currently evaluates prior knowledge against TUM Mechanical Engineering foundations and therefore may carry larger mechanics-related mismatch risk.
+
+### Recommendation to Project Control
+
+- Preserve TUM RCI as a serious candidate, but classify the 5-ECTS control requirement as a **formal prerequisite audit item**, not as an immediate new execution line.
+- Before allocating resources, verify whether the user's own programme offers any formally transcripted control course, cross-program elective, recognized supplementary course or other low-overhead credit-bearing route that can plausibly satisfy the requirement.
+- Compare that bounded solution against the opportunity cost of a full minor.
+- In parallel, keep TUM Electrical and Computer Engineering → Automation and Robotics as a high-fit alternative rather than overfitting the undergraduate route to RCI alone.
+- Re-check all TUM regulations in the actual 2028–2029 application cycle because programme requirements can change.
+
+### Decision requested from Project Control
+
+No immediate activation is requested. Project Control is asked to:
+
+1. acknowledge the TUM RCI 5-ECTS control prerequisite as a future admissions-risk item;
+2. decide at an appropriate academic-planning review whether a bounded formal-credit solution should be investigated;
+3. avoid authorizing a full minor solely from this finding unless the expected admissions value justifies the opportunity cost.
+
+### Confidence
+
+High on the current 2026 TUM rule; medium on the user's eventual individual equivalence because TUM does not pre-assess applicants and the user's complete official Electronic Information Engineering module descriptions have not yet been mapped.
+
+### Review trigger
+
+- complete official Electronic Information Engineering curriculum / transcript and module descriptions become available for a full TUM curricular analysis;
+- the university confirms whether cross-program or supplementary control coursework can appear formally on the transcript;
+- TUM changes the RCI FPSO or curricular-analysis rules;
+- the 2028–2029 target-programme pool is constructed.
+
+---
 
 ### VTC-20260821-04 — Preserve Fragmented Strategic Inputs as a Durable Life-Route Ledger
 
