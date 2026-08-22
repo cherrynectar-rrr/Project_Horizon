@@ -15,110 +15,158 @@ The recommendation also protects GPA and opportunity cost. It does not authorize
 
 ## Evidence Basis
 
-The correct undergraduate curriculum is Electronic Information Engineering (080701). The degree already requires mathematics, physics, circuits, analog/digital electronics, signals and systems, MCU, high-frequency electronics, DSP, embedded systems and communications. Professional electives total 30 credits, with minimum module requirements of:
+The correct undergraduate curriculum is Electronic Information Engineering (080701). The degree already requires mathematics, physics, circuits, analog/digital electronics, signals and systems, MCU, high-frequency electronics, DSP, embedded systems and communications.
+
+Professional electives total 30 credits, with published minimum module requirements of:
 
 - Intelligent Hardware Development: 11 credits
 - Signal and Information Processing: 9 credits
 - Information Software Systems: 8 credits
 - Interdisciplinary Integration: 2 credits
 
-The current 2026 TUM ECE MSc is used only as calibration: it accepts ECE-like backgrounds and offers an Automation and Robotics core area. TUM RCI is also relevant but has programme-specific curricular requirements that must be rechecked in the actual application cycle.
+### Locked / already selected courses confirmed by the user
 
-## Recommended Core Plan — Strict 30 Credits
+- Linux Operating System — 2 credits — Intelligent Hardware Development
+- Data Structures and Algorithms — 3 credits — Information Software Systems
+- MATLAB Fundamentals and Applications — 3 credits — Signal and Information Processing
+
+MATLAB is institutionally required / effectively non-optional for the user's selection plan. It therefore must be treated as a fixed constraint rather than compared against optional alternatives. Although it is not the user's preferred elective, it has genuine reuse value for numerical computing, signal processing, control-system simulation, optimization and potentially mathematical modeling.
+
+The user's actual execution-plan screenshots take precedence for real course timing and locked selections where they differ from the generic curriculum.
+
+## Revised Recommended Plan — Strict 30 Credits
+
+Because the four published module minima sum exactly to 30 credits, the clean default is to satisfy each module at its minimum unless the school explicitly permits useful excess credits without adverse GPA / workload consequences.
 
 ### Intelligent Hardware Development — 11 credits
 
+Already locked:
+
 - Linux Operating System — 2
+
+Recommend adding:
+
 - Information Theory and Coding — 3
-- Sensors and Detection / Sensor Principles and Applications — 3
+- Sensor Principles and Applications — 3
 - Electronic System Design — 3
 
-Rationale: combines systems software, signal/information foundation, sensing and hardware-system integration. The compulsory curriculum already contains MCU and Embedded Systems, so this combination adds breadth instead of duplicating the same layer.
+Total: **11 credits**
+
+Rationale: this preserves the user's ECE / information-theory base while adding robot sensing and system-level hardware integration. MCU and Embedded Systems are already compulsory, so these electives add complementary depth instead of duplicating the same layer.
 
 ### Signal and Information Processing — 9 credits
 
-- Introduction to Artificial Intelligence — 2
-- Machine Learning Algorithms and Applications — 2
-- Deep Learning — 2
+Already locked / required:
+
+- MATLAB Fundamentals and Applications — 3
+
+Recommend adding:
+
+- Digital Image Processing — 3
 - Computer Control Technology — 3
 
-Rationale: preserves a formal AI/ML path while adding the most important available control-oriented elective. `Computer Control Technology` should be preserved with its official syllabus because future MSc programmes may classify control coursework differently.
+Total: **9 credits**
+
+Rationale:
+
+- Computer Control Technology is the strongest available formal bridge toward robotics / automation / control-oriented MSc curricula. Preserve its official syllabus and workload evidence for future prerequisite audits.
+- Digital Image Processing gives a formal perception / vision foundation that is highly reusable in robotics, sensor processing and later computer-vision work.
+- MATLAB, while not selected by preference, can support both of these areas through matrix computation, signal/image processing, simulation, optimization and control-oriented numerical work.
+
+This exact-30 plan intentionally leaves AI / ML / Deep Learning electives out of the transcript because the module-credit constraint is tight. That does **not** mean AI/ML is unimportant. Horizon can build stronger practical AI/ML evidence through projects and later coursework, while formal image-processing + control credits are harder to replace when MSc programmes perform curricular analysis.
 
 ### Information Software Systems — 8 credits
 
+Already locked:
+
 - Data Structures and Algorithms — 3
+
+Recommend adding:
+
 - Object-Oriented Programming — 3
 - Data Mining and Application — 2
 
-Rationale: provides the strongest formal software/algorithm foundation available within exactly 8 credits. Python is valuable but is already being developed through Horizon; formal Data Structures + OOP add more admissions-relevant curriculum structure.
+Total: **8 credits**
+
+Rationale: Data Structures + OOP forms a useful formal software foundation for robot software and larger engineering systems. Data Mining is selected mainly because it completes the module at exactly 8 credits while retaining some data / ML-adjacent relevance.
 
 ### Interdisciplinary Integration — 2 credits
 
-Preferred if the school confirms two 1-credit courses may combine to satisfy the 2-credit module minimum:
+Preferred if the school confirms that two 1-credit courses can jointly satisfy the module requirement:
 
 - Measurement and Control Technologies in Agricultural Engineering — 1
 - Frontier Technology Lectures on Agricultural Machinery — 1
 
-If this combination is not accepted by the curriculum rules, choose:
+If the school requires one course carrying at least 2 credits, choose:
 
 - Smart Agriculture — 2
 
-Rationale: these are the closest interdisciplinary options to sensing, control, autonomous machinery and robotics context. The curriculum wording does not by itself prove that two 1-credit courses may be combined, so school confirmation is required.
+Rationale: these are the closest interdisciplinary options to sensing, control, autonomous machinery and robotics context. School confirmation is required because the curriculum wording alone does not prove that two 1-credit courses can be combined.
 
-## Preferred Upgrade — 31 Credits, Only If Allowed and GPA/Timetable Risk Is Low
+## Final Strict-30 Structure
 
-Add / prioritize **Digital Image Processing — 3 credits** in the Signal and Information Processing module, and remove **Deep Learning — 2 credits** from the strict-30 set. This changes the signal block from 9 to 10 credits and total professional electives from 30 to 31.
+| Module | Courses | Credits |
+| --- | --- | ---: |
+| Intelligent Hardware | Linux + Information Theory and Coding + Sensors + Electronic System Design | 11 |
+| Signal / Information Processing | MATLAB + Digital Image Processing + Computer Control Technology | 9 |
+| Information Software Systems | Data Structures and Algorithms + OOP + Data Mining | 8 |
+| Interdisciplinary | Measurement/Control + Agricultural Machinery lecture, or Smart Agriculture | 2 |
+| **Total** |  | **30** |
 
-Preferred 10-credit signal block:
+## If the School Allows >30 Credits Without Meaningful Cost
 
-- Introduction to Artificial Intelligence — 2
-- Machine Learning Algorithms and Applications — 2
-- Digital Image Processing — 3
-- Computer Control Technology — 3
+The first additional courses to consider are:
 
-Reason: for undergraduate robotics preparation, formal image-processing / perception foundations plus ML and control are unusually transferable. Deep learning can be developed later through deeper project/AI work and graduate modules. Do not take the extra credit if it creates timetable conflict, GPA risk or crowds out a higher-value project/research opportunity.
+1. Machine Learning Algorithms and Applications — 2
+2. Introduction to Artificial Intelligence — 2
+3. Deep Learning — 2
+4. Microcomputer Principle and Interface — 2.5
+5. EDA Technology and Application — 3
+6. Computer Networks — 3
 
-## Priority of Courses Not in the Core Plan
+Priority depends on the eventual robotics subarea:
 
-Strong first alternatives if a selected course is unavailable or if a future specialization changes:
+- perception / embodied AI -> ML, AI, Deep Learning
+- robot software / distributed systems -> Computer Networks
+- embedded / deployment -> Microcomputer Interface, EDA
+- control -> preserve Computer Control first; seek a stronger formal control course only if future MSc audits show it is necessary
 
-1. Microcomputer Principle and Interface — strong for embedded/robot hardware interfaces.
-2. EDA Technology and Application — useful if FPGA/digital hardware/AI acceleration becomes important.
-3. Digital Image Processing — first perception upgrade when not already selected.
-4. MATLAB Fundamentals and Applications — useful for control/simulation, but can also be learned outside transcript coursework.
-5. Computer Networks — useful for distributed robot systems, but secondary to sensors/control/algorithms at undergraduate stage.
+Do not exceed the published 30-credit requirement merely to collect course names. Extra courses require a positive opportunity-cost case: useful transcript value, manageable grading risk, no important timetable conflict, and no displacement of GPA, projects, internships or research.
 
-Lower default priority for the current robotics route: Java Programming, Mobile Application Development, NLP, Modern Communications, Agricultural Information Technology, CAD in Electronic Circuit, and Professional Foreign Language. These are not useless; they lose only on opportunity cost against the selected courses.
+## Lower Default Priority for the Current Route
 
-PLC is useful for industrial automation but is not a substitute for formal control theory and is lower priority than Computer Control Technology for the current MSc/robotics objective.
+- Java Programming
+- Mobile Application Development
+- NLP
+- Modern Communications Technology
+- Agricultural Information Technology
+- CAD in Electronic Circuit
+- Professional Foreign Language
+
+These are not useless; they lose only on opportunity cost against the selected robotics-aligned courses.
+
+PLC is useful for industrial automation but is not a substitute for formal control theory and remains lower priority than Computer Control Technology for the current MSc / robotics objective.
 
 ## Why This Plan Fits the Long-Term Route
 
-It uses the undergraduate degree as an ECE/EEIT trunk rather than trying to imitate a pure CS or Mechanical Engineering degree:
+It uses Electronic Information Engineering as an ECE/EEIT trunk rather than trying to imitate a pure CS or Mechanical Engineering degree:
 
 - sensing and electronics -> robot hardware / perception front-end
-- signals / information -> estimation and perception foundation
+- signals / image processing -> perception foundation
 - data structures / OOP / Linux -> robot software and systems foundation
-- AI / ML -> intelligent behavior and perception
 - computer control -> control bridge
 - electronic system design -> hardware-software integration
+- MATLAB -> numerical / simulation tool that supports signal, control and modeling work
 
 This structure preserves high compatibility with broad ECE/EEIT MSc programmes while making Automation & Robotics / Intelligent Systems / Embedded Robotics a natural graduate specialization.
 
-## TUM Calibration (2026 only)
-
-- TUM M.Sc. Electrical and Computer Engineering currently accepts Electrical and Computer Engineering, Informatics, Physics or similar backgrounds and evaluates higher mathematics, physics and specialized EE/IT/Informatics knowledge.
-- The programme currently offers an Automation and Robotics core area and an Embedded and Computer Systems core area.
-- Current Automation and Robotics recommendations include Dynamic Systems, Foundations of Modern Robotics, Machine Learning and Optimization, and Optimal Control and Decision Making.
-- TUM RCI remains a separate candidate; its current control-engineering prerequisite must be rechecked in the 2028–2029 application cycle.
-
 ## Constraints / Unknowns
 
-- This recommendation assumes the curriculum's published module-minimum rules remain applicable to the user's cohort.
-- The uploaded curriculum does not establish whether students may exceed 30 professional-elective credits without GPA / transcript consequences.
-- Course teaching quality, grading difficulty, timetable conflicts and instructor differences are not yet known. These can change the final selection.
-- The user's actual execution-plan screenshots take precedence for real course timing/availability.
-- Future MSc rules can change; no 2026 TUM rule should be treated as a 2029 guarantee.
+- Confirm whether the published 11 + 9 + 8 + 2 module minima function as exact practical selection requirements for the user's cohort.
+- Confirm whether students may exceed 30 professional-elective credits and whether extra grades affect GPA / transcript calculations.
+- Course teaching quality, grading difficulty, timetable conflicts and instructor differences can change the final selection.
+- Preserve official syllabi for Computer Control Technology, Digital Image Processing, Sensors, Data Structures and other strategically important modules.
+- Future MSc rules can change; no 2026 programme prerequisite should be treated as a 2029 guarantee.
 
 ## Review Triggers
 
