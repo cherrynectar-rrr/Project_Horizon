@@ -1,4 +1,4 @@
-# Germany MSc Direction Match Matrix — Electronic Information Engineering
+# Germany MSc Direction Match Matrix — Robotics-Aligned Electronic Information Engineering
 
 Last Updated: 2026-08-22
 Owner: Voyage Room
@@ -6,14 +6,19 @@ Status: Strategic reference; preliminary and reviewable
 
 ## Purpose
 
-This document ranks future Germany / TUM MSc **application directions** from the user's own formal undergraduate curriculum rather than from programme names, trends or isolated interests.
+This document ranks future Germany / TUM MSc application directions under **two ordered constraints**:
+
+1. The MSc must remain meaningfully aligned with the user's long-term robotics / embodied-AI / intelligent-systems / hardware-software systems direction.
+2. Within that admissible set, prefer the programmes with the strongest formal undergraduate-curriculum match.
+
+Therefore, a programme with very high raw overlap in communications or signal processing is **not** automatically preferred if it materially diverts the long-term route away from robotics.
 
 Evidence basis:
 
 - Correct undergraduate major: Electronic Information Engineering (080701).
 - Official curriculum supplied by the user on 2026-08-22.
 - User's actual execution-plan screenshots take precedence for planned timing / selections where they differ from the generic curriculum.
-- Current 2026 TUM programme pages and regulations are examples for calibration only; all requirements must be re-verified in the 2028–2029 application cycle.
+- Current 2026 university programme pages and regulations are calibration only; all requirements must be re-verified in the 2028–2029 application cycle.
 
 This is not an admission guarantee and does not allocate execution resources.
 
@@ -30,7 +35,7 @@ This is not an admission guarantee and does not allocate execution resources.
 - Probability Theory and Mathematical Statistics
 - Complex Function and Integral Transformation
 
-**Electrical / electronic engineering**
+**Electrical / electronics / information**
 - Circuit Principles
 - Analog Electronics
 - Digital Electronics
@@ -63,9 +68,9 @@ This is not an admission guarantee and does not allocate execution resources.
 **Practice evidence built into the degree**
 - electronic technology practice
 - software project development
-- embedded system development
-- intelligent information processing
-- signal processing and transmission practice
+- embedded-system development
+- intelligent-information-processing practice
+- signal-processing and transmission practice
 - research training / course paper
 - professional comprehensive practice
 - graduation internship and thesis
@@ -74,191 +79,149 @@ The curriculum itself defines its disciplinary trunk as **Electronic Science and
 
 ---
 
-## 2. Direction Ranking by Curriculum Fit
+## 2. Robotics-Aligned Direction Ranking
 
-### Tier S — Highest natural fit
+### Tier S — Best current strategic fit
 
-#### A. Electrical and Computer Engineering / Electrical Engineering and Information Technology
+#### A. Electrical and Computer Engineering / EEIT with Automation & Robotics / Intelligent Systems track
 
-**Fit: Very High**
+**Curriculum fit: Very High**  
+**Robotics alignment: Very High**
 
 Why:
-- Directly uses the user's mathematics, physics, circuits, analog/digital electronics, signals, embedded, communications and computing base.
-- Broad enough that the undergraduate background does not need to pretend to be pure CS or mechanical engineering.
-- Preserves multiple later specializations: Automation and Robotics, Communications, Embedded and Computer Systems, Electronic Circuits and Systems, Electromagnetics, etc.
-
-TUM calibration:
-- Current TUM M.Sc. Electrical and Computer Engineering evaluates higher mathematics, physical foundations and specialized knowledge in electrical engineering / information technology / informatics.
-- Current TUM ECE offers specializations including Automation and Robotics, Communications Engineering, Electronic Circuits and Systems, Embedded and Computer Systems and others.
+- Directly uses mathematics, physics, circuits, electronics, signals, embedded systems, communications and computing.
+- Does not require the undergraduate degree to pretend to be pure CS or mechanical engineering.
+- Can preserve formal continuity from Electronic Information Engineering while specializing upward into control, robotics, autonomous systems, sensing or intelligent embedded systems.
 
 Strategic interpretation:
-- This is the **best broad application family** for the user's current formal degree.
-- It is also a strong bridge into robotics without discarding the Electronic Information Engineering base.
+- This is currently the **best broad application family**.
+- For TUM-like structures, an ECE/EEIT MSc with an Automation & Robotics specialization is the cleanest combination of curriculum fit and long-term direction.
 
-#### B. Communications and Electronics / Communication Engineering / Signal Processing
+#### B. Embedded Systems / Computer Engineering / Embedded & Computer Systems with robotics/deployment relevance
 
-**Fit: Very High; possibly the strongest content-specific match**
-
-Why:
-- The degree's own formal trunk includes Information and Communication Engineering.
-- Strong direct coverage from Signals and Systems, DSP, Communications, High-Frequency Electronics, Information Theory and Coding, Computer Networks, Electromagnetic Field/Waves, Modern Communications and related electronics.
-
-TUM calibration:
-- Current TUM M.Sc. Communications and Electronics Engineering specifically seeks EE / information-technology graduates with a communications focus.
-- Its stage-1 subject assessment explicitly scores Mathematics, Electrical Engineering and Communications Engineering.
-- Its graduate core includes information theory, channel coding, statistical signal processing, communications electronics, EDA, embedded systems and SoC-related topics.
-
-Strategic interpretation:
-- From a **pure prerequisite / curriculum-match perspective**, this is one of the strongest directions available.
-- It should not become the user's long-term career merely because it is easy to match; programme fit and desired future work remain separate questions.
-
----
-
-### Tier A — Strong fit with some programme-level variability
-
-#### C. Embedded Systems / Computer Engineering / Embedded and Computer Systems
-
-**Fit: High**
+**Curriculum fit: High to Very High**  
+**Robotics alignment: High**
 
 Why:
-- MCU + Embedded Systems + circuits + digital electronics + EDA + electronic system design provide hardware foundation.
-- Data Structures, OOP, Python/Java, Linux and Networks can add software/systems depth.
-- This direction naturally exploits the user's hardware-software integration advantage.
+- MCU, embedded systems, digital electronics, EDA, sensors and electronic-system design form a strong hardware base.
+- Data structures, OOP, Linux, networks and programming can provide the software/systems bridge.
+- This direction maps naturally to robot software infrastructure, embedded robotics, real-time systems, edge AI and deployment.
 
 Main risk:
-- Some Embedded Systems programmes are effectively CS-heavy and may require formal operating systems, computer architecture, software engineering, databases or theoretical-CS credits beyond the user's transcript.
-- Programme-by-programme curricular analysis is necessary.
+- Some programmes named Embedded Systems are actually CS-heavy and may require formal OS, architecture, theoretical-CS or software-engineering credits beyond the transcript.
 
 Strategic interpretation:
-- Strong match when the programme is ECE / computer-engineering oriented.
-- Less certain when the programme is housed in Informatics and uses a CS bachelor's curriculum as its reference.
+- Prefer ECE/computer-engineering-oriented programmes rather than strict Informatics programmes.
 
-#### D. Robotics / Intelligent Systems / Automation
+### Tier A — Strong target family, but programme-level prerequisite audit is essential
 
-**Fit: Medium-High to High, depending on programme structure**
+#### C. Robotics / Intelligent Systems / Autonomous Systems that explicitly accept ECE backgrounds
 
-Why:
-- Strong signals, embedded, sensor, programming, AI/ML, image-processing and communications foundations are relevant.
-- `Computer Control Technology` is a useful formal bridge if it appears on the transcript and its syllabus is accepted as control engineering.
+**Curriculum fit: Medium-High to High**  
+**Robotics alignment: Direct**
+
+Strengths:
+- Signals, DSP, sensors, embedded systems, programming, AI/ML and image processing are all relevant.
+- `Computer Control Technology` may provide a formal control bridge if its syllabus and workload are accepted by the target programme.
 
 Main risks:
 - Robotics programmes differ radically: some are EE/control-heavy, some CS-heavy, some mechanical/mechatronics-heavy.
-- Current TUM RCI requires at least 5 ECTS in control engineering (`Regelungstechnik`) at application time.
-- The user's `Computer Control Technology` course is a plausible candidate but must not be assumed to satisfy that current TUM rule without syllabus / workload / classification review.
-- Mechanical-heavy robotics programmes may demand mechanics, dynamics, machine design or materials that are not central to the user's degree.
+- Mechanical-heavy programmes may demand mechanics, dynamics, machine design or materials that are not central to the user's degree.
+- Strict control-heavy programmes may require more formal control credits than are clearly available.
 
-TUM calibration:
-- Current TUM RCI explicitly compares applicants from several reference bachelor families and, for the EE / Information Technology reference, looks at electrical fundamentals including circuits, programming, digital systems, computer engineering, signals, communications, control systems and measurement/sensors, plus mathematics / physics / algorithms and data structures.
-
-Strategic interpretation:
-- Keep this as an important target family, but **select programmes whose prerequisite architecture fits ECE backgrounds** rather than selecting by the word “Robotics” alone.
-
----
-
-### Tier B — Plausible but less naturally aligned than the top families
-
-#### E. Microelectronics / Chip Design / Electronic Circuits and Systems
-
-**Fit: Medium-High**
-
-Strengths:
-- Circuits, analog/digital electronics, high-frequency electronics, EDA, embedded and electronic system design are relevant.
-
-Likely gaps / uncertainty:
-- Some programmes expect deeper semiconductor physics, semiconductor devices, IC process technology, VLSI, microelectronics or device-level content not prominent in the current curriculum.
-
-TUM calibration:
-- Current TUM M.Sc. Microelectronics and Chip Design accepts ECE-like backgrounds and evaluates mathematics, electronics and programming, but uses its own curricular analysis.
+TUM-specific known audit item under 2026 rules:
+- TUM RCI currently requires at least 5 ECTS in control engineering (`Regelungstechnik`) at application time.
+- The user's `Computer Control Technology` course is a plausible candidate but must not be assumed to satisfy that requirement until syllabus / workload / classification review.
 
 Strategic interpretation:
-- A credible option if future coursework / projects show genuine interest in circuits, FPGA/ASIC/SoC or chip design.
-- Not currently the most natural Horizon direction merely from the curriculum.
+- Keep robotics-named MSc programmes as serious targets **only when their prerequisite architecture is ECE-compatible**.
 
-#### F. Applied AI / Intelligent Information Processing programmes that accept EE/ECE backgrounds
+### Tier B — Useful adjacent options, not the primary route unless later evidence changes direction
 
-**Fit: Medium and highly programme-dependent**
+#### D. Signal Processing / Perception / Sensor Systems with clear robotics bridge
+
+**Curriculum fit: Very High**  
+**Robotics alignment: Medium to High depending on programme**
+
+Why:
+- Signals and Systems, DSP, probability, communications, sensors, image processing and ML form a strong perception/sensing base.
+
+Strategic interpretation:
+- Strong when the programme leads naturally toward robotic perception, sensor fusion, computer vision or autonomous sensing.
+- Do not choose a traditional communications-only programme merely because raw curriculum overlap is maximal.
+
+#### E. Applied AI / Intelligent Information Processing that explicitly accepts EE/ECE backgrounds
+
+**Curriculum fit: Medium**  
+**Robotics alignment: High when perception / embodied / autonomous-systems focused**
 
 Strengths:
-- The curriculum can include AI, ML, deep learning, digital image processing, data mining, NLP and intelligent information-processing practice.
-- Signals/DSP/communications provide good mathematical and signal-domain context for perception-oriented AI.
+- AI, ML, deep learning, image processing, data mining and intelligent-information-processing practice.
+- Signal-processing background can be a strong basis for perception-oriented AI.
 
 Risk:
-- A handful of AI electives do not transform the formal degree into a Computer Science bachelor's curriculum.
-- Programmes that require large formal CS-credit blocks may reject on curricular equivalence even if practical AI ability is strong.
+- Pure AI/CS programmes may require a full formal CS core that the degree does not provide.
 
 Strategic interpretation:
-- Prefer interdisciplinary AI / intelligent-systems programmes that explicitly accept EE/ECE backgrounds.
-- Do not use pure CS / Informatics admission standards as the default route.
+- Prefer interdisciplinary intelligent-systems programmes that explicitly accept EE/ECE applicants.
 
 ---
 
-### Tier C — Generally lower curriculum match
+## 3. Directions Not to Use as Primary Route Merely for Admission Convenience
 
-#### G. Pure Computer Science / Informatics / Data Engineering
+### Communications & Electronics / traditional Communication Engineering
 
-**Fit: Low-Medium for strict curricular-analysis programmes**
+**Raw curriculum fit: Very High**
 
-Why lower:
-- The user can build programming, algorithms, Linux, networks and AI evidence, but the formal curriculum is not a full CS core.
-- Likely missing or thinner formal coverage may include theoretical CS, databases, operating-systems depth, software engineering, discrete mathematics, compiler / systems breadth and other CS-bachelor requirements.
+The user's Signals and Systems, DSP, Communications, High-Frequency Electronics, Information Theory and related courses make this a strong admissions match.
 
-Strategic interpretation:
-- Apply only where the programme explicitly accepts ECE / engineering backgrounds or where the formal prerequisites can be demonstrated.
-- Do not overfit the undergraduate route to become a pseudo-CS degree.
+However, the user explicitly clarified on 2026-08-22 that the MSc should still move toward robotics. Therefore:
 
-#### H. Mechanical-heavy Mechatronics / Robotics
+- communications-only programmes are **not** the default primary target merely because they are easiest to match;
+- they remain relevant only when they offer a credible sensing, embedded, signal-processing, autonomous-systems or robotics bridge, or as a deliberately chosen backup;
+- admissions convenience must not silently redefine the long-term route.
 
-**Fit: Low-Medium**
+### Pure Computer Science / Informatics
 
-Why lower:
-- The current curriculum has little formal mechanics, dynamics, machine elements, materials, thermodynamics or mechanical design.
+Lower default fit for strict curricular-analysis programmes because the formal undergraduate degree is not a full CS core.
 
-Strategic interpretation:
-- Avoid programmes that benchmark applicants mainly against Mechanical Engineering.
-- Prefer ECE/control/software-oriented robotics routes.
+### Mechanical-heavy Mechatronics / Robotics
 
-#### I. Power Engineering / Electrical Power Systems
+Lower default fit because the curriculum has little formal mechanics, dynamics, machine elements, materials or mechanical design.
 
-**Fit: Low**
+### Power Engineering
 
-Why lower:
-- Unlike Electrical Engineering and Automation curricula, the user's Electronic Information Engineering degree does not center on power systems, electrical machines, relay protection, high voltage or power electronics.
-
-Strategic interpretation:
-- Not a natural application direction unless future interests and formally documented coursework change materially.
+Low fit and weak alignment with the current long-term route.
 
 ---
 
-## 3. Current Priority Order for Target-Pool Construction
+## 4. Current Priority Order for Target-Pool Construction
 
-When building the 2028–2029 programme pool, search in this order:
+When the 2028–2029 target pool is built, search in this order:
 
-1. **Electrical and Computer Engineering / EEIT** — especially tracks in Automation & Robotics, Embedded & Computer Systems, Communications / Signal Processing.
-2. **Communications and Electronics / Information & Communication Engineering / Signal Processing.**
-3. **Embedded Systems / Computer Engineering** where admissions are ECE-oriented rather than pure-CS-oriented.
-4. **Robotics / Intelligent Systems / Autonomous Systems** only after checking whether the programme's formal prerequisites are ECE-compatible and whether control / mechanics / CS thresholds are satisfied.
-5. **Microelectronics / Chip Design / Electronic Circuits and Systems** as a secondary option if later evidence supports interest.
-6. **Applied AI / Intelligent Information Processing** when the programme explicitly accepts ECE / EE backgrounds.
-
-Pure CS and mechanical-heavy robotics are not default search families.
+1. **ECE / EEIT programmes with Automation & Robotics, Intelligent Systems, Autonomous Systems, Embedded & Computer Systems or closely related tracks.**
+2. **Robotics / Intelligent Systems / Autonomous Systems MSc programmes whose formal prerequisites explicitly accommodate EE/ECE backgrounds.**
+3. **Embedded Systems / Computer Engineering programmes with strong robotics, real-time, intelligent-device or AI-deployment relevance.**
+4. **Signal Processing / Perception / Sensor Systems programmes with a direct path into robotic perception or autonomous sensing.**
+5. **Applied AI / Intelligent Systems programmes that accept EE/ECE applicants and connect to perception / robotics rather than pure software-only AI.**
+6. Communications-focused programmes only as a robotics-relevant adjacent route or backup, not as the default destination solely from raw curriculum match.
 
 ---
 
-## 4. TUM-Specific Preliminary Ordering (2026 Rules)
+## 5. TUM-Specific Preliminary Ordering Under 2026 Rules
 
-Based on current curriculum architecture, not prestige or career preference:
+This ordering combines **robotics alignment + current curriculum fit**, not prestige alone:
 
-1. **TUM M.Sc. Electrical and Computer Engineering** — strongest broad structural match; preserves Automation and Robotics + Embedded and Computer Systems + Communications exits.
-2. **TUM M.Sc. Communications and Electronics Engineering** — exceptionally strong content-specific match to the user's signals / communications / electronics trunk.
-3. **TUM M.Sc. Robotics, Cognition, Intelligence** — strategically attractive and plausible, but currently has an explicit 5-ECTS control-engineering prerequisite and broader competence comparison.
-4. **TUM M.Sc. Microelectronics and Chip Design** — plausible, but requires a closer semiconductor / chip-design curricular audit.
-5. Pure Informatics / Information Systems / Data-heavy programmes — lower default curricular match unless their exact prerequisite analysis proves otherwise.
+1. **TUM M.Sc. Electrical and Computer Engineering → Automation and Robotics** — currently the cleanest structural fit.
+2. **TUM M.Sc. Robotics, Cognition, Intelligence** — directly aligned and plausible, subject to the explicit control-engineering prerequisite and broader curricular analysis.
+3. **TUM ECE → Embedded and Computer Systems** — strong alternative for robot systems / embedded / deployment direction.
+4. Communications / signal-processing-oriented TUM routes only if chosen as a deliberate perception/sensing/embedded bridge or backup, not because they have the highest raw overlap.
 
-This ordering is **not** an application decision and does not mean the user should study communications instead of robotics. It only expresses current formal curriculum fit.
+All TUM rules must be re-verified in the actual application cycle.
 
 ---
 
-## 5. Evidence Needed Before Any Final Programme Verdict
+## 6. Evidence Needed Before Any Final Programme Verdict
 
 For each concrete MSc:
 
@@ -268,7 +231,7 @@ For each concrete MSc:
 4. Official course descriptions / syllabi for ambiguous modules.
 5. Contact hours, assessment format and workload evidence where required.
 6. Correct application-cycle credit-conversion method.
-7. Current language, GRE, APS, fee and deadline rules.
+7. Current language, APS, fee and deadline rules.
 
 Do not infer a universal Chinese-credit → ECTS conversion.
 
