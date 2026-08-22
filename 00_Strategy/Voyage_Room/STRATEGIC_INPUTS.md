@@ -48,6 +48,7 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - The country remains open. Germany is a strong hypothesis, not a commitment.
 - TUM is a benchmark / target, not the sole destination and not a school around which the entire undergraduate profile should be overfit.
 - Future MSc applications should be broad within the same technical direction and compare curricular fit, program quality, research/engineering ecosystem, funding, mobility and life fit.
+- **Application-direction preference (2026-08-22): when choosing among MSc subject directions, the user currently prefers the direction with the strongest formal undergraduate-curriculum match rather than prioritizing a more fashionable or more explicitly robotics-named programme. Based on the current Electronic Information Engineering curriculum audit, `Communications & Electronics / Signal Processing` is the leading match category, with broader ECE/EEIT as a close alternative. This is an application-direction preference, not a permanent career identity.**
 - Current financial planning uses approximately RMB 100,000 per year in realistic all-in MSc cost as an affordable order-of-magnitude planning band, subject to later reconfirmation.
 - Zero tuition is not a hard requirement; total cost and funding reliability matter more.
 - High-cost self-funded routes and large education debt are non-default.
