@@ -32,6 +32,19 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - The user expects major life decisions to improve iteratively as more real experience becomes available.
 - The user expressed a long-term aspiration that, after becoming financially capable, they want to “raise themselves again from beginning to end” (`以后有钱了想从头到尾把自己再养一遍`). Treat this as a durable life-design preference: future resources should create room to revisit and provide themselves with experiences, care and choices across life stages. The exact meaning should be refined through future conversation rather than over-specified now.
 
+### Wealth, capital and autonomy
+
+- **Major clarification — 2026-08-22:** financial independence / wealth formation is a first-order life objective, not a secondary side effect of career success.
+- The user sees engineering ability, graduate study, internships and employment partly as mechanisms for building earning power, investable capital and future optionality rather than as ends in themselves.
+- The user explicitly wants investment / capital allocation to become a durable, continuously maintained part of Project Horizon, and described it as one of the most important long-term lines.
+- The user's desired outcome is not simply a high salary. The desired outcome is enough autonomy to choose whether to work, travel, rest, explore or change direction without being continuously constrained by an employer or immediate financial pressure.
+- The user views working income as an important source of principal that can later compound through investment.
+- The user considers overseas study / work partly attractive because it may expand economic opportunity, international perspective, lived experience and access to a larger world, not merely because of degree prestige.
+- The user believes staying only inside a narrow local environment can make small problems feel disproportionately large; travel and international experience are valued partly because they broaden judgment and perspective.
+- The user explicitly does **not** want money to become the only value in life. Wealth should support travel, exploration, life experience, autonomy and the ability to enjoy life rather than erase them.
+- The exact investment method is **not yet decided**. Horizon must not silently equate the user's wealth goal with active trading, stock picking, leverage or speculation. Those are separate hypotheses that require evidence and risk analysis.
+- A dedicated strategic framework now exists at `00_Strategy/Voyage_Room/WEALTH_AND_CAPITAL_STRATEGY.md`.
+
 ### Technical / academic direction
 
 - The current graduate-study and technical direction of interest is centered on robotics, embodied AI, intelligent systems and related hardware-software integration.
@@ -53,6 +66,7 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - Zero tuition is not a hard requirement; total cost and funding reliability matter more.
 - High-cost self-funded routes and large education debt are non-default.
 - If the Germany route becomes real, the user's preferred post-study residence strategy is to use the EU Blue Card when feasible rather than treat the ordinary skilled-worker residence route as the default. This is a strategic preference, not a requirement to sacrifice job quality or academic goals merely to qualify for a Blue Card; future execution must use the then-current salary thresholds and legal rules.
+- Future country / MSc comparisons should eventually include a **wealth-formation lens**: after-tax investable surplus, cost of living, ability to save and invest, market access, immigration flexibility and long-term optionality, alongside academic and life fit.
 
 ### Evidence and application competitiveness
 
@@ -72,6 +86,7 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - The first technical internship is valuable as an evidence-generating experiment rather than a prestige contest.
 - C/C++, Linux, embedded/electronics, automation and robotics-adjacent engineering are currently plausible first-internship categories.
 - Real company, project and interview feedback should be used to update the long-term technical route rather than forcing the route to match isolated job descriptions.
+- Career decisions should eventually be evaluated not only by title / salary, but also by how well they improve **after-tax savings capacity, ownership / equity opportunities, portability, future earning power and life autonomy**.
 
 ### Strategic continuity preference
 
@@ -89,6 +104,9 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - Desired long-term family, residence, mobility and financial structure.
 - Sustainable workload, health, relationships and non-work life design.
 - Which robotics / embodied-AI subarea becomes strongest after real projects: control, perception, robot software, embedded/deployment, systems integration or another area.
+- What level of assets / passive cash flow / expense coverage would count as genuine financial freedom for the user.
+- What investment architecture should eventually be adopted after evidence on risk tolerance, country, tax residency, market access, income and capital becomes concrete.
+- How much long-term upside should come from labor income, diversified investing, entrepreneurship / ownership or other sources.
 
 ## Update Standard
 
