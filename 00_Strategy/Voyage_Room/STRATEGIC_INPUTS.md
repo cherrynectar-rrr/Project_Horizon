@@ -51,6 +51,7 @@ This is not a diary, not an execution STATUS file and not an automatic task queu
 - Current financial planning uses approximately RMB 100,000 per year in realistic all-in MSc cost as an affordable order-of-magnitude planning band, subject to later reconfirmation.
 - Zero tuition is not a hard requirement; total cost and funding reliability matter more.
 - High-cost self-funded routes and large education debt are non-default.
+- If the Germany route becomes real, the user's preferred post-study residence strategy is to use the EU Blue Card when feasible rather than treat the ordinary skilled-worker residence route as the default. This is a strategic preference, not a requirement to sacrifice job quality or academic goals merely to qualify for a Blue Card; future execution must use the then-current salary thresholds and legal rules.
 
 ### Evidence and application competitiveness
 
