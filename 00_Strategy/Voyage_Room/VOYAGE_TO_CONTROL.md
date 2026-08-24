@@ -1,6 +1,6 @@
 # Voyage Room → Project Control
 
-Last Updated: 2026-08-22
+Last Updated: 2026-08-24
 Owner / Sole Writer: Voyage Room
 Readers: Project Control and specialist threads
 Authority: Advisory only
@@ -15,78 +15,90 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260822-06 — Normal Four-Year Graduation Baseline + TOEFL as Common English Test
+### VTC-20260824-01 — Activate Dedicated Personal Finance & Capital Specialist Thread
 
-- Date: 2026-08-22
-- Type: Graduate-timing / exam-strategy refinement
-- Trigger: User explicitly decided not to include early graduation in the route and asked whether TOEFL can replace IELTS for the retained MSc target pool.
-- Status: **Needs Master Acknowledgement / Exam Sequencing Update**
+- Date: 2026-08-24
+- Type: Thread activation / financial-capability architecture
+- Trigger: User explicitly requested a new dedicated Horizon branch to manage current living-expense planning and later evolve into asset allocation, investment and broader personal-finance management across life stages.
+- Status: **Needs Master Decision — Thread Activation**
 
 ### Executive summary
 
-Two durable route refinements are now user-confirmed:
+The user no longer wants routine financial execution to remain inside the Voyage Room. This is consistent with the existing `WEALTH_AND_CAPITAL_STRATEGY.md`, which already treats financial freedom / capital formation as a first-order long-horizon objective while recommending bounded undergraduate execution.
 
-1. **Early graduation is withdrawn.** Project Horizon should use the normal four-year undergraduate timeline and **2029 bachelor's graduation** as the planning baseline. No credit-compression, S7/S8 practice acceleration, 2028-graduation application scenario or related fact-finding should receive resources unless the user explicitly reopens the option.
-2. **TOEFL iBT replaces IELTS as the preferred single standardized English examination** for the retained multi-school pool. Do not plan to take both unless a future programme creates a genuine incompatibility.
+Voyage Room recommends creating a dedicated specialist thread tentatively named **Personal Finance & Capital / 个人财务与资本**, suggested path `10_Finance/`, with an initial state of **Active — Bounded Support / Maintenance** rather than a second main line.
 
-Voyage Room updated:
+The thread should evolve with real life stage:
 
-- `EARLY_GRADUATION_FEASIBILITY_AUDIT.md` -> Closed / archived;
-- `MSC_APPLICATION_EXAM_STRATEGY.md` -> TOEFL-first English strategy + normal four-year timeline;
-- `STRATEGIC_INPUTS.md` -> records both user decisions.
+1. **Undergraduate / low capital base:** monthly budget, cash-flow visibility, emergency reserve, basic investment structure, fund / portfolio literacy and risk discipline.
+2. **Internship / early career:** salary allocation, rising investable surplus, lifestyle-inflation control, tax / insurance / pension / employer-equity basics and cross-border account issues.
+3. **Meaningful capital base:** formal asset allocation, rebalancing, concentration control, tax / jurisdiction / custody structure, withdrawal / financial-independence planning and evidence-based evaluation of ownership / entrepreneurship / real estate / active strategies.
 
-### Current minimum reusable exam architecture
+Detailed proposal: `00_Strategy/Voyage_Room/FINANCE_THREAD_PROPOSAL.md`.
 
-The strategic test stack is now:
+### Recommended initial objective
 
-1. **German** — longest-runway and least-substitutable requirement because TUM remains the primary target/benchmark. Current preferred proof routes: TestDaF TDN4 in all four sections or telc Deutsch C1 Hochschule.
-2. **TOEFL iBT** — one reusable English exam for the broader pool. Under the post-2026 TOEFL scale, Voyage Room recommends a planning target around **5.0 overall** (historically approximately 100/120) with balanced section performance. This is a margin target, not a universal formal minimum.
-3. **Technical/oral interview competence** — developed through normal coursework, GPA, projects, research and English technical communication rather than a separate cram track.
-4. **GRE General — later and conditional.** Not currently required for TUM ECE; preserve only if TUM RCI, selected University of Tokyo routes or another GRE-requiring target remains worthwhile.
-5. **APS / Germany administrative gate** — prepare in the real application cycle under then-current China procedure.
+**Personal Finance Baseline v1** — establish a verified personal-finance operating baseline covering recurring cash flow, essential spending floor, discretionary categories, liquid reserve target, investable-money boundary, asset categories and a lightweight monthly review process.
 
-### Current TOEFL evidence snapshot
+Sensitive credentials, full account numbers, passwords and authentication data must never be stored in GitHub.
 
-- TUM's current general English-certificate policy accepts TOEFL; the primary TUM ECE route itself is mainly German-taught, so German remains its principal language gate.
-- University of Osaka Engineering Science international Master's routes explicitly accept TOEFL.
-- KAIST current international graduate admissions accept TOEFL iBT 4.5 under the post-2026 scale (historically 83) or IELTS 6.5.
-- SNU current international graduate admissions accept TOEFL iBT historical-equivalent 80 or IELTS Academic 6.0.
-- KTH current English-equivalent guidance uses approximately TOEFL 90 / IELTS 6.5.
-- Kyoto, University of Tokyo, Polimi and other retained routes currently accept or use TOEFL depending on programme-specific rules.
-- Paris-Saclay's selected International Electrical Engineering route requires English proof but currently does not publish one universal TOEFL numerical minimum on its programme page.
+### Suggested responsibility boundary
+
+The Finance specialist thread would own approved operational work such as:
+
+- monthly budgeting and expense review;
+- reserve / liquidity targets;
+- portfolio and fund structure review;
+- investment-literacy tasks;
+- later asset-allocation and Investment Policy Statement maintenance;
+- reporting meaningful financial-state changes or decisions requiring Project Control.
+
+It would **not** own:
+
+- academic / graduate / country / career route decisions;
+- cross-thread priority changes;
+- a high-frequency trading roadmap;
+- leverage or speculative use of tuition / essential living / emergency funds;
+- any assumption of guaranteed returns.
+
+Voyage Room should continue to own the strategic role of wealth, country / career wealth-formation comparisons and the relationship between money, freedom and life quality.
 
 ### Resource implication
 
-This refinement **reduces**, rather than increases, preparation complexity:
+Recommended execution intensity is deliberately small:
 
-- no early-graduation workload;
-- no simultaneous IELTS + TOEFL duplication;
-- no immediate GRE activation;
-- no Japanese/Korean/French/Italian admission-language track.
+- one initial baseline session;
+- one short monthly review;
+- event-driven work when income, expenses, asset allocation, study-abroad cost, internship salary, tax residency, currency exposure or major investment decisions change.
 
-The remaining future sequencing question is primarily **when German should begin receiving regular maintenance/support resources**, while English/TOEFL continues as broad international infrastructure.
+This should not displace the current technical / academic route. The finance line is proposed as standing bounded support / maintenance.
 
 ### Decision requested from Project Control
 
 Project Control is asked to:
 
-1. record normal four-year / 2029 bachelor's completion as the current academic timing baseline;
-2. close `VTC-20260822-03` early-graduation investigation with no further action;
-3. replace IELTS with TOEFL as the preferred single English standardized exam in any future execution plan;
-4. retain TUM as primary benchmark while preserving the broader target pool;
-5. decide language/test sequencing without opening simultaneous high-intensity German + TOEFL + GRE work.
+1. decide whether to create and activate the dedicated Finance specialist thread;
+2. choose exact path / name / activation state;
+3. authorize `Personal Finance Baseline v1` as the first concrete output if activated;
+4. set its execution ceiling relative to Python, Algorithm, GPA/core coursework and Career / Internship;
+5. respond to the still-pending wealth-pillar proposal `VTC-20260822-02` and clarify whether this thread is the operational implementation of that pillar.
 
 ### Voyage Room recommendation
 
-**Adopt the simplification. Normal four-year graduation; German gets the longest strategic runway; TOEFL is the one common English exam; GRE stays conditional and later.**
+**Activate, but keep bounded.** The user now has a recurring real financial-management need, and the subject will persist through undergraduate life, internships, early career, international mobility and later capital growth. A dedicated specialist thread is cleaner than keeping operational budgeting and portfolio work inside the strategic Voyage Room.
 
 ### Confidence
 
-High on the user decisions. High on TOEFL's current reuse across the main retained pool. Medium-to-low on exact 2029 thresholds because programme rules and TOEFL institutional mappings can change and must be reverified in the real application cycle.
+High on thread-architecture fit and user intent. Medium on exact initial scope until Project Control integrates current execution capacity and decides how much standing maintenance load is acceptable.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260822-06 — Normal Four-Year Graduation Baseline + TOEFL as Common English Test
+
+- Status: **Needs Master Acknowledgement / Exam Sequencing Update**
+- Summary: Use normal four-year / 2029 bachelor completion as the planning baseline; early graduation is closed; TOEFL replaces IELTS as the preferred common English test; German retains the longest runway; GRE remains later / conditional; retain TUM as primary benchmark while preserving the broader pool.
 
 ### VTC-20260822-05 — TUM-Primary Multi-School Exam Preparation Strategy
 
@@ -110,6 +122,7 @@ High on the user decisions. High on TOEFL's current reuse across the main retain
 
 - Status: **Needs Master Decision — Yes**
 - Summary: Financial independence, capital formation and investment are first-order objectives. Voyage Room recommends a co-equal long-horizon pillar with bounded undergraduate execution. Framework: `WEALTH_AND_CAPITAL_STRATEGY.md`.
+- New development: `VTC-20260824-01` now proposes a dedicated bounded Finance specialist thread as the operational home for this work.
 
 ### VTC-20260822-01 — TUM RCI Control-Engineering Prerequisite Audit
 
