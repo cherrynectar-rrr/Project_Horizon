@@ -1,14 +1,14 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-21
+Last Updated: 2026-08-24
 Status: Active
 Authority: Main control thread only
 
 ## Current Operating Model
 
-Project Horizon uses GitHub as the shared source of truth and now operates through three layers: the Voyage Room provides strategic exploration and recommendations; Project Control makes integrated judgments and allocates resources; specialist threads execute concrete learning and projects.
+Project Horizon uses GitHub as the shared source of truth and operates through three layers: Voyage Room explores; Project Control decides and coordinates; specialist threads execute concrete work and produce evidence.
 
-See [THREAD_PROTOCOL.md](./THREAD_PROTOCOL.md) for the read/write and update rules.
+See [THREAD_PROTOCOL.md](./THREAD_PROTOCOL.md) for read/write and update rules.
 
 ## Strategic Layer
 
@@ -19,141 +19,122 @@ See [THREAD_PROTOCOL.md](./THREAD_PROTOCOL.md) for the read/write and update rul
 | Status | Active |
 | Location | [`00_Strategy/Voyage_Room/`](../00_Strategy/Voyage_Room/) |
 | Layer | Strategic |
-| Role | Explore long-term direction, analyze scenarios and trade-offs, and propose recommendations |
+| Role | Explore long-term direction, scenarios, trade-offs and strategic recommendations |
 | Decision Authority | Advisory only |
 | Decision Owner | Main control thread |
 | Voyage → Control | [`VOYAGE_TO_CONTROL.md`](../00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md) |
 | Control → Voyage | [`CONTROL_TO_VOYAGE.md`](./CONTROL_TO_VOYAGE.md) |
 
-The Voyage Room is not an execution thread and is not parallel to Python, C++, Linux, Algorithm or other technical domains. It may challenge assumptions and surface strategic options, but it cannot activate a route, change priorities, allocate time, or direct specialist work on its own.
+Voyage Room may challenge assumptions and surface options, but it cannot activate routes, allocate resources or change execution priority.
 
-Project Control combines Voyage Room recommendations with current evidence, capacity and constraints before recording a decision or changing resource allocation.
+## Current Priority / Capacity Structure
 
-## Current Priority Order
-
-1. Python — main line
+1. Python — main technical line
 2. Algorithm — active structured line
 3. Linux — support line
 4. C++ — support for algorithm implementation
-5. Career / Internship — Active bounded support; event-driven, not a main technical line
+5. Career / Internship — Active — Bounded Support; event-driven
+6. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
+
+The addition of Finance does **not** change the one-main-technical-line principle. Strategic importance and current execution intensity are not the same thing.
 
 ## Track Overview
 
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
-| [Python](../01_Python/STATUS.md) | Main line | Python foundation completed through Week03; OOP is the current milestone | Build Student Manager V2 with object-oriented structure |
-| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; time/space complexity, arrays and strings completed; sorting is current | Complete the sorting milestone, then continue Block 01 one topic at a time |
-| [Linux](../03_Linux/STATUS.md) | Support line | Active as needed; no verified Linux milestone is recorded yet | Complete one bounded practical Linux workflow milestone after Student Manager V2, or earlier only if a real programming need provides the entry point |
-| [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Use C++ reliably in algorithm work and fill only real language/STL gaps as they appear |
-| [Career / Internship](../09_Career/STATUS.md) | Bounded support | Active on 2026-08-21 by explicit user request; owns readiness, concrete opportunity review, public-source due diligence and application feedback without owning technical curricula | Complete Internship Readiness Baseline v1; then continue bounded on-demand opportunity work |
+| [Python](../01_Python/STATUS.md) | Main line | Foundation complete through Week03; OOP is current | Student Manager V2 with object-oriented structure |
+| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; complexity, arrays, strings and sorting foundations complete; binary search is current | First verifiable binary-search milestone |
+| [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
+| [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Continue supporting Algorithm and patch only real C++/STL gaps |
+| [Career / Internship](../09_Career/STATUS.md) | Bounded support | Active; Internship Readiness Baseline v1 complete; on-demand opportunity review active | New readiness evidence, concrete high-fit opportunity, or seasonal application decision |
+| [Personal Finance & Capital](../10_Finance/STATUS.md) | Bounded support / maintenance | Activated 2026-08-24; first baseline in progress | Personal Finance Baseline v1 |
 
 ## Current Main-Line Decision
 
-Python remains the Horizon main learning line. The immediate milestone is object-oriented programming through Student Manager V2.
+Python remains the Horizon main technical learning line. The immediate milestone is OOP through Student Manager V2.
 
-Algorithm study is active as a structured line because the C++ readiness gate has been passed with repository evidence. It is currently in Block 01 — Foundation. Time complexity, space complexity, arrays and strings have verifiable completion evidence; sorting is the current topic. Algorithm work should continue one topic at a time and must not displace the Python main line without a separate Project Control decision.
+Algorithm remains active as a structured line and must not displace Python without a separate Project Control decision. Sorting foundation is complete; binary search is now the active topic.
 
-Linux remains a support line learned through real development needs.
+Linux and C++ remain support lines. C++ standalone preheat is complete; Linux should be learned through real development needs rather than as a broad standalone curriculum.
 
-C++ standalone preheat is complete. C++ now serves algorithm implementation and future system work rather than remaining an independent preparation track.
+Career / Internship remains Active — Bounded Support. Its readiness baseline is complete; it may evaluate concrete opportunities and capture market feedback, but it may not create technical curricula or a continuous high-volume application workload without Project Control approval.
 
-Career / Internship is now **Active — Bounded Support** following explicit user request and Project Control authorization on 2026-08-21. Activation permits Internship Readiness Baseline v1, concrete role evaluation, lawful public-source company/team due diligence, application-material work when relevant, and interview-feedback capture. It does not authorize a continuous application push, daily internship browsing, technical curriculum creation, or displacement of Python, Algorithm, Linux support, GPA/core coursework, or current competition priorities.
+Personal Finance & Capital is now Active — Bounded Support / Maintenance. It exists to handle recurring operational finance work at low time cost and must not displace GPA/core coursework, Python, Algorithm or approved Career work.
 
 ## First-Internship Readiness Framework
 
-Project Control adopts `VTC-20260820-02 — Internship-Aligned Capability Planning Review` as a **bounded planning framework**, not as a new execution line.
-
-The purpose is to make the existing technical lines compound toward a future first serious internship while preserving GPA, competition priorities, execution depth and long-term robotics / embedded / systems / AI-deployment optionality.
+The bounded First-Internship Readiness Framework remains active.
 
 ### Application Ready Gate
 
-Before a serious first-internship application push, Project Control should look for approximately the following evidence:
+Before a serious first-internship application push, look for approximately:
 
-1. At least one presentable engineering project that runs, has a clear README, and can be explained in terms of design choices, debugging and limitations.
-2. C/C++ fluency sufficient for small modules and debugging without syntax or basic STL becoming the primary blocker.
-3. Verified practical Linux workflow evidence covering filesystem/CLI use, Git/tooling, compile/run/debug, environment/package use and basic shell work in a real task.
-4. Basic algorithm/data-structure competence from the approved Algorithm route, without opening a second high-volume interview-grinding roadmap.
-5. Ability to explain projects, reproduce bugs, document work and communicate technical decisions.
-6. A credible continuous availability window for the target internship period.
+1. at least one presentable engineering project with a clear README and explainable design/debugging/limitations;
+2. C/C++ fluency sufficient for small modules and debugging without syntax/STL being the main blocker;
+3. verified practical Linux workflow evidence;
+4. basic algorithm/data-structure competence from the approved Algorithm route;
+5. ability to explain projects, reproduce bugs, document work and communicate technical decisions;
+6. a credible continuous availability window.
 
-This is an **Application Ready** gate, not a professional-engineer readiness claim.
-
-### Resource Decisions
-
-- **Python:** remains the main line through Student Manager V2. Internship planning does not replace the current OOP milestone.
-- **Algorithm:** continues the approved Block 01 → Block 08 route one topic at a time and remains the source of baseline screening readiness.
-- **C++:** remains implementation support. Do not restart a broad standalone C++ curriculum without evidence of a real gap.
-- **Linux:** is the clearest current support-evidence gap. The next explicit support milestone should be one bounded practical workflow milestone, preferably after Student Manager V2 unless a real Python/C++ task creates an earlier natural need. It must be integrated with real programming work rather than become an independent curriculum.
-- **Embedded:** remains dormant. Reconsider only after the current main-line milestone is completed or handed off, execution capacity is not under acute academic/competition pressure, and suitable hardware access or a concrete project/opportunity can justify one bounded hardware-software output.
-- **Career / Internship:** is now **Active — Bounded Support**. It may complete Internship Readiness Baseline v1 and respond to concrete opportunities using the adopted role-fit / company-due-diligence workflow. It may handle local application gaps, but technical capability gaps must return to Project Control. A larger seasonal application push still requires a later control decision based on readiness, availability, or a concrete high-fit opportunity. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
-- **AI / Embodied AI:** remain strategic options and are not first-internship prerequisites.
+Career's Baseline v1 currently records: C++ readiness demonstrated; project evidence partial; Linux evidence missing; Algorithm Block 01 in progress; communication/documentation partial; internship availability unverified.
 
 ### Career Opportunity Review Workflow
 
-For concrete internship opportunities, Career / Internship should use the lightweight standard sequence adopted in `CTV-20260821-05`:
+For concrete opportunities, Career uses:
 
-1. role reality check;
-2. verified user-fit analysis;
-3. lawful public-source company/team due diligence;
-4. risk/value verdict;
-5. application/interview feedback loop.
+1. Role Reality Check
+2. Verified User Fit
+3. Lawful public-source Company & Team Due Diligence
+4. Risk / Value Verdict
+5. Application / Interview Feedback Loop
 
-Standard final action vocabulary:
+Standard verdicts: `PRIORITY APPLY / APPLY / WATCH / SKIP`.
 
-- `PRIORITY APPLY`
-- `APPLY`
-- `WATCH`
-- `SKIP`
+Local application gaps may be handled by Career. Technical capability gaps return to Project Control. Structural mismatches are classified as structural rather than converted into technical study tasks.
 
-Career may resolve local application gaps directly. Technical capability gaps must be reported to Project Control rather than converted into new curricula. Structural mismatches such as graduation year, geography, duration or schedule should be classified as structural rather than treated as technical deficits.
+Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 
-### Explicit Non-Goals
+## Personal Finance & Capital Framework
 
-This framework does **not** authorize:
+Project Control adopts Financial Freedom / Capital Formation as a **first-order long-horizon strategic pillar**, while keeping undergraduate execution deliberately bounded.
 
-- opening multiple new technical lines at once;
-- ROS2 + STM32 + CUDA + OpenCV + advanced C++ in parallel;
-- a second LeetCode/interview-grinding roadmap;
-- treating internship job descriptions as a personal curriculum;
-- optimizing for employer prestige over real technical content;
-- continuous daily internship browsing or high-volume applications without a later seasonal activation decision;
-- allowing internship preparation to displace GPA/core coursework or the current mathematics competition priority without a separate Project Control decision.
+### Current Finance Objective
 
-### Review Triggers
+`Personal Finance Baseline v1` should establish:
 
-Review the framework when any of the following occurs:
+- recurring cash inflow / support;
+- realistic essential spending floor;
+- discretionary, growth and irregular spending categories;
+- liquid reserve / safety-buffer target;
+- separation between money that must remain liquid and money that is genuinely investable;
+- current asset categories at a non-sensitive summary level;
+- a lightweight monthly review process.
 
-- Student Manager V2 is completed;
-- the first verified Linux milestone is completed;
-- a presentable engineering project is available;
-- a major Algorithm block milestone is completed;
-- Internship Readiness Baseline v1 identifies a gap that requires a control-level resource decision;
-- early-2027 winter-break availability is confirmed;
-- a concrete high-fit internship opportunity appears;
-- the first 3–5 Career opportunity reviews reveal repeated market evidence or excessive overhead;
-- a relevant specialist thread reports `Needs Master Decision: Yes`.
+### Execution Ceiling
 
-Formal Career decisions are recorded in `CONTROL_TO_VOYAGE.md`.
+Default Finance workload:
 
-## Algorithm Activation Protocol
+- one initial baseline session;
+- one short monthly review;
+- event-driven work only when income, expenses, asset allocation, study-abroad cost, internship salary, tax residency, currency exposure or major investment decisions materially change.
 
-Algorithm activation is controlled by a small C++ readiness gate rather than by completing a broad C++ curriculum.
+No standing market-watching quota is authorized.
 
-The C++ / joint preparation thread should transition the user to the Algorithm thread when the following are all demonstrated at a practical level:
+### Finance Guardrails
 
-1. Comfortable use of `std::string` and `std::vector`.
-2. Understanding of references, including ordinary use of forms such as `const std::vector<int>&` in function parameters.
-3. Ability to use `std::sort`, including a simple custom comparator.
-4. Practical use of `vector`, `stack`, `queue`, and `pair`, with basic awareness of `set` and `map`.
-5. Ability to solve a simple array or string task without being blocked by C++ syntax or basic STL usage.
+- no borrowed-money investing merely to accelerate returns;
+- no speculative use of tuition, essential living money or emergency reserves;
+- no guaranteed-return assumptions;
+- no high-frequency trading roadmap by default;
+- no financial work that materially displaces current academic / technical priorities without Project Control review;
+- no passwords, authentication codes, full account numbers or other sensitive credentials stored in GitHub;
+- material tax/legal/regulated-product questions must be reverified against then-current authoritative sources.
 
-Validation should be a small **Algorithm Readiness Test**, not a long C++ examination.
-
-**Gate result: PASS — 2026-08-18.** The C++ specialist status records the gate as passed, and `02_CPP/Week02/readiness_test.cpp` provides direct implementation evidence. The Algorithm thread is therefore authorized to activate and begin Block 01.
+Voyage Room continues to own the strategic role of wealth, country/career wealth-formation comparisons and money-versus-life-quality trade-offs. Finance owns approved operational execution only.
 
 ## Algorithm Learning Architecture
 
-The Algorithm thread should teach one block at a time. Each block should produce verifiable evidence such as code, solved problems, a small implementation task, README notes, or commits before moving on.
+The Algorithm thread proceeds one block at a time with verifiable evidence before moving on.
 
 | Block | Scope |
 | --- | --- |
@@ -162,32 +143,22 @@ The Algorithm thread should teach one block at a time. Each block should produce
 | Block 03 — Search | Recursion, enumeration, DFS, BFS, backtracking, basic pruning |
 | Block 04 — Trees & Priority Structures | Binary trees, traversals, BST concepts, heap / `priority_queue`, disjoint set union |
 | Block 05 — Graphs | Graph representation, DFS/BFS, connectivity, topological sort, shortest paths, minimum spanning trees |
-| Block 06 — Greedy | Sorting-based greedy methods, intervals, proof intuition, common greedy patterns |
+| Block 06 — Greedy | Sorting-based greedy, intervals, proof intuition, common patterns |
 | Block 07 — Dynamic Programming | State design, transitions, initialization, iteration order, 1D/2D DP, knapsack, sequence DP |
-| Block 08 — Toolbox | Bit operations, basic number theory, GCD, primes, fast power, monotonic stack/queue, Trie, KMP and other recurring tools |
-| Advanced — On Demand | Fenwick tree, segment tree, harder graph algorithms, advanced DP/string algorithms when evidence or competition needs justify them |
+| Block 08 — Toolbox | Bits, basic number theory, GCD, primes, fast power, monotonic stack/queue, Trie, KMP, recurring tools |
+| Advanced — On Demand | Fenwick tree, segment tree, harder graph algorithms, advanced DP/string algorithms when evidence justifies them |
 
-School `数据结构与算法` coursework should feed this same route rather than creating a second parallel curriculum. Horizon should add implementation depth, problem-solving practice and evidence around school content instead of re-teaching the same material independently.
-
-## Algorithm Practice Integration
-
-External problem sets are support material for the Algorithm thread, not a second independent roadmap.
-
-- Practice should follow the currently completed or in-progress topic. Do not jump ahead merely because a platform labels a problem as popular or important.
-- A small number of selected problems is preferred over large undirected volume. The aim is transfer, implementation fluency and error analysis rather than a raw solved-count metric.
-- LeetCode / AcWing / Luogu may be used when a problem directly reinforces the active topic; the Algorithm thread should choose the smallest useful set.
-- Lanqiao Cup problems may be used opportunistically when they only require material already learned. This counts as topic practice, not dedicated Lanqiao preparation.
-- After Block 03 is complete, Project Control should review whether systematic Lanqiao past-paper practice is justified.
-- After Block 07 is substantially complete, Project Control may review whether full 4-hour Lanqiao simulations are justified if the competition target has been upgraded.
-- Until Project Control explicitly changes the competition strategy, Lanqiao remains a baseline attempt and must not create a parallel high-intensity preparation line.
+External problem sets support the current Algorithm topic and must not become a second roadmap. Prefer a small number of selected problems over raw volume. Lanqiao remains a baseline attempt unless Project Control later upgrades it.
 
 ## Competition Strategy
 
 | Competition | Position | Current Strategy |
 | --- | --- | --- |
 | Mathematics competition | Primary | Main competition focus |
-| Physics theory competition | Secondary / interest validation | Participate as a secondary direction and use it to test sustained interest |
-| Lanqiao Cup campus selection | Baseline attempt | Sit the campus selection without dedicated preparation; allow only low-cost topic-aligned problem exposure until a later review gate |
+| Physics theory competition | Secondary / interest validation | Use as secondary participation and evidence of sustained interest |
+| Lanqiao Cup campus selection | Baseline attempt | No dedicated preparation; only low-cost topic-aligned exposure until later review gates |
+
+Review systematic Lanqiao past-paper practice after Algorithm Block 03; review full simulations only after substantial Block 07 completion and a separate competition upgrade decision.
 
 ## External Systems
 
@@ -197,13 +168,11 @@ External problem sets are support material for the Algorithm thread, not a secon
 | --- | --- |
 | Status | Active |
 | Source | [`cherrynectar-rrr/Horizon_Opportunity_Radar`](https://github.com/cherrynectar-rrr/Horizon_Opportunity_Radar) |
-| Role | External opportunity intake / 外部机会入口 |
+| Role | External opportunity intake |
 | Cadence | GitHub Actions every 6 hours |
 | Decision Owner | Main control thread |
 
-When evaluating competitions, research, exchanges, scholarships, summer research, internships, or similar opportunities, the main control thread may read the Radar repository's `data/opportunities.json` and `data/opportunities.md` as needed.
-
-Opportunity Radar is responsible only for collecting, deduplicating, structuring, and presenting factual opportunity data. It cannot change the Project Horizon route or make the user's final `APPLY`, `WATCH`, `SKIP`, or `URGENT` decision.
+Radar collects factual opportunities only. Project Control owns `APPLY / WATCH / SKIP / URGENT` decisions.
 
 ## Cross-Thread Blockers
 
@@ -211,22 +180,21 @@ None reported.
 
 ## Decisions Needed
 
-None currently.
+The latest Finance activation request has been resolved by Project Control. Other Voyage Room transmissions dated 2026-08-21 through 2026-08-22 may still require separate acknowledgement or decision; they should be handled individually rather than silently folded into execution state.
 
 ## Next Master Review
 
-Review this file when any thread reports:
+Review on meaningful changes including:
 
-- a completed milestone;
-- a new or resolved blocker;
-- a route or priority change;
-- an Algorithm block milestone;
-- completion of Algorithm Block 03 or substantial completion of Block 07, for Lanqiao review gates;
-- completion of Student Manager V2, first verified Linux milestone, a presentable engineering project, or Internship Readiness Baseline v1 for internship-readiness review;
-- confirmation of early-2027 winter-break availability or discovery of a concrete high-fit internship opportunity;
-- the first 3–5 Career opportunity reviews reveal repeated market evidence or excessive overhead;
+- Student Manager V2 completion;
+- an Algorithm block/topic milestone that materially changes state;
+- first verified Linux milestone;
+- concrete high-fit internship opportunity or seasonal application decision;
+- first 3–5 Career opportunity reviews producing repeated market evidence;
+- Personal Finance Baseline v1 completion;
+- a material financial change or finance issue requiring cross-thread resources;
 - a competition result;
 - `Needs Master Decision: Yes`;
-- a Voyage Room recommendation that requires adoption, rejection, deferral or an experiment.
+- a Voyage Room recommendation requiring adoption, rejection, deferral or an experiment.
 
 This file is a control summary, not a daily journal.
