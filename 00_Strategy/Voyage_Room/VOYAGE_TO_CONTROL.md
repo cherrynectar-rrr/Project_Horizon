@@ -15,107 +15,108 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
+### VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate
 
 - Date: 2026-08-28
-- Type: Governance / academic execution / evidence preservation
-- Trigger: As the user transitions into the next semester, recurring work has emerged around actual-course intake, assessment structures, textbook and syllabus capture, experiment/project evidence, Notion course records, semester review, and later APS/TUM course-evidence preparation. The user explicitly identified that these are execution tasks and should not be continuously handled by the Voyage Room.
-- Status: **Needs Master Decision — Thread Activation / Scope**
+- Type: International MSc route / country comparison / language-resource allocation
+- Trigger: User requested a deep feasibility investigation of Japan after identifying it as a possible alternative to the current Germany/TUM benchmark.
+- Detailed audit: `00_Strategy/Voyage_Room/JAPAN_MSC_FEASIBILITY_AUDIT.md`
+- Status: **Needs Master Decision — Strategic Candidate / Language Guardrail**
 
-### Problem
+### Executive summary
 
-The work is real and recurring, but it currently has no formal execution owner.
+Current official 2026/2027 evidence is strong enough to upgrade Japan from a generic alternative to a **formal high-potential strategic candidate** for the 2029 MSc cycle.
 
-Recent work already created a Notion `Horizon Knowledge Hub` and `University Course Evidence` database and began capturing verified first-year courses, grades, credits/hours, textbooks, lecture coverage and experiment evidence. This is useful operational infrastructure, but continued maintenance by the Voyage Room would violate the layer boundary: Voyage should explore and recommend, not become a semester administrator or evidence clerk.
+The most important finding is not simply lower cost. Japan currently offers high-level national-university engineering master's routes taught in English that fit an Electronic Information Engineering → control / robotics / intelligent-systems trajectory without requiring Japanese for admission.
 
-At the same time, this workload should not be pushed into Python, Algorithm, Linux, C++ or Career, because it is cross-course academic operations rather than a single technical domain.
+The strongest current Japan benchmark is:
 
-### Recommended thread
+- **Institute of Science Tokyo — International Graduate Program (C)**;
+- especially **Systems and Control Engineering** and **Electrical and Electronic Engineering**;
+- current IGP(C) rules use English for lectures/seminars, have no Japanese-language admission requirement, require intended-supervisor consent, and evaluate applicants through interview/examination rather than a universal external English-score requirement;
+- current fees are compatible with Horizon's existing approximately RMB100k/year planning band under current exchange rates/costs, though 2029 costs must be reverified.
 
-Recommended name: **Academic Operations & Evidence / 学业运营与证据**.
+Additional high-value candidates found:
 
-Recommended repository path if activated: `11_Academic/STATUS.md` (final naming/path remains a Project Control decision).
+- **University of Tokyo IME — Electrical Engineering and Information Systems**: English route, remote selection, strong academic fit; current programme requires GRE General, so this is a concrete future GRE activation trigger rather than a reason to activate GRE now;
+- **University of Osaka**: current English EEE and mechanical master's programmes; needs lab-level follow-up;
+- **Tohoku University IMAC-G Robotics**: fully English and strong robotics ecosystem, but structurally more mechanical/mechatronics-oriented;
+- **Kyushu University ISEE Global Course**: strong ECE fit but current oral/written exam structure requires a deeper procedure audit;
+- Nagoya G30 and Kyoto remain conditional/lab-driven options under the current English-first control/robotics lens.
 
-Recommended state: **Active — Bounded Support / Maintenance**.
+### Financial finding
 
-Recommended current goal: **Year 2 Fall Academic Baseline v1**.
+Official Study in Japan data currently places first-year national graduate-school academic fees at approximately JPY820,000 on average, and average international-student living costs at approximately JPY105,000/month excluding academic/research costs. This makes a national-university Japan MSc plausibly compatible with the current Horizon affordability band, especially outside the most expensive Tokyo scenarios.
 
-Recommended first verifiable output:
+MEXT provides major upside but must not be used as the base affordability assumption. Current 2027 Research Student rules provide JPY144,000/month for regular master's students, university examination/matriculation/tuition waivers under the scholarship rules, and qualifying international transportation. Embassy Recommendation is itself a competitive process involving documents, Japanese and English written tests, interview, research plan, provisional university acceptance and final placement.
 
-1. verified current-semester course register based primarily on the user's actual execution plan / registration evidence;
-2. assessment-method and deadline map for materially important courses;
-3. evidence-capture baseline for textbooks, official syllabi, lecture coverage, labs/projects and grades;
-4. clean Notion `University Course Evidence` maintenance workflow;
-5. semester-end archive procedure that can later support APS, prerequisite audits and MSc applications without reconstructing years of coursework from memory.
+### Strategic language correction
 
-### Scope
+**Do not activate Japanese now merely because Japan is attractive.**
 
-Authorized bounded responsibilities should include:
+Admission language and career language must be separated:
 
-- ingesting the user's actual semester course plan and distinguishing it from the school's generic培养方案;
-- maintaining factual course records: official Chinese/English name, credits, hours, semester, assessment structure and grade when verified;
-- preserving course evidence: syllabus, textbook, lecture outline, lab/project instructions, reports, code/results and other verifiable artifacts;
-- maintaining the Notion course-evidence system and lightweight semester dashboard;
-- tracking academic deadlines / grading-risk items when the user supplies the relevant course information;
-- conducting a short weekly or event-driven academic-operations review when needed;
-- performing semester-end archival and marking what remains missing;
-- preparing factual course-evidence packages for later APS / TUM / MSc prerequisite review;
-- escalating strategic elective choices, overload decisions, GPA-versus-project trade-offs, graduation-route changes and cross-thread resource conflicts to Project Control or Voyage as appropriate.
+- current English-only Japanese engineering MSc routes demonstrate that Japanese is not universally necessary for admission;
+- therefore English/TOEFL remains the reusable cross-country asset;
+- however JASSO's current employment guidance shows Japanese communication is important for broad Japanese new-graduate employment, so Japanese may become valuable later if Japan's probability rises materially;
+- Germany + Japanese high-intensity study should not run simultaneously by default.
 
-### Explicit non-scope / guardrails
+### Capability implications
 
-This thread should **not** become a universal tutoring thread or a second Main Control.
+Japan increases the strategic value of work Horizon already wants rather than requiring a new undergraduate curriculum:
 
-It should not:
+- GPA and core ECE/math foundations;
+- real engineering projects;
+- undergraduate research / course paper experience;
+- ability to form and explain a research question;
+- recommendation relationships;
+- technical English;
+- verified academic/project evidence.
 
-- decide long-term academic, country, career or research direction;
-- independently change Horizon priorities or allocate time across technical threads;
-- teach Python / Algorithm / Linux / C++ material that already belongs to existing specialists;
-- turn every lecture into a polished Notion note;
-- copy whole textbooks or PPT decks into Notion;
-- treat school curriculum as the user's personal growth route;
-- create daily administrative overhead merely to keep the database visually complete.
-
-When a course overlaps an existing specialist, subject-matter learning stays with that specialist; Academic Operations & Evidence only maintains the academic/evidence layer.
-
-### Resource ceiling
-
-Recommended default workload:
-
-- one semester-start baseline setup;
-- approximately one short weekly review only when useful;
-- event-driven updates for major assignments, labs, exams, project outputs, grades or newly available official materials;
-- one semester-end archive.
-
-This is a support system, not a new technical main line.
-
-### Capacity / opportunity-cost answer
-
-If this thread is accepted, the thing that should temporarily stop is **Voyage Room doing recurring course administration and Notion evidence maintenance directly**. Main Control should also not be burdened with routine course-record upkeep.
-
-No new high-intensity study line is implied. The purpose is to reduce coordination waste and future application reconstruction cost, not to add another curriculum.
+The current Year 2 Fall `Electronic Information Engineering Professional Scientific Research Training and Course Paper` therefore deserves special observation as a possible research-entry gate.
 
 ### Decision requested from Project Control
 
 Project Control is asked to:
 
-1. decide whether a dedicated Academic Operations & Evidence specialist thread should be activated;
-2. if yes, approve its bounded scope and repository path;
-3. decide whether the current Notion `University Course Evidence` database becomes this thread's operational workspace while GitHub remains the formal Horizon source of truth;
-4. preserve the boundary that academic evidence maintenance does not grant the thread authority over technical priorities, electives with major strategic consequences, GPA/resource trade-offs or graduate-route decisions;
-5. define whether current semester-start work should become the thread's first milestone immediately after activation.
+1. adopt Japan as a formal high-potential strategic candidate alongside the existing Germany/TUM benchmark rather than as an informal backup;
+2. accept Science Tokyo IGP(C), especially Systems and Control Engineering / EEE, as the primary Japan benchmark for future lab-level research;
+3. **not** activate a Japanese-language execution line yet;
+4. preserve the rule that German + Japanese must not become simultaneous high-intensity language lines without a later explicit resource decision;
+5. preserve TOEFL as the common English asset;
+6. keep GRE conditional, with UTokyo IME or another retained GRE-requiring programme as a future activation trigger;
+7. include exact Japanese lab/professor, intake timing, exam-location, language, supervisor-consent, research-plan and funding fields when Target Pool v1 is frozen no later than 2028 H1;
+8. request deeper lab-level Science Tokyo / UTokyo research only when the user's technical/research evidence is developed enough for meaningful matching.
 
 ### Voyage Room recommendation
 
-**Adopt.** The workload has crossed the threshold from one-off organization into recurring operational work, and a bounded specialist reduces role leakage without creating a new technical main line.
+**Adopt the strategic candidate, not the workload.**
+
+Japan materially improves Horizon's future option set today, but the immediate execution cost should remain near zero. The correct action now is to build GPA, ECE/math foundations, research/project evidence and English that improve both German and Japanese routes, while avoiding a premature JLPT/Japanese or GRE branch.
+
+### Opportunity cost
+
+If this recommendation is accepted, what should temporarily **not** be done:
+
+- no Japanese-language high-intensity line now;
+- no German + Japanese dual-language escalation;
+- no GRE preparation before target-pool evidence justifies it;
+- no high-volume professor outreach before the user has a credible research direction and evidence base.
 
 ### Confidence
 
-High on the governance need and scope separation. Medium on the exact thread name/path, which Project Control should choose to fit repository organization.
+High on Japan's current financial and programme-level feasibility and on Science Tokyo's structural fit. Medium on any 2029-specific procedure, scholarship or fee because exact admissions must be reverified in the real cycle. Medium on final Germany-vs-Japan preference because that should depend on future research interest, language experience, career/life fit and real engineering feedback rather than today's paperwork alone.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
+
+- Date: 2026-08-28
+- Type: Governance / academic execution / evidence preservation
+- Status: **Needs Master Decision — Thread Activation / Scope**
+- Summary: recurring semester-course intake, assessment/deadline control, textbook/syllabus/lab/project evidence, Notion course records and future APS/TUM course-evidence preparation should not remain recurring Voyage Room work. Recommend a bounded `Academic Operations & Evidence / 学业运营与证据` specialist, proposed path `11_Academic/STATUS.md`, first goal `Year 2 Fall Academic Baseline v1`, with no authority over technical learning priorities or long-term strategy.
 
 ### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
 
