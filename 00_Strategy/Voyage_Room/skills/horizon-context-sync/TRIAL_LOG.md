@@ -11,6 +11,74 @@ This is evidence for later Project Control adoption / revision decisions. It is 
 
 ---
 
+## Trial 002 — Continue Skill Development After Control Decision
+
+- Date: 2026-08-28
+- Invoking role: Voyage Room
+- User intent: Continue building the Horizon Skills system after the first HZN-001 trial.
+- Task classification:
+  - strategic operating-architecture continuation;
+  - repository write;
+  - possible implementation of additional Skills;
+  - cross-thread governance implication.
+
+### Minimum authoritative reads selected
+
+- `00_Project_Control/MASTER_STATUS.md` — verify current thread structure and whether Academic Operations & Evidence is now active.
+- `00_Project_Control/CONTROL_TO_VOYAGE.md` — verify whether the shared Skills-layer proposal and HZN-001 had been adopted since Trial 001.
+- `11_Academic/STATUS.md` — determine factual ownership of recurring course-evidence operations relevant to the proposed future `evidence-intake` pattern.
+- `00_Strategy/Voyage_Room/HORIZON_SKILLS_ARCHITECTURE.md` — compare current prototype architecture against new Control state.
+- `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md` — preserve prior trial evidence and avoid duplicate conclusions.
+
+### Context packet
+
+- Role: Voyage Room
+- Task Type: Strategic architecture + repository write
+- Authoritative state change discovered: `CTV-20260828-02` has authorized the Skills architecture principles as a bounded Trial and HZN-001 v0.2 for shared cross-thread trial use.
+- Relevant active thread: Academic Operations & Evidence is formally Active — Bounded Support / Maintenance and owns factual academic evidence maintenance.
+- Allowed writes: Voyage Room architecture / prototype / trial documents and Voyage-owned bridge.
+- Prototype work allowed: HZN-001 maintenance inside Voyage-owned prototype path.
+- Additional Skill implementation allowed: No. HZN-002–HZN-005 are explicitly frozen by Control.
+- Canonical adoption authority: Project Control.
+- External freshness needed: No.
+- Escalation needed: Not for continued HZN-001 trial; yes before additional Skill implementation or canonical migration.
+
+### Outcome
+
+The preflight discovered that the previous local assumption — "Skills proposal still awaiting Control" — was stale.
+
+It also prevented the opposite error: treating Control's bounded Trial approval as permission to implement the entire backlog.
+
+The correct next actions became:
+
+1. update the Skills Architecture to reflect bounded Trial authorization;
+2. keep HZN-001 in the Voyage-owned prototype path while allowing shared invocation;
+3. keep HZN-002–HZN-005 frozen;
+4. recognize Academic Operations & Evidence as the operational owner of course-evidence work, without prematurely implementing `HZN-003 evidence-intake`;
+5. seek additional real HZN-001 uses across more than one role type before Control review.
+
+### What worked
+
+- The Skill caught a real **stale-state change** in `CONTROL_TO_VOYAGE.md`.
+- Minimum reads were sufficient; no full-repository scan was needed.
+- It distinguished shared trial authorization from canonical migration.
+- It distinguished a future Skill's procedure layer from the Academic thread's execution ownership.
+- It prevented unauthorized implementation of an attractive backlog item.
+
+### Friction / possible improvements
+
+- No HZN-001 text change is required from this trial.
+- The main remaining evidence gap is cross-role use: both Trial 001 and Trial 002 were invoked from Voyage Room.
+- Future meaningful trials should preferentially come from Main Control or a Specialist Thread rather than manufacturing more Voyage-only architecture cases.
+
+### Trial verdict
+
+**Pass — no revision required.**
+
+HZN-001 produced value by detecting changed Control state and preventing both under-reading and over-expansion.
+
+---
+
 ## Trial 001 — Skill-Layer Development Governance
 
 - Date: 2026-08-28
