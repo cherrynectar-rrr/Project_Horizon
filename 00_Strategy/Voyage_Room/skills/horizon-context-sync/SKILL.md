@@ -1,7 +1,7 @@
 # HZN-001 — horizon-context-sync
 
-Version: 0.1
-Status: Draft Prototype
+Version: 0.2
+Status: Trial Prototype
 Owner: Voyage Room prototype; canonical ownership pending Project Control
 Last Updated: 2026-08-28
 
@@ -84,6 +84,8 @@ Read the Charter and THREAD_PROTOCOL when:
 - designing/changing shared operating architecture;
 - a possible conflict with current rules exists.
 
+If the task concerns a previously proposed cross-thread standard, shared infrastructure or activation request, always check the latest `CONTROL_TO_VOYAGE.md` before treating it as adopted.
+
 Write boundary:
 
 - Voyage Room documents;
@@ -94,6 +96,8 @@ Never write:
 - `MASTER_STATUS.md`;
 - `CONTROL_TO_VOYAGE.md`;
 - specialist `STATUS.md` files.
+
+Voyage Room may create **draft / trial prototypes inside its own writable area**. That does not make them canonical, adopted or binding on other threads. Cross-thread canonicalization requires Project Control adoption.
 
 ### Main Control
 
@@ -184,6 +188,11 @@ State internally:
 
 If role or write authority is unclear, stop before writing and consult Charter / THREAD_PROTOCOL.
 
+Distinguish explicitly between:
+
+- **role-owned prototype / draft work**, which may be allowed inside that role's writable area; and
+- **canonical cross-thread adoption**, which requires the authority defined by Project Control.
+
 ### Step 3 — Fetch minimum authoritative state
 
 Use the role rules above.
@@ -215,6 +224,8 @@ Relevant Active Priorities:
 Relevant Constraints:
 Affected Threads:
 Allowed Writes:
+Prototype Work Allowed: Yes/No
+Canonical Adoption Authority:
 External Freshness Needed: Yes/No
 Escalation Needed: Yes/No
 Unknowns That Matter:
@@ -235,6 +246,7 @@ Success means the invoking workflow now has:
 - a fresh, role-correct Horizon state;
 - the relevant priority/constraint context;
 - a clear write boundary;
+- a distinction between allowed prototype work and canonical adoption;
 - identified external facts requiring verification;
 - identified unresolved conflicts or escalation needs.
 
@@ -248,6 +260,7 @@ Before proceeding, verify:
 - [ ] Correct authoritative files read
 - [ ] No unnecessary full-repo scan
 - [ ] Recommendations not mistaken for adopted state
+- [ ] Prototype permission not mistaken for canonical adoption
 - [ ] Write ownership respected
 - [ ] Changing external facts marked for verification
 - [ ] Material conflicts surfaced rather than overwritten
@@ -259,10 +272,17 @@ Stop or escalate when:
 - requested write would violate ownership;
 - user asks a specialist to change long-term route;
 - Voyage Room would need to activate/deactivate a thread;
+- a prototype would need to become a binding cross-thread standard without Control adoption;
 - specialist state conflicts materially with MASTER_STATUS;
 - current evidence is insufficient for a high-impact decision;
 - external rules are time-sensitive but cannot be verified;
 - required repository/tool access fails and the missing state is essential.
+
+## Trial Evidence
+
+Meaningful real uses are recorded in `TRIAL_LOG.md` in this Skill directory.
+
+Trial evidence should record only cases that reveal value, friction, failure modes or needed revisions.
 
 ## Anti-patterns
 
@@ -273,10 +293,18 @@ Do not:
 - read all threads "just in case";
 - write a status update because a conversation happened;
 - treat a Voyage recommendation as Control adoption;
+- treat prototype existence as cross-thread adoption;
 - treat a school curriculum as Horizon's personal route;
 - fabricate missing state to keep the workflow moving.
 
 ## Change Log
+
+### v0.2 — 2026-08-28
+
+- Entered Trial Prototype state after first real governance use.
+- Added explicit distinction between role-owned prototypes and canonical cross-thread adoption.
+- Added mandatory Control-bridge check for previously proposed shared standards.
+- Added Trial Evidence convention and expanded Context Packet.
 
 ### v0.1 — 2026-08-28
 
