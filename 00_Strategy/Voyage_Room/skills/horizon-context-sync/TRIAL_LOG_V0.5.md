@@ -1,14 +1,63 @@
 # HZN-001 v0.5 — Candidate Trial Log
 
 Last Updated: 2026-08-29
-Status: Active Candidate Trial
+Status: Candidate Trial Complete — Adoption Recommended
 Owner: Horizon Core
 
 ## Purpose
 
 Record only meaningful real uses of the **v0.5 Horizon Core Edition** that reveal value, failure, friction or a needed revision.
 
-Historical v0.1–v0.4 trial evidence remains preserved in `TRIAL_LOG.md` and Git history. Adopted v0.4 remains pinned by `CTV-20260828-04`.
+Historical v0.1–v0.4 trial evidence remains preserved in `TRIAL_LOG.md` and Git history. Adopted v0.4 remains pinned by `CTV-20260828-04` until v0.5 is formally adopted.
+
+---
+
+## Trial 006 — Algorithm Specialist Validation Under Horizon Core
+
+- Date: 2026-08-29
+- Invoking role: Algorithm Specialist Thread
+- User intent: run HZN-001 v0.5 and then continue the existing Algorithm main line.
+- Evidence classification: **user-reported invocation + repository-verified clean Specialist state**.
+- Task classification:
+  - Specialist-thread context preflight;
+  - two-layer governance validation;
+  - no independent Algorithm milestone expected from the Skill test itself.
+
+### Repository observations
+
+- `05_Algorithm/STATUS.md` remains focused on real Algorithm execution state.
+- The current topic remains binary search and the next milestone remains the first verifiable binary-search milestone.
+- `Last Updated` remains 2026-08-21; the Skill test did not manufacture a status update.
+- No new commit was created under `05_Algorithm/` merely to record the Skill test; the most recent Algorithm-path commit remains the 2026-08-21 advance to binary search.
+- No evidence indicates that the Specialist modified another thread or converted the Skill invocation into execution evidence.
+
+### What can and cannot be verified
+
+GitHub verifies the **absence of incorrect writes / artificial status churn** and the preservation of Algorithm's factual state.
+
+GitHub does not record chat-side read telemetry, so Horizon Core cannot independently prove exactly which files the Algorithm chat read or did not read during the invocation. The user confirmed that the invocation completed. Therefore this trial does **not** invent a claim that every internal read step was independently observed.
+
+### Outcome
+
+The observable Specialist-side behavior is consistent with v0.5's intended boundaries:
+
+1. the Skill invocation did not become an Algorithm milestone;
+2. Algorithm STATUS remained clean and factual;
+3. no cross-thread write leakage appeared;
+4. no unnecessary repository artifact was created solely for trial bookkeeping.
+
+Combined with:
+
+- Trial 005's clean Horizon Core self-preflight under Charter v4.0 / Protocol v2.0; and
+- v0.4's prior cross-role evidence establishing the underlying context-sync method,
+
+this is sufficient evidence for the **governance migration** from v0.4 to v0.5. A further manufactured test would add little decision value.
+
+### Trial verdict
+
+**Pass — Specialist validation sufficient for v0.5 adoption.**
+
+Evidence limitation retained: exact chat-side read telemetry is not independently available from GitHub.
 
 ---
 
@@ -68,15 +117,8 @@ The candidate rewrite:
 
 No material Core-side friction was found in this trial.
 
-The main remaining evidence gap is **Specialist behavior under v0.5**. A real Specialist invocation should verify that the simplified rules still cause the thread to:
-
-- read its own STATUS first;
-- read MASTER only when cross-thread / priority context matters;
-- avoid unnecessary strategic reads;
-- escalate only genuine cross-thread decisions as `Needs Core Decision`.
+The remaining evidence gap was Specialist behavior under v0.5; this was addressed by Trial 006.
 
 ### Trial verdict
 
-**Pass — Core migration trial successful; Specialist validation still needed before adoption.**
-
-Do not adopt v0.5 solely from this self-preflight.
+**Pass — Core migration trial successful.**
