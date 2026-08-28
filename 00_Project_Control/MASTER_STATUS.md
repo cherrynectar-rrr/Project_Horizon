@@ -129,7 +129,34 @@ Evidence limitation: GitHub does not expose chat-side read telemetry, so exact i
 
 `HZN-001 v0.4` remains preserved as the first adopted historical baseline under `CTV-20260828-04`.
 
-HZN-002 through HZN-005 remain frozen unless separately authorized. v0.5 adoption does not unlock them automatically.
+---
+
+## HZN-002 Skill State
+
+`HZN-002 — status-update v0.1` is **Candidate — Trial**.
+
+Purpose:
+
+- apply a meaningful-change gate before any STATUS / MASTER write;
+- route updates to the correct single owner;
+- fetch the latest target + SHA before writing;
+- make the minimum evidence-justified patch;
+- prevent plans, tiny exercises and communication-only events from becoming formal state churn;
+- opportunistically migrate legacy governance terminology only when a meaningful update already touches the file.
+
+Current artifact:
+
+`00_Strategy/Voyage_Room/skills/status-update/SKILL.md`
+
+Trial gate:
+
+1. at least one real **No formal update** case that correctly prevents churn;
+2. at least one real meaningful update that produces a minimal evidence-based patch;
+3. no authority leakage or evidence inflation.
+
+This Core authorization / MASTER patch is the first real meaningful-update trial case.
+
+`HZN-003` through `HZN-005` remain frozen. HZN-002 trial authorization does not unlock them.
 
 ---
 
@@ -281,6 +308,7 @@ Review on meaningful changes including:
 - `Needs Core Decision: Yes` from a specialist;
 - one of the inherited strategic backlog items being ready for decision;
 - a material HZN-001 failure / authority ambiguity;
+- HZN-002 producing a clean no-write case and a clean real-write case, or exposing material friction;
 - a material failure showing the Horizon Core merger created strategic tunnel vision or new communication friction.
 
 This file is a Core summary, not a daily journal.
