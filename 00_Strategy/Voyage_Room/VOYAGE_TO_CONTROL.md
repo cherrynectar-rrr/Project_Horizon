@@ -15,94 +15,99 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
+### VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types
 
 - Date: 2026-08-28
-- Type: Country-route comparison / life-career-capital formation / language-resource allocation
-- Trigger: User requested a direct comparison between the current Germany/TUM route and the newly audited Japan route.
-- Detailed comparison: `00_Strategy/Voyage_Room/GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md`
-- Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
+- Type: Shared operating infrastructure / Skill trial review / governance
+- Trigger: `HZN-001 — horizon-context-sync` has now accumulated four meaningful trial cases across Voyage Room, Main Control and an Algorithm Specialist invocation, satisfying the lower bound of the review trigger established by `CTV-20260828-02`.
+- Trial artifact: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md` v0.4
+- Trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
+- Status: **Needs Master Decision — Trial Review / Adoption Path / Backlog Unlock**
 
-### Executive summary
+### Trial evidence summary
 
-Current evidence does **not** justify immediately replacing Germany with Japan or vice versa. The two routes optimize different parts of Horizon's mission.
+1. **Trial 001 — Voyage Room / Skill-layer development governance**
+   - prevented premature canonicalization and unauthorized implementation;
+   - exposed the need to distinguish role-owned prototype permission from cross-thread adoption;
+   - led to v0.2.
 
-**Germany currently has the stronger long-horizon life/career/settlement profile** if the user can absorb the German-language burden and chooses a financially viable programme:
+2. **Trial 002 — Voyage Room / changed Control state**
+   - detected that Skills bounded-Trial authorization had changed since the previous conversation;
+   - prevented both stale-state under-reading and unauthorized HZN-002+ expansion;
+   - passed without a Skill revision.
 
-- German graduates currently have up to 18 months to find qualified work;
-- German-university graduates may obtain settlement after more than two years of skilled employment if requirements are met;
-- EU Blue Card settlement can currently be reached after 27 months with A1 German or 21 months with B1;
-- current official German engineering pay data is strong in electrical engineering / automation / technical cybernetics;
-- OECD 2024 average annual hours worked are materially lower in Germany than Japan;
-- Germany offers stronger European mobility and broader long-term option value.
+3. **Trial 003 — Main Control cross-role use**
+   - used a minimum authoritative read set rather than a repository-wide scan;
+   - correctly refreshed the latest Voyage transmission;
+   - preserved Main Control write ownership and refused to edit the Voyage-owned Trial Log;
+   - exposed cross-role trial-evidence routing friction;
+   - led to v0.3 after `CTV-20260828-03`.
 
-**Japan currently has the stronger admission-language efficiency and robotics/manufacturing research fit**:
+4. **Trial 004 — Algorithm Specialist invocation**
+   - user confirmed the Algorithm line invoked HZN-001;
+   - Algorithm `STATUS.md` remained unpolluted by Skill-test bookkeeping, which is correct;
+   - however Voyage could not reconstruct the Specialist trial outcome from GitHub because a Skill-only test does not justify a STATUS update and Specialists have no dedicated bridge to Voyage;
+   - this exposed a Specialist feedback-routing gap;
+   - led to v0.4, which allows clearly labeled **user-reported trial evidence** when no Specialist STATUS update is justified, while forbidding invented success claims and preserving normal `Needs Master Decision` for genuine conflicts.
 
-- Science Tokyo IGP(C) currently offers English-taught master's routes including Systems and Control Engineering / EEE with no Japanese admission requirement;
-- Japan has unusually strong robotics, mechatronics, industrial automation and electronics/manufacturing research ecosystems;
-- regional national universities can fit the existing affordability band well;
-- MEXT creates exceptional funding upside;
-- proximity to China is materially better.
+### Current judgment
 
-Important correction: **TUM is not representative of Germany's cheapest route.** TUM ECE currently charges non-EU students EUR 6,000/semester and Munich living costs are high, so TUM remains financially conditional. Other German public universities can be materially cheaper.
+HZN-001 has demonstrated real value in:
 
-Important correction on Japan: **English admission does not remove the long-term Japanese-language bill.** Current JASSO guidance shows that Japanese proficiency and Japan's distinctive new-graduate recruiting process matter substantially for broad employment access.
+- detecting stale formal state;
+- selecting minimum authoritative reads;
+- preserving role/write boundaries;
+- distinguishing recommendation, trial authorization and adoption;
+- preventing unnecessary repository scans and artificial STATUS churn.
 
-### Strategic recommendation
+The strongest remaining uncertainty is not the core preflight logic, but whether Specialist-thread use stays sufficiently lightweight in normal technical execution. Trial 004 confirmed an invocation and surfaced routing friction, but did not independently verify every part of the Algorithm execution outcome.
 
-**Preserve both candidates now; choose at a defined future gate.**
+### Recommendation
 
-Recommended architecture:
+**Continue HZN-001 and move to formal Control review now.**
 
-1. keep TOEFL / technical English as the shared language asset;
-2. allow low-cost German foundation work while Germany remains the benchmark;
-3. do not activate Japanese as a second serious language line now;
-4. create a **Germany–Japan Strategic Gate** before German escalates into B2/C1/TestDaF-level intensity;
-5. at that gate compare updated programme/lab fit, research direction, self-funded total cost, funding, employment, settlement, language burden and life preference;
-6. if Japan becomes clearly primary, reduce German before escalating Japanese;
-7. if Germany remains primary, continue German and keep Japan accessible through English-track options until final target-pool freeze.
+Voyage Room recommends one of two acceptable Control outcomes:
 
-### Direction-sensitive rule
+- **Adopt with a short stabilization period**, keeping the current physical location until canonical write ownership is reconciled; or
+- **Continue Trial for one more clean Specialist execution**, if Control wants direct evidence that the preflight itself reduced reads/ceremony in a normal technical session before adoption.
 
-Future technical evidence should affect the country choice:
-
-- control theory / industrial automation / cyber-physical systems / automotive control / broad EU engineering → Germany gains weight;
-- robotics hardware / mechatronics / embodied systems / sensors / industrial robotics / electronics-manufacturing integration → Japan gains weight;
-- AI-heavy software / pure ML → re-open the broader international pool rather than force Germany-vs-Japan.
+Voyage Room does **not** recommend expanding a large Skill catalog immediately.
 
 ### Decision requested from Project Control
 
-Project Control is asked to:
+Project Control is asked to decide:
 
-1. preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution;
-2. acknowledge `GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md` as the current comparison reference;
-3. establish a Germany–Japan Strategic Gate before German B2/C1/TestDaF escalation and no later than Target Pool v1 freeze in 2028 H1;
-4. retain the current affordability constraint and treat TUM as financially conditional rather than Germany-representative;
-5. preserve English/TOEFL as the common reusable asset;
-6. avoid Japanese activation until Japan probability rises enough to justify the opportunity cost.
+1. whether HZN-001 v0.4 is ready for `Adopted` status or requires one more clean Specialist trial;
+2. whether canonical migration to `00_Project_Control/Skills/` should remain deferred until `THREAD_PROTOCOL.md` explicitly defines shared-library ownership;
+3. whether, after HZN-001 review, exactly **one** next Skill may be unlocked for Draft/Trial rather than unlocking the entire backlog;
+4. if one next Skill is authorized, whether `HZN-002 status-update` remains the preferred next candidate or whether accumulated real evidence now makes `HZN-003 evidence-intake` the higher-value first follow-on.
 
-### Voyage Room judgment if forced to choose today
+### Opportunity-cost rule
 
-- **Germany** if the dominant objective is long-term settlement, work-life balance, higher engineering income, European mobility and the user accepts the German-language cost.
-- **Japan** if the dominant objective is English-accessible top robotics/control research, closer geography, strong manufacturing/robotics ecosystem and lower admission-language burden, while accepting that Japanese likely becomes important for long-term employment.
+Even if the review is positive:
 
-For Horizon today: **do not choose yet. Build common assets and preserve option value.**
+- no Skills specialist thread;
+- no standing Skill-development quota;
+- no large catalog build-out;
+- Skill work must remain subordinate to real academic, technical, career and evidence work.
 
 ### Confidence
 
-High on the current structural differences. Medium on 2029-specific admissions, fees and immigration because they must be reverified. Medium on final personal fit because research interests, language experience and real engineering/work exposure are still developing.
+High that HZN-001 solves a real recurring Horizon problem. Medium on immediate canonicalization because shared-library ownership is still not defined in `THREAD_PROTOCOL.md`. Medium on the exact next Skill because HZN-002 and HZN-003 both have strong real-use cases and should be sequenced rather than launched together.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
+- Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
+- Summary: Preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution. Establish a Germany–Japan Strategic Gate before German escalates into B2/C1/TestDaF-level intensity and no later than 2028 H1 Target Pool freeze. Detailed comparison: `GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md`.
 
 ### VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate
 - Status: **Needs Master Decision — Strategic Candidate / Language Guardrail**
 - Summary: Japan should be upgraded from generic alternative to high-potential candidate. Science Tokyo IGP(C), especially Systems and Control Engineering / EEE, is the primary Japan benchmark. Do not activate Japanese yet; preserve TOEFL; keep GRE conditional. Detailed audit: `JAPAN_MSC_FEASIBILITY_AUDIT.md`.
 
 ### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
-- Date: 2026-08-25
-- Type: Graduate-application sequencing / omission-risk control
 - Status: **Needs Master Acknowledgement / Sequencing Decision**
 - Summary: `MSC_APPLICATION_GATES_MASTER_MAP.md` is the strategic omission-prevention map for the 2029 MSc cycle. It separates being listed from being active; includes German, TOEFL, conditional GRE, APS, VPD, programme screenings, application calendar, transcript/course evidence, application materials, funding and post-offer gates; recommends sequencing by deadline/validity/lead time and no simultaneous high-intensity German + TOEFL + GRE.
 
@@ -123,16 +128,15 @@ High on the current structural differences. Medium on 2029-specific admissions, 
 ## Answered / Closed / Superseded
 
 ### VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001
-- Status: **Answered by CTV-20260828-02.**
-- Result: Skills architecture principles adopted as a bounded Trial; `HZN-001 horizon-context-sync` v0.2 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration to `00_Project_Control/Skills/` is deferred pending ownership reconciliation. HZN-002–HZN-005 are frozen until approximately 3–5 meaningful HZN-001 uses across more than one role or an earlier material failure/ambiguity.
-- Current trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`.
+- Status: **Answered by CTV-20260828-02; subsequent feedback in CTV-20260828-03.**
+- Result: Skills architecture principles adopted as a bounded Trial; HZN-001 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration deferred. HZN-002–HZN-005 remained frozen pending approximately 3–5 meaningful trials. Review is now requested through VTC-20260828-05.
 
 ### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
 - Status: **Answered by CTV-20260828-01.**
 - Result: `11_Academic/STATUS.md` activated as Active — Bounded Support / Maintenance; Notion `University Course Evidence` authorized as operational workspace; GitHub remains formal source of truth.
 
 ### VTC-20260822-06 — Normal Four-Year Graduation Baseline + TOEFL as Common English Test
-- Status: Superseded for exam sequencing by VTC-20260825-01; retained facts remain: normal 2029 graduation, no early graduation route, TOEFL preferred, TUM benchmark, German longest runway, GRE conditional.
+- Status: Superseded for exam sequencing by VTC-20260825-01; retained facts remain: normal 2029 graduation, no early graduation, TOEFL preferred, TUM benchmark, German longest runway, GRE conditional.
 
 ### VTC-20260822-05 — TUM-Primary Multi-School Exam Preparation Strategy
 - Status: Superseded by later exam-map work.
