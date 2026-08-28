@@ -1,6 +1,6 @@
 # HZN-001 — horizon-context-sync
 
-Version: 0.3
+Version: 0.4
 Status: Trial Prototype
 Owner: Voyage Room prototype; canonical ownership pending Project Control
 Last Updated: 2026-08-28
@@ -289,10 +289,13 @@ While the prototype remains Voyage-owned:
 - Voyage Room may record its own meaningful uses directly in the Trial Log;
 - Main Control and Specialist Threads **must not edit the Voyage-owned Trial Log**;
 - Main Control should return meaningful HZN-001 trial feedback through its authorized `CONTROL_TO_VOYAGE.md` channel;
-- a Specialist Thread should use only its existing authorized channel. It may record a trial-related issue in its own `STATUS.md` only when the issue independently meets the normal meaningful-status-update threshold; otherwise it should not manufacture a GitHub status update merely to log a Skill trial;
-- Voyage Room may then incorporate cross-role feedback into the prototype Trial Log under Voyage ownership.
+- a Specialist Thread may record a trial-related issue in its own `STATUS.md` only when that issue independently meets the normal meaningful-status-update threshold;
+- if a Specialist trial is useful but does **not** justify a STATUS update, the user may relay the concise trial outcome to Voyage Room. Voyage must label this as **user-reported trial evidence**, not as formal Specialist GitHub state;
+- a user-reported invocation without enough outcome detail may reveal a feedback-routing problem, but must not be upgraded into an invented success verdict;
+- if a Specialist trial exposes a material execution/governance conflict that genuinely requires Control, use the normal `Needs Master Decision` path rather than creating a Skill-specific reporting channel;
+- Voyage Room may incorporate valid cross-role feedback into the prototype Trial Log under Voyage ownership.
 
-This routing rule records trial evidence without granting cross-role write permissions or creating a new reporting bureaucracy.
+This routing rule records trial evidence without granting cross-role write permissions, polluting specialist STATUS files, pretending chats share live state, or creating a new reporting bureaucracy.
 
 Trial evidence should record only cases that reveal value, friction, failure modes or needed revisions.
 
@@ -307,10 +310,18 @@ Do not:
 - treat a Voyage recommendation as Control adoption;
 - treat prototype existence as cross-thread adoption;
 - let trial logging create unauthorized writes or meaningless STATUS churn;
+- invent a Specialist trial result merely because invocation is known;
 - treat a school curriculum as Horizon's personal route;
 - fabricate missing state to keep the workflow moving.
 
 ## Change Log
+
+### v0.4 — 2026-08-28
+
+- Incorporated the first Specialist-thread trial-routing friction observed after an Algorithm-line invocation.
+- Added user-relayed Specialist trial feedback as an explicitly labeled prototype-stage evidence path when no STATUS update is justified.
+- Clarified that invocation confirmation alone is not enough to claim a successful Specialist trial outcome.
+- Preserved `Needs Master Decision` for genuinely material conflicts rather than inventing a Skill-specific Specialist bridge.
 
 ### v0.3 — 2026-08-28
 
