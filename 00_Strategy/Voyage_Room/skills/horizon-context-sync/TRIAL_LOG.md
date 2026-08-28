@@ -11,6 +11,58 @@ This is evidence for later Project Control adoption / revision decisions. It is 
 
 ---
 
+## Trial 003 — Main Control Cross-Role Context Sync
+
+- Date: 2026-08-28
+- Invoking role: Main Control
+- Evidence source: `CTV-20260828-03` returned through `00_Project_Control/CONTROL_TO_VOYAGE.md`.
+- Task classification:
+  - governance / context-sync trial;
+  - repository-read boundary check;
+  - cross-role Skill validation.
+
+### Minimum authoritative reads selected by Main Control
+
+- `00_Project_Control/MASTER_STATUS.md`
+- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`
+- `00_Project_Control/CONTROL_TO_VOYAGE.md`
+- `00_Project_Control/THREAD_PROTOCOL.md` because governance/write authority was material
+- HZN-001 and its current Trial Log for trial-specific verification
+
+### Outcome
+
+The Main Control trial correctly discovered that the latest Voyage transmission had moved on to `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`, while the existing Skills bounded-Trial authorization remained active.
+
+It avoided a repository-wide scan, did not rely on stale chat state, and correctly refused to edit the Voyage-owned Trial Log.
+
+### What worked
+
+- HZN-001 produced value from a second role type, not only Voyage Room.
+- Minimum authoritative reads were sufficient.
+- Recommendation / current-transmission state was refreshed correctly.
+- Role write boundaries were preserved.
+
+### Friction found
+
+The previous HZN-001 Trial Evidence convention implied that meaningful trials were recorded in the Voyage-owned `TRIAL_LOG.md`, but did not explicitly explain how non-Voyage roles should return trial evidence without violating write ownership.
+
+### Revision made
+
+HZN-001 was updated from v0.2 to v0.3:
+
+- Main Control returns meaningful trial feedback through `CONTROL_TO_VOYAGE.md`;
+- Specialist Threads never edit the Voyage Trial Log and use only existing authorized channels;
+- a Specialist STATUS update is allowed only when the issue independently meets the normal meaningful-update threshold;
+- Voyage Room incorporates valid cross-role feedback into the Trial Log.
+
+### Trial verdict
+
+**Pass with governance-friction revision completed.**
+
+Cross-role evidence requirement is now partially satisfied. The next valuable trial should preferably come from a Specialist Thread.
+
+---
+
 ## Trial 002 — Continue Skill Development After Control Decision
 
 - Date: 2026-08-28
