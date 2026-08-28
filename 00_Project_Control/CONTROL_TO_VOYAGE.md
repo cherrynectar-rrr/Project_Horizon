@@ -13,96 +13,110 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread` is **adopted**.
-- A dedicated specialist thread is established at `11_Academic/STATUS.md` under the name **Academic Operations & Evidence / 学业运营与证据**.
-- Initial state: **Active — Bounded Support / Maintenance**.
-- First concrete output: **Year 2 Fall Academic Baseline v1**.
-- The thread owns recurring factual academic operations and course-evidence maintenance, not subject-matter tutoring, strategic elective choices or cross-thread resource allocation.
-- Notion `University Course Evidence` is authorized as an operational workspace for course records/evidence; GitHub remains the formal Horizon source of truth for governance, thread state and meaningful milestones.
-- Default workload is semester-start setup, short weekly review only when useful, event-driven updates, and semester-end archival. No daily administration quota is authorized.
-- The purpose is to stop Voyage Room and Main Control from carrying recurring course administration and evidence-clerk work, not to add another curriculum.
-- Existing Python / Algorithm / Linux / C++ / Career / Finance priorities are unchanged.
-- Other Voyage transmissions awaiting control response remain separate decisions.
+- `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001` is **adopted as a bounded Trial**.
+- Horizon formally recognizes a Skill as a reusable, versioned operating procedure for a recurring task pattern. A Skill is **not** a fourth governance layer, thread, authority source, memory store or workload activation mechanism.
+- `HZN-001 — horizon-context-sync` v0.2 is authorized for **shared cross-thread trial use** as a preflight procedure before important Horizon tasks.
+- During the trial, HZN-001 remains physically located in the Voyage-owned prototype path `00_Strategy/Voyage_Room/skills/horizon-context-sync/`. Project Control authorization permits shared trial invocation; it does not transfer file ownership or make the prototype directory canonical.
+- The intended future canonical library location is `00_Project_Control/Skills/`, but physical migration / canonicalization is **deferred** until trial evidence is sufficient and shared-library write ownership is explicitly reconciled with `THREAD_PROTOCOL.md`.
+- HZN-001 must remain subordinate to the Charter, `THREAD_PROTOCOL.md`, `MASTER_STATUS.md` and role-specific authority. It cannot grant new write permissions, activate work, convert recommendations into decisions, or replace fresh external verification where facts can change.
+- Skill invocation should normally be silent and should reduce context/ceremony rather than expose governance boilerplate to the user.
+- `HZN-002 status-update`, `HZN-003 evidence-intake`, `HZN-004 strategic-route-audit` and `HZN-005 opportunity-filter` are **not authorized for implementation yet**. The backlog remains frozen until HZN-001 produces enough real trial evidence.
+- No Skills specialist thread is authorized. No standing execution quota is allocated to Skill development.
+- Review HZN-001 after approximately 3–5 meaningful real uses across more than one Horizon role, or immediately after any material failure / authority ambiguity.
+- Existing technical, Career, Finance and Academic priorities are unchanged.
 
 ## Decisions
+
+### CTV-20260828-02 — Authorize Shared Horizon Skills Trial and HZN-001
+
+- Date: 2026-08-28
+- Responds to: `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001`
+- Decision: **Adopt the Skills architecture principles as a bounded Trial and authorize HZN-001 for shared trial use.**
+- Rationale:
+  - repeated startup/context-sync workflows now occur across multiple Horizon chats and are mature enough to test as a reusable procedure;
+  - HZN-001 addresses a real recurring cost: stale chat memory, unnecessary repository reads, role leakage, bridge confusion and unauthorized writes;
+  - the first recorded trial already produced concrete governance value by preventing premature canonicalization and unnecessary full-repository scanning;
+  - starting with one preflight Skill is reversible and low-cost, while building the full backlog now would create bureaucracy before evidence justifies it.
+- Adopted definition:
+  - **Thread = who owns the work**;
+  - **Skill = how a recurring type of work is performed**;
+  - **Status = what is currently true**;
+  - **Strategy = what may be worth doing**;
+  - **Evidence = what actually happened**.
+- Authority rule:
+  - Skills remain subordinate to the Charter, `THREAD_PROTOCOL.md`, `MASTER_STATUS.md` and current Control decisions;
+  - a Skill never grants authority the invoking role does not already possess;
+  - when authority or write ownership is unclear, fail closed and escalate rather than inventing permission.
+- Lifecycle adopted for trial purposes:
+  - `Draft → Trial → Adopted → Deprecated`;
+  - only repeated real workflows should be promoted;
+  - cross-thread adoption requires Project Control decision.
+- HZN-001 trial authorization:
+  - current trial artifact: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md` v0.2;
+  - allowed use: role-aware minimum authoritative reads, write-boundary check, freshness check, conflict handling and internal context packet before important Horizon work;
+  - visible output remains the user's actual task result, not governance ceremony;
+  - meaningful failures/friction may continue to be recorded in the Voyage-owned trial log while the artifact remains a prototype.
+- Canonical-library decision:
+  - intended future canonical location: `00_Project_Control/Skills/`;
+  - **do not physically migrate yet**;
+  - reason: current `THREAD_PROTOCOL.md` does not explicitly define shared Skill Library ownership, so canonical write governance should be reconciled after trial evidence rather than assumed;
+  - until that review, the Control decision authorizes usage, while the prototype file remains Voyage-owned and non-canonical.
+- Frozen backlog:
+  - `HZN-002 status-update` — not authorized;
+  - `HZN-003 evidence-intake` — not authorized;
+  - `HZN-004 strategic-route-audit` — not authorized;
+  - `HZN-005 opportunity-filter` — not authorized;
+  - no additional Skill should be created merely because it is imaginable.
+- Resource / priority implication:
+  - no new execution line;
+  - no Skills specialist thread;
+  - no standing Skill-maintenance quota;
+  - Skill work must not displace Python, Algorithm, GPA/core coursework, Career, Finance or Academic evidence work.
+- Trial success criteria:
+  - reduces repeated setup instructions and unnecessary reads;
+  - preserves role/write boundaries;
+  - prevents stale-state or recommendation-vs-decision errors;
+  - creates less ceremony, not more;
+  - produces value across at least two role types rather than only one prototype case.
+- Review trigger:
+  - approximately 3–5 meaningful HZN-001 uses across more than one Horizon role;
+  - any material failure, authority ambiguity or evidence that the Skill adds more overhead than it removes;
+  - before authorizing HZN-002 or any canonical migration.
+- Expected next action:
+  - exercise HZN-001 on real Horizon work;
+  - revise only from observed friction/failure;
+  - return to Project Control with trial evidence before expanding the library.
+- Status: Active Trial
 
 ### CTV-20260828-01 — Activate Academic Operations & Evidence as Bounded Support
 
 - Date: 2026-08-28
 - Responds to: `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread`
 - Decision: **Adopt and activate with bounded maintenance scope.**
-- Rationale:
-  - recurring work now exists around actual-course intake, assessment structures, textbook/syllabus capture, labs/projects, grades, Notion course records, semester review and future APS/MSc evidence preparation;
-  - this work is operational rather than strategic, so keeping it in Voyage Room would create role leakage;
-  - it is cross-course academic operations and does not belong to Python, Algorithm, Linux, C++, Career or Finance;
-  - a bounded specialist reduces future evidence-reconstruction cost without creating a new high-intensity study line.
 - Thread identity:
   - path: `11_Academic/`;
   - specialist status: `11_Academic/STATUS.md`;
   - name: **Academic Operations & Evidence / 学业运营与证据**;
   - state: **Active — Bounded Support / Maintenance**.
-- Initial objective: **Year 2 Fall Academic Baseline v1**, covering:
-  1. verified current-semester course register based primarily on actual registration / execution evidence;
-  2. assessment methods and materially important deadlines when verified;
-  3. evidence-capture baseline for textbooks, official syllabi, lecture coverage, labs/projects and grades;
-  4. lightweight Notion `University Course Evidence` maintenance workflow;
-  5. semester-end archival procedure for later APS, prerequisite audits and MSc applications.
+- Initial objective: **Year 2 Fall Academic Baseline v1**.
 - Workspace rule:
   - GitHub remains the formal Horizon source of truth for governance, status and meaningful milestones;
   - Notion may serve as the operational structured-record workspace;
   - strategic or cross-thread decisions must return to Project Control and must not exist only in Notion.
-- Authorized work:
-  - distinguish actual semester execution from the school's generic 培养方案;
-  - maintain factual course records and evidence;
-  - maintain the course-evidence workspace and lightweight dashboard;
-  - track grading-risk/deadline items from user-supplied verified course information;
-  - perform semester-end archive and missing-evidence review;
-  - prepare factual course-evidence packages for later APS/TUM/MSc review.
-- Not authorized:
-  - universal tutoring;
-  - teaching material owned by existing specialist threads;
-  - long-term academic/country/career/research decisions;
-  - changing Horizon priorities or technical allocations;
-  - major elective / overload / GPA-versus-project trade-off decisions without Project Control;
-  - daily administrative overhead or polishing every lecture into Notion;
-  - copying whole textbooks or slide decks into Notion;
-  - treating the school curriculum as the user's personal growth route.
-- Resource ceiling:
-  - one semester-start baseline;
-  - one short weekly review only when useful;
-  - event-driven updates for major assignments, labs, exams, project outputs, grades or official materials;
-  - one semester-end archive.
-- Opportunity-cost answer:
-  - Voyage Room stops recurring course administration / Notion evidence maintenance;
-  - Main Control stops routine course-record upkeep;
-  - no technical main-line work is displaced.
-- Review triggers:
-  - completion of Year 2 Fall Academic Baseline v1;
-  - a grading/academic workload issue requiring cross-thread resource judgment;
-  - a strategic elective or overload decision;
-  - semester-end archive;
-  - APS/TUM/MSc prerequisite evidence request exposing missing records.
+- Boundary: factual course operations/evidence only; no universal tutoring, strategic academic decisions, technical-priority changes or daily administrative overhead.
 - Status: Active
 
 ### CTV-20260824-01 — Adopt Wealth Pillar and Activate Personal Finance & Capital as Bounded Support
 
 - Date: 2026-08-24
-- Responds to:
-  - `VTC-20260824-01 — Activate Dedicated Personal Finance & Capital Specialist Thread`
-  - `VTC-20260822-02 — Establish Financial Freedom / Capital Formation as a First-Order Horizon Pillar`
-- Decision: **Adopt strategically; activate operationally with bounded maintenance scope.**
-- Thread: `10_Finance/STATUS.md`, **Personal Finance & Capital / 个人财务与资本**, Active — Bounded Support / Maintenance.
-- Initial objective: Personal Finance Baseline v1.
-- Resource implication: no change to Python main, Algorithm active structured, Linux/C++ support or Career bounded support; Finance has no daily quota or standing market-watching workload.
-- Guardrails: cash flow/liquidity before return optimization; no borrowed-money investing; no speculative use of tuition/essential living/emergency reserves; no guaranteed-return assumptions; no default high-frequency trading roadmap; no sensitive credentials in GitHub; then-current authoritative verification for material tax/legal/regulated-product questions.
+- Decision: Financial Freedom / Capital Formation is adopted as a first-order long-horizon strategic pillar with asymmetric undergraduate execution. `10_Finance/STATUS.md` is Active — Bounded Support / Maintenance with `Personal Finance Baseline v1` as its initial objective.
+- Boundary: low-frequency finance operations only; no borrowed-money investing, speculative use of tuition/essential living/emergency reserves, guaranteed-return assumptions, default high-frequency trading or displacement of core academic/technical work.
 - Status: Active
 
 ### CTV-20260821-07 — Adopt Overseas MSc Total-Cost Affordability Constraint
 
 - Date: 2026-08-21
-- Responds to: `VTC-20260821-03`
-- Decision: Adopt approximately RMB 100,000/year realistic all-in overseas MSc cost as the current planning band; zero tuition is not a hard requirement and country remains open.
-- Key constraints: use total cost, verify current rules near application time, do not rely on uncertain student work to rescue an unaffordable route, and keep high-cost self-funded routes non-default.
+- Decision: Use approximately RMB 100,000/year realistic all-in overseas MSc cost as the current planning band; zero tuition is not a hard requirement and country remains open.
 - TUM remains Conditional under then-current 2026 tuition/living-cost conditions unless reliable funding changes net cost.
 - Status: Active strategic constraint
 
@@ -116,15 +130,13 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 ### CTV-20260821-05 — Adopt Career Opportunity Review & Company Due Diligence Workflow
 
 - Date: 2026-08-21
-- Decision: Adopt the standard sequence Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop.
-- Standard verdicts: `PRIORITY APPLY / APPLY / WATCH / SKIP`.
-- Technical gaps return to Project Control; structural mismatches are not converted into technical study tasks.
+- Decision: Adopt Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop, with `PRIORITY APPLY / APPLY / WATCH / SKIP` verdicts.
 - Status: Active
 
 ### CTV-20260821-04 — Establish Dedicated Career / Internship Preheat Thread
 
 - Date: 2026-08-21
-- Decision: Established `09_Career/STATUS.md`; its Preheat-only activation state was later superseded by `CTV-20260821-06`, while responsibility boundaries remain valid.
+- Decision: Established `09_Career/STATUS.md`; its Preheat-only state was later superseded by `CTV-20260821-06` while boundaries remain valid.
 - Status: Superseded in activation state
 
 ### CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework
@@ -132,7 +144,6 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 - Date: 2026-08-20
 - Decision: Use a bounded Application Ready Gate built from presentable project evidence, practical C/C++ fluency, Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and credible availability.
 - Python remains main; Algorithm structured; C++/Linux support; Embedded remains dormant until justified.
-- Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 - Status: Active
 
 ### CTV-20260816-02 — Remove Astronomy From Current Strategic Route
@@ -145,13 +156,14 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 - Date: 2026-08-16
 - Decision: Adopt Voyage Room's long-term map as an advisory reference with no execution-resource change.
-- Germany / Europe, US research, domestic routes and other international options remain hypotheses rather than commitments.
 - Status: Complete
 
 ## Awaiting Separate Control Review
 
-These Voyage transmissions remain separate and are not decided by `CTV-20260828-01`:
+These Voyage transmissions remain separate and are not decided by `CTV-20260828-02`:
 
+- `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`;
+- `VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate`;
 - `VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map`;
 - `VTC-20260822-04 — Establish QS Top-100 Affordable Robotics MSc Target Pool`;
 - `VTC-20260822-01 — TUM RCI Control-Engineering Prerequisite Audit`;
