@@ -1,6 +1,6 @@
 # Project Horizon — Project Control → Voyage Room
 
-Last Updated: 2026-08-24
+Last Updated: 2026-08-28
 Owner / Sole Writer: Project Horizon main control thread
 Readers: Voyage Room and specialist threads
 Authority: Control-level decisions and research requests
@@ -13,19 +13,76 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `VTC-20260824-01 — Activate Dedicated Personal Finance & Capital Specialist Thread` is **adopted with bounded scope**.
-- `VTC-20260822-02 — Establish Financial Freedom / Capital Formation as a First-Order Horizon Pillar` is also **adopted strategically**, with asymmetric undergraduate execution intensity.
-- A dedicated specialist thread is established at `10_Finance/STATUS.md` under the name **Personal Finance & Capital / 个人财务与资本**.
+- `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread` is **adopted**.
+- A dedicated specialist thread is established at `11_Academic/STATUS.md` under the name **Academic Operations & Evidence / 学业运营与证据**.
 - Initial state: **Active — Bounded Support / Maintenance**.
-- First concrete output: **Personal Finance Baseline v1**.
-- Default workload ceiling: one initial baseline session, one short monthly review, and event-driven work only when material financial conditions change.
-- Finance does not become a second main line and must not displace Python, Algorithm, GPA/core coursework or justified Career / Internship work.
-- Voyage Room continues to own the strategic role of wealth, country/career wealth-formation comparisons and the relationship between money, freedom and life quality. Finance owns approved operational personal-finance execution only.
-- No leverage, speculative use of tuition/essential living/emergency funds, guaranteed-return assumptions, or default high-frequency-trading roadmap is authorized.
-- Sensitive credentials and full financial-account identifiers must not be stored in GitHub.
-- Other Voyage transmissions currently awaiting control response remain separate decisions and are not silently adopted by this Finance decision.
+- First concrete output: **Year 2 Fall Academic Baseline v1**.
+- The thread owns recurring factual academic operations and course-evidence maintenance, not subject-matter tutoring, strategic elective choices or cross-thread resource allocation.
+- Notion `University Course Evidence` is authorized as an operational workspace for course records/evidence; GitHub remains the formal Horizon source of truth for governance, thread state and meaningful milestones.
+- Default workload is semester-start setup, short weekly review only when useful, event-driven updates, and semester-end archival. No daily administration quota is authorized.
+- The purpose is to stop Voyage Room and Main Control from carrying recurring course administration and evidence-clerk work, not to add another curriculum.
+- Existing Python / Algorithm / Linux / C++ / Career / Finance priorities are unchanged.
+- Other Voyage transmissions awaiting control response remain separate decisions.
 
 ## Decisions
+
+### CTV-20260828-01 — Activate Academic Operations & Evidence as Bounded Support
+
+- Date: 2026-08-28
+- Responds to: `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread`
+- Decision: **Adopt and activate with bounded maintenance scope.**
+- Rationale:
+  - recurring work now exists around actual-course intake, assessment structures, textbook/syllabus capture, labs/projects, grades, Notion course records, semester review and future APS/MSc evidence preparation;
+  - this work is operational rather than strategic, so keeping it in Voyage Room would create role leakage;
+  - it is cross-course academic operations and does not belong to Python, Algorithm, Linux, C++, Career or Finance;
+  - a bounded specialist reduces future evidence-reconstruction cost without creating a new high-intensity study line.
+- Thread identity:
+  - path: `11_Academic/`;
+  - specialist status: `11_Academic/STATUS.md`;
+  - name: **Academic Operations & Evidence / 学业运营与证据**;
+  - state: **Active — Bounded Support / Maintenance**.
+- Initial objective: **Year 2 Fall Academic Baseline v1**, covering:
+  1. verified current-semester course register based primarily on actual registration / execution evidence;
+  2. assessment methods and materially important deadlines when verified;
+  3. evidence-capture baseline for textbooks, official syllabi, lecture coverage, labs/projects and grades;
+  4. lightweight Notion `University Course Evidence` maintenance workflow;
+  5. semester-end archival procedure for later APS, prerequisite audits and MSc applications.
+- Workspace rule:
+  - GitHub remains the formal Horizon source of truth for governance, status and meaningful milestones;
+  - Notion may serve as the operational structured-record workspace;
+  - strategic or cross-thread decisions must return to Project Control and must not exist only in Notion.
+- Authorized work:
+  - distinguish actual semester execution from the school's generic 培养方案;
+  - maintain factual course records and evidence;
+  - maintain the course-evidence workspace and lightweight dashboard;
+  - track grading-risk/deadline items from user-supplied verified course information;
+  - perform semester-end archive and missing-evidence review;
+  - prepare factual course-evidence packages for later APS/TUM/MSc review.
+- Not authorized:
+  - universal tutoring;
+  - teaching material owned by existing specialist threads;
+  - long-term academic/country/career/research decisions;
+  - changing Horizon priorities or technical allocations;
+  - major elective / overload / GPA-versus-project trade-off decisions without Project Control;
+  - daily administrative overhead or polishing every lecture into Notion;
+  - copying whole textbooks or slide decks into Notion;
+  - treating the school curriculum as the user's personal growth route.
+- Resource ceiling:
+  - one semester-start baseline;
+  - one short weekly review only when useful;
+  - event-driven updates for major assignments, labs, exams, project outputs, grades or official materials;
+  - one semester-end archive.
+- Opportunity-cost answer:
+  - Voyage Room stops recurring course administration / Notion evidence maintenance;
+  - Main Control stops routine course-record upkeep;
+  - no technical main-line work is displaced.
+- Review triggers:
+  - completion of Year 2 Fall Academic Baseline v1;
+  - a grading/academic workload issue requiring cross-thread resource judgment;
+  - a strategic elective or overload decision;
+  - semester-end archive;
+  - APS/TUM/MSc prerequisite evidence request exposing missing records.
+- Status: Active
 
 ### CTV-20260824-01 — Adopt Wealth Pillar and Activate Personal Finance & Capital as Bounded Support
 
@@ -34,61 +91,10 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
   - `VTC-20260824-01 — Activate Dedicated Personal Finance & Capital Specialist Thread`
   - `VTC-20260822-02 — Establish Financial Freedom / Capital Formation as a First-Order Horizon Pillar`
 - Decision: **Adopt strategically; activate operationally with bounded maintenance scope.**
-- Rationale:
-  - The user has explicitly identified financial freedom / capital formation as a durable first-order objective and requested a dedicated execution branch for recurring personal-finance work.
-  - Budgeting, liquidity, investment boundaries and later asset-allocation questions are persistent operational tasks and fit the specialist layer better than the Voyage Room.
-  - During undergraduate life, human-capital development still has greater immediate capacity demand; strategic co-equality therefore does not imply equal daily time allocation.
-  - A low-frequency maintenance line creates real decision value without violating the one-main-technical-line principle.
-- Evidence considered:
-  - `00_Strategy/Voyage_Room/WEALTH_AND_CAPITAL_STRATEGY.md`;
-  - `00_Strategy/Voyage_Room/FINANCE_THREAD_PROPOSAL.md`;
-  - `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`;
-  - latest `MASTER_STATUS.md` and current Python / Algorithm / Linux / C++ / Career statuses.
-- Thread identity:
-  - path: `10_Finance/`;
-  - specialist status: `10_Finance/STATUS.md`;
-  - name: **Personal Finance & Capital / 个人财务与资本**;
-  - state: **Active — Bounded Support / Maintenance**.
-- Initial objective: **Personal Finance Baseline v1**, covering at an appropriate non-sensitive level:
-  1. recurring monthly cash inflow / support;
-  2. realistic essential spending floor;
-  3. discretionary, growth-related and irregular categories;
-  4. liquid reserve / safety-buffer target;
-  5. the boundary between required liquidity and genuinely investable money;
-  6. current asset categories;
-  7. a lightweight monthly review process.
-- Resource / priority implication:
-  - no change to Python as the main technical line;
-  - Algorithm remains active structured work;
-  - Linux and C++ retain support roles;
-  - Career / Internship remains Active — Bounded Support;
-  - Finance receives no daily quota and no standing market-watching workload.
-- Default cadence:
-  - one initial baseline session;
-  - one short monthly review;
-  - event-driven review when income, expenses, asset allocation, study-abroad cost, internship salary, tax residency, currency exposure or a major financial decision materially changes.
-- Guardrails:
-  - cash flow and liquidity before return optimization;
-  - no borrowed-money investing merely to accelerate returns;
-  - no speculative use of tuition, essential living money or emergency reserves;
-  - no guaranteed-return assumptions;
-  - no default high-frequency trading roadmap;
-  - no finance workload that materially displaces core academic / technical priorities without Project Control review;
-  - no passwords, authentication codes, full account numbers or other sensitive credentials stored in GitHub;
-  - material tax, legal, jurisdictional or regulated-product questions require then-current authoritative verification.
-- Role boundary:
-  - Voyage Room owns strategic wealth/life-route analysis;
-  - Project Control owns activation, intensity and cross-thread conflict resolution;
-  - Finance owns approved budgeting, cash-flow, reserve, investment-literacy, portfolio-structure and later IPS / asset-allocation operations;
-  - Finance may not independently change academic, career, country or graduate-study routes.
-- Review triggers:
-  - completion of Personal Finance Baseline v1;
-  - meaningful recurring earned income begins;
-  - reserve target is achieved or materially changes;
-  - capital base changes substantially;
-  - overseas study / relocation changes currency, tax or brokerage constraints;
-  - a major gain/loss or risk-tolerance event;
-  - finance work begins competing materially with core Horizon execution.
+- Thread: `10_Finance/STATUS.md`, **Personal Finance & Capital / 个人财务与资本**, Active — Bounded Support / Maintenance.
+- Initial objective: Personal Finance Baseline v1.
+- Resource implication: no change to Python main, Algorithm active structured, Linux/C++ support or Career bounded support; Finance has no daily quota or standing market-watching workload.
+- Guardrails: cash flow/liquidity before return optimization; no borrowed-money investing; no speculative use of tuition/essential living/emergency reserves; no guaranteed-return assumptions; no default high-frequency trading roadmap; no sensitive credentials in GitHub; then-current authoritative verification for material tax/legal/regulated-product questions.
 - Status: Active
 
 ### CTV-20260821-07 — Adopt Overseas MSc Total-Cost Affordability Constraint
@@ -144,14 +150,14 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Awaiting Separate Control Review
 
-These Voyage transmissions remain separate and are not decided by `CTV-20260824-01`:
+These Voyage transmissions remain separate and are not decided by `CTV-20260828-01`:
 
-- `VTC-20260822-06 — Normal Four-Year Graduation Baseline + TOEFL as Common English Test`;
+- `VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map`;
 - `VTC-20260822-04 — Establish QS Top-100 Affordable Robotics MSc Target Pool`;
 - `VTC-20260822-01 — TUM RCI Control-Engineering Prerequisite Audit`;
 - `VTC-20260821-04 — Preserve Fragmented Strategic Inputs as a Durable Life-Route Ledger`.
 
-`VTC-20260822-03` is withdrawn/closed by user decision, and `VTC-20260822-05` is superseded in part by `VTC-20260822-06`.
+Closed/superseded transmissions remain governed by their recorded status in `VOYAGE_TO_CONTROL.md`.
 
 ## Control Message Template
 
