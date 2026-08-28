@@ -13,197 +13,157 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `HZN-001 — horizon-context-sync` has now completed a meaningful **Main Control cross-role trial** after the prior Voyage-only trials.
-- The Main Control trial used a minimum authoritative read set and correctly discovered that the current Voyage transmission had moved on to `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`, while the Skills Trial authorization in `CTV-20260828-02` remained active.
-- The trial did not require a repository-wide scan and did not treat stale chat context as current state.
-- A real design friction was exposed: HZN-001 currently says meaningful trials are recorded in the Voyage-owned `TRIAL_LOG.md`, but Main Control does not have write authority to that file.
-- Main Control therefore did **not** write the Voyage-owned Trial Log. This feedback is being returned through the Control-owned bridge so Voyage can, if appropriate, incorporate the cross-role trial into its own trial evidence.
-- Recommended prototype revision: clarify that while HZN-001 remains Voyage-owned, non-Voyage roles should report meaningful trial evidence through their own authorized channel / bridge rather than directly editing the Voyage Trial Log.
-- This trial counts as the first demonstrated use from a second role type. It strengthens the case for HZN-001 but does not yet authorize HZN-002+ or canonical migration.
-- `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001` remains **adopted as a bounded Trial**.
-- Horizon formally recognizes a Skill as a reusable, versioned operating procedure for a recurring task pattern. A Skill is **not** a fourth governance layer, thread, authority source, memory store or workload activation mechanism.
-- `HZN-001 — horizon-context-sync` v0.2 is authorized for **shared cross-thread trial use** as a preflight procedure before important Horizon tasks.
-- During the trial, HZN-001 remains physically located in the Voyage-owned prototype path `00_Strategy/Voyage_Room/skills/horizon-context-sync/`. Project Control authorization permits shared trial invocation; it does not transfer file ownership or make the prototype directory canonical.
-- The intended future canonical library location is `00_Project_Control/Skills/`, but physical migration / canonicalization is **deferred** until trial evidence is sufficient and shared-library write ownership is explicitly reconciled with `THREAD_PROTOCOL.md`.
-- HZN-001 must remain subordinate to the Charter, `THREAD_PROTOCOL.md`, `MASTER_STATUS.md` and role-specific authority. It cannot grant new write permissions, activate work, convert recommendations into decisions, or replace fresh external verification where facts can change.
-- Skill invocation should normally be silent and should reduce context/ceremony rather than expose governance boilerplate to the user.
-- `HZN-002 status-update`, `HZN-003 evidence-intake`, `HZN-004 strategic-route-audit` and `HZN-005 opportunity-filter` are **not authorized for implementation yet**. The backlog remains frozen until HZN-001 produces enough real trial evidence.
-- No Skills specialist thread is authorized. No standing execution quota is allocated to Skill development.
-- Review HZN-001 after approximately 3–5 meaningful real uses across more than one Horizon role, or immediately after any material failure / authority ambiguity.
+- `VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types` is **approved**.
+- **HZN-001 — horizon-context-sync v0.4 is now Adopted** as Project Horizon's first shared Skill / reusable operating procedure.
+- The adopted artifact is the current v0.4 content at `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md`, blob SHA `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78` at adoption time.
+- Adoption is **version-pinned**: later edits to the Voyage-owned prototype file are not automatically adopted. Any materially changed v0.5+ is a new candidate version requiring evidence and Project Control review before replacing adopted v0.4.
+- Physical migration to `00_Project_Control/Skills/` remains deferred because `THREAD_PROTOCOL.md` does not yet define shared Skill Library write ownership. Operational adoption does not require inventing that permission now.
+- HZN-001 should be used silently as a preflight before important Horizon work when fresh role-aware context matters; routine tiny tasks should not incur a full sync.
+- HZN-001 remains subordinate to the Charter, `THREAD_PROTOCOL.md`, `MASTER_STATUS.md`, current Control decisions and role-specific write authority. It cannot grant permissions, activate work, transform recommendations into decisions, or replace external freshness verification.
+- The four recorded trials are sufficient for adoption: two Voyage uses, one Main Control use, and one Algorithm Specialist invocation that exposed and corrected a real feedback-routing gap. A manufactured fifth trial is not required.
+- `HZN-002` through `HZN-005` remain **frozen / not authorized for implementation**. HZN-001 adoption does not automatically unlock the backlog.
+- `VTC-20260828-06 — Horizon Liaison` remains a separate pending proposal and is **not** decided by this Skill adoption.
+- Voyage Room should update its owned HZN-001 artifact / architecture / Trial Log metadata to reflect adoption without changing the adopted v0.4 procedure. Trial history should remain preserved as historical evidence.
 - Existing technical, Career, Finance and Academic priorities are unchanged.
 
 ## Decisions
 
+### CTV-20260828-04 — Adopt HZN-001 horizon-context-sync v0.4
+
+- Date: 2026-08-28
+- Responds to: `VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types`.
+- Decision: **Adopt HZN-001 v0.4 as the first shared Horizon Skill.**
+- Adopted version:
+  - ID: `HZN-001`;
+  - name: `horizon-context-sync`;
+  - version: `0.4`;
+  - current artifact: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md`;
+  - adoption-time blob SHA: `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78`.
+- Evidence considered:
+  - Trial 001 — Voyage governance prototype use: prevented premature canonicalization and unnecessary full-repository scanning;
+  - Trial 002 — Voyage continuation use: detected changed Control state and prevented frozen-backlog expansion;
+  - Trial 003 — Main Control use: refreshed stale strategic state, used minimum authoritative reads, preserved write boundaries, and exposed cross-role Trial Log ownership friction;
+  - Trial 004 — Algorithm Specialist invocation: preserved Algorithm STATUS cleanliness and exposed a real Specialist feedback-routing gap, leading to v0.4 routing rules without inventing a new reporting authority.
+- Adoption rationale:
+  - evidence spans three role types rather than only the authoring role;
+  - observed failures produced concrete revisions from v0.2 through v0.4;
+  - the Skill has repeatedly reduced stale-state risk, unnecessary reads, role leakage and unauthorized-write risk;
+  - remaining feedback-routing limitations are explicitly modeled rather than hidden;
+  - requiring another artificial trial solely to reach a numeric count would conflict with the evidence-over-bureaucracy principle.
+- Operating scope:
+  - use before important Horizon planning, cross-thread work, governance-sensitive tasks, repository writes where current state matters, and specialist sessions where stale state could materially affect execution;
+  - do not trigger a full sync for casual conversation, tiny isolated exercises or tasks already operating from freshly fetched authoritative state.
+- Authority constraints:
+  - Charter > `THREAD_PROTOCOL.md` > `MASTER_STATUS.md` > role-specific formal state > relevant specialist status/evidence > chat memory;
+  - the Skill never creates new authority or write permission;
+  - authority ambiguity fails closed and escalates;
+  - current external facts must still be freshly verified when material.
+- Version-governance rule:
+  - adopted v0.4 is version-pinned;
+  - edits to the Voyage-owned file after adoption are candidate changes only and do not silently alter the adopted standard;
+  - a materially changed v0.5+ requires Project Control review before becoming the new adopted version.
+- Physical-location decision:
+  - keep the artifact in the existing Voyage-owned path for now;
+  - defer canonical migration to `00_Project_Control/Skills/` until shared-library ownership is explicitly reconciled with `THREAD_PROTOCOL.md`;
+  - do not modify `THREAD_PROTOCOL.md` merely to make the directory structure look cleaner.
+- Backlog decision:
+  - `HZN-002 status-update` — frozen;
+  - `HZN-003 evidence-intake` — frozen;
+  - `HZN-004 strategic-route-audit` — frozen;
+  - `HZN-005 opportunity-filter` — frozen;
+  - no next Skill is authorized by this decision.
+- Follow-up requested from Voyage Room:
+  - mark HZN-001 / architecture metadata as Adopted while preserving v0.4 procedure content;
+  - close the active Trial phase in the Trial Log while retaining historical trials;
+  - treat any future procedure change as a new candidate version.
+- Review triggers:
+  - a material HZN-001 failure or authority ambiguity;
+  - evidence that routine use creates more overhead than it removes;
+  - a governance change that invalidates its authority/read model;
+  - before replacing v0.4 with a later version;
+  - before canonical-library migration.
+- Resource / priority implication: none.
+- Status: **Adopted / Active**.
+
 ### CTV-20260828-03 — Record HZN-001 Main Control Cross-Role Trial Feedback
 
 - Date: 2026-08-28
-- Responds to: ongoing `HZN-001 — horizon-context-sync` bounded Trial under `CTV-20260828-02`.
-- Decision: **Record trial feedback; continue HZN-001 Trial without expanding the backlog.**
-- Invoking role: Main Control.
-- Task type: governance / context-sync trial / repository-read boundary check.
-- Minimum authoritative reads used:
-  - `00_Project_Control/MASTER_STATUS.md`;
-  - `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`;
-  - `00_Project_Control/CONTROL_TO_VOYAGE.md`;
-  - `00_Project_Control/THREAD_PROTOCOL.md` because governance/write authority was material;
-  - HZN-001 itself and its current Trial Log for trial-specific verification.
-- Observed value:
-  - detected that the latest Voyage state had changed to a Germany–Japan strategic-gate request rather than assuming the prior Skills transmission was still current;
-  - preserved the existing Skills Trial authorization from Control;
-  - avoided unnecessary specialist-status and repository-wide reads;
-  - correctly preserved Main Control write authority rather than editing the Voyage-owned trial log.
-- Friction found:
-  - HZN-001's current Trial Evidence convention points to a Voyage-owned `TRIAL_LOG.md`, which is not directly writable by Main Control or specialist roles.
-- Required behavior during prototype stage:
-  - non-Voyage roles must not write the Voyage-owned Trial Log;
-  - meaningful cross-role trial feedback should be returned through an authorized role-owned channel, then Voyage may incorporate it into the prototype Trial Log under its own ownership.
-- Recommended HZN-001 revision:
-  - clarify cross-role trial-evidence routing while the prototype remains Voyage-owned.
-- Resource / priority implication: none.
-- Backlog implication: HZN-002 through HZN-005 remain frozen.
-- Trial verdict: **Pass with one governance-friction revision recommended.**
-- Review implication: cross-role evidence requirement is now partially satisfied; continue until approximately 3–5 meaningful uses and preferably at least one Specialist Thread use.
-- Status: Active Trial feedback
+- Decision: Recorded a successful Main Control cross-role trial with one governance-friction revision; HZN-001 continued in Trial pending broader evidence.
+- Result: Voyage incorporated the feedback into v0.3/v0.4 cross-role Trial Evidence routing.
+- Status: Complete; superseded in trial-state implication by `CTV-20260828-04`.
 
 ### CTV-20260828-02 — Authorize Shared Horizon Skills Trial and HZN-001
 
 - Date: 2026-08-28
-- Responds to: `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001`
-- Decision: **Adopt the Skills architecture principles as a bounded Trial and authorize HZN-001 for shared trial use.**
-- Rationale:
-  - repeated startup/context-sync workflows now occur across multiple Horizon chats and are mature enough to test as a reusable procedure;
-  - HZN-001 addresses a real recurring cost: stale chat memory, unnecessary repository reads, role leakage, bridge confusion and unauthorized writes;
-  - the first recorded trial already produced concrete governance value by preventing premature canonicalization and unnecessary full-repository scanning;
-  - starting with one preflight Skill is reversible and low-cost, while building the full backlog now would create bureaucracy before evidence justifies it.
-- Adopted definition:
-  - **Thread = who owns the work**;
-  - **Skill = how a recurring type of work is performed**;
-  - **Status = what is currently true**;
-  - **Strategy = what may be worth doing**;
-  - **Evidence = what actually happened**.
-- Authority rule:
-  - Skills remain subordinate to the Charter, `THREAD_PROTOCOL.md`, `MASTER_STATUS.md` and current Control decisions;
-  - a Skill never grants authority the invoking role does not already possess;
-  - when authority or write ownership is unclear, fail closed and escalate rather than inventing permission.
-- Lifecycle adopted for trial purposes:
-  - `Draft → Trial → Adopted → Deprecated`;
-  - only repeated real workflows should be promoted;
-  - cross-thread adoption requires Project Control decision.
-- HZN-001 trial authorization:
-  - current trial artifact: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md` v0.2;
-  - allowed use: role-aware minimum authoritative reads, write-boundary check, freshness check, conflict handling and internal context packet before important Horizon work;
-  - visible output remains the user's actual task result, not governance ceremony;
-  - meaningful failures/friction may continue to be recorded in the Voyage-owned trial log while the artifact remains a prototype.
-- Canonical-library decision:
-  - intended future canonical location: `00_Project_Control/Skills/`;
-  - **do not physically migrate yet**;
-  - reason: current `THREAD_PROTOCOL.md` does not explicitly define shared Skill Library ownership, so canonical write governance should be reconciled after trial evidence rather than assumed;
-  - until that review, the Control decision authorizes usage, while the prototype file remains Voyage-owned and non-canonical.
-- Frozen backlog:
-  - `HZN-002 status-update` — not authorized;
-  - `HZN-003 evidence-intake` — not authorized;
-  - `HZN-004 strategic-route-audit` — not authorized;
-  - `HZN-005 opportunity-filter` — not authorized;
-  - no additional Skill should be created merely because it is imaginable.
-- Resource / priority implication:
-  - no new execution line;
-  - no Skills specialist thread;
-  - no standing Skill-maintenance quota;
-  - Skill work must not displace Python, Algorithm, GPA/core coursework, Career, Finance or Academic evidence work.
-- Trial success criteria:
-  - reduces repeated setup instructions and unnecessary reads;
-  - preserves role/write boundaries;
-  - prevents stale-state or recommendation-vs-decision errors;
-  - creates less ceremony, not more;
-  - produces value across at least two role types rather than only one prototype case.
-- Review trigger:
-  - approximately 3–5 meaningful HZN-001 uses across more than one Horizon role;
-  - any material failure, authority ambiguity or evidence that the Skill adds more overhead than it removes;
-  - before authorizing HZN-002 or any canonical migration.
-- Expected next action:
-  - exercise HZN-001 on real Horizon work;
-  - revise only from observed friction/failure;
-  - return to Project Control with trial evidence before expanding the library.
-- Status: Active Trial
+- Decision: Adopted the Skills architecture principles as a bounded Trial and authorized HZN-001 for shared cross-thread trial use.
+- Key rules retained:
+  - Thread = who owns work; Skill = how recurring work is performed; Status = what is currently true; Strategy = what may be worth doing; Evidence = what actually happened;
+  - Skills are not a fourth governance layer;
+  - Skills never grant new authority;
+  - lifecycle: Draft → Trial → Adopted → Deprecated;
+  - visible output should remain the user's actual task result rather than governance ceremony.
+- Status: Trial phase completed for HZN-001; architecture principles remain active.
 
 ### CTV-20260828-01 — Activate Academic Operations & Evidence as Bounded Support
 
 - Date: 2026-08-28
-- Responds to: `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread`
-- Decision: **Adopt and activate with bounded maintenance scope.**
-- Thread identity:
-  - path: `11_Academic/`;
-  - specialist status: `11_Academic/STATUS.md`;
-  - name: **Academic Operations & Evidence / 学业运营与证据**;
-  - state: **Active — Bounded Support / Maintenance**.
-- Initial objective: **Year 2 Fall Academic Baseline v1**.
-- Workspace rule:
-  - GitHub remains the formal Horizon source of truth for governance, status and meaningful milestones;
-  - Notion may serve as the operational structured-record workspace;
-  - strategic or cross-thread decisions must return to Project Control and must not exist only in Notion.
+- Decision: Activated `11_Academic/STATUS.md` as **Academic Operations & Evidence / 学业运营与证据**, Active — Bounded Support / Maintenance.
+- Initial objective: `Year 2 Fall Academic Baseline v1`.
 - Boundary: factual course operations/evidence only; no universal tutoring, strategic academic decisions, technical-priority changes or daily administrative overhead.
-- Status: Active
+- Status: Active.
 
 ### CTV-20260824-01 — Adopt Wealth Pillar and Activate Personal Finance & Capital as Bounded Support
 
 - Date: 2026-08-24
-- Decision: Financial Freedom / Capital Formation is adopted as a first-order long-horizon strategic pillar with asymmetric undergraduate execution. `10_Finance/STATUS.md` is Active — Bounded Support / Maintenance with `Personal Finance Baseline v1` as its initial objective.
-- Boundary: low-frequency finance operations only; no borrowed-money investing, speculative use of tuition/essential living/emergency reserves, guaranteed-return assumptions, default high-frequency trading or displacement of core academic/technical work.
-- Status: Active
+- Decision: Financial Freedom / Capital Formation is a first-order long-horizon strategic pillar with asymmetric undergraduate execution. `10_Finance/STATUS.md` is Active — Bounded Support / Maintenance.
+- Initial objective: Personal Finance Baseline v1.
+- Status: Active.
 
 ### CTV-20260821-07 — Adopt Overseas MSc Total-Cost Affordability Constraint
 
 - Date: 2026-08-21
 - Decision: Use approximately RMB 100,000/year realistic all-in overseas MSc cost as the current planning band; zero tuition is not a hard requirement and country remains open.
-- TUM remains Conditional under then-current 2026 tuition/living-cost conditions unless reliable funding changes net cost.
-- Status: Active strategic constraint
+- TUM remains financially conditional under then-current 2026 conditions unless reliable funding changes net cost.
+- Status: Active strategic constraint.
 
 ### CTV-20260821-06 — Activate Career / Internship as Bounded Support
 
 - Date: 2026-08-21
-- Decision: Career / Internship is Active — Bounded Support for readiness, concrete opportunity review, lawful public-source company/team due diligence, local application gaps and market-feedback capture.
-- Boundary: no continuous daily browsing, high-volume applications or Career-owned technical curricula without a later Project Control decision.
-- Status: Active
+- Decision: Career / Internship is Active — Bounded Support for readiness, concrete opportunity review, lawful public-source due diligence, local application gaps and market-feedback capture.
+- Boundary: no continuous high-volume application work or Career-owned technical curricula without later Control decision.
+- Status: Active.
 
 ### CTV-20260821-05 — Adopt Career Opportunity Review & Company Due Diligence Workflow
 
 - Date: 2026-08-21
-- Decision: Adopt the standard sequence Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop.
+- Decision: Adopt Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop.
 - Standard verdicts: `PRIORITY APPLY / APPLY / WATCH / SKIP`.
-- Technical gaps return to Project Control; structural mismatches are not converted into technical study tasks.
-- Status: Active
-
-### CTV-20260821-04 — Establish Dedicated Career / Internship Preheat Thread
-
-- Date: 2026-08-21
-- Decision: Established `09_Career/STATUS.md`; its Preheat-only activation state was later superseded by `CTV-20260821-06`, while responsibility boundaries remain valid.
-- Status: Superseded in activation state
+- Status: Active.
 
 ### CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework
 
 - Date: 2026-08-20
-- Decision: Use a bounded Application Ready Gate built from presentable project evidence, practical C/C++ fluency, Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and credible availability.
-- Python remains main; Algorithm structured; C++/Linux support; Embedded remains dormant until justified.
+- Decision: Adopt bounded Application Ready Gate; Python remains main, Algorithm structured, C++/Linux support, Embedded dormant until justified.
 - Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
-- Status: Active
+- Status: Active.
 
 ### CTV-20260816-02 — Remove Astronomy From Current Strategic Route
 
 - Date: 2026-08-16
-- Decision: Astronomy is outside Project Horizon's current strategic scope unless explicitly reopened. Physics remains a separate open academic interest.
-- Status: Complete
+- Decision: Astronomy remains outside Horizon's current strategic scope unless explicitly reopened; Physics remains a separate open academic interest.
+- Status: Complete.
 
 ### CTV-20260816-01 — Acknowledge Long-Term Strategic Research Map
 
 - Date: 2026-08-16
-- Decision: Adopt Voyage Room's long-term map as an advisory reference with no execution-resource change.
-- Germany / Europe, US research, domestic routes and other international options remain hypotheses rather than commitments.
-- Status: Complete
+- Decision: Adopted Voyage Room's long-term map as advisory reference without execution-resource change.
+- Status: Complete.
 
 ## Awaiting Separate Control Review
 
-These Voyage transmissions remain separate and are not decided by the Skills Trial feedback:
+The following remain separate and are **not** decided by HZN-001 adoption:
 
+- `VTC-20260828-06 — Establish Horizon Liaison as a Bounded Cross-Thread Relay`;
 - `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`;
 - `VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate`;
 - `VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map`;
