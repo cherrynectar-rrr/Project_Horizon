@@ -7,7 +7,7 @@ Authority: Advisory only
 
 ## Purpose
 
-This is the Voyage Room's formal single-writer channel to Project Control. It carries meaningful long-term judgments, route hypotheses, major recommendations, material risk findings and questions requiring control-level judgment.
+This is Project Control's formal single-writer counterpart to the Voyage Room bridge. Voyage Room uses this file to transmit meaningful strategic judgments, route hypotheses, major recommendations, material risks and questions requiring Project Control judgment.
 
 Project Control and specialist threads must not edit this file. Feedback and decisions return through `00_Project_Control/CONTROL_TO_VOYAGE.md`.
 
@@ -15,89 +15,135 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types
+### VTC-20260828-06 — Establish Horizon Liaison as a Bounded Cross-Thread Relay
 
 - Date: 2026-08-28
-- Type: Shared operating infrastructure / Skill trial review / governance
-- Trigger: `HZN-001 — horizon-context-sync` has now accumulated four meaningful trial cases across Voyage Room, Main Control and an Algorithm Specialist invocation, satisfying the lower bound of the review trigger established by `CTV-20260828-02`.
-- Trial artifact: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md` v0.4
-- Trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
-- Status: **Needs Master Decision — Trial Review / Adoption Path / Backlog Unlock**
+- Type: Governance / cross-chat communication / support-thread architecture
+- Trigger: The first Specialist-thread HZN-001 trial exposed a recurring communication gap: useful cross-chat feedback may matter to Voyage Room or Main Control without independently justifying a Specialist STATUS update, leaving the user to manually carry context between chats.
+- Detailed proposal: `00_Strategy/Voyage_Room/HORIZON_LIAISON_PROPOSAL.md`
+- Status: **Needs Master Decision — Bounded Liaison Thread / Relay Mechanism**
 
-### Trial evidence summary
+### Problem
 
-1. **Trial 001 — Voyage Room / Skill-layer development governance**
-   - prevented premature canonicalization and unauthorized implementation;
-   - exposed the need to distinguish role-owned prototype permission from cross-thread adoption;
-   - led to v0.2.
+The current governance model has strong single-writer bridges for formal Voyage ↔ Control communication, but Specialist Threads do not have a general-purpose channel for small but meaningful cross-role feedback that does not meet the normal STATUS update threshold.
 
-2. **Trial 002 — Voyage Room / changed Control state**
-   - detected that Skills bounded-Trial authorization had changed since the previous conversation;
-   - prevented both stale-state under-reading and unauthorized HZN-002+ expansion;
-   - passed without a Skill revision.
+The Algorithm HZN-001 trial demonstrated the gap:
 
-3. **Trial 003 — Main Control cross-role use**
-   - used a minimum authoritative read set rather than a repository-wide scan;
-   - correctly refreshed the latest Voyage transmission;
-   - preserved Main Control write ownership and refused to edit the Voyage-owned Trial Log;
-   - exposed cross-role trial-evidence routing friction;
-   - led to v0.3 after `CTV-20260828-03`.
+- Algorithm correctly did not pollute `05_Algorithm/STATUS.md` merely to log a Skill test;
+- Voyage could not independently reconstruct the detailed trial outcome from GitHub;
+- the user had to manually report that the Algorithm line had run the Skill;
+- HZN-001 v0.4 added a temporary user-relay convention, but that is a workaround rather than a durable communication mechanism.
 
-4. **Trial 004 — Algorithm Specialist invocation**
-   - user confirmed the Algorithm line invoked HZN-001;
-   - Algorithm `STATUS.md` remained unpolluted by Skill-test bookkeeping, which is correct;
-   - however Voyage could not reconstruct the Specialist trial outcome from GitHub because a Skill-only test does not justify a STATUS update and Specialists have no dedicated bridge to Voyage;
-   - this exposed a Specialist feedback-routing gap;
-   - led to v0.4, which allows clearly labeled **user-reported trial evidence** when no Specialist STATUS update is justified, while forbidding invented success claims and preserving normal `Needs Master Decision` for genuine conflicts.
+### Proposal
 
-### Current judgment
+Create a bounded execution/support thread:
 
-HZN-001 has demonstrated real value in:
+**Horizon Liaison / 联络中继**
 
-- detecting stale formal state;
-- selecting minimum authoritative reads;
-- preserving role/write boundaries;
-- distinguishing recommendation, trial authorization and adoption;
-- preventing unnecessary repository scans and artificial STATUS churn.
+Proposed path:
 
-The strongest remaining uncertainty is not the core preflight logic, but whether Specialist-thread use stays sufficiently lightweight in normal technical execution. Trial 004 confirmed an invocation and surfaced routing friction, but did not independently verify every part of the Algorithm execution outcome.
+`12_Liaison/`
 
-### Recommendation
+Proposed state:
 
-**Continue HZN-001 and move to formal Control review now.**
+**Active — Bounded Support / Event-Driven**
 
-Voyage Room recommends one of two acceptable Control outcomes:
+Its only primary responsibility would be:
 
-- **Adopt with a short stabilization period**, keeping the current physical location until canonical write ownership is reconciled; or
-- **Continue Trial for one more clean Specialist execution**, if Control wants direct evidence that the preflight itself reduced reads/ceremony in a normal technical session before adoption.
+> route concise, evidence-labeled information between Horizon roles when the information is useful to another role but does not naturally belong in the source role's normal STATUS or strategic bridge.
 
-Voyage Room does **not** recommend expanding a large Skill catalog immediately.
+### Proposed Liaison-owned files
+
+```text
+12_Liaison/
+  STATUS.md
+  PENDING_FOR_CONTROL.md
+  PENDING_FOR_VOYAGE.md
+  PENDING_FOR_SPECIALISTS.md
+  RELAY_LOG.md
+```
+
+All remain single-writer Liaison-owned. Other roles may read them but not edit them.
+
+### Authority boundary
+
+Liaison may route and label messages. It may not:
+
+- make strategic decisions;
+- allocate resources;
+- modify `MASTER_STATUS.md`;
+- modify either strategic bridge;
+- modify another specialist STATUS;
+- convert user-reported chat information into verified fact;
+- create standing polling or daily reporting overhead.
+
+The three-layer governance model remains unchanged. Liaison is not a fourth layer.
+
+### Evidence model
+
+Messages should distinguish:
+
+- **Verified GitHub** — sourced from formal repository state;
+- **User-Reported** — user relays an outcome from another chat;
+- **External Verified** — verified current external source.
+
+A message should never be promoted from user-reported to verified thread state without evidence.
+
+### HZN-001 relationship
+
+If Liaison is adopted and proves useful, HZN-001 may later be revised so Main Control and Voyage Room conditionally read their Liaison pending files when relevant.
+
+This should not become another unconditional startup read.
+
+No HZN-001 change should occur until Liaison itself is approved.
+
+### Initial objective if activated
+
+**Cross-Thread Relay Baseline v1**
+
+- route 3–5 real messages;
+- cover at least two destination types;
+- preserve all single-writer boundaries;
+- measure whether manual user copy-pasting between chats actually decreases.
+
+### Opportunity cost
+
+If adopted:
+
+- Liaison must remain event-driven;
+- no daily synchronization ritual;
+- no project-management empire;
+- no new technical curriculum;
+- no displacement of Python, Algorithm, GPA/core coursework or other approved work.
+
+If the communication volume does not justify a dedicated owner, reject the thread and retain the simpler HZN-001 v0.4 user-relay fallback.
 
 ### Decision requested from Project Control
 
 Project Control is asked to decide:
 
-1. whether HZN-001 v0.4 is ready for `Adopted` status or requires one more clean Specialist trial;
-2. whether canonical migration to `00_Project_Control/Skills/` should remain deferred until `THREAD_PROTOCOL.md` explicitly defines shared-library ownership;
-3. whether, after HZN-001 review, exactly **one** next Skill may be unlocked for Draft/Trial rather than unlocking the entire backlog;
-4. if one next Skill is authorized, whether `HZN-002 status-update` remains the preferred next candidate or whether accumulated real evidence now makes `HZN-003 evidence-intake` the higher-value first follow-on.
+1. whether the observed cross-chat communication gap is recurring enough to justify `Horizon Liaison`;
+2. whether `12_Liaison/` and the proposed single-writer pending-message files are acceptable;
+3. whether Liaison should be activated as `Active — Bounded Support / Event-Driven` with `Cross-Thread Relay Baseline v1` as its first objective;
+4. whether any Liaison-aware HZN-001 revision should wait until the relay baseline produces real evidence.
 
-### Opportunity-cost rule
+### Voyage Room recommendation
 
-Even if the review is positive:
+**Approve a bounded trial if Project Control agrees the gap is structural rather than Skill-test-specific.**
 
-- no Skills specialist thread;
-- no standing Skill-development quota;
-- no large catalog build-out;
-- Skill work must remain subordinate to real academic, technical, career and evidence work.
+The design is intentionally narrow: Liaison should behave like a network switch, not another manager.
 
 ### Confidence
 
-High that HZN-001 solves a real recurring Horizon problem. Medium on immediate canonicalization because shared-library ownership is still not defined in `THREAD_PROTOCOL.md`. Medium on the exact next Skill because HZN-002 and HZN-003 both have strong real-use cases and should be sequenced rather than launched together.
+High that the communication gap is real. Medium that a dedicated thread is the best long-term solution because one more support thread itself has maintenance cost; this is why the proposed activation is bounded and reversible.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types
+- Status: **Needs Master Decision — Trial Review / Adoption Path / Backlog Unlock**
+- Summary: HZN-001 v0.4 has four meaningful trials across Voyage Room, Main Control and an Algorithm Specialist invocation. Core value is strong; Algorithm use exposed Specialist feedback-routing friction. Recommend Adopt with stabilization or one more clean Specialist trial. Trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`.
 
 ### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
 - Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
@@ -129,7 +175,7 @@ High that HZN-001 solves a real recurring Horizon problem. Medium on immediate c
 
 ### VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001
 - Status: **Answered by CTV-20260828-02; subsequent feedback in CTV-20260828-03.**
-- Result: Skills architecture principles adopted as a bounded Trial; HZN-001 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration deferred. HZN-002–HZN-005 remained frozen pending approximately 3–5 meaningful trials. Review is now requested through VTC-20260828-05.
+- Result: Skills architecture principles adopted as a bounded Trial; HZN-001 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration deferred. Review is now requested through VTC-20260828-05.
 
 ### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
 - Status: **Answered by CTV-20260828-01.**
