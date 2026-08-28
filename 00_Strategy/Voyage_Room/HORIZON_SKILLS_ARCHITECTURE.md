@@ -102,11 +102,38 @@ Evidence limitation remains explicit: GitHub does not expose chat-side read tele
 
 **HZN-001 v0.4** remains preserved as the first adopted historical baseline. It is no longer the preferred operational version because its three-role model predates Charter v4.0 / Protocol v2.0.
 
-## 6. Physical Location
+## 6. HZN-002 State
 
-HZN-001 currently remains under the preserved strategy path:
+**HZN-002 v0.1 — status-update**
 
-`00_Strategy/Voyage_Room/skills/horizon-context-sync/`
+- Status: **Candidate — Trial**
+- Current artifact: `skills/status-update/SKILL.md`
+- Trial evidence: `skills/status-update/TRIAL_LOG.md`
+
+Purpose:
+
+- decide whether a formal STATUS / MASTER update is justified;
+- route the update to the correct single owner;
+- fetch the latest target + SHA before writing;
+- apply the minimum evidence-justified patch;
+- prevent plans, tiny exercises, communication-only events and cosmetic cleanup from creating state churn.
+
+Initial evidence:
+
+- Trial 001 — Core authorization of HZN-002 correctly produced a bounded MASTER update;
+- Trial 002 — legacy `Project Control / Needs Master Decision` wording in older Specialist STATUS files was correctly left untouched because no meaningful execution change justified a write.
+
+Remaining adoption evidence gap:
+
+- one natural Specialist-side case that demonstrates either a clean minimal Specialist STATUS update or a correct no-write decision.
+
+Do not manufacture Specialist state to finish the Trial.
+
+## 7. Physical Location
+
+Current Skills remain under the preserved strategy path:
+
+`00_Strategy/Voyage_Room/skills/`
 
 This path is Core-maintained under Charter v4.0 / Protocol v2.0.
 
@@ -114,34 +141,39 @@ Potential future canonical location remains:
 
 `00_Project_Control/Skills/`
 
-Do **not** migrate merely for cosmetic cleanliness. Reconsider physical migration only when multiple adopted Skills make a shared library materially useful or a governance/maintenance benefit becomes clear.
+Do **not** migrate merely for cosmetic cleanliness. Reconsider physical migration only when multiple adopted Skills make a shared library materially useful or a governance / maintenance benefit becomes clear.
 
-## 7. Frozen Backlog
+## 8. Frozen Backlog
 
 The following remain **not authorized for implementation**:
 
-- `HZN-002 — status-update`
 - `HZN-003 — evidence-intake`
 - `HZN-004 — strategic-route-audit`
 - `HZN-005 — opportunity-filter`
 
-HZN-001 v0.5 adoption does **not** unlock them automatically.
+HZN-002 Trial authorization does **not** unlock them automatically.
 
-Any next Skill requires a separate Horizon Core decision based on demonstrated recurring cost and opportunity cost.
+Any next Skill requires a separate Horizon Core decision after HZN-002 is adopted, abandoned or materially revised.
 
-## 8. Invocation Rule
+## 9. Invocation Rule
 
 Skills should be invoked by task pattern, normally without visible ceremony.
 
-For HZN-001:
+### HZN-001
 
 - important Horizon / cross-thread / governance-sensitive task → run a minimum context preflight;
 - tiny isolated work → do not perform a full sync;
 - fresh authoritative state already fetched in the same conversation → reuse it when safe rather than rereading by ritual.
 
-The visible response should answer the user's actual task.
+### HZN-002
 
-## 9. Success Test
+- a real event may justify STATUS / MASTER state → apply the meaningful-change gate first;
+- threshold not met → no formal write;
+- threshold met → route to the correct owner, fetch latest target / SHA and make the minimum justified patch.
+
+The visible response should answer the user's actual task rather than narrating Skill machinery unless the decision itself is useful to explain.
+
+## 10. Success Test
 
 The Skills layer is useful only if it measurably reduces one or more of:
 
@@ -149,17 +181,20 @@ The Skills layer is useful only if it measurably reduces one or more of:
 - unnecessary repository reads;
 - incorrect or unauthorized writes;
 - stale-state decisions;
+- meaningless STATUS / MASTER churn;
 - context / administration cost;
 - user coordination burden.
 
 If a Skill adds more maintenance than it removes, simplify or remove it.
 
-## 10. Immediate Operating Rule
+## 11. Immediate Operating Rule
 
 For now:
 
 1. operate with adopted HZN-001 v0.5;
-2. preserve v0.4 and earlier trials as history;
-3. do not create routine trial logs unless a material failure / friction appears;
-4. keep HZN-002–005 frozen;
-5. before starting any next Skill, ask whether the recurring cost is real enough to justify another maintained procedure.
+2. trial only HZN-002 v0.1 as the next candidate;
+3. preserve historical Skill evidence;
+4. seek one natural Specialist-side HZN-002 validation;
+5. revise only from observed friction;
+6. keep HZN-003–005 frozen;
+7. decide HZN-002 adoption before starting another Skill.
