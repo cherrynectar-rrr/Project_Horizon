@@ -13,7 +13,14 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 ## Current Control Message
 
-- `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001` is **adopted as a bounded Trial**.
+- `HZN-001 — horizon-context-sync` has now completed a meaningful **Main Control cross-role trial** after the prior Voyage-only trials.
+- The Main Control trial used a minimum authoritative read set and correctly discovered that the current Voyage transmission had moved on to `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`, while the Skills Trial authorization in `CTV-20260828-02` remained active.
+- The trial did not require a repository-wide scan and did not treat stale chat context as current state.
+- A real design friction was exposed: HZN-001 currently says meaningful trials are recorded in the Voyage-owned `TRIAL_LOG.md`, but Main Control does not have write authority to that file.
+- Main Control therefore did **not** write the Voyage-owned Trial Log. This feedback is being returned through the Control-owned bridge so Voyage can, if appropriate, incorporate the cross-role trial into its own trial evidence.
+- Recommended prototype revision: clarify that while HZN-001 remains Voyage-owned, non-Voyage roles should report meaningful trial evidence through their own authorized channel / bridge rather than directly editing the Voyage Trial Log.
+- This trial counts as the first demonstrated use from a second role type. It strengthens the case for HZN-001 but does not yet authorize HZN-002+ or canonical migration.
+- `VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001` remains **adopted as a bounded Trial**.
 - Horizon formally recognizes a Skill as a reusable, versioned operating procedure for a recurring task pattern. A Skill is **not** a fourth governance layer, thread, authority source, memory store or workload activation mechanism.
 - `HZN-001 — horizon-context-sync` v0.2 is authorized for **shared cross-thread trial use** as a preflight procedure before important Horizon tasks.
 - During the trial, HZN-001 remains physically located in the Voyage-owned prototype path `00_Strategy/Voyage_Room/skills/horizon-context-sync/`. Project Control authorization permits shared trial invocation; it does not transfer file ownership or make the prototype directory canonical.
@@ -26,6 +33,37 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 - Existing technical, Career, Finance and Academic priorities are unchanged.
 
 ## Decisions
+
+### CTV-20260828-03 — Record HZN-001 Main Control Cross-Role Trial Feedback
+
+- Date: 2026-08-28
+- Responds to: ongoing `HZN-001 — horizon-context-sync` bounded Trial under `CTV-20260828-02`.
+- Decision: **Record trial feedback; continue HZN-001 Trial without expanding the backlog.**
+- Invoking role: Main Control.
+- Task type: governance / context-sync trial / repository-read boundary check.
+- Minimum authoritative reads used:
+  - `00_Project_Control/MASTER_STATUS.md`;
+  - `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`;
+  - `00_Project_Control/CONTROL_TO_VOYAGE.md`;
+  - `00_Project_Control/THREAD_PROTOCOL.md` because governance/write authority was material;
+  - HZN-001 itself and its current Trial Log for trial-specific verification.
+- Observed value:
+  - detected that the latest Voyage state had changed to a Germany–Japan strategic-gate request rather than assuming the prior Skills transmission was still current;
+  - preserved the existing Skills Trial authorization from Control;
+  - avoided unnecessary specialist-status and repository-wide reads;
+  - correctly preserved Main Control write authority rather than editing the Voyage-owned trial log.
+- Friction found:
+  - HZN-001's current Trial Evidence convention points to a Voyage-owned `TRIAL_LOG.md`, which is not directly writable by Main Control or specialist roles.
+- Required behavior during prototype stage:
+  - non-Voyage roles must not write the Voyage-owned Trial Log;
+  - meaningful cross-role trial feedback should be returned through an authorized role-owned channel, then Voyage may incorporate it into the prototype Trial Log under its own ownership.
+- Recommended HZN-001 revision:
+  - clarify cross-role trial-evidence routing while the prototype remains Voyage-owned.
+- Resource / priority implication: none.
+- Backlog implication: HZN-002 through HZN-005 remain frozen.
+- Trial verdict: **Pass with one governance-friction revision recommended.**
+- Review implication: cross-role evidence requirement is now partially satisfied; continue until approximately 3–5 meaningful uses and preferably at least one Specialist Thread use.
+- Status: Active Trial feedback
 
 ### CTV-20260828-02 — Authorize Shared Horizon Skills Trial and HZN-001
 
@@ -130,13 +168,15 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 ### CTV-20260821-05 — Adopt Career Opportunity Review & Company Due Diligence Workflow
 
 - Date: 2026-08-21
-- Decision: Adopt Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop, with `PRIORITY APPLY / APPLY / WATCH / SKIP` verdicts.
+- Decision: Adopt the standard sequence Role Reality Check → Verified User Fit → Company & Team Due Diligence → Risk / Value Verdict → Feedback Loop.
+- Standard verdicts: `PRIORITY APPLY / APPLY / WATCH / SKIP`.
+- Technical gaps return to Project Control; structural mismatches are not converted into technical study tasks.
 - Status: Active
 
 ### CTV-20260821-04 — Establish Dedicated Career / Internship Preheat Thread
 
 - Date: 2026-08-21
-- Decision: Established `09_Career/STATUS.md`; its Preheat-only state was later superseded by `CTV-20260821-06` while boundaries remain valid.
+- Decision: Established `09_Career/STATUS.md`; its Preheat-only activation state was later superseded by `CTV-20260821-06`, while responsibility boundaries remain valid.
 - Status: Superseded in activation state
 
 ### CTV-20260820-03 — Adopt Bounded First-Internship Readiness Framework
@@ -144,6 +184,7 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 - Date: 2026-08-20
 - Decision: Use a bounded Application Ready Gate built from presentable project evidence, practical C/C++ fluency, Linux workflow evidence, baseline algorithm/data-structure competence, technical communication and credible availability.
 - Python remains main; Algorithm structured; C++/Linux support; Embedded remains dormant until justified.
+- Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 - Status: Active
 
 ### CTV-20260816-02 — Remove Astronomy From Current Strategic Route
@@ -156,11 +197,12 @@ The Voyage Room and specialist threads must not edit this file. New Voyage Room 
 
 - Date: 2026-08-16
 - Decision: Adopt Voyage Room's long-term map as an advisory reference with no execution-resource change.
+- Germany / Europe, US research, domestic routes and other international options remain hypotheses rather than commitments.
 - Status: Complete
 
 ## Awaiting Separate Control Review
 
-These Voyage transmissions remain separate and are not decided by `CTV-20260828-02`:
+These Voyage transmissions remain separate and are not decided by the Skills Trial feedback:
 
 - `VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely`;
 - `VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate`;
