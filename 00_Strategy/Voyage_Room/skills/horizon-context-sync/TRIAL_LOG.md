@@ -11,6 +11,63 @@ This is evidence for later Project Control adoption / revision decisions. It is 
 
 ---
 
+## Trial 004 — Algorithm Specialist Invocation and Feedback-Routing Gap
+
+- Date: 2026-08-28
+- Invoking role: Algorithm Specialist Thread
+- Evidence source: user report that the Algorithm line ran HZN-001; latest `05_Algorithm/STATUS.md`; recent repository commits.
+- Evidence classification: **user-reported invocation + repository-side absence of artificial status churn**. The detailed execution outcome was not independently available to Voyage Room.
+- Task classification:
+  - Specialist-thread context-sync invocation;
+  - cross-role Skill validation;
+  - trial-evidence routing test.
+
+### Verified repository observations
+
+- `05_Algorithm/STATUS.md` remained focused on real Algorithm execution state: Block 01 active, binary search current, no Skill-test diary entry.
+- No recent repository commit created an Algorithm-side Skill trial record merely for logging purposes.
+- This is consistent with HZN-001's rule that a Skill trial should not manufacture a STATUS update when no meaningful Algorithm milestone/blocker/route change occurred.
+
+### Outcome
+
+The invocation itself is confirmed by the user, but Voyage Room could not reconstruct the Algorithm thread's detailed HZN-001 execution result from GitHub.
+
+This exposed a real prototype-stage routing gap:
+
+- Main Control has `CONTROL_TO_VOYAGE.md` for authorized feedback;
+- a Specialist Thread is normally allowed to maintain only its own `STATUS.md`;
+- a Skill-only test usually does not meet the threshold for a meaningful STATUS update;
+- therefore useful Specialist trial feedback can remain trapped in one chat unless a safe relay convention exists.
+
+### What worked
+
+- The Specialist did not pollute `05_Algorithm/STATUS.md` with test-only bookkeeping.
+- Existing write ownership was preserved.
+- The trial surfaced a governance problem without requiring a new reporting file or unauthorized write.
+
+### Friction found
+
+HZN-001 v0.3 said Specialist feedback should use an existing authorized channel, but did not fully cover the case where **no repository write is justified at all**.
+
+### Revision made
+
+HZN-001 was updated from v0.3 to v0.4:
+
+- when a Specialist trial does not justify a STATUS update, the user may relay concise trial feedback to Voyage Room;
+- Voyage must label that material as **user-reported trial evidence**, not formal Specialist GitHub state;
+- invocation confirmation alone is not enough to invent a success verdict;
+- genuine execution/governance conflicts still use normal `Needs Master Decision` rather than a new Skill-specific bridge.
+
+### Trial verdict
+
+**Meaningful partial trial — routing failure discovered and revised.**
+
+This counts as a meaningful HZN-001 trial because it exposed and corrected a cross-role governance gap, but it does **not** count as independently verified evidence that the Algorithm preflight itself succeeded in every respect.
+
+Trial coverage has now reached three role types: Voyage Room, Main Control and Specialist Thread.
+
+---
+
 ## Trial 003 — Main Control Cross-Role Context Sync
 
 - Date: 2026-08-28
