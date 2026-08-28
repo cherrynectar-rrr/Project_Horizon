@@ -1,6 +1,6 @@
 # HZN-001 — horizon-context-sync
 
-Version: 0.2
+Version: 0.3
 Status: Trial Prototype
 Owner: Voyage Room prototype; canonical ownership pending Project Control
 Last Updated: 2026-08-28
@@ -280,7 +280,19 @@ Stop or escalate when:
 
 ## Trial Evidence
 
-Meaningful real uses are recorded in `TRIAL_LOG.md` in this Skill directory.
+The Voyage-owned prototype Trial Log is:
+
+`00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
+
+While the prototype remains Voyage-owned:
+
+- Voyage Room may record its own meaningful uses directly in the Trial Log;
+- Main Control and Specialist Threads **must not edit the Voyage-owned Trial Log**;
+- Main Control should return meaningful HZN-001 trial feedback through its authorized `CONTROL_TO_VOYAGE.md` channel;
+- a Specialist Thread should use only its existing authorized channel. It may record a trial-related issue in its own `STATUS.md` only when the issue independently meets the normal meaningful-status-update threshold; otherwise it should not manufacture a GitHub status update merely to log a Skill trial;
+- Voyage Room may then incorporate cross-role feedback into the prototype Trial Log under Voyage ownership.
+
+This routing rule records trial evidence without granting cross-role write permissions or creating a new reporting bureaucracy.
 
 Trial evidence should record only cases that reveal value, friction, failure modes or needed revisions.
 
@@ -294,10 +306,18 @@ Do not:
 - write a status update because a conversation happened;
 - treat a Voyage recommendation as Control adoption;
 - treat prototype existence as cross-thread adoption;
+- let trial logging create unauthorized writes or meaningless STATUS churn;
 - treat a school curriculum as Horizon's personal route;
 - fabricate missing state to keep the workflow moving.
 
 ## Change Log
+
+### v0.3 — 2026-08-28
+
+- Incorporated Main Control cross-role Trial feedback from `CTV-20260828-03`.
+- Added explicit cross-role Trial Evidence routing while the prototype remains Voyage-owned.
+- Clarified that Main Control / Specialist roles must not edit Voyage-owned `TRIAL_LOG.md`.
+- Preserved the normal STATUS meaningful-update threshold so Skill trial logging does not create artificial repository churn.
 
 ### v0.2 — 2026-08-28
 
