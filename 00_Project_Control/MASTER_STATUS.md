@@ -106,18 +106,30 @@ Do not create a Specialist → Core message bus unless real post-merger evidence
 
 ## HZN-001 Skill State
 
-`HZN-001 — horizon-context-sync v0.4` remains the first adopted shared Horizon Skill, version-pinned to its adoption-time artifact.
+`HZN-001 — horizon-context-sync v0.5` is the current **Adopted — Active** shared Horizon Skill.
 
-Because v0.4 encodes the former three-role model, Charter v4.0 and THREAD_PROTOCOL v2.0 override any stale role labels.
+v0.5 supersedes v0.4 for current operation and is aligned with Charter v4.0 / `THREAD_PROTOCOL.md` v2.0:
 
-A future candidate HZN-001 v0.5 may simplify the role model to:
+- roles simplified to `Horizon Core` + `Specialist Thread`;
+- frozen Voyage–Control bridges are no longer read as live state;
+- fresh authoritative state may be safely reused in the same conversation;
+- Specialist threads read their own STATUS first and only load MASTER / strategic context when materially required;
+- evidence, write-boundary and external-freshness protections remain active.
 
-- Horizon Core;
-- Specialist Thread.
+Adoption evidence:
 
-v0.5 must be reviewed normally and must not silently replace adopted v0.4.
+- Trial 005 — clean Horizon Core migration/self-preflight;
+- Trial 006 — real Algorithm Specialist invocation with repository-verified clean state, no artificial STATUS churn and no cross-thread write leakage;
+- v0.4 historical trials remain preserved as prior evidence for the underlying context-sync method.
 
-HZN-002 through HZN-005 remain frozen unless separately authorized.
+Adoption commit: `4d4ad680febc8194d735ad3874902ef0952686c5`.
+Adoption-time Skill blob SHA: `c501100aef77dc488a98badddcb566c2ab55cf7e`.
+
+Evidence limitation: GitHub does not expose chat-side read telemetry, so exact internal read sequences are not claimed as independently verified.
+
+`HZN-001 v0.4` remains preserved as the first adopted historical baseline under `CTV-20260828-04`.
+
+HZN-002 through HZN-005 remain frozen unless separately authorized. v0.5 adoption does not unlock them automatically.
 
 ---
 
@@ -268,6 +280,7 @@ Review on meaningful changes including:
 - competition result;
 - `Needs Core Decision: Yes` from a specialist;
 - one of the inherited strategic backlog items being ready for decision;
+- a material HZN-001 failure / authority ambiguity;
 - a material failure showing the Horizon Core merger created strategic tunnel vision or new communication friction.
 
 This file is a Core summary, not a daily journal.
