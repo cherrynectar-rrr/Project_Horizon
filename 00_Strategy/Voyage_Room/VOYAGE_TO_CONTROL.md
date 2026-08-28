@@ -19,38 +19,37 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 - Date: 2026-08-28
 - Type: Governance / cross-chat communication / support-thread architecture
-- Trigger: The first Specialist-thread HZN-001 trial exposed a recurring communication gap: useful cross-chat feedback may matter to Voyage Room or Main Control without independently justifying a Specialist STATUS update, leaving the user to manually carry context between chats.
+- Trigger: Specialist-thread HZN-001 use exposed a recurring communication gap: useful cross-chat feedback may matter to Voyage Room or Main Control without independently justifying a Specialist STATUS update, leaving the user to manually carry context between chats.
 - Detailed proposal: `00_Strategy/Voyage_Room/HORIZON_LIAISON_PROPOSAL.md`
-- Status: **Needs Master Decision — Bounded Liaison Thread / Relay Mechanism**
+- Status: **Needs Master Decision — Bounded Liaison Thread / Outbox-Relay-Inbox Transport**
 
-### Problem
+### Important revision after user challenge
 
-The current governance model has strong single-writer bridges for formal Voyage ↔ Control communication, but Specialist Threads do not have a general-purpose channel for small but meaningful cross-role feedback that does not meet the normal STATUS update threshold.
+The user correctly identified that a Liaison thread alone does **not** make other chats automatically know about new messages.
 
-The Algorithm HZN-001 trial demonstrated the gap:
+Separate Horizon chats are not live background processes and cannot directly subscribe to one another's conversations.
 
-- Algorithm correctly did not pollute `05_Algorithm/STATUS.md` merely to log a Skill test;
-- Voyage could not independently reconstruct the detailed trial outcome from GitHub;
-- the user had to manually report that the Algorithm line had run the Skill;
-- HZN-001 v0.4 added a temporary user-relay convention, but that is a workaround rather than a durable communication mechanism.
+Therefore the proposal has been revised from a simple "user → Liaison → pending file" model to a **pull-based mailbox architecture**:
 
-### Proposal
+> **Source-owned OUTBOX → Liaison routing → destination pending INBOX → HZN-001 startup pull**
 
-Create a bounded execution/support thread:
+### Revised transport model
 
-**Horizon Liaison / 联络中继**
+1. **Source role writes only its own OUTBOX** when a cross-role message matters but does not belong in STATUS.
+   - Example: `05_Algorithm/OUTBOX.md`.
+   - This requires a narrow `THREAD_PROTOCOL.md` permission change because Specialists currently own only their STATUS files.
+2. **Liaison reads OUTBOX files** and routes concise evidence-labeled messages into Liaison-owned pending destination files.
+3. **Destination role discovers messages on its next important session** by conditionally reading its pending inbox through HZN-001 or an equivalent approved startup rule.
+4. Dormant chat windows still do not wake up by themselves. Without an optional scheduled watcher, this is automatic discovery on next relevant use, not real-time push.
 
-Proposed path:
+### Why this is better
 
-`12_Liaison/`
-
-Proposed state:
-
-**Active — Bounded Support / Event-Driven**
-
-Its only primary responsibility would be:
-
-> route concise, evidence-labeled information between Horizon roles when the information is useful to another role but does not naturally belong in the source role's normal STATUS or strategic bridge.
+- user no longer needs to manually restate the message content between chats;
+- Specialist STATUS files remain clean;
+- no role writes another role's files;
+- GitHub remains the durable transport/state layer;
+- the three-layer governance model remains unchanged;
+- Liaison stays a router rather than becoming a manager.
 
 ### Proposed Liaison-owned files
 
@@ -63,7 +62,27 @@ Its only primary responsibility would be:
   RELAY_LOG.md
 ```
 
-All remain single-writer Liaison-owned. Other roles may read them but not edit them.
+### Proposed source-owned files
+
+Pilot roles may each own one `OUTBOX.md`, for example:
+
+```text
+05_Algorithm/OUTBOX.md
+11_Academic/OUTBOX.md
+09_Career/OUTBOX.md
+```
+
+No role may edit another role's OUTBOX.
+
+### Evidence model
+
+Messages distinguish:
+
+- `Verified GitHub`;
+- `User-Reported`;
+- `External Verified`.
+
+A Specialist OUTBOX proves intentional transmission by that role but does not automatically convert every substantive claim into a verified milestone; evidence links still matter.
 
 ### Authority boundary
 
@@ -73,69 +92,45 @@ Liaison may route and label messages. It may not:
 - allocate resources;
 - modify `MASTER_STATUS.md`;
 - modify either strategic bridge;
-- modify another specialist STATUS;
-- convert user-reported chat information into verified fact;
-- create standing polling or daily reporting overhead.
+- modify another role's STATUS or OUTBOX;
+- convert user-reported information into verified fact;
+- create a daily reporting bureaucracy.
 
-The three-layer governance model remains unchanged. Liaison is not a fourth layer.
+### Optional near-push mode
 
-### Evidence model
+If later needed, Project Control may separately consider a scheduled Liaison watcher that periodically processes OUTBOX files and surfaces important unread messages.
 
-Messages should distinguish:
-
-- **Verified GitHub** — sourced from formal repository state;
-- **User-Reported** — user relays an outcome from another chat;
-- **External Verified** — verified current external source.
-
-A message should never be promoted from user-reported to verified thread state without evidence.
-
-### HZN-001 relationship
-
-If Liaison is adopted and proves useful, HZN-001 may later be revised so Main Control and Voyage Room conditionally read their Liaison pending files when relevant.
-
-This should not become another unconditional startup read.
-
-No HZN-001 change should occur until Liaison itself is approved.
+This is not part of the default proposal and would still not make dormant chat windows execute in the background.
 
 ### Initial objective if activated
 
 **Cross-Thread Relay Baseline v1**
 
-- route 3–5 real messages;
-- cover at least two destination types;
-- preserve all single-writer boundaries;
-- measure whether manual user copy-pasting between chats actually decreases.
-
-### Opportunity cost
-
-If adopted:
-
-- Liaison must remain event-driven;
-- no daily synchronization ritual;
-- no project-management empire;
-- no new technical curriculum;
-- no displacement of Python, Algorithm, GPA/core coursework or other approved work.
-
-If the communication volume does not justify a dedicated owner, reject the thread and retain the simpler HZN-001 v0.4 user-relay fallback.
+- pilot the OUTBOX convention on a small number of roles;
+- route 3–5 real messages across at least two destination types;
+- preserve single-writer boundaries;
+- verify at least one destination discovers a message through startup pull without the user restating it;
+- measure whether manual cross-chat relay burden actually decreases.
 
 ### Decision requested from Project Control
 
 Project Control is asked to decide:
 
-1. whether the observed cross-chat communication gap is recurring enough to justify `Horizon Liaison`;
-2. whether `12_Liaison/` and the proposed single-writer pending-message files are acceptable;
-3. whether Liaison should be activated as `Active — Bounded Support / Event-Driven` with `Cross-Thread Relay Baseline v1` as its first objective;
-4. whether any Liaison-aware HZN-001 revision should wait until the relay baseline produces real evidence.
+1. whether the communication gap justifies `Horizon Liaison` as a bounded support thread;
+2. whether a narrow role-owned `OUTBOX.md` permission should be added to `THREAD_PROTOCOL.md`;
+3. whether `12_Liaison/` and the proposed pending-message files are acceptable;
+4. whether Liaison should be activated as `Active — Bounded Support / Event-Driven` for `Cross-Thread Relay Baseline v1`;
+5. whether Liaison-aware HZN-001 startup pulls should remain deferred until the relay baseline exists.
 
 ### Voyage Room recommendation
 
-**Approve a bounded trial if Project Control agrees the gap is structural rather than Skill-test-specific.**
+**Approve only as a bounded pilot if Project Control accepts the OUTBOX → Relay → Inbox model.**
 
-The design is intentionally narrow: Liaison should behave like a network switch, not another manager.
+The design goal is to remove the user as the routine human message bus without pretending separate chats are continuously alive.
 
 ### Confidence
 
-High that the communication gap is real. Medium that a dedicated thread is the best long-term solution because one more support thread itself has maintenance cost; this is why the proposed activation is bounded and reversible.
+High that the communication gap is real. Medium that a dedicated Liaison thread is worth its maintenance cost; the bounded pilot should answer that.
 
 ---
 
@@ -143,31 +138,30 @@ High that the communication gap is real. Medium that a dedicated thread is the b
 
 ### VTC-20260828-05 — Review HZN-001 After Four Meaningful Trials Across Three Role Types
 - Status: **Needs Master Decision — Trial Review / Adoption Path / Backlog Unlock**
-- Summary: HZN-001 v0.4 has four meaningful trials across Voyage Room, Main Control and an Algorithm Specialist invocation. Core value is strong; Algorithm use exposed Specialist feedback-routing friction. Recommend Adopt with stabilization or one more clean Specialist trial. Trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`.
+- Summary: HZN-001 v0.4 has four meaningful trials across Voyage Room, Main Control and an Algorithm Specialist invocation. Core value is strong; Algorithm use exposed Specialist feedback-routing friction. Recommend Adopt with stabilization or one more clean Specialist trial.
 
 ### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
 - Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
-- Summary: Preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution. Establish a Germany–Japan Strategic Gate before German escalates into B2/C1/TestDaF-level intensity and no later than 2028 H1 Target Pool freeze. Detailed comparison: `GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md`.
+- Summary: Preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution. Establish a Germany–Japan Strategic Gate before German escalates into B2/C1/TestDaF-level intensity and no later than 2028 H1 Target Pool freeze.
 
 ### VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate
 - Status: **Needs Master Decision — Strategic Candidate / Language Guardrail**
-- Summary: Japan should be upgraded from generic alternative to high-potential candidate. Science Tokyo IGP(C), especially Systems and Control Engineering / EEE, is the primary Japan benchmark. Do not activate Japanese yet; preserve TOEFL; keep GRE conditional. Detailed audit: `JAPAN_MSC_FEASIBILITY_AUDIT.md`.
+- Summary: Japan should be upgraded from generic alternative to high-potential candidate. Science Tokyo IGP(C), especially Systems and Control Engineering / EEE, is the primary Japan benchmark. Do not activate Japanese yet; preserve TOEFL; keep GRE conditional.
 
 ### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
 - Status: **Needs Master Acknowledgement / Sequencing Decision**
-- Summary: `MSC_APPLICATION_GATES_MASTER_MAP.md` is the strategic omission-prevention map for the 2029 MSc cycle. It separates being listed from being active; includes German, TOEFL, conditional GRE, APS, VPD, programme screenings, application calendar, transcript/course evidence, application materials, funding and post-offer gates; recommends sequencing by deadline/validity/lead time and no simultaneous high-intensity German + TOEFL + GRE.
+- Summary: Strategic omission-prevention map for German, TOEFL, conditional GRE, APS, VPD, programme screening, application materials, funding and post-offer gates.
 
 ### VTC-20260822-04 — Establish QS Top-100 Affordable Robotics MSc Target Pool
 - Status: **Needs Master Decision — Target-Pool Framework**
-- Summary: Preserve the QS Top-100, approximately RMB100k/year all-in robotics-aligned pool. TUM remains the primary Germany benchmark while the broader pool stays open. Detailed pool: `QS_TOP100_AFFORDABLE_ROBOTICS_MSC_TARGET_POOL.md`.
+- Summary: Preserve a broader affordable robotics-aligned MSc pool around the current approximately RMB100k/year all-in planning band.
 
 ### VTC-20260822-01 — TUM RCI Control-Engineering Prerequisite Audit
 - Status: Awaiting Control Response
-- Summary: Current TUM RCI rules require formal control-engineering evidence. `Computer Control Technology` is a plausible candidate but requires later syllabus / credit-classification audit; do not open a full minor solely for this before lower-cost options are checked.
+- Summary: Formal control-engineering evidence remains a prerequisite issue requiring later syllabus / credit-classification audit.
 
 ### VTC-20260821-04 — Preserve Fragmented Strategic Inputs as a Durable Life-Route Ledger
 - Status: Awaiting Control Response
-- Summary: `STRATEGIC_INPUTS.md` preserves durable user-confirmed fragments without automatically changing execution priority.
 
 ---
 
@@ -175,20 +169,19 @@ High that the communication gap is real. Medium that a dedicated thread is the b
 
 ### VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001
 - Status: **Answered by CTV-20260828-02; subsequent feedback in CTV-20260828-03.**
-- Result: Skills architecture principles adopted as a bounded Trial; HZN-001 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration deferred. Review is now requested through VTC-20260828-05.
+- Result: Skills architecture principles adopted as a bounded Trial; HZN-001 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration deferred. Review requested through VTC-20260828-05.
 
 ### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
 - Status: **Answered by CTV-20260828-01.**
-- Result: `11_Academic/STATUS.md` activated as Active — Bounded Support / Maintenance; Notion `University Course Evidence` authorized as operational workspace; GitHub remains formal source of truth.
 
 ### VTC-20260822-06 — Normal Four-Year Graduation Baseline + TOEFL as Common English Test
-- Status: Superseded for exam sequencing by VTC-20260825-01; retained facts remain: normal 2029 graduation, no early graduation, TOEFL preferred, TUM benchmark, German longest runway, GRE conditional.
+- Status: Superseded for exam sequencing by VTC-20260825-01; retained facts remain normal 2029 graduation, TOEFL preferred, TUM benchmark, German longest runway, GRE conditional.
 
 ### VTC-20260822-05 — TUM-Primary Multi-School Exam Preparation Strategy
-- Status: Superseded by later exam-map work.
+- Status: Superseded.
 
 ### VTC-20260822-03 — Evaluate Three-Year Early Graduation as a Strategic Option
-- Status: Withdrawn / Closed by explicit user decision.
+- Status: Withdrawn / Closed.
 
 ### VTC-20260824-01 — Activate Dedicated Personal Finance & Capital Specialist Thread
 - Status: Answered by `CTV-20260824-01`.
@@ -197,10 +190,10 @@ High that the communication gap is real. Medium that a dedicated thread is the b
 - Status: Answered by `CTV-20260824-01`.
 
 ### VTC-20260821-03 — Refine Overseas MSc Financial Constraint to Total Annual Affordability
-- Status: Answered by `CTV-20260821-07`; approximately RMB100,000/year realistic all-in remains the current planning band.
+- Status: Answered by `CTV-20260821-07`.
 
 ### VTC-20260821-02 — Tuition-Free / Near-Zero Tuition as a Hard MSc Feasibility Constraint
-- Status: Superseded by VTC-20260821-03.
+- Status: Superseded.
 
 ### VTC-20260821-01 — Operationalize Career Opportunity Evaluation & Company Due Diligence
 - Status: Answered by `CTV-20260821-05` and subsequent Career activation.
