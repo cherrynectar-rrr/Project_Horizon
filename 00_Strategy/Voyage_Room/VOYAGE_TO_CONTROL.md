@@ -1,6 +1,6 @@
 # Voyage Room → Project Control
 
-Last Updated: 2026-08-25
+Last Updated: 2026-08-28
 Owner / Sole Writer: Voyage Room
 Readers: Project Control and specialist threads
 Authority: Advisory only
@@ -15,80 +15,114 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
+### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
 
-- Date: 2026-08-25
-- Type: Graduate-application sequencing / omission-risk control
-- Trigger: User explicitly requested that all examination and application sub-lines be listed in one plan because the number of tests, verifications and applications creates a material risk of forgetting a gate.
-- Status: **Needs Master Acknowledgement / Sequencing Decision**
+- Date: 2026-08-28
+- Type: Governance / academic execution / evidence preservation
+- Trigger: As the user transitions into the next semester, recurring work has emerged around actual-course intake, assessment structures, textbook and syllabus capture, experiment/project evidence, Notion course records, semester review, and later APS/TUM course-evidence preparation. The user explicitly identified that these are execution tasks and should not be continuously handled by the Voyage Room.
+- Status: **Needs Master Decision — Thread Activation / Scope**
 
-### Executive summary
+### Problem
 
-Voyage Room created `00_Strategy/Voyage_Room/MSC_APPLICATION_GATES_MASTER_MAP.md` as the single strategic omission-prevention map for the 2029 MSc cycle.
+The work is real and recurring, but it currently has no formal execution owner.
 
-The map deliberately separates **being listed** from **being active**. It contains all currently visible branches without authorizing simultaneous preparation.
+Recent work already created a Notion `Horizon Knowledge Hub` and `University Course Evidence` database and began capturing verified first-year courses, grades, credits/hours, textbooks, lecture coverage and experiment evidence. This is useful operational infrastructure, but continued maintenance by the Voyage Room would violate the layer boundary: Voyage should explore and recommend, not become a semester administrator or evidence clerk.
 
-Current branch register:
+At the same time, this workload should not be pushed into Python, Algorithm, Linux, C++ or Career, because it is cross-course academic operations rather than a single technical domain.
 
-1. German — TestDaF / telc C1 Hochschule;
-2. TOEFL iBT;
-3. GRE General — conditional;
-4. APS — Germany-specific credential verification; current TestAS/interview procedure must be rechecked;
-5. uni-assist VPD — TUM/Germany as applicable;
-6. TUM ECE aptitude assessment / possible interview;
-7. programme-specific oral / written / internet screening;
-8. application-calendar / deadline control;
-9. transcript / GPA / course-guide evidence;
-10. CV / motivation / recommendation / research-fit materials;
-11. scholarship / funding applications;
-12. post-offer visa / proof-of-funds / insurance / enrollment.
+### Recommended thread
 
-Explicitly not active under the current pool: IELTS, JLPT, Korean/French/Italian admission-language exams, GMAT, GRE Subject and GATE.
+Recommended name: **Academic Operations & Evidence / 学业运营与证据**.
 
-### Key timing correction
+Recommended repository path if activated: `11_Academic/STATUS.md` (final naming/path remains a Project Control decision).
 
-The application cycle must be planned from the **earliest retained school deadline**, not from TUM's April–May window.
+Recommended state: **Active — Bounded Support / Maintenance**.
 
-Current evidence shows:
+Recommended current goal: **Year 2 Fall Academic Baseline v1**.
 
-- TOEFL scores are currently valid for 2 years, so official testing should not be unnecessarily early;
-- GRE scores are currently reportable for 5 years;
-- TestDaF certificates are currently valid indefinitely, subject to any university-specific recency rule;
-- current KTH cycles demonstrate that some applications begin in October of the year before entry and close in January;
-- therefore a 2029-entry application season may begin in autumn 2028.
+Recommended first verifiable output:
 
-Recommended safety architecture:
+1. verified current-semester course register based primarily on the user's actual execution plan / registration evidence;
+2. assessment-method and deadline map for materially important courses;
+3. evidence-capture baseline for textbooks, official syllabi, lecture coverage, labs/projects and grades;
+4. clean Notion `University Course Evidence` maintenance workflow;
+5. semester-end archive procedure that can later support APS, prerequisite audits and MSc applications without reconstructing years of coursework from memory.
 
-- 2026 H2–2027: German foundation + English ability + academic evidence preservation; no GRE activation;
-- 2028 H1: freeze Target Pool v1, identify earliest deadlines, decide GRE trigger, recheck APS procedure, begin official TOEFL / German-exam timing when readiness supports it;
-- 2028 H2: main standardized-test and application-preparation season; target German proof + valid TOEFL done by year end, GRE only if activated, APS ideally usable, recommenders/materials/scholarship calendar ready; earliest applications may already open;
-- 2029 Jan–Mar: backup retakes and early-deadline schools; Germany documentation/VPD readiness;
-- 2029 Apr–May: TUM application should have no first-time language-test dependency;
-- 2029 Jun–Sep: interviews, offers, funding comparison, visa/enrollment.
+### Scope
+
+Authorized bounded responsibilities should include:
+
+- ingesting the user's actual semester course plan and distinguishing it from the school's generic培养方案;
+- maintaining factual course records: official Chinese/English name, credits, hours, semester, assessment structure and grade when verified;
+- preserving course evidence: syllabus, textbook, lecture outline, lab/project instructions, reports, code/results and other verifiable artifacts;
+- maintaining the Notion course-evidence system and lightweight semester dashboard;
+- tracking academic deadlines / grading-risk items when the user supplies the relevant course information;
+- conducting a short weekly or event-driven academic-operations review when needed;
+- performing semester-end archival and marking what remains missing;
+- preparing factual course-evidence packages for later APS / TUM / MSc prerequisite review;
+- escalating strategic elective choices, overload decisions, GPA-versus-project trade-offs, graduation-route changes and cross-thread resource conflicts to Project Control or Voyage as appropriate.
+
+### Explicit non-scope / guardrails
+
+This thread should **not** become a universal tutoring thread or a second Main Control.
+
+It should not:
+
+- decide long-term academic, country, career or research direction;
+- independently change Horizon priorities or allocate time across technical threads;
+- teach Python / Algorithm / Linux / C++ material that already belongs to existing specialists;
+- turn every lecture into a polished Notion note;
+- copy whole textbooks or PPT decks into Notion;
+- treat school curriculum as the user's personal growth route;
+- create daily administrative overhead merely to keep the database visually complete.
+
+When a course overlaps an existing specialist, subject-matter learning stays with that specialist; Academic Operations & Evidence only maintains the academic/evidence layer.
+
+### Resource ceiling
+
+Recommended default workload:
+
+- one semester-start baseline setup;
+- approximately one short weekly review only when useful;
+- event-driven updates for major assignments, labs, exams, project outputs, grades or newly available official materials;
+- one semester-end archive.
+
+This is a support system, not a new technical main line.
+
+### Capacity / opportunity-cost answer
+
+If this thread is accepted, the thing that should temporarily stop is **Voyage Room doing recurring course administration and Notion evidence maintenance directly**. Main Control should also not be burdened with routine course-record upkeep.
+
+No new high-intensity study line is implied. The purpose is to reduce coordination waste and future application reconstruction cost, not to add another curriculum.
 
 ### Decision requested from Project Control
 
 Project Control is asked to:
 
-1. acknowledge the master-gates map as the official strategic omission-prevention reference for the 2029 MSc cycle;
-2. preserve the rule that listing a branch does not activate it;
-3. decide when German becomes a formal maintenance/support workload;
-4. keep TOEFL official testing late enough to preserve validity but early enough for autumn/winter 2028 application deadlines;
-5. require Target Pool v1 freeze no later than 2028 H1 so GRE and programme-specific exam requirements can be resolved in time;
-6. require a dedicated application calendar before the first 2029-cycle application opens;
-7. retain the no-simultaneous-high-intensity-German+TOEFL+GRE guardrail.
+1. decide whether a dedicated Academic Operations & Evidence specialist thread should be activated;
+2. if yes, approve its bounded scope and repository path;
+3. decide whether the current Notion `University Course Evidence` database becomes this thread's operational workspace while GitHub remains the formal Horizon source of truth;
+4. preserve the boundary that academic evidence maintenance does not grant the thread authority over technical priorities, electives with major strategic consequences, GPA/resource trade-offs or graduate-route decisions;
+5. define whether current semester-start work should become the thread's first milestone immediately after activation.
 
 ### Voyage Room recommendation
 
-**Adopt the map and sequence by deadline / validity / lead time, not by anxiety.** German receives the longest runway; TOEFL is timed to its 2-year validity and earliest application deadlines; GRE remains conditional; APS/VPD and programme-specific screenings are tracked as first-class gates even though they are not ordinary language tests.
+**Adopt.** The workload has crossed the threshold from one-off organization into recurring operational work, and a bounded specialist reduces role leakage without creating a new technical main line.
 
 ### Confidence
 
-High on the architecture and omission-control logic. High on current TOEFL/GRE/TestDaF validity facts. Medium on 2028–2029 programme procedures because APS, admissions, scholarships and exact school deadlines can change and must be reverified in the real cycle.
+High on the governance need and scope separation. Medium on the exact thread name/path, which Project Control should choose to fit repository organization.
 
 ---
 
 ## Other Awaiting Control Responses
+
+### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
+
+- Date: 2026-08-25
+- Type: Graduate-application sequencing / omission-risk control
+- Status: **Needs Master Acknowledgement / Sequencing Decision**
+- Summary: Voyage Room created `00_Strategy/Voyage_Room/MSC_APPLICATION_GATES_MASTER_MAP.md` as the strategic omission-prevention map for the 2029 MSc cycle. It separates being listed from being active; includes German, TOEFL, conditional GRE, APS, VPD, programme screenings, application calendar, transcript/course evidence, application materials, funding and post-offer gates; recommends sequencing by deadline/validity/lead time and no simultaneous high-intensity German + TOEFL + GRE.
 
 ### VTC-20260822-04 — Establish QS Top-100 Affordable Robotics MSc Target Pool
 
