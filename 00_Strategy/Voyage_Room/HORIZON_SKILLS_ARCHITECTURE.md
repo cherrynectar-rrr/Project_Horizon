@@ -2,7 +2,7 @@
 
 Last Updated: 2026-08-28
 Owner: Voyage Room (prototype / strategic design)
-Status: Draft — Awaiting Project Control Adoption
+Status: Trial Architecture — Bounded Trial Authorized by Project Control
 
 ## 1. Purpose
 
@@ -17,6 +17,8 @@ Skills should compress mature methods without creating new execution lines.
 > Status = what is currently true.  
 > Strategy = what may be worth doing.  
 > Evidence = what actually happened.
+
+Project Control authorized these architecture principles as a **bounded Trial** in `CTV-20260828-02`. This does not create a fourth governance layer or authorize unrestricted Skill implementation.
 
 ## 2. What a Skill Is Not
 
@@ -90,101 +92,107 @@ Every canonical `SKILL.md` should contain:
 15. **Anti-patterns** — recurring failure modes.
 16. **Change Log** — meaningful changes only.
 
-## 5. Proposed Lifecycle
+## 5. Lifecycle
+
+Project Control adopted the following lifecycle for trial purposes:
 
 ### Draft
 
-A role may design a Skill inside its own writable area. It is not yet canonical.
+A role may design a Skill inside its own writable area when governance permits. It is not canonical and does not bind other roles.
 
 ### Trial
 
-The Skill is used on several real tasks. Failures, missing inputs and unnecessary steps are recorded.
+The Skill is used on real tasks. Failures, missing inputs, unnecessary steps and measurable value are recorded.
+
+Cross-thread trial use requires Project Control authorization.
 
 ### Adopted
 
-Project Control approves cross-thread use and canonical location. An adopted Skill becomes the preferred operating procedure for its task pattern, but remains subordinate to governance documents.
+Project Control approves canonical cross-thread use and governance. An adopted Skill becomes the preferred operating procedure for its task pattern, but remains subordinate to higher-authority documents.
 
 ### Deprecated
 
 A newer Skill or governance change supersedes it. The old Skill remains discoverable with a clear replacement pointer when useful.
 
-## 6. Proposed Canonical Library
+## 6. Canonical Library — Deferred
 
-Recommended canonical location after Project Control approval:
+Intended future canonical location:
 
 `00_Project_Control/Skills/`
 
-Rationale:
+Project Control accepted this as the intended direction but **deferred physical migration and canonicalization** because `THREAD_PROTOCOL.md` does not yet define shared Skill Library write ownership.
 
-- Skills are shared operating infrastructure rather than another execution thread;
-- Project Control can govern cross-thread adoption without making the Skill itself a Main Control decision;
-- role-owned prototypes may remain inside the role's writable directory until adopted;
-- canonical Skills should be stable, low-frequency artifacts.
+During the bounded trial:
 
-Proposed shape:
+- `HZN-001` remains physically located in the Voyage-owned prototype path;
+- shared invocation is authorized by Control;
+- physical location does not imply canonical ownership;
+- no other role may infer new write rights from the Skill's location or trial authorization.
+
+Potential future shape remains:
 
 ```text
 00_Project_Control/Skills/
   README.md
   HZN-001_horizon-context-sync/
     SKILL.md
-  HZN-002_status-update/
-    SKILL.md
-  HZN-003_evidence-intake/
-    SKILL.md
 ```
 
-Final location and write ownership require Project Control approval because THREAD_PROTOCOL does not yet define a shared Skill Library.
+Do not create this canonical structure before the ownership question is explicitly resolved.
 
-## 7. Initial Skill Backlog
-
-Priority is intentionally small.
+## 7. Current Trial and Frozen Backlog
 
 ### HZN-001 — horizon-context-sync
 
-Determine the minimum authoritative Horizon state that must be read before an important task and produce a role-safe context packet.
+Status: **Shared Cross-Thread Trial Authorized**.
 
-Why first: every later Skill depends on correct state and authority.
+Purpose: determine the minimum authoritative Horizon state that must be read before an important task and produce a role-safe context packet.
 
-### HZN-002 — status-update
+Current artifact:
 
-Perform evidence-safe, role-safe STATUS / bridge updates only when a meaningful change exists.
+`00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md`
 
-Why next: status writing is repetitive and high-risk if done inconsistently.
+Review trigger:
 
-### HZN-003 — evidence-intake
+- approximately 3–5 meaningful real uses;
+- use across more than one Horizon role;
+- any material authority ambiguity, failure or evidence that the Skill adds more overhead than it removes.
 
-Turn user-supplied files/screenshots/project artifacts into verified structured evidence without inventing missing facts.
+### Frozen backlog
 
-Why next: directly useful to Academic Operations, Career, projects and future MSc applications.
+The following concepts remain **not authorized for implementation** until Project Control reviews HZN-001 trial evidence:
 
-### HZN-004 — strategic-route-audit
+- `HZN-002 — status-update`
+- `HZN-003 — evidence-intake`
+- `HZN-004 — strategic-route-audit`
+- `HZN-005 — opportunity-filter`
 
-Standardize deep comparison of countries, degrees, careers or research routes using current external evidence, assumptions, opportunity cost and decision gates.
-
-### HZN-005 — opportunity-filter
-
-Apply the Charter decision framework to competitions, internships, projects, courses or external opportunities and explicitly answer: "What temporarily will not be done?"
-
-Do not create all backlog Skills at once. Promote only workflows that have repeated real use.
+The backlog may remain documented as candidate patterns, but no Skill artifact should be implemented merely because the pattern is attractive.
 
 ## 8. Invocation Model
 
-Skills should be invoked by task pattern, not by user having to remember an exact command.
+Skills should be invoked by task pattern, not by requiring the user to remember an exact command.
 
-Example:
+For the current trial:
 
-- User asks an important cross-thread Horizon question → invoke `horizon-context-sync` first.
-- A verified milestone is completed → consider `status-update`.
-- User uploads a syllabus / grade screenshot / report → consider `evidence-intake`.
+- important cross-thread or governance-sensitive Horizon task → consider `HZN-001` preflight;
+- routine low-impact work → do not invoke a full sync unnecessarily.
 
-Invocation does not mean visible ceremony. Routine Skill use should normally be silent unless the user benefits from seeing the procedure or decision boundary.
+Invocation should normally be silent. The user should receive the actual task result, not a recital of governance machinery.
 
-## 9. Relationship to Tools
+## 9. Relationship to Threads and Tools
 
 A Skill may orchestrate existing tools such as GitHub, Notion, web research, file analysis or other connected systems.
 
 The Skill is the procedure; the tool is the mechanism.
+
+A Skill does not own the underlying work merely because it coordinates a procedure.
+
+Example boundary:
+
+- Academic Operations & Evidence owns factual academic evidence maintenance;
+- a future `evidence-intake` Skill could standardize *how* evidence is ingested across eligible contexts;
+- such a Skill would not transfer Academic's operational authority to Voyage Room or any other role.
 
 A Skill must not assume a connector is available. If a required tool is unavailable, it should either use an allowed fallback or stop with a clear limitation.
 
@@ -202,13 +210,15 @@ The Skills layer succeeds if it:
 
 It fails if it becomes a large bureaucracy that requires maintaining Skills for their own sake.
 
-## 11. Immediate Recommendation
+## 11. Immediate Operating Rule
 
-Prototype and trial only `HZN-001 — horizon-context-sync` first.
+For now:
 
-After several real uses, Project Control should decide whether to:
+1. use and observe only `HZN-001`;
+2. record only meaningful Trial evidence;
+3. revise HZN-001 only from observed friction, failure or clear simplification opportunities;
+4. seek real use from more than one role type;
+5. keep HZN-002–005 frozen;
+6. return to Project Control after approximately 3–5 meaningful trials or sooner if a material problem appears.
 
-- adopt the shared Skills architecture;
-- choose the canonical location;
-- promote HZN-001;
-- authorize HZN-002 and HZN-003 as the next two skills.
+The next milestone is **decision-quality HZN-001 trial evidence**, not a larger Skill catalog.
