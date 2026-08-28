@@ -1,7 +1,7 @@
 # HZN-001 — horizon-context-sync
 
 Version: 0.5
-Status: Candidate — Trial
+Status: Adopted — Active
 Owner: Horizon Core
 Last Updated: 2026-08-29
 
@@ -20,10 +20,10 @@ This Skill exists to prevent:
 
 ## Version Status
 
-- **Adopted baseline:** HZN-001 v0.4, pinned at adoption-time blob SHA `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78` under `CTV-20260828-04`.
-- **Current candidate:** v0.5 Horizon Core Edition.
-- v0.5 does not replace adopted v0.4 until Horizon Core explicitly adopts it after real trial evidence.
-- Charter v4.0 and `THREAD_PROTOCOL.md` v2.0 always override stale role labels in older Skill versions.
+- **Current adopted version:** HZN-001 v0.5 — Horizon Core Edition.
+- **Historical adopted baseline:** HZN-001 v0.4, pinned at adoption-time blob SHA `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78` under `CTV-20260828-04`.
+- v0.5 supersedes v0.4 for current operation under Charter v4.0 / `THREAD_PROTOCOL.md` v2.0.
+- Later material edits are candidate changes only until Horizon Core explicitly adopts a new version.
 
 ## Triggers
 
@@ -228,19 +228,11 @@ Historical v0.1–v0.4 evidence remains in:
 
 `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
 
-Meaningful **v0.5 candidate** trials are recorded in:
+v0.5 adoption evidence is preserved in:
 
 `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG_V0.5.md`
 
-Horizon Core owns this preserved Skill workspace under Charter v4.0 / `THREAD_PROTOCOL.md` v2.0.
-
-Trial logging rules:
-
-- record only cases that reveal value, failure, friction or a needed revision;
-- do not create specialist STATUS churn merely to log Skill use;
-- a specialist's substantive execution claims still require normal specialist evidence;
-- user-reported outcomes must remain labeled as user-reported when not independently verified;
-- trial logging never creates new execution or write authority.
+Trial 005 validated Horizon Core behavior under the two-layer governance model. Trial 006 validated Specialist-side clean-state behavior without artificial STATUS churn. GitHub does not expose chat-side read telemetry; that limitation is explicitly preserved in the Trial 006 record rather than inferred away.
 
 ## Anti-patterns
 
@@ -257,15 +249,16 @@ Do not:
 
 ## Change Log
 
-### v0.5 — 2026-08-29 — Candidate / Trial
+### v0.5 — 2026-08-29 — Adopted
 
 - Migrated from the retired Voyage Room + Main Control model to **Horizon Core + Specialist Threads**.
 - Updated authority root from Charter v3.0 to Charter v4.0.
 - Removed live Voyage–Control bridge reads and old cross-role Trial Log routing machinery.
 - Simplified the Context Packet and role-based minimum-read rules.
 - Replaced `Needs Master Decision` language with `Needs Core Decision`.
-- Split historical v0.1–v0.4 Trial evidence from the v0.5 candidate Trial Log.
-- Preserved adopted v0.4 as a pinned historical baseline rather than silently overwriting it.
+- Split historical v0.1–v0.4 Trial evidence from v0.5 adoption evidence.
+- Validated one real Horizon Core use and one real Algorithm Specialist invocation under the two-layer model.
+- Preserved the evidence limitation that chat-side read telemetry is not independently visible in GitHub.
 
 ### v0.4 — 2026-08-28 — Adopted historical baseline
 
