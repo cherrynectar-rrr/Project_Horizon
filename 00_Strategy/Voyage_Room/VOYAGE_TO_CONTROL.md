@@ -15,133 +15,94 @@ Project Control and specialist threads must not edit this file. Feedback and dec
 
 ## Current Transmission
 
-### VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001
+### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
 
 - Date: 2026-08-28
-- Type: Governance / reusable operating infrastructure / context-cost reduction
-- Trigger: The user explicitly proposed beginning to create reusable Skills as Horizon now contains multiple threads, recurring GitHub/Notion workflows and stable operating patterns that are repeatedly reconstructed in chat.
-- Architecture prototype: `00_Strategy/Voyage_Room/HORIZON_SKILLS_ARCHITECTURE.md`
-- First Skill prototype: `00_Strategy/Voyage_Room/skills/horizon-context-sync/SKILL.md`
-- Status: **Needs Master Decision — Shared Skills Architecture / Canonical Location / Trial Adoption**
+- Type: Country-route comparison / life-career-capital formation / language-resource allocation
+- Trigger: User requested a direct comparison between the current Germany/TUM route and the newly audited Japan route.
+- Detailed comparison: `00_Strategy/Voyage_Room/GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md`
+- Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
 
-### Problem
+### Executive summary
 
-Horizon has reached a point where repeated workflows are mature enough to standardize, including:
+Current evidence does **not** justify immediately replacing Germany with Japan or vice versa. The two routes optimize different parts of Horizon's mission.
 
-- role-aware startup and authoritative state reads;
-- evidence-safe status updates;
-- evidence intake from user files/screenshots/artifacts;
-- strategic route audits;
-- opportunity filtering.
+**Germany currently has the stronger long-horizon life/career/settlement profile** if the user can absorb the German-language burden and chooses a financially viable programme:
 
-Without a reusable Skill layer, each chat reconstructs these procedures from context. This increases context cost, inconsistency and role leakage.
+- German graduates currently have up to 18 months to find qualified work;
+- German-university graduates may obtain settlement after more than two years of skilled employment if requirements are met;
+- EU Blue Card settlement can currently be reached after 27 months with A1 German or 21 months with B1;
+- current official German engineering pay data is strong in electrical engineering / automation / technical cybernetics;
+- OECD 2024 average annual hours worked are materially lower in Germany than Japan;
+- Germany offers stronger European mobility and broader long-term option value.
 
-At the same time, Skills must not become a fourth governance layer or a disguised way to activate new work.
+**Japan currently has the stronger admission-language efficiency and robotics/manufacturing research fit**:
 
-### Proposed definition
+- Science Tokyo IGP(C) currently offers English-taught master's routes including Systems and Control Engineering / EEE with no Japanese admission requirement;
+- Japan has unusually strong robotics, mechatronics, industrial automation and electronics/manufacturing research ecosystems;
+- regional national universities can fit the existing affordability band well;
+- MEXT creates exceptional funding upside;
+- proximity to China is materially better.
 
-A Horizon Skill is a **reusable, versioned operating procedure for a recurring task pattern**.
+Important correction: **TUM is not representative of Germany's cheapest route.** TUM ECE currently charges non-EU students EUR 6,000/semester and Munich living costs are high, so TUM remains financially conditional. Other German public universities can be materially cheaper.
 
-Key distinction:
+Important correction on Japan: **English admission does not remove the long-term Japanese-language bill.** Current JASSO guidance shows that Japanese proficiency and Japan's distinctive new-graduate recruiting process matter substantially for broad employment access.
 
-- Thread = who owns the work;
-- Skill = how a recurring type of work is performed;
-- Status = what is currently true;
-- Strategy = what may be worth doing;
-- Evidence = what actually happened.
+### Strategic recommendation
 
-A Skill never grants authority the invoking role does not already possess.
+**Preserve both candidates now; choose at a defined future gate.**
 
-### Proposed governance
+Recommended architecture:
 
-1. Skills remain subordinate to the Charter, THREAD_PROTOCOL and MASTER_STATUS.
-2. Cross-thread Skills require Project Control adoption.
-3. Role-owned prototypes may be drafted inside the role's writable area before adoption.
-4. Skills should have explicit triggers, required reads, write boundaries, procedure, output contract, verification and stop/escalation conditions.
-5. Skills should be versioned and move through `Draft → Trial → Adopted → Deprecated`.
-6. Skill use should usually be silent; it should reduce ceremony rather than create new bureaucracy.
-7. Do not create Skills merely because a workflow is imaginable. Promote only repeated real workflows.
+1. keep TOEFL / technical English as the shared language asset;
+2. allow low-cost German foundation work while Germany remains the benchmark;
+3. do not activate Japanese as a second serious language line now;
+4. create a **Germany–Japan Strategic Gate** before German escalates into B2/C1/TestDaF-level intensity;
+5. at that gate compare updated programme/lab fit, research direction, self-funded total cost, funding, employment, settlement, language burden and life preference;
+6. if Japan becomes clearly primary, reduce German before escalating Japanese;
+7. if Germany remains primary, continue German and keep Japan accessible through English-track options until final target-pool freeze.
 
-### Proposed canonical library
+### Direction-sensitive rule
 
-Recommended after adoption:
+Future technical evidence should affect the country choice:
 
-`00_Project_Control/Skills/`
-
-Reason: shared Skills are operating infrastructure, not another execution thread. Project Control is the natural curator for cross-thread adoption and write-boundary governance.
-
-Final location is explicitly left to Project Control because THREAD_PROTOCOL does not currently define shared Skill ownership.
-
-### First Skill trial — HZN-001 horizon-context-sync
-
-Purpose: before an important Horizon task, determine the **minimum authoritative context** that must be read and produce an internal role-safe context packet.
-
-HZN-001 encodes:
-
-- authority hierarchy;
-- role-specific required reads;
-- write boundaries;
-- minimum-read rather than full-repository logic;
-- current-external-fact freshness checks;
-- conflict handling;
-- escalation conditions.
-
-It is intentionally a preflight Skill, not a deliverable. The user should still receive the actual answer/task result rather than governance ceremony.
-
-### Initial backlog — not yet authorized for implementation
-
-Recommended order after HZN-001 trial:
-
-1. `HZN-002 status-update` — evidence-safe, role-safe GitHub status/bridge update workflow;
-2. `HZN-003 evidence-intake` — user files/screenshots/artifacts → verified structured evidence without fabrication;
-3. `HZN-004 strategic-route-audit` — current-source route/country/degree/career comparison;
-4. `HZN-005 opportunity-filter` — apply Charter decision framework and explicit opportunity-cost test.
-
-Do **not** build the backlog all at once.
+- control theory / industrial automation / cyber-physical systems / automotive control / broad EU engineering → Germany gains weight;
+- robotics hardware / mechatronics / embodied systems / sensors / industrial robotics / electronics-manufacturing integration → Japan gains weight;
+- AI-heavy software / pure ML → re-open the broader international pool rather than force Germany-vs-Japan.
 
 ### Decision requested from Project Control
 
 Project Control is asked to:
 
-1. decide whether Horizon should formally adopt a shared Skills layer;
-2. approve or modify the Skill definition and lifecycle in `HORIZON_SKILLS_ARCHITECTURE.md`;
-3. choose the canonical library location and write ownership;
-4. authorize `HZN-001 horizon-context-sync` for a real-world trial;
-5. preserve the rule that Skills do not override role authority or activate new workload;
-6. defer HZN-002+ until HZN-001 has been exercised enough to expose design failures.
+1. preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution;
+2. acknowledge `GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md` as the current comparison reference;
+3. establish a Germany–Japan Strategic Gate before German B2/C1/TestDaF escalation and no later than Target Pool v1 freeze in 2028 H1;
+4. retain the current affordability constraint and treat TUM as financially conditional rather than Germany-representative;
+5. preserve English/TOEFL as the common reusable asset;
+6. avoid Japanese activation until Japan probability rises enough to justify the opportunity cost.
 
-### Voyage Room recommendation
+### Voyage Room judgment if forced to choose today
 
-**Adopt the architecture as a bounded trial and trial HZN-001 first.**
+- **Germany** if the dominant objective is long-term settlement, work-life balance, higher engineering income, European mobility and the user accepts the German-language cost.
+- **Japan** if the dominant objective is English-accessible top robotics/control research, closer geography, strong manufacturing/robotics ecosystem and lower admission-language burden, while accepting that Japanese likely becomes important for long-term employment.
 
-The Skills layer can meaningfully lower context and coordination cost, but it will become harmful if Horizon starts maintaining a large library for its own sake. The correct design target is a very small number of high-leverage procedures.
-
-### Opportunity-cost answer
-
-If this is adopted, what should temporarily not be done:
-
-- do not build a large Skill catalog;
-- do not create a new Skills specialist thread;
-- do not automate unstable workflows;
-- do not spend execution time polishing Skill files instead of producing real evidence.
+For Horizon today: **do not choose yet. Build common assets and preserve option value.**
 
 ### Confidence
 
-High that repeated workflows now justify a reusable procedure layer. Medium on the final canonical location and ownership because THREAD_PROTOCOL has not yet defined this infrastructure.
+High on the current structural differences. Medium on 2029-specific admissions, fees and immigration because they must be reverified. Medium on final personal fit because research interests, language experience and real engineering/work exposure are still developing.
 
 ---
 
 ## Other Awaiting Control Responses
-
-### VTC-20260828-03 — Preserve Germany and Japan Through a Formal Strategic Gate Rather Than Choose Prematurely
-- Status: **Needs Master Decision — Dual-Candidate Preservation / Future Decision Gate**
-- Summary: Preserve Germany and Japan as parallel strategic candidates without parallel high-intensity local-language execution. Establish a Germany–Japan Strategic Gate before German escalates into B2/C1/TestDaF-level intensity and no later than 2028 H1 Target Pool freeze. Detailed comparison: `GERMANY_JAPAN_MSC_ROUTE_COMPARISON.md`.
 
 ### VTC-20260828-02 — Upgrade Japan to a Formal High-Potential 2029 MSc Strategic Candidate
 - Status: **Needs Master Decision — Strategic Candidate / Language Guardrail**
 - Summary: Japan should be upgraded from generic alternative to high-potential candidate. Science Tokyo IGP(C), especially Systems and Control Engineering / EEE, is the primary Japan benchmark. Do not activate Japanese yet; preserve TOEFL; keep GRE conditional. Detailed audit: `JAPAN_MSC_FEASIBILITY_AUDIT.md`.
 
 ### VTC-20260825-01 — Establish 2029 MSc Application Exams & Gates Master Map
+- Date: 2026-08-25
+- Type: Graduate-application sequencing / omission-risk control
 - Status: **Needs Master Acknowledgement / Sequencing Decision**
 - Summary: `MSC_APPLICATION_GATES_MASTER_MAP.md` is the strategic omission-prevention map for the 2029 MSc cycle. It separates being listed from being active; includes German, TOEFL, conditional GRE, APS, VPD, programme screenings, application calendar, transcript/course evidence, application materials, funding and post-offer gates; recommends sequencing by deadline/validity/lead time and no simultaneous high-intensity German + TOEFL + GRE.
 
@@ -160,6 +121,11 @@ High that repeated workflows now justify a reusable procedure layer. Medium on t
 ---
 
 ## Answered / Closed / Superseded
+
+### VTC-20260828-04 — Establish a Shared Horizon Skills Layer and Trial HZN-001
+- Status: **Answered by CTV-20260828-02.**
+- Result: Skills architecture principles adopted as a bounded Trial; `HZN-001 horizon-context-sync` v0.2 authorized for shared cross-thread trial use while remaining in the Voyage-owned prototype path. Canonical migration to `00_Project_Control/Skills/` is deferred pending ownership reconciliation. HZN-002–HZN-005 are frozen until approximately 3–5 meaningful HZN-001 uses across more than one role or an earlier material failure/ambiguity.
+- Current trial evidence: `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`.
 
 ### VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread
 - Status: **Answered by CTV-20260828-01.**
