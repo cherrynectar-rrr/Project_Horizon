@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-24
+Last Updated: 2026-08-28
 Status: Active
 Authority: Main control thread only
 
@@ -35,8 +35,9 @@ Voyage Room may challenge assumptions and surface options, but it cannot activat
 4. C++ — support for algorithm implementation
 5. Career / Internship — Active — Bounded Support; event-driven
 6. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
+7. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
 
-The addition of Finance does **not** change the one-main-technical-line principle. Strategic importance and current execution intensity are not the same thing.
+The addition of Finance and Academic Operations does **not** change the one-main-technical-line principle. Strategic importance and execution support do not imply equal daily time allocation.
 
 ## Track Overview
 
@@ -48,6 +49,7 @@ The addition of Finance does **not** change the one-main-technical-line principl
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Continue supporting Algorithm and patch only real C++/STL gaps |
 | [Career / Internship](../09_Career/STATUS.md) | Bounded support | Active; Internship Readiness Baseline v1 complete; on-demand opportunity review active | New readiness evidence, concrete high-fit opportunity, or seasonal application decision |
 | [Personal Finance & Capital](../10_Finance/STATUS.md) | Bounded support / maintenance | Activated 2026-08-24; first baseline in progress | Personal Finance Baseline v1 |
+| [Academic Operations & Evidence](../11_Academic/STATUS.md) | Bounded support / maintenance | Activated 2026-08-28; semester baseline in progress | Year 2 Fall Academic Baseline v1 |
 
 ## Current Main-Line Decision
 
@@ -59,7 +61,44 @@ Linux and C++ remain support lines. C++ standalone preheat is complete; Linux sh
 
 Career / Internship remains Active — Bounded Support. Its readiness baseline is complete; it may evaluate concrete opportunities and capture market feedback, but it may not create technical curricula or a continuous high-volume application workload without Project Control approval.
 
-Personal Finance & Capital is now Active — Bounded Support / Maintenance. It exists to handle recurring operational finance work at low time cost and must not displace GPA/core coursework, Python, Algorithm or approved Career work.
+Personal Finance & Capital is Active — Bounded Support / Maintenance. It handles recurring operational finance work at low time cost and must not displace GPA/core coursework, Python, Algorithm or approved Career work.
+
+Academic Operations & Evidence is Active — Bounded Support / Maintenance. It owns the factual academic-operations and course-evidence layer, not subject-matter teaching or strategic academic decisions. It should reduce recurring administration and later APS/MSc evidence-reconstruction cost without creating daily overhead.
+
+## Academic Operations & Evidence Framework
+
+Project Control adopts `VTC-20260828-01 — Establish Academic Operations & Evidence as a Bounded-Support Specialist Thread`.
+
+### Current Academic Objective
+
+`Year 2 Fall Academic Baseline v1` should establish:
+
+1. a verified current-semester course register based primarily on actual registration / execution evidence rather than the generic school curriculum;
+2. assessment methods and materially important deadlines when verified;
+3. an evidence-capture baseline for textbooks, official syllabi, lecture coverage, labs/projects and grades;
+4. a lightweight Notion `University Course Evidence` maintenance workflow;
+5. a semester-end archive procedure supporting later APS, prerequisite audits and MSc applications.
+
+### Workspace Boundary
+
+- GitHub remains the formal Horizon source of truth for governance, thread state and meaningful milestones.
+- Notion `University Course Evidence` may be used as the operational workspace for structured course records and evidence maintenance.
+- Strategic or cross-thread decisions must return to Project Control and must not exist only in Notion.
+
+### Resource Ceiling
+
+Default Academic Operations workload:
+
+- one semester-start baseline setup;
+- one short weekly review only when useful;
+- event-driven updates for major assignments, labs, exams, project outputs, grades or newly available official materials;
+- one semester-end archive.
+
+No standing daily note-taking or administration quota is authorized.
+
+### Boundary
+
+Academic Operations & Evidence may maintain factual course records, deadlines and evidence packages. It may not become a universal tutoring thread, change technical priorities, decide electives with major strategic consequences, or treat the school curriculum as the user's personal growth route. When a course overlaps an existing specialist, subject-matter learning remains with that specialist.
 
 ## First-Internship Readiness Framework
 
@@ -180,7 +219,7 @@ None reported.
 
 ## Decisions Needed
 
-The latest Finance activation request has been resolved by Project Control. Other Voyage Room transmissions dated 2026-08-21 through 2026-08-22 may still require separate acknowledgement or decision; they should be handled individually rather than silently folded into execution state.
+`VTC-20260828-01` is resolved by Project Control. Other Voyage Room transmissions still awaiting separate review include the 2029 MSc application gates map, the affordable robotics MSc target-pool framework, the TUM RCI control-engineering prerequisite audit, and the durable strategic-input ledger proposal.
 
 ## Next Master Review
 
@@ -192,6 +231,7 @@ Review on meaningful changes including:
 - concrete high-fit internship opportunity or seasonal application decision;
 - first 3–5 Career opportunity reviews producing repeated market evidence;
 - Personal Finance Baseline v1 completion;
+- Year 2 Fall Academic Baseline v1 completion or an academic issue requiring cross-thread resources;
 - a material financial change or finance issue requiring cross-thread resources;
 - a competition result;
 - `Needs Master Decision: Yes`;
