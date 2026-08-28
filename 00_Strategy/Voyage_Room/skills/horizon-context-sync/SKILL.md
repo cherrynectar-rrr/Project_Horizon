@@ -224,9 +224,13 @@ Stop or escalate when:
 
 ## Trial Evidence
 
-Meaningful v0.5 trials may be recorded in:
+Historical v0.1–v0.4 evidence remains in:
 
 `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
+
+Meaningful **v0.5 candidate** trials are recorded in:
+
+`00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG_V0.5.md`
 
 Horizon Core owns this preserved Skill workspace under Charter v4.0 / `THREAD_PROTOCOL.md` v2.0.
 
@@ -260,6 +264,7 @@ Do not:
 - Removed live Voyage–Control bridge reads and old cross-role Trial Log routing machinery.
 - Simplified the Context Packet and role-based minimum-read rules.
 - Replaced `Needs Master Decision` language with `Needs Core Decision`.
+- Split historical v0.1–v0.4 Trial evidence from the v0.5 candidate Trial Log.
 - Preserved adopted v0.4 as a pinned historical baseline rather than silently overwriting it.
 
 ### v0.4 — 2026-08-28 — Adopted historical baseline
@@ -268,4 +273,4 @@ Do not:
 - Proven across Voyage Room, Main Control and Algorithm Specialist use.
 - Historical adopted artifact pinned by blob SHA.
 
-Earlier v0.1–v0.3 changes remain preserved in Git history and `TRIAL_LOG.md`.
+Earlier v0.1–v0.3 changes remain preserved in Git history and the historical `TRIAL_LOG.md`.
