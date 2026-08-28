@@ -1,138 +1,186 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-08-16
-Version: V1.1
+Last Updated: 2026-08-29
+Version: V2.0 — Horizon Core Edition
 
 ## Purpose
 
-GitHub is the shared source of truth for Project Horizon's current state. Chat history can provide context, but it must not be the only place where milestones, blockers, route changes, or competition results are recorded.
+GitHub is the shared source of truth for Project Horizon's current state. Chat history provides context but must not be the only place where milestones, blockers, route changes or major decisions are recorded.
 
-Project Horizon uses three layers:
+Project Horizon now uses two layers:
 
-- **Strategic layer — Voyage Room:** explores, analyzes and proposes recommendations.
-- **Control layer — Project Control / main control thread:** synthesizes evidence, makes cross-thread judgments and allocates resources.
-- **Execution layer — specialist threads:** performs concrete learning, projects and evidence production.
+- **Horizon Core / 核心舱:** Explore + Decide & Coordinate.
+- **Specialist Threads:** Execute approved work and produce evidence.
 
-The Voyage Room is not an execution thread and is not parallel to Python, C++, Linux, Algorithm or other specialist domains.
+The former Voyage Room / Main Control split is retired. Strategic exploration remains mandatory as an internal mode of Horizon Core rather than a separate top-level chat.
 
-## Session Startup
+---
 
-For every important Project Horizon conversation:
+## 1. Session Startup
 
-1. For an execution-thread conversation, read that thread's `STATUS.md` before planning or changing work. The Voyage Room follows the strategic startup rules below instead of using a `STATUS.md`.
-2. Read `00_Project_Control/MASTER_STATUS.md` when the task involves priorities, dependencies, route choices, competition strategy, or another thread.
-3. If chat memory conflicts with GitHub, verify the latest repository state before acting.
-4. Use chat memory as supporting context only, never as the sole state source.
+### Horizon Core
 
-Routine, low-impact questions do not require a full status review.
+For important Core work:
 
-For strategic work, the role-specific startup rules in **Strategic Communication Protocol** also apply.
+1. Read `00_Project_Control/MASTER_STATUS.md`.
+2. Read only the specialist `STATUS.md` files that can materially affect the task.
+3. Read relevant strategic documents under `00_Strategy/Voyage_Room/` when the task depends on prior route research, unresolved hypotheses or preserved strategic evidence.
+4. Verify current external facts when the answer depends on mutable real-world information.
+5. Use chat memory as supporting context only.
 
-## Write Ownership
+For a major decision, Horizon Core should use the internal two-pass discipline:
 
-| Thread | May update |
-| --- | --- |
-| Voyage Room | Voyage Room documents and `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`; `CONTROL_TO_VOYAGE.md` is read-only |
-| Main control thread | `00_Project_Control/MASTER_STATUS.md` and `00_Project_Control/CONTROL_TO_VOYAGE.md`; `VOYAGE_TO_CONTROL.md` is read-only |
-| Python thread | `01_Python/STATUS.md` |
-| C++ thread | `02_CPP/STATUS.md` |
-| Linux thread | `03_Linux/STATUS.md` |
-| Algorithm thread | `05_Algorithm/STATUS.md` |
+- **Explore:** alternatives, uncertainty, counter-cases, missing evidence.
+- **Decide & Coordinate:** temporary decision, resources, opportunity cost, review trigger.
 
-Each specialist thread may write only its own `STATUS.md`. Only the main control thread may edit `MASTER_STATUS.md`.
+### Specialist Thread
 
-The Voyage Room does not use the execution-thread `STATUS.md` format. It records analysis, assumptions, recommendations, open questions and strategic decision history in its own documents. A Voyage Room recommendation does not become an active route until the main control thread adopts it.
+For important execution work:
 
-The two strategic communication files have exactly one writer each. The Voyage Room and main control thread must never jointly edit the same communication file.
+1. Read that specialist's own `STATUS.md`.
+2. Read `MASTER_STATUS.md` when the task involves priority, another thread, capacity conflict, activation state, a competition/project route or a Core dependency.
+3. Read strategic documents only when the approved execution scope genuinely depends on long-term route context.
+4. Verify mutable external facts when material.
 
-The Charter is outside this status-sync protocol and must not be changed as part of routine status updates.
+Routine low-impact questions do not require a full project sync.
 
-## Strategic Communication Protocol
+---
 
-### Voyage Room to Project Control
+## 2. Write Ownership
 
-The Voyage Room updates `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md` when it produces any of the following:
+### Horizon Core
 
-- a meaningful long-term strategic judgment;
-- a route hypothesis worth evaluating;
-- a major recommendation;
-- a material risk finding;
-- a question requiring main-control judgment.
-
-Project Control must read the latest `VOYAGE_TO_CONTROL.md` before handling:
-
-- long-term direction;
-- academic route;
-- graduate-study-abroad or international route;
-- career direction;
-- research direction;
-- a major competition or project;
-- significant time or resource reallocation;
-- an overall Project Horizon route adjustment.
-
-Project Control evaluates the Voyage Room's work together with:
-
-- `MASTER_STATUS.md`;
-- relevant specialist-thread `STATUS.md` files;
-- Opportunity Radar facts when the decision concerns external opportunities;
-- current real-world constraints, including time, energy, health, finances and confirmed commitments.
-
-### Project Control to Voyage Room
-
-Project Control updates `00_Project_Control/CONTROL_TO_VOYAGE.md` when it has:
-
-- important feedback on a Voyage Room recommendation;
-- an adopted, rejected or deferred strategic decision;
-- a new question or scenario requiring further strategic research;
-- changed constraints that materially affect prior analysis.
-
-Before the next strategic analysis that depends on Project Horizon's actual state, the Voyage Room reads:
+Horizon Core may maintain:
 
 - `00_Project_Control/MASTER_STATUS.md`;
-- `00_Project_Control/CONTROL_TO_VOYAGE.md`;
-- any specialist `STATUS.md` files necessary for the question.
+- `00_Project_Control/THREAD_PROTOCOL.md`;
+- top-level control/governance documents explicitly assigned to Core;
+- strategic analysis documents under `00_Strategy/Voyage_Room/` after the merger, except frozen historical bridge files;
+- future Core-owned shared infrastructure explicitly authorized by Charter / Core decision.
 
-### Freedom and Authority Boundary
+The following former bridge files are **historical and frozen after merger handoff**:
 
-The Voyage Room has broad freedom to explore. It may challenge the current route, present conflicting hypotheses and research questions far beyond the current execution horizon. It is not bound by execution-thread rules such as one active deliverable or one narrowly scoped objective.
+- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`;
+- `00_Project_Control/CONTROL_TO_VOYAGE.md`.
 
-This freedom is analytical, not operational. The Voyage Room cannot directly schedule an execution thread, allocate resources, activate or pause a technical line, or modify `MASTER_STATUS.md`.
+Do not use them for new top-level communication after the merger is complete.
 
-**Role relationship:** Voyage Room = Explore; Main Control = Decide & Coordinate; Specialist Threads = Execute.
+### Specialist Threads
 
-## When to Update
+Each specialist thread may maintain only its own `STATUS.md` and any operational workspace/file explicitly authorized for that thread by Core.
 
-Update a status file only when at least one of these occurs:
+Current specialist state owners include:
 
-- a meaningful milestone is completed;
-- a blocker appears, changes, or is resolved;
-- the learning or project route changes;
-- a competition result is available;
-- a decision is needed from the main control thread;
-- the next milestone materially changes.
+- Python → `01_Python/STATUS.md`
+- C++ → `02_CPP/STATUS.md`
+- Linux → `03_Linux/STATUS.md`
+- Algorithm → `05_Algorithm/STATUS.md`
+- Career / Internship → `09_Career/STATUS.md`
+- Personal Finance & Capital → `10_Finance/STATUS.md`
+- Academic Operations & Evidence → `11_Academic/STATUS.md`
 
-Do not update status files for ordinary conversation, small exercises, temporary thoughts, or diary-style notes.
+Future specialists follow the same single-owner rule.
 
-## Update Rules
+A specialist must not modify another specialist's state, `MASTER_STATUS.md`, Core strategy, or cross-thread priority.
+
+---
+
+## 3. Horizon Core Internal Decision Discipline
+
+The merger removes chat-to-chat relay, not strategic dissent.
+
+For high-impact decisions, Horizon Core should separate:
+
+### Explore mode
+
+- generate serious alternatives;
+- challenge the current route;
+- preserve plausible competing hypotheses;
+- identify uncertainty and evidence gaps;
+- research current external reality when needed;
+- allow deferral when evidence is insufficient.
+
+Explore output is not automatically an execution change.
+
+### Decide & Coordinate mode
+
+- compare options against current evidence and constraints;
+- make, reject, defer or bound an experiment;
+- decide resource implications;
+- state what will temporarily not be done;
+- define review triggers;
+- update formal state only when a meaningful change occurs.
+
+A major decision should not be justified solely by the current plan's convenience when a credible counter-case exists.
+
+---
+
+## 4. Specialist Escalation
+
+A specialist handles concrete execution inside its scope.
+
+Escalate to Horizon Core when the issue involves:
+
+- long-term direction;
+- another thread's priority or resources;
+- activation / pause / promotion of a line;
+- strategic electives or course overload;
+- GPA-versus-project or competition trade-offs;
+- research / career / country / graduate-route decisions;
+- a repeated technical gap that may justify cross-thread allocation;
+- any conflict between specialist state and `MASTER_STATUS.md`.
+
+Use:
+
+`Needs Core Decision: Yes`
+
+when a meaningful specialist-state update genuinely requires Core judgment.
+
+Do not manufacture STATUS updates merely to transmit a casual cross-chat message.
+
+---
+
+## 5. When to Update STATUS / MASTER_STATUS
+
+Update only when at least one meaningful change occurs:
+
+- a milestone is completed;
+- a blocker appears, changes or resolves;
+- the learning/project route materially changes;
+- a competition/application/project result arrives;
+- the next milestone materially changes;
+- a cross-thread decision changes active state or priority;
+- a specialist requires a Core decision.
+
+Do not update formal state for ordinary conversation, tiny exercises, speculative plans or diary entries.
+
+`MASTER_STATUS.md` is a control summary, not a complete history archive.
+
+---
+
+## 6. Update Rules
 
 Before writing:
 
-1. Fetch the latest version of the target file.
+1. Fetch the latest target file and current SHA.
 2. Preserve valuable existing facts.
-3. Change only the sections affected by new evidence.
-4. Use an ISO date in `Last Updated`.
-5. Keep entries concise, factual, and verifiable.
-6. Add repository paths or commit links under `Evidence` when available.
-7. Never record an assumption as completed work.
-8. If a route decision is required, set `Needs Master Decision` to `Yes` and explain the decision needed.
+3. Change only what new evidence or a formal decision justifies.
+4. Use ISO dates.
+5. Keep state concise, factual and verifiable.
+6. Add paths / commits / artifacts when useful.
+7. Never record a plan as completed work.
+8. Distinguish verified evidence from user reports and inference.
+9. If write authority is unclear, fail closed and resolve governance before writing.
 
-## Standard STATUS.md Shape
+---
+
+## 7. Standard Specialist STATUS Shape
 
 ```markdown
 # <Thread> Status
 
 Last Updated: YYYY-MM-DD
-Status: <Main / Support / Preheat / Active / Paused / Blocked / Not Fully Activated>
+Status: <Main / Support / Active / Paused / Blocked / Bounded Support / Maintenance>
 
 ## Current Goal
 ...
@@ -155,21 +203,91 @@ Status: <Main / Support / Preheat / Active / Paused / Blocked / Not Fully Activa
 ## Blockers
 None
 
-## Needs Master Decision
+## Needs Core Decision
 No
 ```
 
-Use `None recorded` when the repository contains no verified completion or blocker. Do not fill gaps from memory alone.
+Legacy `Needs Master Decision` wording remains understandable in older files; specialists may migrate to `Needs Core Decision` on their next meaningful status update rather than creating churn solely for renaming.
 
-## Authority and Conflict Resolution
+---
 
-- The Voyage Room owns strategic exploration and recommendations, but not final allocation or execution authority.
-- The main control thread owns synthesis, cross-thread decisions, priority and resource allocation.
-- Execution threads own factual work and evidence inside their approved scopes.
-- `VOYAGE_TO_CONTROL.md` is Voyage Room-owned and read-only to Project Control and specialist threads.
-- `CONTROL_TO_VOYAGE.md` is Project Control-owned and read-only to the Voyage Room and specialist threads.
-- `MASTER_STATUS.md` controls cross-thread priority, activation, and route decisions.
-- Each thread's `STATUS.md` controls factual execution state inside that thread.
-- When the two disagree, do not silently overwrite either file. The specialist thread reports the mismatch in its own status and requests a master decision.
-- Fetch the latest file immediately before editing to avoid overwriting concurrent updates.
-- If a Voyage Room recommendation conflicts with the current route, record the question and send it to the main control thread; do not directly rewrite execution priorities.
+## 8. Strategy Documents
+
+The directory `00_Strategy/Voyage_Room/` is preserved as the historical and working strategy library.
+
+After the merger:
+
+- Horizon Core may read and maintain non-bridge strategy documents there;
+- the directory name does not imply a surviving separate Voyage authority;
+- existing analyses, hypotheses and research history remain valuable evidence;
+- no cosmetic migration is required unless it later reduces real cost.
+
+The former Voyage chat is historical / retired. Its exploratory function survives as Core Explore mode.
+
+---
+
+## 9. Historical Voyage–Control Bridge
+
+The old bridge existed because separate top-level chats did not share live context.
+
+After the one-time merger handoff:
+
+- `VOYAGE_TO_CONTROL.md` is preserved at its final Voyage-owned state;
+- `CONTROL_TO_VOYAGE.md` records the final Core adoption/handoff decision and is then frozen;
+- Horizon Core no longer sends strategy to itself through bridge files.
+
+Unresolved strategic items from the final Voyage transmission become Horizon Core's own decision backlog, not messages requiring relay.
+
+---
+
+## 10. Skills
+
+A Skill is a reusable, versioned operating procedure, not a governance layer.
+
+Skills:
+
+- remain subordinate to the Charter and this protocol;
+- never grant new authority;
+- should reduce ceremony and context cost;
+- should be promoted only after repeated real use;
+- are version-pinned when adopted.
+
+`HZN-001 horizon-context-sync v0.4` remains the first adopted Skill and historical evidence. Because v0.4 encodes the former three-role model, a later candidate version may simplify it for Horizon Core + Specialist Threads. Until then, Charter v4.0 and this protocol govern whenever the old role labels conflict.
+
+---
+
+## 11. Liaison / Message Bus Rule
+
+Do **not** create a Liaison, OUTBOX or INBOX system merely to restore communication between the former Voyage Room and Main Control; that split no longer exists.
+
+A Specialist → Core relay mechanism may be considered later only if real post-merger evidence shows persistent communication friction that cannot be solved through normal Core startup, specialist STATUS or direct user interaction.
+
+Do not pre-build communication bureaucracy.
+
+---
+
+## 12. External Information
+
+Potentially changing facts — admissions rules, scholarships, visas, programme fees, competition dates, software versions, labs, professors, jobs, salaries, employment policy and similar information — must be verified from current reliable sources before high-impact decisions.
+
+Old strategic documents are context, not substitutes for current verification.
+
+---
+
+## 13. Authority and Conflict Resolution
+
+Authority order:
+
+1. `00_Project_Charter/Project_Horizon_Charter_v4.0.md`
+2. `00_Project_Control/THREAD_PROTOCOL.md`
+3. `00_Project_Control/MASTER_STATUS.md`
+4. relevant Core strategy / decision documents
+5. relevant specialist `STATUS.md`
+6. evidence / artifacts
+7. chat memory
+
+When two lower-level sources disagree, do not silently overwrite either. Resolve the conflict through evidence and the correct owner.
+
+**Role relationship:**  
+**Horizon Core = Explore + Decide & Coordinate**  
+**Specialist Threads = Execute**
