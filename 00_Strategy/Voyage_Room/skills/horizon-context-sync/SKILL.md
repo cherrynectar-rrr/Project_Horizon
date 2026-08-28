@@ -1,64 +1,67 @@
 # HZN-001 — horizon-context-sync
 
-Version: 0.4
-Status: Trial Prototype
-Owner: Voyage Room prototype; canonical ownership pending Project Control
-Last Updated: 2026-08-28
+Version: 0.5
+Status: Candidate — Trial
+Owner: Horizon Core
+Last Updated: 2026-08-29
 
 ## Purpose
 
-Establish the minimum authoritative Project Horizon context required before an important task, while preserving role boundaries and avoiding unnecessary repository reads.
+Establish the **minimum authoritative Project Horizon context** needed before important work, while preserving role boundaries and avoiding unnecessary repository reads.
 
 This Skill exists to prevent:
 
 - planning from stale chat memory;
-- role leakage;
-- reading the wrong strategic bridge;
-- treating recommendations as adopted decisions;
-- writing to files the current role does not own;
-- unnecessary full-repository scans.
+- reading more of the repository than the task requires;
+- role / write-boundary leakage;
+- treating hypotheses or old strategic material as current approved state;
+- presenting mutable external facts as current without verification;
+- creating governance ceremony that costs more than it saves.
+
+## Version Status
+
+- **Adopted baseline:** HZN-001 v0.4, pinned at adoption-time blob SHA `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78` under `CTV-20260828-04`.
+- **Current candidate:** v0.5 Horizon Core Edition.
+- v0.5 does not replace adopted v0.4 until Horizon Core explicitly adopts it after real trial evidence.
+- Charter v4.0 and `THREAD_PROTOCOL.md` v2.0 always override stale role labels in older Skill versions.
 
 ## Triggers
 
 Use this Skill before:
 
-- an important Horizon planning or decision task;
-- a cross-thread question;
-- a route / priority / competition / research / study-abroad / career decision;
-- a task that may modify GitHub state;
-- a specialist session where current execution state matters;
-- any task where chat memory may be stale or conflicting.
+- important Horizon planning or decisions;
+- cross-thread coordination;
+- route / priority / competition / research / study-abroad / career decisions;
+- governance-sensitive repository writes;
+- specialist work where current Horizon state materially affects execution;
+- tasks where chat context may be stale or conflicting.
 
 ## Do Not Trigger When
 
 Do not run a full sync for:
 
 - casual conversation;
-- a tiny isolated exercise whose answer does not depend on Horizon state;
-- simple explanations unrelated to current project priorities;
-- a task already operating from freshly fetched authoritative state in the same conversation, unless a material update may have occurred.
+- a tiny isolated exercise unrelated to Horizon state;
+- simple explanations with no priority / authority / state dependency;
+- work already operating from freshly fetched authoritative state in the same conversation, unless a material update may have occurred.
 
-## Inputs
+## Roles
 
-Required:
+Horizon now has two operating layers:
 
-- current role: `Voyage Room`, `Main Control`, or named Specialist Thread;
-- task summary;
-- known affected threads / strategic domains, if any.
+1. **Horizon Core / 核心舱 = Explore + Decide & Coordinate**
+2. **Specialist Threads = Execute**
 
-Optional:
-
-- user-supplied files or evidence;
-- external entities whose current facts may have changed.
+The former Voyage Room / Main Control split and the Voyage–Control bridge are historical. Do not use the frozen bridge files for new top-level communication.
 
 ## Authority Order
 
 Resolve conflicts in this order:
 
-1. `00_Project_Charter/Project_Horizon_Charter_v3.0.md`
+1. `00_Project_Charter/Project_Horizon_Charter_v4.0.md`
 2. `00_Project_Control/THREAD_PROTOCOL.md`
 3. `00_Project_Control/MASTER_STATUS.md`
-4. role-specific strategic/control documents
+4. relevant Core strategic analyses / formal Core decisions
 5. relevant specialist `STATUS.md`
 6. evidence / artifacts
 7. chat memory as supporting context only
@@ -67,78 +70,42 @@ A lower layer must not silently override a higher layer.
 
 ## Required Reads by Role
 
-### Voyage Room
+### Horizon Core
 
-For important strategic work, read:
+For important Core work, read:
 
-1. `00_Project_Control/MASTER_STATUS.md`
-2. `00_Project_Control/CONTROL_TO_VOYAGE.md`
-3. relevant specialist `STATUS.md` files when execution reality matters
-4. relevant Voyage Room strategic documents
-5. `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md` when continuity with prior transmissions matters
+1. `00_Project_Control/MASTER_STATUS.md`;
+2. only the specialist `STATUS.md` files that can materially affect the task;
+3. relevant strategic analyses when prior research, unresolved hypotheses or route history matter;
+4. Charter / `THREAD_PROTOCOL.md` only when governance, authority, write ownership or shared infrastructure is material;
+5. current external sources when the decision depends on mutable real-world facts.
 
-Read the Charter and THREAD_PROTOCOL when:
-
-- governance boundaries are relevant;
-- role authority is uncertain;
-- designing/changing shared operating architecture;
-- a possible conflict with current rules exists.
-
-If the task concerns a previously proposed cross-thread standard, shared infrastructure or activation request, always check the latest `CONTROL_TO_VOYAGE.md` before treating it as adopted.
+Do **not** read every thread or the frozen Voyage–Control bridges by default.
 
 Write boundary:
 
-- Voyage Room documents;
-- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md` only.
-
-Never write:
-
+- Core-owned control / governance files;
 - `MASTER_STATUS.md`;
-- `CONTROL_TO_VOYAGE.md`;
-- specialist `STATUS.md` files.
+- Core-owned strategic analyses, including preserved strategy material under `00_Strategy/Voyage_Room/` except frozen historical bridge files;
+- other files explicitly assigned to Core.
 
-Voyage Room may create **draft / trial prototypes inside its own writable area**. That does not make them canonical, adopted or binding on other threads. Cross-thread canonicalization requires Project Control adoption.
-
-### Main Control
-
-For important control work, read:
-
-1. `00_Project_Control/MASTER_STATUS.md`
-2. `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md` for relevant strategic decisions
-3. relevant specialist `STATUS.md` files
-4. `00_Project_Control/CONTROL_TO_VOYAGE.md` when previous Control decisions / requests matter
-5. external facts when the decision depends on changing real-world conditions
-
-Read Charter / THREAD_PROTOCOL when governance or authority is material.
-
-Write boundary:
-
-- `MASTER_STATUS.md`;
-- `CONTROL_TO_VOYAGE.md`;
-- other explicitly Control-owned files.
-
-Never write Voyage-owned bridge content or specialist STATUS files.
+Never write a specialist's `STATUS.md` on that specialist's behalf.
 
 ### Specialist Thread
 
-Always begin important execution work by reading:
+For important specialist work, read:
 
-1. that specialist's own `STATUS.md`
-
-Also read `MASTER_STATUS.md` when the task involves:
-
-- priority;
-- another thread;
-- capacity/resource conflict;
-- competition/project route;
-- activation state;
-- Main Control dependencies.
-
-Read Voyage strategic material only when the task explicitly involves long-term direction, study-abroad, career, research direction, strategic electives or another issue where the current approved execution scope may depend on strategic context.
+1. that specialist's own `STATUS.md`;
+2. `MASTER_STATUS.md` only when the task involves priority, another thread, capacity conflict, activation state, competition / project route or a Core dependency;
+3. strategic analyses only when the specialist's approved scope genuinely depends on long-term route context;
+4. current external sources when mutable facts are material.
 
 Write boundary:
 
-- the specialist's own `STATUS.md` only, unless another explicit workspace/tool is authorized for operational evidence.
+- the specialist's own `STATUS.md`;
+- operational workspaces / files explicitly authorized for that specialist.
+
+A specialist must not change long-term route, cross-thread priority or another thread's state. Material conflicts escalate as **Needs Core Decision**.
 
 ## External Freshness Check
 
@@ -146,22 +113,11 @@ After repository sync, ask:
 
 > Does the answer depend on information that can change?
 
-Examples:
-
-- admissions rules;
-- APS / visa / immigration procedures;
-- scholarships;
-- programme fees;
-- competition dates;
-- software versions;
-- named labs / professors;
-- job openings;
-- salaries / employment policy;
-- market conditions.
+Examples include admissions rules, APS / visa / immigration procedures, scholarships, programme fees, competition dates, software versions, named labs / professors, job openings, salaries, employment policy and market conditions.
 
 If yes, verify current reliable external sources before presenting the fact as current.
 
-Do not let old strategic documents substitute for fresh real-world verification.
+Old strategic documents may preserve useful reasoning, but they do not substitute for fresh verification.
 
 ## Procedure
 
@@ -171,173 +127,145 @@ Classify as one or more of:
 
 - routine execution;
 - cross-thread coordination;
-- strategic exploration;
-- control decision;
+- Explore;
+- Decide & Coordinate;
 - evidence intake;
 - external-current-fact question;
 - repository write.
 
-### Step 2 — Determine role authority
+### Step 2 — Determine authority
 
-State internally:
+Internally identify:
 
 - current role;
 - allowed decision scope;
 - allowed write scope;
-- whether the task requires escalation.
+- whether a Core decision or governance check is required.
 
-If role or write authority is unclear, stop before writing and consult Charter / THREAD_PROTOCOL.
-
-Distinguish explicitly between:
-
-- **role-owned prototype / draft work**, which may be allowed inside that role's writable area; and
-- **canonical cross-thread adoption**, which requires the authority defined by Project Control.
+If authority or write ownership is unclear, stop before writing and consult the Charter / `THREAD_PROTOCOL.md`.
 
 ### Step 3 — Fetch minimum authoritative state
 
 Use the role rules above.
 
-Do not read every STATUS file by default. Read only what can materially affect the task.
+Read only files that can materially change the answer or write boundary.
 
-### Step 4 — Resolve state conflicts
+### Step 4 — Resolve conflicts
 
 If chat memory, user recollection and GitHub disagree:
 
-- preserve the user's new evidence as evidence;
+- preserve new user evidence as evidence;
 - do not silently rewrite official state;
-- use the latest formal GitHub state for current Horizon governance;
-- route meaningful discrepancies through the proper owner.
+- use the latest formal GitHub state for current governance / execution state;
+- route material discrepancies through the proper owner.
 
-### Step 5 — Determine freshness requirement
+### Step 5 — Check external freshness
 
-If current external facts matter, verify them now.
+If mutable external facts matter, verify them before high-impact conclusions.
 
-### Step 6 — Build Context Packet
-
-Internally produce:
+### Step 6 — Build a compact internal Context Packet
 
 ```text
 Role:
 Task Type:
 Authoritative State:
-Relevant Active Priorities:
-Relevant Constraints:
+Relevant Priorities / Constraints:
 Affected Threads:
 Allowed Writes:
-Prototype Work Allowed: Yes/No
-Canonical Adoption Authority:
 External Freshness Needed: Yes/No
-Escalation Needed: Yes/No
+Needs Core Decision: Yes/No
 Unknowns That Matter:
 ```
 
-This packet normally does not need to be shown to the user.
+Do not show this packet unless it helps explain a decision or limitation.
 
 ### Step 7 — Execute the user's actual task
 
 The Skill is a preflight, not the deliverable.
 
-Do not burden the user with governance ceremony unless it materially helps explain a limitation or decision.
+The visible response should answer the real task rather than narrating governance machinery.
 
 ## Output Contract
 
-Success means the invoking workflow now has:
+Success means the invoking workflow has:
 
-- a fresh, role-correct Horizon state;
-- the relevant priority/constraint context;
+- fresh role-correct Horizon context;
+- only the necessary authoritative state;
+- clear priority / constraint context;
 - a clear write boundary;
-- a distinction between allowed prototype work and canonical adoption;
-- identified external facts requiring verification;
-- identified unresolved conflicts or escalation needs.
-
-The visible user response should answer the user's actual task, not merely report that sync occurred.
+- identified external facts requiring fresh verification;
+- identified unresolved conflicts or Core decisions.
 
 ## Verification Checklist
 
 Before proceeding, verify:
 
 - [ ] Correct current role identified
-- [ ] Correct authoritative files read
-- [ ] No unnecessary full-repo scan
-- [ ] Recommendations not mistaken for adopted state
-- [ ] Prototype permission not mistaken for canonical adoption
+- [ ] Correct current Charter / Protocol model used
+- [ ] Minimum sufficient authoritative files read
+- [ ] Frozen Voyage–Control bridges not used as live state
+- [ ] No unnecessary full-repository scan
+- [ ] Hypotheses / old recommendations not mistaken for approved state
 - [ ] Write ownership respected
-- [ ] Changing external facts marked for verification
+- [ ] Mutable external facts marked for verification
 - [ ] Material conflicts surfaced rather than overwritten
 
 ## Stop / Escalation Conditions
 
 Stop or escalate when:
 
-- requested write would violate ownership;
-- user asks a specialist to change long-term route;
-- Voyage Room would need to activate/deactivate a thread;
-- a prototype would need to become a binding cross-thread standard without Control adoption;
-- specialist state conflicts materially with MASTER_STATUS;
+- a requested write violates ownership;
+- a specialist is being asked to change long-term route or cross-thread priority;
+- specialist state conflicts materially with `MASTER_STATUS.md`;
 - current evidence is insufficient for a high-impact decision;
 - external rules are time-sensitive but cannot be verified;
-- required repository/tool access fails and the missing state is essential.
+- required repository / tool access fails and missing state is essential;
+- a Skill change would silently expand authority or activate new work.
 
 ## Trial Evidence
 
-The Voyage-owned prototype Trial Log is:
+Meaningful v0.5 trials may be recorded in:
 
 `00_Strategy/Voyage_Room/skills/horizon-context-sync/TRIAL_LOG.md`
 
-While the prototype remains Voyage-owned:
+Horizon Core owns this preserved Skill workspace under Charter v4.0 / `THREAD_PROTOCOL.md` v2.0.
 
-- Voyage Room may record its own meaningful uses directly in the Trial Log;
-- Main Control and Specialist Threads **must not edit the Voyage-owned Trial Log**;
-- Main Control should return meaningful HZN-001 trial feedback through its authorized `CONTROL_TO_VOYAGE.md` channel;
-- a Specialist Thread may record a trial-related issue in its own `STATUS.md` only when that issue independently meets the normal meaningful-status-update threshold;
-- if a Specialist trial is useful but does **not** justify a STATUS update, the user may relay the concise trial outcome to Voyage Room. Voyage must label this as **user-reported trial evidence**, not as formal Specialist GitHub state;
-- a user-reported invocation without enough outcome detail may reveal a feedback-routing problem, but must not be upgraded into an invented success verdict;
-- if a Specialist trial exposes a material execution/governance conflict that genuinely requires Control, use the normal `Needs Master Decision` path rather than creating a Skill-specific reporting channel;
-- Voyage Room may incorporate valid cross-role feedback into the prototype Trial Log under Voyage ownership.
+Trial logging rules:
 
-This routing rule records trial evidence without granting cross-role write permissions, polluting specialist STATUS files, pretending chats share live state, or creating a new reporting bureaucracy.
-
-Trial evidence should record only cases that reveal value, friction, failure modes or needed revisions.
+- record only cases that reveal value, failure, friction or a needed revision;
+- do not create specialist STATUS churn merely to log Skill use;
+- a specialist's substantive execution claims still require normal specialist evidence;
+- user-reported outcomes must remain labeled as user-reported when not independently verified;
+- trial logging never creates new execution or write authority.
 
 ## Anti-patterns
 
 Do not:
 
-- recite the whole Charter every time;
+- recite the Charter every time;
 - treat memory as source of truth;
 - read all threads "just in case";
-- write a status update because a conversation happened;
-- treat a Voyage recommendation as Control adoption;
-- treat prototype existence as cross-thread adoption;
-- let trial logging create unauthorized writes or meaningless STATUS churn;
-- invent a Specialist trial result merely because invocation is known;
-- treat a school curriculum as Horizon's personal route;
+- use frozen bridge files as live mailboxes;
+- write a STATUS update merely because a conversation happened;
+- let Explore ideas automatically become execution decisions;
+- let Skill maintenance become a new standing workload;
 - fabricate missing state to keep the workflow moving.
 
 ## Change Log
 
-### v0.4 — 2026-08-28
+### v0.5 — 2026-08-29 — Candidate / Trial
 
-- Incorporated the first Specialist-thread trial-routing friction observed after an Algorithm-line invocation.
-- Added user-relayed Specialist trial feedback as an explicitly labeled prototype-stage evidence path when no STATUS update is justified.
-- Clarified that invocation confirmation alone is not enough to claim a successful Specialist trial outcome.
-- Preserved `Needs Master Decision` for genuinely material conflicts rather than inventing a Skill-specific Specialist bridge.
+- Migrated from the retired Voyage Room + Main Control model to **Horizon Core + Specialist Threads**.
+- Updated authority root from Charter v3.0 to Charter v4.0.
+- Removed live Voyage–Control bridge reads and old cross-role Trial Log routing machinery.
+- Simplified the Context Packet and role-based minimum-read rules.
+- Replaced `Needs Master Decision` language with `Needs Core Decision`.
+- Preserved adopted v0.4 as a pinned historical baseline rather than silently overwriting it.
 
-### v0.3 — 2026-08-28
+### v0.4 — 2026-08-28 — Adopted historical baseline
 
-- Incorporated Main Control cross-role Trial feedback from `CTV-20260828-03`.
-- Added explicit cross-role Trial Evidence routing while the prototype remains Voyage-owned.
-- Clarified that Main Control / Specialist roles must not edit Voyage-owned `TRIAL_LOG.md`.
-- Preserved the normal STATUS meaningful-update threshold so Skill trial logging does not create artificial repository churn.
+- First version adopted across Horizon under `CTV-20260828-04`.
+- Proven across Voyage Room, Main Control and Algorithm Specialist use.
+- Historical adopted artifact pinned by blob SHA.
 
-### v0.2 — 2026-08-28
-
-- Entered Trial Prototype state after first real governance use.
-- Added explicit distinction between role-owned prototypes and canonical cross-thread adoption.
-- Added mandatory Control-bridge check for previously proposed shared standards.
-- Added Trial Evidence convention and expanded Context Packet.
-
-### v0.1 — 2026-08-28
-
-- First prototype.
-- Encodes role-based startup, authority hierarchy, minimum-read logic, freshness check and internal Context Packet.
+Earlier v0.1–v0.3 changes remain preserved in Git history and `TRIAL_LOG.md`.
