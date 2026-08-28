@@ -6,26 +6,20 @@ Status: Proposal — Awaiting Project Control Decision
 
 ## 1. Problem
 
-Project Horizon currently has strong role boundaries and two dedicated strategic bridges:
+Project Horizon has strong role boundaries and formal Voyage ↔ Control bridges, but Specialist Threads lack a lightweight way to send useful cross-chat information that does not independently justify a `STATUS.md` update.
 
-- Voyage Room → Project Control: `VOYAGE_TO_CONTROL.md`
-- Project Control → Voyage Room: `CONTROL_TO_VOYAGE.md`
+The HZN-001 Algorithm trial exposed two different gaps:
 
-This works well for formal strategic communication, but a gap has appeared for **cross-chat operational feedback that matters yet does not justify a specialist STATUS update**.
+1. **source → relay gap:** a Specialist may have a useful message but cannot write Liaison-owned files and should not pollute its `STATUS.md` just to transmit it;
+2. **relay → destination gap:** even after a message exists in GitHub, another chat does not know it exists until that role next reads the relevant shared state.
 
-The first concrete example appeared during the HZN-001 trial:
+Therefore a Liaison thread alone is insufficient unless the transport model is explicit.
 
-- Algorithm Specialist invoked HZN-001;
-- the Skill-only trial did not create an Algorithm milestone, blocker or route change;
-- therefore writing `05_Algorithm/STATUS.md` merely to log the trial would have violated the meaningful-update rule;
-- Main Control has a bridge to Voyage, but Specialist Threads do not have an equivalent general-purpose communication path;
-- as a result, useful feedback can become trapped in one chat and require the user to manually relay it.
-
-This is a communication-routing problem, not a new strategy or technical-work problem.
+This is a communication-routing problem, not a new governance layer or technical-work problem.
 
 ## 2. Proposal
 
-Establish a bounded specialist/support thread:
+Establish a bounded support thread:
 
 **Horizon Liaison / 联络中继**
 
@@ -39,41 +33,39 @@ Proposed state:
 
 Primary responsibility:
 
-> Route concise, evidence-labeled information between Project Horizon roles when that information is useful to another role but does not naturally belong in the source role's normal STATUS / strategic bridge.
+> Route concise, evidence-labeled information between Horizon roles when that information matters to another role but does not naturally belong in the source role's normal STATUS or strategic bridge.
 
-Horizon Liaison is a **message router**, not a fourth governance layer.
+Liaison is a message router, not a fourth governance layer.
 
-## 3. What Liaison May Do
+## 3. Transport Model — Outbox → Relay → Inbox
 
-Liaison may:
+To reduce manual user relaying, use a **pull-based mailbox model**.
 
-- receive user-reported cross-chat information and label it clearly as user-reported;
-- read relevant specialist STATUS files, MASTER_STATUS and strategic bridges to verify formal state;
-- distinguish verified GitHub state from user-reported chat outcomes;
-- normalize a message into a concise routing record;
-- route messages to Main Control, Voyage Room, or a named specialist by maintaining Liaison-owned pending-message files;
-- track whether a message has been delivered / acknowledged / closed when evidence exists;
-- summarize multiple small cross-thread messages into one digest when useful;
-- identify when a message is actually a `Needs Master Decision`, strategic question, or specialist execution issue and route it to the proper owner.
+### 3.1 Source-owned OUTBOX
 
-## 4. What Liaison May Not Do
+Each participating role may have one role-owned `OUTBOX.md`, for example:
 
-Liaison may not:
+```text
+05_Algorithm/OUTBOX.md
+11_Academic/OUTBOX.md
+09_Career/OUTBOX.md
+00_Strategy/Voyage_Room/OUTBOX.md
+00_Project_Control/OUTBOX.md
+```
 
-- make strategic decisions;
-- allocate execution resources;
-- activate, pause or reprioritize threads;
-- interpret a Voyage recommendation as adopted Control state;
-- modify `MASTER_STATUS.md`;
-- modify `VOYAGE_TO_CONTROL.md` or `CONTROL_TO_VOYAGE.md`;
-- modify another specialist's `STATUS.md`;
-- turn informal user reports into verified facts;
-- create standing polling or daily reporting overhead;
-- become a general project manager or universal inbox for trivial chat.
+A role may write only its own OUTBOX.
 
-## 5. Proposed Files
+The OUTBOX is for concise cross-role messages that:
 
-If activated, Liaison may own:
+- are worth communicating;
+- do not belong in normal STATUS state;
+- do not justify changing execution priority by themselves.
+
+**Important:** this requires explicit Project Control / THREAD_PROTOCOL authorization because current Specialist write rules allow only each thread's `STATUS.md`.
+
+### 3.2 Liaison relay
+
+Liaison reads role-owned OUTBOX files when invoked, verifies evidence labels, and routes messages into Liaison-owned destination inboxes:
 
 ```text
 12_Liaison/
@@ -84,31 +76,58 @@ If activated, Liaison may own:
   RELAY_LOG.md
 ```
 
-All are single-writer Liaison-owned files.
+All Liaison files remain single-writer Liaison-owned.
 
-Other roles may read them but not write them.
+### 3.3 Destination pull
 
-### `PENDING_FOR_CONTROL.md`
+Chats are not live background processes and do not receive push events from each other.
 
-Contains only unresolved messages whose correct destination is Main Control.
+Therefore, on the next **important** session for a role, HZN-001 may—after separate Control approval—conditionally read that role's Liaison pending inbox.
 
-### `PENDING_FOR_VOYAGE.md`
+Examples:
 
-Contains only unresolved messages whose correct destination is Voyage Room.
+- Main Control important session → conditionally read `12_Liaison/PENDING_FOR_CONTROL.md`;
+- Voyage Room important session → conditionally read `12_Liaison/PENDING_FOR_VOYAGE.md`;
+- Algorithm important session → conditionally inspect messages addressed to Algorithm in `PENDING_FOR_SPECIALISTS.md`.
 
-### `PENDING_FOR_SPECIALISTS.md`
+This is a **pull** model. It means the destination learns the message automatically when that role next starts relevant work, without the user needing to restate the content.
 
-Contains unresolved messages routed to named specialist threads.
+It does **not** mean a dormant chat wakes up by itself.
 
-### `RELAY_LOG.md`
+## 4. Optional Near-Push Mode
 
-Compact audit trail for meaningful routed messages and their disposition.
+If the user later wants near-real-time delivery, Project Control may separately consider a scheduled Liaison watcher that periodically processes OUTBOX files and notifies the user of important unread messages.
 
-Do not log trivial conversation.
+That would still not make dormant chat windows execute in the background; it would only keep GitHub mailboxes fresh and surface notifications.
 
-## 6. Message Shape
+No standing polling is part of this proposal by default.
 
-A routed message should use a compact structure:
+## 5. What Liaison May Do
+
+Liaison may:
+
+- read authorized role-owned OUTBOX files;
+- receive user-reported cross-chat information and label it `User-Reported`;
+- distinguish verified GitHub state, user reports, and external verified facts;
+- normalize a message into a compact routing record;
+- place it in the correct Liaison-owned pending inbox;
+- track delivered / acknowledged / closed status when evidence exists;
+- identify whether an item belongs to Main Control, Voyage Room, or a Specialist.
+
+## 6. What Liaison May Not Do
+
+Liaison may not:
+
+- make strategic decisions;
+- allocate resources;
+- activate, pause, or reprioritize threads;
+- modify `MASTER_STATUS.md`;
+- modify `VOYAGE_TO_CONTROL.md` or `CONTROL_TO_VOYAGE.md`;
+- modify another thread's `STATUS.md` or `OUTBOX.md`;
+- convert user-reported information into verified thread state;
+- create daily reporting rituals or a project-management bureaucracy.
+
+## 7. Message Shape
 
 ```markdown
 ### MSG-YYYYMMDD-NN — Short Title
@@ -129,126 +148,87 @@ Evidence:
 - repository path / bridge entry / user report / source
 ```
 
-The goal is reliable routing, not bureaucracy.
+## 8. Evidence Rules
 
-## 7. Intake Rules
+### Verified GitHub
 
-### Verified repository information
+Use only when the content is supported by formal repository state or verifiable artifact.
 
-If the message comes from a STATUS / bridge / evidence file, Liaison may report it as verified repository state.
+### User-Reported
 
-### User-reported cross-chat information
+Use when the user relays an outcome from another chat. Preserve the claim without silently upgrading it into verified execution state.
 
-If the user says, for example:
+### Specialist OUTBOX
 
-> “算法线刚跑了 HZN-001，发现 X。”
+A message written by a Specialist into its authorized OUTBOX proves that the Specialist intentionally transmitted the message, but it does not automatically make every substantive claim inside the message a verified milestone. Evidence links still matter.
 
-Liaison records:
+## 9. STATUS Boundary
 
-- Source: Algorithm Specialist
-- Evidence Type: **User-Reported**
-- the exact claimed outcome without upgrading it into formal Algorithm state.
+OUTBOX exists specifically so Specialist Threads do **not** need to pollute `STATUS.md` with communication-only events.
 
-If repository evidence can corroborate part of the claim, Liaison may separately identify that verified portion.
+Normal STATUS rules remain unchanged:
 
-### Meaningful-status threshold
+- milestones;
+- blockers;
+- route changes;
+- meaningful next-milestone changes;
+- `Needs Master Decision` when appropriate.
 
-Liaison must never pressure a specialist to update STATUS merely to create a message source.
+If an event independently meets the normal STATUS threshold, the Specialist should still update its own STATUS.
 
-If the event independently meets the normal STATUS threshold, the specialist should update its own STATUS and Liaison can route from that verified state.
+## 10. Example — Algorithm Sends Skill Feedback Without User Relay
 
-## 8. Delivery Model
+1. Algorithm invokes HZN-001 during a normal technical session.
+2. The Skill test is not an Algorithm milestone, so `05_Algorithm/STATUS.md` stays unchanged.
+3. Algorithm writes a concise message to its own authorized `05_Algorithm/OUTBOX.md` addressed to Voyage Room.
+4. Liaison, when next invoked or processed by an optional scheduled watcher, reads the OUTBOX and places the item into `12_Liaison/PENDING_FOR_VOYAGE.md`.
+5. The next important Voyage Room session runs HZN-001, sees the pending inbox item, and incorporates the feedback.
+6. The user never has to say “算法线刚刚跟你说了什么”.
 
-Because Horizon chats do not share live conversation state, delivery is asynchronous through GitHub.
+This is the desired end state.
 
-When Main Control performs an important task where pending cross-thread messages may matter, HZN-001 can eventually be revised—after Control approval—to conditionally read `12_Liaison/PENDING_FOR_CONTROL.md`.
+## 11. Important Limitation
 
-Likewise, Voyage Room can conditionally read `PENDING_FOR_VOYAGE.md` when relevant.
+Without a scheduled watcher, Liaison itself is also not a background process.
 
-This should remain conditional rather than becoming another mandatory file read for every routine task.
+Therefore the system provides **automatic discovery on next relevant session**, not instantaneous chat-to-chat push.
 
-No HZN-001 change is proposed until Liaison itself is approved.
+That distinction should remain explicit so Horizon does not pretend separate chat windows can read each other's live conversation state.
 
-## 9. Operating Cadence
+## 12. Governance Change Required
 
-Default mode: **event-driven only**.
+If Project Control adopts the Outbox model, `THREAD_PROTOCOL.md` should be amended narrowly to authorize:
 
-Typical invocation:
+- each participating Specialist to write its own `OUTBOX.md` in addition to its own `STATUS.md`;
+- Voyage / Control to write only their own OUTBOX files if used;
+- Liaison to read OUTBOX files and write only Liaison-owned inbox/log files;
+- no role may edit another role's OUTBOX.
 
-- user asks Liaison to relay a message;
-- user asks Liaison to synchronize meaningful changes;
-- another role identifies a cross-chat message worth routing;
-- a Skill trial or cross-thread issue needs a neutral relay path.
-
-No daily check-in and no standing polling quota.
-
-## 10. Example — Algorithm HZN-001 Trial
-
-Without Liaison:
-
-1. Algorithm runs HZN-001.
-2. Trial itself is not an Algorithm milestone, so Algorithm correctly does not edit STATUS.
-3. Voyage cannot see the detailed result.
-4. User manually returns to Voyage and says “算法线跑了一下.”
-5. Voyage must reconstruct what happened with incomplete evidence.
-
-With Liaison:
-
-1. User tells Liaison: “算法线刚跑了 HZN-001，结果是 X.”
-2. Liaison reads `05_Algorithm/STATUS.md` only to confirm formal Algorithm state was not changed.
-3. Liaison records the outcome as **User-Reported**, not verified Algorithm state.
-4. Liaison writes one concise item into `PENDING_FOR_VOYAGE.md`.
-5. Voyage later reads that item and updates the Skill Trial Log if appropriate.
-6. Algorithm STATUS remains clean.
-
-This solves the routing problem without weakening evidence standards.
-
-## 11. Relationship to Existing Governance
-
-The three-layer model remains unchanged:
-
-- Voyage Room = Explore
-- Main Control = Decide & Coordinate
-- Specialist Threads = Execute
-
-Liaison is an execution/support thread whose only execution product is reliable communication routing.
-
-It has no decision authority.
-
-The strategic bridges remain authoritative for formal Voyage ↔ Control decisions. Liaison does not replace them.
-
-## 12. Success Criteria
-
-Liaison is useful only if it:
-
-- reduces user effort spent carrying messages between chats;
-- prevents important cross-thread information from being lost;
-- keeps specialist STATUS files clean;
-- preserves single-writer ownership;
-- distinguishes verified facts from user-reported claims;
-- adds very little ceremony.
-
-It should be paused or redesigned if it becomes a second project-management bureaucracy.
+This is a transport permission, not new decision authority.
 
 ## 13. Initial Objective
 
-If activated, the first objective should be:
+If activated:
 
 **Cross-Thread Relay Baseline v1**
 
 Deliverable:
 
-- establish the three pending-message files and relay log;
+- establish source-owned OUTBOX convention for a small pilot set of roles;
+- establish Liaison pending inboxes and relay log;
 - route 3–5 real messages across at least two destination types;
-- verify that no role ownership is violated;
-- measure whether the user actually has to do less manual cross-chat copying.
+- verify single-writer boundaries;
+- verify at least one destination discovers a message through startup pull without manual user restatement;
+- measure whether user relay burden actually decreases.
 
 ## 14. Recommendation
 
-Recommend activation as a bounded, event-driven support thread **only if Project Control agrees that the communication gap is recurring enough to justify a dedicated owner**.
+Recommend a bounded pilot only if Project Control agrees the communication gap is structural enough to justify it.
 
-If Control believes the need is too small, the fallback is to keep the v0.4 HZN-001 user-relay convention and avoid creating a new thread.
+The preferred design is now:
 
-The deciding question is not “Would a Liaison be neat?” but:
+> **Source-owned OUTBOX → Liaison routing → destination-owned startup pull**
 
-> Does the reduction in cross-chat routing friction exceed the maintenance cost of one more bounded support thread?
+not merely "user tells Liaison, Liaison stores it".
+
+If the maintenance cost is too high, retain the simpler HZN-001 user-relay fallback.
