@@ -79,53 +79,42 @@ A newer adopted version or governance change supersedes the old one. Historical 
 
 ## 5. HZN-001 State
 
-### Adopted baseline
+### Current adopted version
 
-**HZN-001 v0.4 — horizon-context-sync**
+**HZN-001 v0.5 — horizon-context-sync / Horizon Core Edition**
 
-- Status: Adopted historical baseline
-- Decision: `CTV-20260828-04`
-- Adoption-time blob SHA: `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78`
-- Historical trials: `skills/horizon-context-sync/TRIAL_LOG.md`
-
-v0.4 proved the basic method across Voyage Room, Main Control and an Algorithm Specialist, but its role model predates the Horizon Core merger.
-
-### Current candidate
-
-**HZN-001 v0.5 — Horizon Core Edition**
-
-- Status: Candidate — Trial
+- Status: **Adopted — Active**
 - Current artifact: `skills/horizon-context-sync/SKILL.md`
-- Candidate trial log: `skills/horizon-context-sync/TRIAL_LOG_V0.5.md`
+- Adoption evidence: `skills/horizon-context-sync/TRIAL_LOG_V0.5.md`
+- Historical adopted baseline: v0.4 under `CTV-20260828-04`, blob SHA `ff2d8af44fd346e20ed6d9e255be4ff9a48e8f78`
+- Historical v0.1–v0.4 trials: `skills/horizon-context-sync/TRIAL_LOG.md`
 
-Primary change:
+v0.5 migrated the Skill to the two-layer Horizon Core model and retained the same evidence, authority and freshness protections while removing stale Voyage–Control machinery.
 
-- simplify the operating roles to `Horizon Core` + `Specialist Thread`;
-- remove live Voyage–Control bridge logic;
-- reduce redundant reads and old trial-routing machinery;
-- preserve the same evidence / authority / freshness protections.
+Adoption evidence includes:
 
-Adoption gate:
+- Trial 005 — clean Horizon Core self-preflight using fresh-state reuse and minimum sufficient context;
+- Trial 006 — real Algorithm Specialist invocation with repository-verified clean state, no artificial STATUS churn and no cross-thread write leakage.
 
-- at least one clean real Horizon Core use;
-- at least one real Specialist use under the two-layer model;
-- no material authority ambiguity or evidence that the rewrite increases overhead.
+Evidence limitation remains explicit: GitHub does not expose chat-side read telemetry, so exact internal read sequences are not independently observable. The Skill must not invent such telemetry.
 
-Do not manufacture tests solely to hit a count.
+### Superseded version
+
+**HZN-001 v0.4** remains preserved as the first adopted historical baseline. It is no longer the preferred operational version because its three-role model predates Charter v4.0 / Protocol v2.0.
 
 ## 6. Physical Location
 
-The Skill currently remains under the preserved strategy path:
+HZN-001 currently remains under the preserved strategy path:
 
 `00_Strategy/Voyage_Room/skills/horizon-context-sync/`
 
-This path is now Core-maintained under Charter v4.0 / Protocol v2.0.
+This path is Core-maintained under Charter v4.0 / Protocol v2.0.
 
 Potential future canonical location remains:
 
 `00_Project_Control/Skills/`
 
-Do **not** migrate merely for cosmetic cleanliness. Reconsider physical migration only after v0.5 is adopted or when multiple adopted Skills make a shared library materially useful.
+Do **not** migrate merely for cosmetic cleanliness. Reconsider physical migration only when multiple adopted Skills make a shared library materially useful or a governance/maintenance benefit becomes clear.
 
 ## 7. Frozen Backlog
 
@@ -136,9 +125,9 @@ The following remain **not authorized for implementation**:
 - `HZN-004 — strategic-route-audit`
 - `HZN-005 — opportunity-filter`
 
-HZN-001 v0.5 work does not unlock them automatically.
+HZN-001 v0.5 adoption does **not** unlock them automatically.
 
-The next Skill should begin only after HZN-001 v0.5 is either adopted or intentionally abandoned.
+Any next Skill requires a separate Horizon Core decision based on demonstrated recurring cost and opportunity cost.
 
 ## 8. Invocation Rule
 
@@ -169,9 +158,8 @@ If a Skill adds more maintenance than it removes, simplify or remove it.
 
 For now:
 
-1. trial only HZN-001 v0.5;
-2. preserve v0.4 as the adopted historical baseline;
-3. seek one real Specialist validation;
-4. revise only from observed friction;
-5. keep HZN-002–005 frozen;
-6. decide v0.5 adoption before starting another Skill.
+1. operate with adopted HZN-001 v0.5;
+2. preserve v0.4 and earlier trials as history;
+3. do not create routine trial logs unless a material failure / friction appears;
+4. keep HZN-002–005 frozen;
+5. before starting any next Skill, ask whether the recurring cost is real enough to justify another maintained procedure.
