@@ -13,7 +13,8 @@ Target development loop:
 `STM32CubeIDE → Build → Flash → Debug → onboard LED`
 
 Platform:
-- Board: STMicroelectronics NUCLEO-G071RB
+- Authorized board: STMicroelectronics NUCLEO-G071RB
+- Existing user hardware: generic STM32F407VET6 development/core board (reported 2026-08-29; exact board revision not yet verified)
 - Toolchain: STM32CubeIDE
 
 ## Completed
@@ -23,21 +24,23 @@ Platform:
 - Embedded Specialist Thread initialized under HZN-001 v0.5.
 
 ## In Progress
-- Acquire the authorized NUCLEO-G071RB hardware and a data-capable USB cable.
-- Verify host toolchain and physical board bring-up prerequisites after hardware arrives.
+- Evaluate the existing STM32F407VET6 board against the authorized NUCLEO-G071RB bring-up path without silently changing the approved Sprint platform.
+- Acquire / verify the authorized hardware if the existing board is not adopted as a substitute.
+- Verify host toolchain and physical board bring-up prerequisites.
 - Establish the first minimal STM32 project and complete the build / flash / debug / onboard-LED loop.
 
 ## Next Milestone
-- Phase 0 complete: one minimal NUCLEO-G071RB project successfully builds, flashes, enters a debugger session, and controls the onboard LED on real hardware.
+- Phase 0 complete: one approved STM32 board successfully builds, flashes, enters a debugger session, and controls an onboard LED on real hardware.
 
 ## Evidence
-- `04_Embedded/README.md` — Core-authorized Embedded Exploration Sprint v1 scope and platform decision.
+- `04_Embedded/README.md` — Core-authorized Embedded Exploration Sprint v1 scope and NUCLEO-G071RB platform decision.
 - `00_Project_Control/MASTER_STATUS.md` — Embedded marked Active — Bounded Exploration.
-- User report on 2026-08-29: no embedded hardware currently available.
+- User report and screenshot on 2026-08-29: an STM32F407VET6 development/core board is already available.
 - Phase 0 hardware/project evidence: pending.
 
 ## Blockers
-- Physical NUCLEO-G071RB board is not yet available, so Flash / Debug / onboard-LED verification cannot proceed on real hardware.
+- Authorized NUCLEO-G071RB is not yet available.
+- Existing STM32F407VET6 board may require an external SWD/ST-LINK probe for the required debug loop; exact board/debug capability is not yet verified.
 
 ## Needs Core Decision
-No
+No — unless replacing the authorized NUCLEO-G071RB with the existing STM32F407VET6 board is proposed.
