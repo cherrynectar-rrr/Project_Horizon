@@ -25,6 +25,8 @@ Block 01 scope:
 
 Time-complexity, space-complexity, arrays, strings, sorting, binary-search, and two-pointers foundations are complete; the current topic is prefix sums.
 
+The existing Block 01–Block 08 route is now presented through a maintainable course layer in `05_Algorithm/README.md`; this does not create a second algorithm roadmap.
+
 ## Completed
 
 - C++ Algorithm Readiness Gate satisfied on 2026-08-18; the prerequisite for Algorithm activation is complete.
@@ -35,6 +37,7 @@ Time-complexity, space-complexity, arrays, strings, sorting, binary-search, and 
 - Sorting foundation completed on 2026-08-21: implemented selection sort from first principles using minimum-index search, reasoned about `O(n^2)` best/worst time, `O(n)` swaps, and `O(1)` auxiliary space, with runnable code and concise README notes.
 - Binary-search foundation completed on 2026-08-29: implemented iterative binary search on an ascending array, handled successful and unsuccessful lookup, and explained best-case `O(1)`, worst-case `O(log n)`, and `O(1)` auxiliary space.
 - Two-pointers foundation completed on 2026-08-29: implemented two-sum search on an ascending array using left/right pointers, correctly moved pointers from the comparison with `target`, handled found/not-found cases, and reasoned about worst-case `O(n)` time and `O(1)` auxiliary space.
+- Algorithm course homepage established on 2026-08-29: `05_Algorithm/README.md` now maps the approved Block 01–Block 08 route into a maintainable first-study / review / beginner-teaching course format, standardizes topic structure, and defines the progressive-hint protocol for external example problems without creating a second roadmap.
 
 ## In Progress
 
@@ -47,7 +50,9 @@ Produce the first verifiable prefix-sums milestone through a small runnable exer
 
 ## Evidence
 
-- `00_Project_Control/MASTER_STATUS.md` — Algorithm activation approved; Block 01 structure defined.
+- `00_Project_Control/MASTER_STATUS.md` — Algorithm activation approved; Block 01–Block 08 structure defined.
+- `05_Algorithm/README.md` — maintainable Algorithm course homepage and lesson/problem-coaching conventions.
+- Commit `1745ce9a3108807065e472525104e01409050765` — `algorithm: establish course homepage`.
 - `02_CPP/STATUS.md` — Algorithm Readiness Gate recorded as passed.
 - `02_CPP/Week02/readiness_test.cpp` — direct readiness evidence.
 - `05_Algorithm/Block01/01_time_complexity/main.cpp`
