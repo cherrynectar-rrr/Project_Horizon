@@ -74,6 +74,7 @@ Current specialist state owners include:
 - Python → `01_Python/STATUS.md`
 - C++ → `02_CPP/STATUS.md`
 - Linux → `03_Linux/STATUS.md`
+- Embedded → `04_Embedded/STATUS.md` after its first Specialist session creates the file
 - Algorithm → `05_Algorithm/STATUS.md`
 - Career / Internship → `09_Career/STATUS.md`
 - Personal Finance & Capital → `10_Finance/STATUS.md`
@@ -252,7 +253,7 @@ Skills:
 - should be promoted only after repeated real use;
 - are version-pinned when adopted.
 
-`HZN-001 horizon-context-sync v0.4` remains the first adopted Skill and historical evidence. Because v0.4 encodes the former three-role model, a later candidate version may simplify it for Horizon Core + Specialist Threads. Until then, Charter v4.0 and this protocol govern whenever the old role labels conflict.
+`HZN-001 horizon-context-sync v0.5` is the current adopted active context-sync Skill for the Horizon Core + Specialist model. `HZN-002 status-update v0.1` is currently Candidate — Trial. HZN-003 through HZN-005 remain frozen unless separately authorized.
 
 ---
 
