@@ -1,6 +1,6 @@
 # Algorithm Status
 
-Last Updated: 2026-08-21
+Last Updated: 2026-08-29
 Status: Active
 
 ## Current Goal
@@ -23,7 +23,7 @@ Block 01 scope:
 - prefix sums;
 - basic algorithmic thinking.
 
-Time-complexity, space-complexity, arrays, strings, and sorting foundations are complete; the current topic is binary search.
+Time-complexity, space-complexity, arrays, strings, sorting, and binary-search foundations are complete; the current topic is two pointers.
 
 ## Completed
 
@@ -33,15 +33,16 @@ Time-complexity, space-complexity, arrays, strings, and sorting foundations are 
 - Arrays foundation completed on 2026-08-19: practiced indexed access and modification, linear search, insertion/deletion movement costs, and in-place reversal with `O(1)` auxiliary space.
 - Strings foundation completed on 2026-08-19: practiced indexed character access, full traversal, character counting, in-place reversal, and palindrome checking with correct time/auxiliary-space reasoning.
 - Sorting foundation completed on 2026-08-21: implemented selection sort from first principles using minimum-index search, reasoned about `O(n^2)` best/worst time, `O(n)` swaps, and `O(1)` auxiliary space, with runnable code and concise README notes.
+- Binary-search foundation completed on 2026-08-29: implemented iterative binary search on an ascending array, handled successful and unsuccessful lookup, and explained best-case `O(1)`, worst-case `O(log n)`, and `O(1)` auxiliary space.
 
 ## In Progress
 
 - Block 01 — Foundation
-- Current topic: binary search
+- Current topic: two pointers
 
 ## Next Milestone
 
-Produce the first verifiable binary-search milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
+Produce the first verifiable two-pointers milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
 
 ## Evidence
 
@@ -63,11 +64,14 @@ Produce the first verifiable binary-search milestone through a small runnable ex
 - `05_Algorithm/Block01/05_sorting/main.cpp`
 - `05_Algorithm/Block01/05_sorting/README.md`
 - Commit `5f26b73316c0e70ac1681a3ab62a7ae079ee917a` — `algorithm: add sorting foundation`.
+- `05_Algorithm/Block01/06_binary_search/main.cpp`
+- `05_Algorithm/Block01/06_binary_search/README.md`
+- Commit `d3ecbd0be6df50e88d07868f96812a3a09efdb38` — `algorithm: add binary search foundation`.
 
 ## Blockers
 
 None reported.
 
-## Needs Master Decision
+## Needs Core Decision
 
 No
