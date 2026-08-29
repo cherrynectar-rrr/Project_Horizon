@@ -23,7 +23,8 @@ Platform:
 - Embedded Specialist Thread initialized under HZN-001 v0.5.
 
 ## In Progress
-- Verify host toolchain and physical board bring-up prerequisites.
+- Acquire the authorized NUCLEO-G071RB hardware and a data-capable USB cable.
+- Verify host toolchain and physical board bring-up prerequisites after hardware arrives.
 - Establish the first minimal STM32 project and complete the build / flash / debug / onboard-LED loop.
 
 ## Next Milestone
@@ -32,10 +33,11 @@ Platform:
 ## Evidence
 - `04_Embedded/README.md` — Core-authorized Embedded Exploration Sprint v1 scope and platform decision.
 - `00_Project_Control/MASTER_STATUS.md` — Embedded marked Active — Bounded Exploration.
+- User report on 2026-08-29: no embedded hardware currently available.
 - Phase 0 hardware/project evidence: pending.
 
 ## Blockers
-None confirmed. Toolchain installation state, USB/ST-LINK connectivity and real-board behavior remain to be verified during Phase 0.
+- Physical NUCLEO-G071RB board is not yet available, so Flash / Debug / onboard-LED verification cannot proceed on real hardware.
 
 ## Needs Core Decision
 No
