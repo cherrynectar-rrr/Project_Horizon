@@ -30,11 +30,12 @@ See `00_Project_Control/THREAD_PROTOCOL.md` v2.0 for current read/write rules.
 2. Algorithm — active structured line
 3. Linux — support line
 4. C++ — support for algorithm implementation
-5. Career / Internship — Active — Bounded Support; event-driven
-6. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
-7. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
+5. Embedded — Active — Bounded Exploration; project-first Sprint v1
+6. Career / Internship — Active — Bounded Support; event-driven
+7. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
+8. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
 
-The Horizon Core merger changes governance and communication overhead only. It does **not** change current execution priorities or the one-main-technical-line principle.
+Embedded activation does **not** change the one-main-technical-line principle. Python remains the main technical line and Algorithm remains the active structured line. Embedded may not materially displace either without a separate Horizon Core decision.
 
 ---
 
@@ -46,6 +47,7 @@ The Horizon Core merger changes governance and communication overhead only. It d
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; complexity, arrays, strings and sorting foundations complete; binary search is current | First verifiable binary-search milestone |
 | [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Support Algorithm and patch only real C++/STL gaps |
+| [Embedded](../04_Embedded/README.md) | Bounded exploration | Sprint v1 authorized; NUCLEO-G071RB + STM32CubeIDE selected; Specialist STATUS not yet created | Phase 0: verify toolchain, build, flash and debug loop on real board |
 | [Career / Internship](../09_Career/STATUS.md) | Bounded support | Internship Readiness Baseline v1 complete; on-demand opportunity review active | New readiness evidence, high-fit opportunity, or seasonal application decision |
 | [Personal Finance & Capital](../10_Finance/STATUS.md) | Bounded support / maintenance | Personal Finance Baseline v1 in progress | Complete Personal Finance Baseline v1 |
 | [Academic Operations & Evidence](../11_Academic/STATUS.md) | Bounded support / maintenance | Year 2 Fall Academic Baseline v1 in progress | Complete Year 2 Fall Academic Baseline v1 |
@@ -60,11 +62,43 @@ Algorithm remains active as a structured line and must not displace Python witho
 
 Linux and C++ remain support lines. C++ standalone preheat is complete; Linux should be learned through real development needs rather than through a broad standalone curriculum.
 
+Embedded is activated only as **bounded exploration**. Its job is to collect real evidence about fit with MCU / hardware-software engineering through one small STM32 project-first sprint. It is not authorized to become a parallel full curriculum, and it may not expand into ESP32, 51, FPGA, FreeRTOS, Embedded Linux, CAN or ROS 2 during Sprint v1 without a separate Core decision.
+
 Career / Internship remains bounded support. It may evaluate concrete opportunities and capture market feedback, but it may not create technical curricula or continuous high-volume application work without Core approval.
 
 Personal Finance & Capital remains low-frequency bounded maintenance. It must not displace GPA/core coursework, Python, Algorithm or justified Career work.
 
 Academic Operations & Evidence owns factual academic operations and course-evidence maintenance, not subject-matter teaching or strategic academic decisions.
+
+---
+
+## Embedded Exploration Sprint v1
+
+Status: **Active — Bounded Exploration**.
+
+Purpose: use one small project-first STM32 sprint to determine whether Embedded deserves a larger long-term role in Horizon.
+
+Current platform decision:
+
+- board: `NUCLEO-G071RB`;
+- toolchain: current official `STM32CubeIDE` at setup time;
+- Core startup artifact: `04_Embedded/README.md`;
+- future Specialist-owned state: `04_Embedded/STATUS.md`.
+
+Sprint route:
+
+1. **Phase 0 — Bring-up:** install / verify toolchain, connect ST-LINK, create/build/flash/debug a minimal project and control the onboard LED.
+2. **Phase 1 — MCU interaction:** GPIO, button input, EXTI, timer, PWM and UART, patching embedded-C gaps only when the hardware task requires them.
+3. **Phase 2 — First integrated project:** `STM32 Interactive Controller v1` with button input, interrupts, timer/PWM, UART, simple state-machine behavior, README, wiring / pin explanation, demo evidence and meaningful Git history.
+
+Sprint exit review asks:
+
+- is real hardware debugging genuinely engaging after friction appears?
+- can the user explain the system rather than only reproduce tutorial steps?
+- did Embedded materially disrupt Python / Algorithm or academic priorities?
+- did the sprint produce a reproducible project artifact worth keeping in a future portfolio?
+
+Possible exit decisions: Promote / Continue Bounded Exploration / Pause.
 
 ---
 
@@ -154,7 +188,7 @@ Trial gate:
 2. at least one real meaningful update that produces a minimal evidence-based patch;
 3. no authority leakage or evidence inflation.
 
-This Core authorization / MASTER patch is the first real meaningful-update trial case.
+The Embedded Sprint activation is an additional real Core-state update governed by HZN-002: Core changes MASTER / Protocol while leaving the future Specialist-owned `04_Embedded/STATUS.md` untouched.
 
 `HZN-003` through `HZN-005` remain frozen. HZN-002 trial authorization does not unlock them.
 
@@ -292,6 +326,8 @@ None reported.
 
 No governance decision remains for the Voyage/Main Control merger; it is adopted through Charter v4.0 and THREAD_PROTOCOL v2.0.
 
+Embedded Sprint v1 is authorized. The next Embedded decision is the Sprint exit review after real project evidence, not an immediate promotion to a full line.
+
 The strategic handoff backlog above remains to be reviewed one item at a time.
 
 ## Next Core Review
@@ -300,6 +336,8 @@ Review on meaningful changes including:
 
 - Student Manager V2 completion;
 - a material Algorithm milestone;
+- Embedded Phase 0 bring-up completion or a material hardware/toolchain blocker;
+- Embedded `STM32 Interactive Controller v1` completion and Sprint exit review;
 - first verified Linux milestone;
 - concrete high-fit internship opportunity or seasonal application decision;
 - Personal Finance Baseline v1 completion;
@@ -308,7 +346,7 @@ Review on meaningful changes including:
 - `Needs Core Decision: Yes` from a specialist;
 - one of the inherited strategic backlog items being ready for decision;
 - a material HZN-001 failure / authority ambiguity;
-- HZN-002 producing a clean no-write case and a clean real-write case, or exposing material friction;
+- HZN-002 producing a clean Specialist real-write case or exposing material friction;
 - a material failure showing the Horizon Core merger created strategic tunnel vision or new communication friction.
 
 This file is a Core summary, not a daily journal.
