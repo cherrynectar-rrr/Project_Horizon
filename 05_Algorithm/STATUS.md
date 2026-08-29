@@ -23,7 +23,7 @@ Block 01 scope:
 - prefix sums;
 - basic algorithmic thinking.
 
-Time-complexity, space-complexity, arrays, strings, sorting, and binary-search foundations are complete; the current topic is two pointers.
+Time-complexity, space-complexity, arrays, strings, sorting, binary-search, and two-pointers foundations are complete; the current topic is prefix sums.
 
 ## Completed
 
@@ -34,15 +34,16 @@ Time-complexity, space-complexity, arrays, strings, sorting, and binary-search f
 - Strings foundation completed on 2026-08-19: practiced indexed character access, full traversal, character counting, in-place reversal, and palindrome checking with correct time/auxiliary-space reasoning.
 - Sorting foundation completed on 2026-08-21: implemented selection sort from first principles using minimum-index search, reasoned about `O(n^2)` best/worst time, `O(n)` swaps, and `O(1)` auxiliary space, with runnable code and concise README notes.
 - Binary-search foundation completed on 2026-08-29: implemented iterative binary search on an ascending array, handled successful and unsuccessful lookup, and explained best-case `O(1)`, worst-case `O(log n)`, and `O(1)` auxiliary space.
+- Two-pointers foundation completed on 2026-08-29: implemented two-sum search on an ascending array using left/right pointers, correctly moved pointers from the comparison with `target`, handled found/not-found cases, and reasoned about worst-case `O(n)` time and `O(1)` auxiliary space.
 
 ## In Progress
 
 - Block 01 — Foundation
-- Current topic: two pointers
+- Current topic: prefix sums
 
 ## Next Milestone
 
-Produce the first verifiable two-pointers milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
+Produce the first verifiable prefix-sums milestone through a small runnable exercise, correct complexity reasoning, concise README notes, and a meaningful Git commit.
 
 ## Evidence
 
@@ -67,6 +68,10 @@ Produce the first verifiable two-pointers milestone through a small runnable exe
 - `05_Algorithm/Block01/06_binary_search/main.cpp`
 - `05_Algorithm/Block01/06_binary_search/README.md`
 - Commit `d3ecbd0be6df50e88d07868f96812a3a09efdb38` — `algorithm: add binary search foundation`.
+- `05_Algorithm/Block01/07_two_pointers/main.cpp`
+- `05_Algorithm/Block01/07_two_pointers/README.md`
+- Commit `470c67132c5a5f063fe41834a13791ec180c8d95` — `algorithm: add two pointers foundation`.
+- Commit `5e4f40861fe9760fea59d1b551c596b3f41bf756` — `algorithm: add two pointers notes`.
 
 ## Blockers
 
