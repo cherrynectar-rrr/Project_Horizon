@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-29
+Last Updated: 2026-08-30
 Status: Active
 Authority: Horizon Core only
 
@@ -44,10 +44,10 @@ Embedded activation does **not** change the one-main-technical-line principle. P
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main line | Foundation complete through Week03; OOP is current | Student Manager V2 with object-oriented structure |
-| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; complexity, arrays, strings and sorting foundations complete; binary search is current | First verifiable binary-search milestone |
+| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; binary search and two pointers complete; prefix sums is current | First verifiable prefix-sums milestone |
 | [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Support Algorithm and patch only real C++/STL gaps |
-| [Embedded](../04_Embedded/README.md) | Bounded exploration | Sprint v1 authorized; NUCLEO-G071RB + STM32CubeIDE selected; Specialist STATUS not yet created | Phase 0: verify toolchain, build, flash and debug loop on real board |
+| [Embedded](../04_Embedded/STATUS.md) | Bounded exploration | Specialist STATUS active; Phase 0 bring-up in progress; NUCLEO-G071RB remains the authorized first board | Phase 0: verify toolchain, build, flash and debug loop on real board |
 | [Career / Internship](../09_Career/STATUS.md) | Bounded support | Internship Readiness Baseline v1 complete; on-demand opportunity review active | New readiness evidence, high-fit opportunity, or seasonal application decision |
 | [Personal Finance & Capital](../10_Finance/STATUS.md) | Bounded support / maintenance | Personal Finance Baseline v1 in progress | Complete Personal Finance Baseline v1 |
 | [Academic Operations & Evidence](../11_Academic/STATUS.md) | Bounded support / maintenance | Year 2 Fall Academic Baseline v1 in progress | Complete Year 2 Fall Academic Baseline v1 |
@@ -58,7 +58,7 @@ Embedded activation does **not** change the one-main-technical-line principle. P
 
 Python remains the Horizon main technical learning line. The immediate milestone is OOP through Student Manager V2.
 
-Algorithm remains active as a structured line and must not displace Python without a separate Core decision. Sorting foundation is complete; binary search is the current topic.
+Algorithm remains active as a structured line and must not displace Python without a separate Core decision. Binary search and two pointers foundations are complete; prefix sums is the current topic.
 
 Linux and C++ remain support lines. C++ standalone preheat is complete; Linux should be learned through real development needs rather than through a broad standalone curriculum.
 
@@ -83,7 +83,7 @@ Current platform decision:
 - board: `NUCLEO-G071RB`;
 - toolchain: current official `STM32CubeIDE` at setup time;
 - Core startup artifact: `04_Embedded/README.md`;
-- future Specialist-owned state: `04_Embedded/STATUS.md`.
+- Specialist-owned state: `04_Embedded/STATUS.md`.
 
 Sprint route:
 
