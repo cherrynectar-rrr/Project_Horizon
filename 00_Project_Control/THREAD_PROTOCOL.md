@@ -1,6 +1,6 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-08-29
+Last Updated: 2026-08-30
 Version: V2.0 — Horizon Core Edition
 
 ## Purpose
@@ -253,7 +253,15 @@ Skills:
 - should be promoted only after repeated real use;
 - are version-pinned when adopted.
 
-`HZN-001 horizon-context-sync v0.5` is the current adopted active context-sync Skill for the Horizon Core + Specialist model. `HZN-002 status-update v0.1` is currently Candidate — Trial. HZN-003 through HZN-005 remain frozen unless separately authorized.
+`HZN-001 horizon-context-sync v0.5` is the current adopted active context-sync Skill for the Horizon Core + Specialist model.
+
+`HZN-002 status-update v0.1` is currently Candidate — Trial.
+
+`horizon-learning-loop v0.1` is currently **Candidate — Cross-thread Trial** for learning-oriented Specialist work. It generalizes the learning mechanism already used in the Algorithm Course: first attempt / generation, gap exposure, minimum necessary theory, guided discovery, independent construction, real feedback, debugging/explanation, closed-book retrieval, spaced revisit, interleaving after basic mastery and transfer / teach-back. Specialists should adapt the surface form to the domain and must not turn the Skill into new tracking bureaucracy or a second roadmap.
+
+The learning-loop trial should gather evidence through ordinary Python / C++ / Algorithm / Linux / Embedded / AI / academic learning sessions rather than manufacturing Skill-test work. A candidate Skill does not justify STATUS churn by itself.
+
+HZN-003 through HZN-005 remain frozen unless separately authorized. The unnumbered learning-loop trial does not unfreeze or consume those IDs.
 
 ---
 
