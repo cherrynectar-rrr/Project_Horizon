@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-30
+Last Updated: 2026-08-31
 Status: Active
 Authority: Horizon Core only
 
@@ -26,16 +26,17 @@ See `00_Project_Control/THREAD_PROTOCOL.md` v2.0 for current read/write rules.
 
 ## Current Priority / Capacity Structure
 
-1. Python — main technical line
-2. Algorithm — active structured line
-3. Linux — support line
-4. C++ — support for algorithm implementation
-5. Embedded — Active — Bounded Exploration; project-first Sprint v1
-6. Career / Internship — Active — Bounded Support; event-driven
-7. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
-8. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
+1. Python — main technical capability line
+2. Qingdao Agri Data Competition Project — Active — Bounded Short-Term Project; Phase 1 MVP build through the 2026-09-30 competition deadline
+3. Algorithm — active structured line
+4. Linux — support line
+5. C++ — support for algorithm implementation
+6. Embedded — Active — Bounded Exploration; project-first Sprint v1
+7. Career / Internship — Active — Bounded Support; event-driven
+8. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
+9. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
 
-Embedded activation does **not** change the one-main-technical-line principle. Python remains the main technical line and Algorithm remains the active structured line. Embedded may not materially displace either without a separate Horizon Core decision.
+The Qingdao Agri Data Competition project is **not** a new permanent main line. It is a deadline-bounded application project that primarily consumes Python application time. Python remains the main technical capability line; Algorithm and Embedded remain active within their existing scopes but should not expand while the competition project is in its delivery window. Academic obligations and GPA-sensitive work remain higher priority than competition polish.
 
 ---
 
@@ -43,7 +44,8 @@ Embedded activation does **not** change the one-main-technical-line principle. P
 
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
-| [Python](../01_Python/STATUS.md) | Main line | Foundation complete through Week03; OOP is current | Student Manager V2 with object-oriented structure |
+| [Python](../01_Python/STATUS.md) | Main capability line | Foundation complete through Week03; OOP / Student Manager V2 remains open | Student Manager V2 or equivalent evidence that Python foundation can support real project work |
+| [Qingdao Agri Data Competition](../13_Projects/2026_Qingdao_Agri_Data_Competition/STATUS.md) | Bounded short-term project | Phase 0 GO; egg-price topic authorized; Phase 1 MVP build active | Reproducible historical dataset + indicators + chart + explainable risk rule |
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; binary search and two pointers complete; prefix sums is current | First verifiable prefix-sums milestone |
 | [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Support Algorithm and patch only real C++/STL gaps |
@@ -56,9 +58,9 @@ Embedded activation does **not** change the one-main-technical-line principle. P
 
 ## Current Main-Line Decision
 
-Python remains the Horizon main technical learning line. The immediate milestone is OOP through Student Manager V2.
+Python remains the Horizon main technical capability line. Its immediate curriculum milestone remains OOP through Student Manager V2, but during the Qingdao competition delivery window, bounded Python learning may be driven directly by the real project when that produces stronger evidence than isolated curriculum exercises.
 
-Algorithm remains active as a structured line and must not displace Python without a separate Core decision. Binary search and two pointers foundations are complete; prefix sums is the current topic.
+Algorithm remains active as a structured line and must not displace Python or the authorized short-term project without a separate Core decision. Binary search and two pointers foundations are complete; prefix sums is the current topic.
 
 Linux and C++ remain support lines. C++ standalone preheat is complete; Linux should be learned through real development needs rather than through a broad standalone curriculum.
 
@@ -69,6 +71,65 @@ Career / Internship remains bounded support. It may evaluate concrete opportunit
 Personal Finance & Capital remains low-frequency bounded maintenance. It must not displace GPA/core coursework, Python, Algorithm or justified Career work.
 
 Academic Operations & Evidence owns factual academic operations and course-evidence maintenance, not subject-matter teaching or strategic academic decisions.
+
+---
+
+## Qingdao Agri Data Competition Project
+
+Status: **GO — Active — Bounded Short-Term Project / Phase 1 MVP Build**.
+
+Core decision date: **2026-08-31**.
+
+Target competition: `2026 青岛市农业农村领域数据驱动创新应用竞赛`.
+
+Current authorized route:
+
+- track: **赛道二 — 农业大数据挖掘分析**;
+- working topic: **青岛蛋鸡行情波动风险提示系统**;
+- fallback topic: **青岛蔬菜价格—上市量波动监测** if egg-price data becomes materially inadequate;
+- submission deadline: **2026-09-30**.
+
+Phase 0 exit decision: **GO**.
+
+Evidence supporting GO:
+
+- real Qingdao egg-price observations have been stored locally, read successfully with `pandas`, and plotted with `matplotlib`;
+- the user correctly interpreted the first real time-series chart;
+- official Qingdao weekly reports provide historical egg-price observations beyond a one-off July sample;
+- official local reporting supports a real problem around cyclical egg-price volatility, producer market-warning needs and income-risk protection;
+- MVP buildability has been demonstrated using current Python plus bounded just-in-time additions;
+- one July sample point still requires source reconciliation, but this is a data-cleaning task rather than a project-feasibility blocker.
+
+Phase 1 minimum output:
+
+1. one reproducible historical dataset with cited sources;
+2. Python loading / cleaning pipeline;
+3. basic indicators such as latest value, week-to-week change, recent average and recent volatility;
+4. one clear time-series chart;
+5. one simple, explainable trend / risk rule;
+6. README that separates observed facts from forecasts and states limitations.
+
+Resource allocation through the competition window:
+
+- the project receives bounded short-term delivery priority and may use Python learning time as direct application work;
+- Python foundation is not abandoned; project-driven gaps should be learned just in time rather than opening a second curriculum;
+- Algorithm remains active but receives no expansion of scope because of this competition;
+- Embedded remains bounded exploration and receives no scope expansion during the competition delivery window;
+- academic/GPA-sensitive obligations override competition polish or optional features;
+- no deep-learning, mobile-app, generic smart-agriculture-platform or unrelated feature expansion is authorized unless a later evidence-based Core decision changes scope.
+
+Review / stop triggers:
+
+- Phase 1 MVP cannot be made reproducible from real data;
+- project workload begins materially damaging academic obligations or the main capability line;
+- the agricultural story requires fabricated evidence or unsupported claims;
+- the project proposes a major track/topic change;
+- MVP completion shows a clear case for Phase 2 competition polishing;
+- submission / competition result creates meaningful new evidence.
+
+Project workspace: `13_Projects/2026_Qingdao_Agri_Data_Competition/`.
+
+The Project Specialist owns its `STATUS.md` and project files. Horizon Core owns cross-thread resource decisions and MASTER state.
 
 ---
 
@@ -269,6 +330,7 @@ External problem sets support the active topic and must not become a second road
 | Competition | Position | Current Strategy |
 | --- | --- | --- |
 | Mathematics competition | Primary | Main competition focus |
+| Qingdao Agri Data Competition | Active bounded project | GO; build a real Python/data MVP for Track 2 before 2026-09-30; no unrelated AI expansion |
 | Physics theory competition | Secondary / interest validation | Secondary participation and evidence of sustained interest |
 | Lanqiao Cup campus selection | Baseline attempt | No dedicated preparation; only low-cost topic-aligned exposure until later review gates |
 
@@ -324,6 +386,8 @@ None reported.
 
 ## Decisions Needed
 
+The Qingdao Agri Data Competition Phase 0 exit gate is resolved: **GO**. Phase 1 MVP build is authorized under the bounded short-term resource rules above.
+
 No governance decision remains for the Voyage/Main Control merger; it is adopted through Charter v4.0 and THREAD_PROTOCOL v2.0.
 
 Embedded Sprint v1 is authorized. The next Embedded decision is the Sprint exit review after real project evidence, not an immediate promotion to a full line.
@@ -334,6 +398,7 @@ The strategic handoff backlog above remains to be reviewed one item at a time.
 
 Review on meaningful changes including:
 
+- Qingdao Agri Data Competition Phase 1 MVP completion, material project blocker, submission decision or competition result;
 - Student Manager V2 completion;
 - a material Algorithm milestone;
 - Embedded Phase 0 bring-up completion or a material hardware/toolchain blocker;
