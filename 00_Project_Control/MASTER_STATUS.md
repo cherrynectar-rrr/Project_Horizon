@@ -20,14 +20,14 @@ For major decisions, Core preserves an internal two-pass discipline:
 
 The former Voyage strategy directory remains preserved as a strategy library; the two Voyage–Control bridge files become historical records after merger handoff.
 
-See `00_Project_Control/THREAD_PROTOCOL.md` v2.0 for current read/write rules.
+See `00_Project_Control/THREAD_PROTOCOL.md` v2.1 for current read/write and project-activation rules.
 
 ---
 
 ## Current Priority / Capacity Structure
 
 1. Python — main technical capability line
-2. Qingdao Agri Data Competition Project — Active — Bounded Short-Term Project; Phase 1 MVP build through the 2026-09-30 competition deadline
+2. Qingdao Agri Data Competition Project — Active — Bounded Short-Term Project; end-to-end delivery authorized through the 2026-09-30 competition deadline
 3. Algorithm — active structured line
 4. Linux — support line
 5. C++ — support for algorithm implementation
@@ -36,7 +36,7 @@ See `00_Project_Control/THREAD_PROTOCOL.md` v2.0 for current read/write rules.
 8. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
 9. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
 
-The Qingdao Agri Data Competition project is **not** a new permanent main line. It is a deadline-bounded application project that primarily consumes Python application time. Python remains the main technical capability line; Algorithm and Embedded remain active within their existing scopes but should not expand while the competition project is in its delivery window. Academic obligations and GPA-sensitive work remain higher priority than competition polish.
+The Qingdao Agri Data Competition project is **not** a new permanent main line. It is a deadline-bounded application project that primarily consumes Python application time. **Bounded refers to scope and resource protection, not partial execution permission:** the Project Specialist is authorized to complete the approved project end-to-end without recurring Core approval at each internal phase. Python remains the main technical capability line; Algorithm and Embedded remain active within their existing scopes but should not expand while the competition project is in its delivery window. Academic obligations and GPA-sensitive work remain higher priority than competition polish.
 
 ---
 
@@ -45,7 +45,7 @@ The Qingdao Agri Data Competition project is **not** a new permanent main line. 
 | Track | Role | Current State | Next Gate |
 | --- | --- | --- | --- |
 | [Python](../01_Python/STATUS.md) | Main capability line | Foundation complete through Week03; OOP / Student Manager V2 remains open | Student Manager V2 or equivalent evidence that Python foundation can support real project work |
-| [Qingdao Agri Data Competition](../13_Projects/2026_Qingdao_Agri_Data_Competition/STATUS.md) | Bounded short-term project | Phase 0 GO; egg-price topic authorized; Phase 1 MVP build active | Reproducible historical dataset + indicators + chart + explainable risk rule |
+| [Qingdao Agri Data Competition](../13_Projects/2026_Qingdao_Agri_Data_Competition/STATUS.md) | Bounded short-term project | GO; egg-price topic authorized; end-to-end delivery active | Final submission, material blocker, major scope/resource conflict, or competition result |
 | [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; binary search and two pointers complete; prefix sums is current | First verifiable prefix-sums milestone |
 | [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
 | [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Support Algorithm and patch only real C++/STL gaps |
@@ -76,7 +76,7 @@ Academic Operations & Evidence owns factual academic operations and course-evide
 
 ## Qingdao Agri Data Competition Project
 
-Status: **GO — Active — Bounded Short-Term Project / Phase 1 MVP Build**.
+Status: **GO — Active — Bounded Short-Term Project / End-to-End Delivery**.
 
 Core decision date: **2026-08-31**.
 
@@ -91,6 +91,8 @@ Current authorized route:
 
 Phase 0 exit decision: **GO**.
 
+**Execution authorization:** GO authorizes the Project Specialist to carry this approved project from data and MVP work through implementation, testing, debugging, documentation, competition-ready refinement and final submission preparation. Internal Phase 1 / Phase 2 / Phase 3 labels are milestones for organizing work, not additional permission gates. The project does not need to return to Horizon Core merely to ask whether it may continue to the next normal phase.
+
 Evidence supporting GO:
 
 - real Qingdao egg-price observations have been stored locally, read successfully with `pandas`, and plotted with `matplotlib`;
@@ -100,7 +102,7 @@ Evidence supporting GO:
 - MVP buildability has been demonstrated using current Python plus bounded just-in-time additions;
 - one July sample point still requires source reconciliation, but this is a data-cleaning task rather than a project-feasibility blocker.
 
-Phase 1 minimum output:
+Minimum project foundation:
 
 1. one reproducible historical dataset with cited sources;
 2. Python loading / cleaning pipeline;
@@ -108,6 +110,8 @@ Phase 1 minimum output:
 4. one clear time-series chart;
 5. one simple, explainable trend / risk rule;
 6. README that separates observed facts from forecasts and states limitations.
+
+After that foundation works, the Project Specialist may continue within the approved scope toward a competition-ready version, including clearer visualization, defensible local context, improved presentation, limitations, reproducibility, submission materials and justified incremental analysis. No separate Core approval is required for normal end-to-end completion.
 
 Resource allocation through the competition window:
 
@@ -118,14 +122,15 @@ Resource allocation through the competition window:
 - academic/GPA-sensitive obligations override competition polish or optional features;
 - no deep-learning, mobile-app, generic smart-agriculture-platform or unrelated feature expansion is authorized unless a later evidence-based Core decision changes scope.
 
-Review / stop triggers:
+Escalation / stop triggers are limited to decisions that materially exceed or threaten the approved project:
 
-- Phase 1 MVP cannot be made reproducible from real data;
+- the project cannot be made reproducible from real data;
 - project workload begins materially damaging academic obligations or the main capability line;
 - the agricultural story requires fabricated evidence or unsupported claims;
 - the project proposes a major track/topic change;
-- MVP completion shows a clear case for Phase 2 competition polishing;
-- submission / competition result creates meaningful new evidence.
+- a substantial new technical stack or feature family outside the approved route becomes necessary;
+- a high-cost, irreversible or otherwise strategically significant commitment appears;
+- submission / competition result creates meaningful new evidence requiring Core review.
 
 Project workspace: `13_Projects/2026_Qingdao_Agri_Data_Competition/`.
 
@@ -330,7 +335,7 @@ External problem sets support the active topic and must not become a second road
 | Competition | Position | Current Strategy |
 | --- | --- | --- |
 | Mathematics competition | Primary | Main competition focus |
-| Qingdao Agri Data Competition | Active bounded project | GO; build a real Python/data MVP for Track 2 before 2026-09-30; no unrelated AI expansion |
+| Qingdao Agri Data Competition | Active bounded project | GO; end-to-end delivery authorized for Track 2 before 2026-09-30; no recurring phase approval inside scope |
 | Physics theory competition | Secondary / interest validation | Secondary participation and evidence of sustained interest |
 | Lanqiao Cup campus selection | Baseline attempt | No dedicated preparation; only low-cost topic-aligned exposure until later review gates |
 
@@ -386,9 +391,9 @@ None reported.
 
 ## Decisions Needed
 
-The Qingdao Agri Data Competition Phase 0 exit gate is resolved: **GO**. Phase 1 MVP build is authorized under the bounded short-term resource rules above.
+The Qingdao Agri Data Competition project is fully activated within its approved scope: **GO — end-to-end delivery authorized through submission preparation.** No recurring Core approval is required merely to move from one internal project phase to the next.
 
-No governance decision remains for the Voyage/Main Control merger; it is adopted through Charter v4.0 and THREAD_PROTOCOL v2.0.
+No governance decision remains for the Voyage/Main Control merger; it is adopted through Charter v4.0 and THREAD_PROTOCOL v2.1.
 
 Embedded Sprint v1 is authorized. The next Embedded decision is the Sprint exit review after real project evidence, not an immediate promotion to a full line.
 
@@ -398,7 +403,7 @@ The strategic handoff backlog above remains to be reviewed one item at a time.
 
 Review on meaningful changes including:
 
-- Qingdao Agri Data Competition Phase 1 MVP completion, material project blocker, submission decision or competition result;
+- Qingdao Agri Data Competition material blocker, major scope/resource conflict, submission decision or competition result;
 - Student Manager V2 completion;
 - a material Algorithm milestone;
 - Embedded Phase 0 bring-up completion or a material hardware/toolchain blocker;
