@@ -1,7 +1,7 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-08-30
-Version: V2.0 — Horizon Core Edition
+Last Updated: 2026-08-31
+Version: V2.1 — Horizon Core Edition
 
 ## Purpose
 
@@ -138,6 +138,27 @@ Use:
 when a meaningful specialist-state update genuinely requires Core judgment.
 
 Do not manufacture STATUS updates merely to transmit a casual cross-chat message.
+
+### 4.1 Project Activation Semantics
+
+When Horizon Core explicitly authorizes a project as **GO / Active**, that authorization is **end-to-end within the approved project scope**.
+
+The owning Project Specialist may proceed from research and data collection through implementation, testing, debugging, documentation, iteration, competition preparation and final delivery without returning to Core for permission at every internal phase.
+
+Internal phases and milestones are execution checkpoints, **not recurring permission gates**.
+
+Once a project is activated, the default expectation is to finish the approved project properly rather than leave it artificially half-open.
+
+A Project Specialist should escalate again only when a new decision would materially change what Core originally authorized, including:
+
+- major topic, track or project-purpose change;
+- substantial new technical stack or feature family outside the approved scope;
+- material reallocation from another Horizon line;
+- real conflict with GPA-sensitive academic obligations or another higher-priority commitment;
+- deadline, feasibility or evidence failure that makes Pivot / Stop a serious option;
+- a high-cost, irreversible, regulated or otherwise strategically significant commitment.
+
+If Core intends to authorize only a feasibility study, prototype or trial, it must state that explicitly as **Feasibility Only / Trial**. A feasibility-only authorization is not equivalent to activating the full project.
 
 ---
 
