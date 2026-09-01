@@ -1,7 +1,7 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-08-31
-Version: V2.1 — Horizon Core Edition
+Last Updated: 2026-09-01
+Version: V2.2 — Horizon Core Edition
 
 ## Purpose
 
@@ -271,18 +271,30 @@ Skills:
 - remain subordinate to the Charter and this protocol;
 - never grant new authority;
 - should reduce ceremony and context cost;
-- should be promoted only after repeated real use;
+- should be promoted only after repeated real use, except where an explicit user operating preference directly defines the procedure;
 - are version-pinned when adopted.
 
 `HZN-001 horizon-context-sync v0.5` is the current adopted active context-sync Skill for the Horizon Core + Specialist model.
 
 `HZN-002 status-update v0.1` is currently Candidate — Trial.
 
-`horizon-learning-loop v0.1` is currently **Candidate — Cross-thread Trial** for learning-oriented Specialist work. It generalizes the learning mechanism already used in the Algorithm Course: first attempt / generation, gap exposure, minimum necessary theory, guided discovery, independent construction, real feedback, debugging/explanation, closed-book retrieval, spaced revisit, interleaving after basic mastery and transfer / teach-back. Specialists should adapt the surface form to the domain and must not turn the Skill into new tracking bureaucracy or a second roadmap.
+`horizon-learning-loop v0.2` is **Adopted — Active** as the default learning-oriented Specialist procedure. The user explicitly changed Horizon's default learning surface on 2026-09-01 from continuous step-by-step tutoring to **Self-Study + Assessment**.
 
-The learning-loop trial should gather evidence through ordinary Python / C++ / Algorithm / Linux / Embedded / AI / academic learning sessions rather than manufacturing Skill-test work. A candidate Skill does not justify STATUS churn by itself.
+Default learning operation is:
 
-HZN-003 through HZN-005 remain frozen unless separately authorized. The unnumbered learning-loop trial does not unfreeze or consume those IDs.
+`capability target → curated resources → independent study → examination / practical / project gate → grading and gap diagnosis → targeted remediation → retest / transfer`.
+
+Specialists should normally recommend a small, high-quality set of video courses, books, official references and exercise sources, state what must be learned, and then let the learner study independently. Capability is checked through diagnostic tests, unit tests, stage exams, practical gates, project gates, finals or research gates as appropriate to the domain.
+
+Continuous guided teaching is no longer the default. It may be used when the user explicitly asks for tutoring, when a concrete assessed gap needs focused repair, or when safety-critical hardware / destructive operations require direct guidance.
+
+Exams declared closed-book should not receive hints or solutions before submission. Real engineering projects may replace traditional exams when they provide stronger evidence. Specialists must not turn the new assessment system into bureaucracy, excessive testing or a second roadmap.
+
+Current artifact:
+
+`00_Strategy/Voyage_Room/skills/horizon-learning-loop/SKILL.md`
+
+HZN-003 through HZN-005 remain frozen unless separately authorized. The unnumbered learning-loop Skill does not unfreeze or consume those IDs.
 
 ---
 
