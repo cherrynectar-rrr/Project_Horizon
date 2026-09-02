@@ -10,91 +10,182 @@ How can embodied agents safely explore unfamiliar physical situations, turn loca
 
 This is a research hypothesis, not a declared permanent career identity.
 
-## Sprint v0 — Toy Physical World
+## Sprint v0 — Earth Flywheel Hand v0
 
 ### Purpose
 
-Build the smallest executable experiment that captures the Earth Flywheel mechanism without requiring real robot hardware, ROS, reinforcement learning, or deep learning.
+Build one minimal real robot body subsystem instead of beginning with a whole robot.
 
-The experiment should test one narrow hypothesis:
+The first subsystem is a **two-finger gripper / minimal robotic hand** because it creates a compact physical testbed for the Earth Flywheel questions that currently matter most:
 
-> Shared experience should allow later agents facing similar unfamiliar objects to make fewer unsafe or wasteful attempts than agents that learn only from their own local experience.
+- physical contact;
+- unknown-object probing;
+- grasp force;
+- slip and failure;
+- tactile / force feedback;
+- local adaptation;
+- experience recording;
+- later shared learning across agents or embodiments.
+
+Sprint v0 does **not** attempt to build a humanoid hand, full arm or general-purpose robot.
+
+### Research Hypothesis
+
+> A small embodied gripper should be able to approach an unfamiliar object conservatively, use physical feedback to adjust its action, record the outcome as experience, and eventually reuse validated experience to reduce unnecessary or unsafe probing.
+
+The first sprint only needs to establish the physical and software substrate for testing this hypothesis. It does not need to solve fleet learning yet.
 
 ### Core Loop
 
-`unknown object -> cautious probe -> observation -> local experience -> shared memory -> next agent retrieves similar experience -> safer/better action`
+`unknown object -> cautious contact / grip -> tactile or force observation -> outcome -> local experience -> improved next attempt`
 
-### Environment
+Later sprints may extend this to:
 
-Create a small simulated physical world in Python.
+`local experience -> validated shared memory -> another agent / embodiment -> safer or faster action`
 
-Each object has:
-- observable features, such as size / surface type / shape class;
-- hidden physical properties, such as required grip force / slip tendency / fragility threshold;
-- an outcome model that maps an attempted action to success, slip, no-move, or damage.
+## Hardware Scope
 
-The agent does not initially know the hidden properties.
+### Target body part
 
-### Required Experimental Conditions
+**Earth Flywheel Hand v0 — minimal two-finger gripper.**
 
-Compare at least three modes:
+Preferred characteristics:
 
-1. **No Memory** — every encounter starts from the same prior rule.
-2. **Local Memory** — one agent may reuse only its own previous experience.
-3. **Shared Fleet Memory** — agents may retrieve validated experience from other agents when the new object is sufficiently similar.
+- one simple closing / opening degree of freedom at first;
+- low-cost replaceable mechanical structure;
+- controllable actuator;
+- at least one measurable contact / force signal;
+- safe low-force operation suitable for tabletop objects;
+- architecture that can later accept better tactile sensing without rebuilding the entire project.
 
-### Minimum Metrics
+The exact actuator, sensor, mechanics and fabrication method are not fixed by this README. They should be selected after a small design / cost / availability review.
 
-Measure and plot at least:
-- task success rate;
-- damaging / unsafe attempts;
-- number of probe attempts before success;
-- cumulative performance over repeated encounters.
+### Controller relationship
 
-### Minimum Deliverables
+The current Horizon Embedded exploration should provide the low-level control foundation rather than creating a separate hardware-learning line.
 
-- runnable Python code;
-- deterministic or seed-controlled experiments;
-- one README explaining the model and assumptions;
-- plots comparing the three conditions;
-- a short result section answering whether the toy experiment supports or weakens the hypothesis;
-- explicit limitations explaining why this does **not** yet prove the idea works on real robots.
+The existing MCU bring-up objective remains useful:
 
-### Forbidden Scope in Sprint v0
+`STM32CubeIDE -> Build -> Flash -> Debug -> real I/O`
 
-Do not add these unless a later Core decision expands scope:
-- ROS 2;
-- real robot hardware;
-- MuJoCo / Isaac Sim;
-- deep learning;
+After bring-up, Earth Flywheel Hand v0 may become the meaningful integrated application target for embedded control, subject to the existing Horizon capacity and specialist ownership rules.
+
+## Sprint Structure
+
+### Gate 0 — Body-Part Architecture
+
+Produce a concrete design before buying unnecessary hardware:
+
+- sketch / CAD / mechanical concept for the two-finger gripper;
+- actuator choice rationale;
+- sensing choice rationale;
+- MCU / power / signal architecture;
+- safety limits;
+- expected measurable variables;
+- estimated bill of materials;
+- explicit statement of what can be built with existing hardware and what must be acquired.
+
+Gate 0 is a design gate, not a requirement to over-engineer CAD or documentation.
+
+### Gate 1 — Open / Close / Measure
+
+Build the smallest physical loop that can:
+
+1. open the gripper;
+2. close the gripper under controlled command;
+3. detect contact or measure a contact-related signal;
+4. stop or limit actuation safely;
+5. log command + sensor + outcome data.
+
+No AI is required.
+
+### Gate 2 — Closed-Loop Physical Reflex
+
+Add one local feedback behavior such as:
+
+- stop when contact force reaches a threshold;
+- increase force when slip is detected;
+- back off when force exceeds a safety limit.
+
+The loop should run locally and deterministically. A high-level model should not be required for every millisecond-scale correction.
+
+### Gate 3 — Unknown-Object Probe
+
+Define a small set of unfamiliar tabletop objects and test a cautious probing policy.
+
+Measure at least:
+
+- successful grasp rate;
+- slip / drop events;
+- over-force / unsafe events;
+- number of probe adjustments;
+- time or attempts before stable grasp.
+
+### Gate 4 — Experience Memory
+
+Record each encounter in a structured form such as:
+
+`object observations + action + tactile / force trace + outcome + confidence`
+
+Then test whether local memory helps on later similar encounters.
+
+### Later Gate — Fleet / Cross-Embodiment
+
+Only after one physical hand can generate reliable experience should the project test shared memory across multiple simulated agents, multiple grippers or different embodiments.
+
+## Simulation Role
+
+Simulation is retained as a support tool rather than the first deliverable.
+
+A small Python toy model or later MuJoCo model may be used to:
+
+- test algorithms before risking hardware;
+- generate counterexamples;
+- compare no-memory / local-memory / shared-memory conditions;
+- explore scaling beyond the single physical hand.
+
+Simulation must not replace real physical feedback when the research claim concerns real contact or manipulation.
+
+## Current Forbidden Scope
+
+Do not add these in Sprint v0 unless a later Core decision expands scope:
+
+- full humanoid hand;
+- full robot arm;
+- humanoid body;
+- walking / legged robotics;
+- ROS 2 merely for architecture prestige;
+- reinforcement learning before a deterministic baseline exists;
 - VLA models;
-- reinforcement learning;
-- cloud fleet infrastructure;
-- humanoid-specific design;
-- complex 3D simulation.
+- large cloud fleet infrastructure;
+- expensive tactile arrays without evidence that simple sensing is insufficient;
+- complex 3D simulation before the physical subsystem exists.
 
-The point is to test the learning-loop idea, not to impress with stack complexity.
+The point is to build one small body part that can **feel, act, fail, record and improve**.
 
 ## Learning Mode
 
 Use Horizon Learning Loop v0.2 — Self-Study + Assessment.
 
-Learn missing Python / probability / experimental concepts just in time. Horizon may provide resources and assessment gates, but the learner owns implementation and debugging.
+Horizon defines capability targets and recommends a small set of references. The learner owns study, implementation and debugging. Missing mechanics, electronics, embedded, control, Python or experimental concepts are learned just in time.
 
-## Sprint v0 Gate
+## Sprint v0 Exit Gate
 
 Sprint v0 passes only if:
 
-1. all three conditions run reproducibly;
-2. the experiment produces interpretable quantitative results;
-3. the learner can explain why shared memory helps, fails, or creates negative transfer;
-4. at least one counterexample is tested where shared experience is misleading;
-5. the result is documented without claiming more than the toy model supports.
+1. one real two-finger gripper is physically built and controllable;
+2. at least one contact / force-related signal is measured reproducibly;
+3. one deterministic feedback / safety behavior works on hardware;
+4. encounters can be logged as structured experience;
+5. multiple objects produce interpretable experimental results;
+6. the learner can explain failures and limitations without overclaiming general intelligence;
+7. the project remains bounded enough not to damage GPA or higher-priority Horizon obligations.
 
 ### Exit Decisions
 
 After Sprint v0, Horizon Core may choose:
-- **Continue** — run a stronger simulation / learning experiment;
+
+- **Continue** — improve sensing / control / experiments;
 - **Promote** — Earth Flywheel earns a larger bounded research role;
 - **Hold** — preserve the seed but return resources to other lines;
-- **Stop** — evidence or interest is insufficient.
+- **Stop** — evidence, feasibility or interest is insufficient.
