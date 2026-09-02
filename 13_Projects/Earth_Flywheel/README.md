@@ -58,7 +58,7 @@ Preferred characteristics:
 - safe low-force operation suitable for tabletop objects;
 - architecture that can later accept better tactile sensing without rebuilding the entire project.
 
-The exact actuator, sensor, mechanics and fabrication method are not fixed by this README. They should be selected after a small design / cost / availability review.
+The exact actuator, sensor, mechanics and fabrication method are not fixed by this README. They should be selected only after the learner passes the zero-baseline foundation gate and can understand the trade-offs.
 
 ### Controller relationship
 
@@ -72,9 +72,35 @@ After bring-up, Earth Flywheel Hand v0 may become the meaningful integrated appl
 
 ## Sprint Structure
 
-### Gate 0 — Body-Part Architecture
+### Gate 0A — Robot Hand Foundations 0
 
-Produce a concrete design before buying unnecessary hardware:
+This gate exists because the learner is currently a true beginner in robotics / mechatronics and should not be asked to design a hand before understanding the minimum vocabulary and system model.
+
+The learner should self-study enough to explain, in simple language:
+
+- what a motor / actuator does;
+- what a sensor does;
+- what a microcontroller does;
+- what power supply / voltage / current mean at a practical beginner level;
+- what open-loop and closed-loop control mean;
+- what feedback means;
+- what a two-finger gripper is;
+- what force / contact / slip mean in this project;
+- why software alone cannot directly move a physical finger without electronics and an actuator.
+
+Minimum success test:
+
+Given a simple block diagram such as
+
+`PC / high-level logic -> MCU -> motor driver / actuator -> gripper -> object -> sensor -> MCU`,
+
+the learner can explain what each block does and trace what happens when the gripper closes on an object.
+
+No CAD, component selection, circuit design or control mathematics is required yet.
+
+### Gate 0B — Body-Part Architecture
+
+Only after Gate 0A passes, produce a concrete first design:
 
 - sketch / CAD / mechanical concept for the two-finger gripper;
 - actuator choice rationale;
@@ -85,7 +111,7 @@ Produce a concrete design before buying unnecessary hardware:
 - estimated bill of materials;
 - explicit statement of what can be built with existing hardware and what must be acquired.
 
-Gate 0 is a design gate, not a requirement to over-engineer CAD or documentation.
+Gate 0B is a design gate, not a requirement to over-engineer CAD or documentation.
 
 ### Gate 1 — Open / Close / Measure
 
@@ -168,6 +194,8 @@ The point is to build one small body part that can **feel, act, fail, record and
 Use Horizon Learning Loop v0.2 — Self-Study + Assessment.
 
 Horizon defines capability targets and recommends a small set of references. The learner owns study, implementation and debugging. Missing mechanics, electronics, embedded, control, Python or experimental concepts are learned just in time.
+
+For true zero-baseline material, Horizon should provide beginner-level vocabulary and a curated foundation resource pack before asking for independent design. Self-study does not mean guessing concepts that have never been introduced.
 
 ## Sprint v0 Exit Gate
 
