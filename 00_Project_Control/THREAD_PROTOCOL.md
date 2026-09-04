@@ -36,7 +36,7 @@ Current canonical detailed state includes:
 | Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` |
 | Academic Operations & Evidence | `Horizon_Academic/Academic_Operations/STATUS.md` |
 | Personal Finance & Capital | `Horizon_Life/Finance/STATUS.md` |
-| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` until a Specialist STATUS is initialized |
+| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/STATUS.md` |
 | Career / Internship | `Project_Horizon/09_Career/STATUS.md` until a later explicit repository decision |
 | Horizon Skills | `Horizon_Skills/` |
 | Earth Flywheel | `Earth_Flywheel/` project-local state/evidence as it matures |
