@@ -1,6 +1,6 @@
 # Project Horizon — Repository Registry
 
-Last Updated: 2026-09-04
+Last Updated: 2026-09-05
 Owner: Horizon Core
 Status: Active — Canonical
 
@@ -18,7 +18,7 @@ This file is the **single canonical repository registry**.
 | --- | --- | --- | --- |
 | `cherrynectar-rrr/Project_Horizon` | Public | Control plane | Charter, `MASTER_STATUS`, `THREAD_PROTOCOL`, strategy, cross-repo decisions, repository registry; Career STATUS remains here until later explicit migration |
 | `cherrynectar-rrr/Horizon_Skills` | Public | Reusable methods | Horizon Skills, versions and trial/adoption evidence |
-| `cherrynectar-rrr/Horizon_Learning` | Public | Capability building | Python, C++, Linux, Algorithm and Embedded learning artifacts + Specialist STATUS files |
+| `cherrynectar-rrr/Horizon_Learning` | Public | Capability building | Python, C++, Linux, Algorithm, Data Structures and Embedded learning artifacts + Specialist STATUS files |
 | `cherrynectar-rrr/Earth_Flywheel` | Public | Flagship robotics / research seed | Earth Flywheel architecture, implementation, experiments and future project-local state |
 | `cherrynectar-rrr/Horizon_projects` | Public | Bounded real projects | Competitions and smaller real projects; current Qingdao competition lives here |
 | `cherrynectar-rrr/Horizon_Academic` | Private | Academic operations / evidence | Academic Operations STATUS, course/application evidence and later APS / prerequisite support artifacts |
@@ -34,6 +34,7 @@ This file is the **single canonical repository registry**.
 | C++ | `Horizon_Learning/CPP/STATUS.md` |
 | Linux | `Horizon_Learning/Linux/STATUS.md` |
 | Algorithm | `Horizon_Learning/Algorithm/STATUS.md` |
+| Data Structures | `Horizon_Learning/Data_Structures/STATUS.md` |
 | Embedded | `Horizon_Learning/Embedded/STATUS.md` |
 | Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` |
 | Academic Operations & Evidence | `Horizon_Academic/Academic_Operations/STATUS.md` |
