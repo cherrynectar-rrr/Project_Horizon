@@ -1,208 +1,174 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-09-01
-Version: V2.2 — Horizon Core Edition
+Last Updated: 2026-09-04
+Version: V2.3 — Multi-Repository Efficiency Edition
 
 ## Purpose
 
-GitHub is the shared source of truth for Project Horizon's current state. Chat history provides context but must not be the only place where milestones, blockers, route changes or major decisions are recorded.
+GitHub is Project Horizon's formal shared state. Project Horizon now operates as a **multi-repository ecosystem** while preserving the same two-layer governance model:
 
-Project Horizon now uses two layers:
+- **Horizon Core / 核心舱 = Explore + Decide & Coordinate**
+- **Specialist Threads = Execute**
 
-- **Horizon Core / 核心舱:** Explore + Decide & Coordinate.
-- **Specialist Threads:** Execute approved work and produce evidence.
+`cherrynectar-rrr/Project_Horizon` is the **control plane**. Detailed execution state belongs to the repository that owns the relevant specialist or project.
 
-The former Voyage Room / Main Control split is retired. Strategic exploration remains mandatory as an internal mode of Horizon Core rather than a separate top-level chat.
+The goal of this protocol is to minimize startup and coordination cost. Read the **minimum authoritative state** needed for the task; do not scan the ecosystem by default.
 
 ---
 
-## 1. Session Startup
+## 1. Canonical State Topology
+
+Repository ownership is defined in:
+
+`00_Project_Control/REPOSITORIES.md`
+
+Current canonical detailed state includes:
+
+| Area | Canonical detailed state |
+| --- | --- |
+| Horizon-wide priority / activation / resource allocation | `Project_Horizon/00_Project_Control/MASTER_STATUS.md` |
+| Python | `Horizon_Learning/Python/STATUS.md` |
+| C++ | `Horizon_Learning/CPP/STATUS.md` |
+| Linux | `Horizon_Learning/Linux/STATUS.md` |
+| Algorithm | `Horizon_Learning/Algorithm/STATUS.md` |
+| Embedded | `Horizon_Learning/Embedded/STATUS.md` |
+| Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` |
+| Academic Operations & Evidence | `Horizon_Academic/Academic_Operations/STATUS.md` |
+| Personal Finance & Capital | `Horizon_Life/Finance/STATUS.md` |
+| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` until a Specialist STATUS is initialized |
+| Career / Internship | `Project_Horizon/09_Career/STATUS.md` until a later explicit repository decision |
+| Horizon Skills | `Horizon_Skills/` |
+| Earth Flywheel | `Earth_Flywheel/` project-local state/evidence as it matures |
+
+Legacy execution copies inside `Project_Horizon` are migration/history artifacts after cutover and must not be treated as independently writable live state.
+
+---
+
+## 2. Session Startup — Local First
 
 ### Horizon Core
 
 For important Core work:
 
-1. Read `00_Project_Control/MASTER_STATUS.md`.
-2. Read only the specialist `STATUS.md` files that can materially affect the task.
-3. Read relevant strategic documents under `00_Strategy/Voyage_Room/` when the task depends on prior route research, unresolved hypotheses or preserved strategic evidence.
-4. Verify current external facts when the answer depends on mutable real-world information.
-5. Use chat memory as supporting context only.
+1. Read `Project_Horizon/00_Project_Control/MASTER_STATUS.md`.
+2. Read only the specialist/project `STATUS.md` files that can materially change the decision.
+3. Read relevant strategy only when prior route research, competing hypotheses or unresolved questions matter.
+4. Read Charter / Protocol only when governance, authority, repository ownership or shared infrastructure is material.
+5. Verify current external sources when mutable real-world facts matter.
 
-For a major decision, Horizon Core should use the internal two-pass discipline:
-
-- **Explore:** alternatives, uncertainty, counter-cases, missing evidence.
-- **Decide & Coordinate:** temporary decision, resources, opportunity cost, review trigger.
+Do **not** reread already-fresh state in the same conversation without a reason.
 
 ### Specialist Thread
 
-For important execution work:
+Default startup:
 
-1. Read that specialist's own `STATUS.md`.
-2. Read `MASTER_STATUS.md` when the task involves priority, another thread, capacity conflict, activation state, a competition/project route or a Core dependency.
-3. Read strategic documents only when the approved execution scope genuinely depends on long-term route context.
-4. Verify mutable external facts when material.
+1. Read the specialist's **canonical local `STATUS.md`**.
+2. Start execution.
 
-Routine low-impact questions do not require a full project sync.
+Read `MASTER_STATUS.md` only when the task involves:
+
+- priority or capacity;
+- another thread;
+- activation / pause / promotion;
+- competition or project scope;
+- a Core dependency;
+- a conflict between local state and Horizon-wide state.
+
+Read README / course architecture only when long-scope context is needed. Read Charter / Protocol only when authority or write ownership is unclear.
+
+Routine low-impact questions do not require a full Horizon sync.
 
 ---
 
-## 2. Write Ownership
+## 3. Write Ownership
 
 ### Horizon Core
 
-Horizon Core may maintain:
+Horizon Core owns:
 
-- `00_Project_Control/MASTER_STATUS.md`;
-- `00_Project_Control/THREAD_PROTOCOL.md`;
-- top-level control/governance documents explicitly assigned to Core;
-- strategic analysis documents under `00_Strategy/Voyage_Room/` after the merger, except frozen historical bridge files;
-- future Core-owned shared infrastructure explicitly authorized by Charter / Core decision.
-
-The following former bridge files are **historical and frozen after merger handoff**:
-
-- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`;
-- `00_Project_Control/CONTROL_TO_VOYAGE.md`.
-
-Do not use them for new top-level communication after the merger is complete.
+- `Project_Horizon/00_Project_Control/MASTER_STATUS.md`;
+- `Project_Horizon/00_Project_Control/THREAD_PROTOCOL.md`;
+- repository registry / migration infrastructure;
+- top-level strategy and Core decisions;
+- shared operating architecture explicitly assigned to Core.
 
 ### Specialist Threads
 
-Each specialist thread may maintain only its own `STATUS.md` and any operational workspace/file explicitly authorized for that thread by Core.
+A Specialist may write only:
 
-Current specialist state owners include:
+- its canonical `STATUS.md`;
+- its authorized operational workspace and evidence files.
 
-- Python → `01_Python/STATUS.md`
-- C++ → `02_CPP/STATUS.md`
-- Linux → `03_Linux/STATUS.md`
-- Embedded → `04_Embedded/STATUS.md` after its first Specialist session creates the file
-- Algorithm → `05_Algorithm/STATUS.md`
-- Career / Internship → `09_Career/STATUS.md`
-- Personal Finance & Capital → `10_Finance/STATUS.md`
-- Academic Operations & Evidence → `11_Academic/STATUS.md`
+A Specialist must not:
 
-Future specialists follow the same single-owner rule.
-
-A specialist must not modify another specialist's state, `MASTER_STATUS.md`, Core strategy, or cross-thread priority.
-
----
-
-## 3. Horizon Core Internal Decision Discipline
-
-The merger removes chat-to-chat relay, not strategic dissent.
-
-For high-impact decisions, Horizon Core should separate:
-
-### Explore mode
-
-- generate serious alternatives;
-- challenge the current route;
-- preserve plausible competing hypotheses;
-- identify uncertainty and evidence gaps;
-- research current external reality when needed;
-- allow deferral when evidence is insufficient.
-
-Explore output is not automatically an execution change.
-
-### Decide & Coordinate mode
-
-- compare options against current evidence and constraints;
-- make, reject, defer or bound an experiment;
-- decide resource implications;
-- state what will temporarily not be done;
-- define review triggers;
-- update formal state only when a meaningful change occurs.
-
-A major decision should not be justified solely by the current plan's convenience when a credible counter-case exists.
-
----
-
-## 4. Specialist Escalation
-
-A specialist handles concrete execution inside its scope.
-
-Escalate to Horizon Core when the issue involves:
-
-- long-term direction;
-- another thread's priority or resources;
-- activation / pause / promotion of a line;
-- strategic electives or course overload;
-- GPA-versus-project or competition trade-offs;
-- research / career / country / graduate-route decisions;
-- a repeated technical gap that may justify cross-thread allocation;
-- any conflict between specialist state and `MASTER_STATUS.md`.
+- modify another Specialist's state;
+- modify `MASTER_STATUS.md`;
+- redefine long-term direction;
+- change cross-thread priority;
+- convert a local technical need into a new Horizon main line.
 
 Use:
 
 `Needs Core Decision: Yes`
 
-when a meaningful specialist-state update genuinely requires Core judgment.
+when a meaningful local state change requires Core judgment.
 
-Do not manufacture STATUS updates merely to transmit a casual cross-chat message.
+---
 
-### 4.1 Project Activation Semantics
+## 4. Project Activation Semantics
 
-When Horizon Core explicitly authorizes a project as **GO / Active**, that authorization is **end-to-end within the approved project scope**.
+When Horizon Core authorizes a project as **GO / Active**, the owning Project Specialist may execute the approved scope end-to-end without returning to Core for permission at every internal phase.
 
-The owning Project Specialist may proceed from research and data collection through implementation, testing, debugging, documentation, iteration, competition preparation and final delivery without returning to Core for permission at every internal phase.
+Internal phases are execution checkpoints, not recurring permission gates.
 
-Internal phases and milestones are execution checkpoints, **not recurring permission gates**.
+Escalate only when there is a material change such as:
 
-Once a project is activated, the default expectation is to finish the approved project properly rather than leave it artificially half-open.
-
-A Project Specialist should escalate again only when a new decision would materially change what Core originally authorized, including:
-
-- major topic, track or project-purpose change;
-- substantial new technical stack or feature family outside the approved scope;
+- major topic / track / purpose change;
+- substantial new technical stack or feature family;
 - material reallocation from another Horizon line;
-- real conflict with GPA-sensitive academic obligations or another higher-priority commitment;
-- deadline, feasibility or evidence failure that makes Pivot / Stop a serious option;
-- a high-cost, irreversible, regulated or otherwise strategically significant commitment.
+- conflict with GPA-sensitive obligations or a higher-priority commitment;
+- deadline / feasibility / evidence failure that makes Pivot or Stop serious;
+- high-cost, irreversible, regulated or strategically significant commitment.
 
-If Core intends to authorize only a feasibility study, prototype or trial, it must state that explicitly as **Feasibility Only / Trial**. A feasibility-only authorization is not equivalent to activating the full project.
-
----
-
-## 5. When to Update STATUS / MASTER_STATUS
-
-Update only when at least one meaningful change occurs:
-
-- a milestone is completed;
-- a blocker appears, changes or resolves;
-- the learning/project route materially changes;
-- a competition/application/project result arrives;
-- the next milestone materially changes;
-- a cross-thread decision changes active state or priority;
-- a specialist requires a Core decision.
-
-Do not update formal state for ordinary conversation, tiny exercises, speculative plans or diary entries.
-
-`MASTER_STATUS.md` is a control summary, not a complete history archive.
+A **Feasibility Only / Trial** authorization is not equivalent to full project activation.
 
 ---
 
-## 6. Update Rules
+## 5. Meaningful-Change Gate
+
+Update `STATUS.md` or `MASTER_STATUS.md` only when at least one meaningful change occurs:
+
+- milestone completed;
+- blocker appears, changes or resolves;
+- route or scope materially changes;
+- competition / project / application result arrives;
+- next gate materially changes;
+- activation / priority changes;
+- Specialist requires Core decision.
+
+Do not update formal state for ordinary conversation, tiny exercises, speculative plans, cosmetic wording or message passing.
 
 Before writing:
 
-1. Fetch the latest target file and current SHA.
-2. Preserve valuable existing facts.
-3. Change only what new evidence or a formal decision justifies.
-4. Use ISO dates.
-5. Keep state concise, factual and verifiable.
-6. Add paths / commits / artifacts when useful.
-7. Never record a plan as completed work.
-8. Distinguish verified evidence from user reports and inference.
-9. If write authority is unclear, fail closed and resolve governance before writing.
+1. fetch the latest target and SHA;
+2. preserve valuable existing facts;
+3. make the minimum evidence-justified change;
+4. use ISO dates;
+5. never record plans as completion;
+6. distinguish verified evidence, user report and inference;
+7. fail closed if write ownership is unclear.
+
+`MASTER_STATUS.md` is a **control summary**, not a complete history archive.
 
 ---
 
-## 7. Standard Specialist STATUS Shape
+## 6. Standard Specialist STATUS Shape
 
 ```markdown
 # <Thread> Status
 
 Last Updated: YYYY-MM-DD
-Status: <Main / Support / Active / Paused / Blocked / Bounded Support / Maintenance>
+Status: <Main / Support / Active / Bounded / Maintenance / Paused / Blocked>
 
 ## Current Goal
 ...
@@ -210,17 +176,14 @@ Status: <Main / Support / Active / Paused / Blocked / Bounded Support / Maintena
 ## Current Stage
 ...
 
-## Completed
-- ...
-
 ## In Progress
-- ...
+...
 
 ## Next Milestone
-- ...
+...
 
-## Evidence
-- ...
+## Recent Evidence
+...
 
 ## Blockers
 None
@@ -229,106 +192,71 @@ None
 No
 ```
 
-Legacy `Needs Master Decision` wording remains understandable in older files; specialists may migrate to `Needs Core Decision` on their next meaningful status update rather than creating churn solely for renaming.
+Long-term route, course architecture and durable explanation belong in README or dedicated docs rather than being repeated inside STATUS.
 
 ---
 
-## 8. Strategy Documents
+## 7. Strategy and Historical Material
 
-The directory `00_Strategy/Voyage_Room/` is preserved as the historical and working strategy library.
+The former Voyage Room / Main Control split is retired. Strategy material preserved under `Project_Horizon/00_Strategy/Voyage_Room/` remains a Core-owned library, not a separate authority.
 
-After the merger:
+Historical bridge files remain frozen:
 
-- Horizon Core may read and maintain non-bridge strategy documents there;
-- the directory name does not imply a surviving separate Voyage authority;
-- existing analyses, hypotheses and research history remain valuable evidence;
-- no cosmetic migration is required unless it later reduces real cost.
+- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md`
+- `00_Project_Control/CONTROL_TO_VOYAGE.md`
 
-The former Voyage chat is historical / retired. Its exploratory function survives as Core Explore mode.
+Do not recreate a message bus, Liaison, OUTBOX or INBOX without real recurring evidence that normal local STATUS + Core startup is insufficient.
 
 ---
 
-## 9. Historical Voyage–Control Bridge
+## 8. Skills
 
-The old bridge existed because separate top-level chats did not share live context.
+Canonical Horizon Skills live in:
 
-After the one-time merger handoff:
+`cherrynectar-rrr/Horizon_Skills`
 
-- `VOYAGE_TO_CONTROL.md` is preserved at its final Voyage-owned state;
-- `CONTROL_TO_VOYAGE.md` records the final Core adoption/handoff decision and is then frozen;
-- Horizon Core no longer sends strategy to itself through bridge files.
+Skills are reusable procedures, not a governance layer. They never grant authority and should exist only when they reduce repeated work or improve reliability.
 
-Unresolved strategic items from the final Voyage transmission become Horizon Core's own decision backlog, not messages requiring relay.
+Current important operating Skills include:
 
----
-
-## 10. Skills
-
-A Skill is a reusable, versioned operating procedure, not a governance layer.
-
-Skills:
-
-- remain subordinate to the Charter and this protocol;
-- never grant new authority;
-- should reduce ceremony and context cost;
-- should be promoted only after repeated real use, except where an explicit user operating preference directly defines the procedure;
-- are version-pinned when adopted.
-
-`HZN-001 horizon-context-sync v0.5` is the current adopted active context-sync Skill for the Horizon Core + Specialist model.
-
-`HZN-002 status-update v0.1` is currently Candidate — Trial.
-
-`horizon-learning-loop v0.2` is **Adopted — Active** as the default learning-oriented Specialist procedure. The user explicitly changed Horizon's default learning surface on 2026-09-01 from continuous step-by-step tutoring to **Self-Study + Assessment**.
-
-Default learning operation is:
-
-`capability target → curated resources → independent study → examination / practical / project gate → grading and gap diagnosis → targeted remediation → retest / transfer`.
-
-Specialists should normally recommend a small, high-quality set of video courses, books, official references and exercise sources, state what must be learned, and then let the learner study independently. Capability is checked through diagnostic tests, unit tests, stage exams, practical gates, project gates, finals or research gates as appropriate to the domain.
-
-Continuous guided teaching is no longer the default. It may be used when the user explicitly asks for tutoring, when a concrete assessed gap needs focused repair, or when safety-critical hardware / destructive operations require direct guidance.
-
-Exams declared closed-book should not receive hints or solutions before submission. Real engineering projects may replace traditional exams when they provide stronger evidence. Specialists must not turn the new assessment system into bureaucracy, excessive testing or a second roadmap.
-
-Current artifact:
-
-`00_Strategy/Voyage_Room/skills/horizon-learning-loop/SKILL.md`
-
-HZN-003 through HZN-005 remain frozen unless separately authorized. The unnumbered learning-loop Skill does not unfreeze or consume those IDs.
+- `HZN-001 horizon-context-sync` — local-first context routing;
+- `horizon-learning-loop` — Self-Study + Assessment default learning loop;
+- `HZN-002 status-update` — Candidate trial for meaningful-state writes;
+- engineering micro-skills such as debug-loop, behavior-first testing and design-grill while under trial.
 
 ---
 
-## 11. Liaison / Message Bus Rule
+## 9. External Information
 
-Do **not** create a Liaison, OUTBOX or INBOX system merely to restore communication between the former Voyage Room and Main Control; that split no longer exists.
+Potentially changing facts — admissions, funding, visas, competition dates, software versions, labs, professors, jobs, salaries, regulations and similar information — must be freshly verified from reliable sources when material to the answer or decision.
 
-A Specialist → Core relay mechanism may be considered later only if real post-merger evidence shows persistent communication friction that cannot be solved through normal Core startup, specialist STATUS or direct user interaction.
-
-Do not pre-build communication bureaucracy.
+Old Horizon strategy is context, not a substitute for current verification.
 
 ---
 
-## 12. External Information
+## 10. Human-Only Showcase Boundary
 
-Potentially changing facts — admissions rules, scholarships, visas, programme fees, competition dates, software versions, labs, professors, jobs, salaries, employment policy and similar information — must be verified from current reliable sources before high-impact decisions.
+The user's personal showcase/profile repositories are outside Horizon's AI execution surface.
 
-Old strategic documents are context, not substitutes for current verification.
+Horizon Core and Specialist Threads must not read, edit, review, synchronize, commit to or otherwise operate on them unless the user explicitly revokes that boundary.
+
+Horizon produces genuine evidence in Horizon-owned repositories; the user alone decides what to transfer into personal showcase repositories.
 
 ---
 
-## 13. Authority and Conflict Resolution
+## 11. Authority and Conflict Resolution
 
 Authority order:
 
-1. `00_Project_Charter/Project_Horizon_Charter_v4.0.md`
-2. `00_Project_Control/THREAD_PROTOCOL.md`
-3. `00_Project_Control/MASTER_STATUS.md`
-4. relevant Core strategy / decision documents
-5. relevant specialist `STATUS.md`
+1. `Project_Horizon/00_Project_Charter/Project_Horizon_Charter_v4.0.md`
+2. `Project_Horizon/00_Project_Control/THREAD_PROTOCOL.md`
+3. `Project_Horizon/00_Project_Control/MASTER_STATUS.md`
+4. relevant Core strategy / decisions
+5. relevant canonical Specialist / project STATUS
 6. evidence / artifacts
 7. chat memory
 
-When two lower-level sources disagree, do not silently overwrite either. Resolve the conflict through evidence and the correct owner.
+When lower-level sources disagree, do not silently overwrite either. Resolve through evidence and the correct owner.
 
 **Role relationship:**  
 **Horizon Core = Explore + Decide & Coordinate**  
