@@ -110,6 +110,16 @@ Embedded remains **Active — Bounded Exploration**.
 
 Career remains event-driven support, not a technical curriculum. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 
+### AI Execution / Memory
+
+Horizon Core has approved **ChatGPT Work Pilot v0** only as a bounded execution-capability trial for clear, long-running, multi-step tasks such as research, synthesis and large deliverables. Work does not become a new authority layer, does not replace Chat / Specialists / Core, and must not maintain parallel Horizon state. GitHub remains canonical; formal writes still follow normal ownership and meaningful-change rules.
+
+`AI + IoT / Intelligent Physical Systems` is retained only as a future integration hypothesis. It does not change the current Embedded gate or activate ESP32 / Raspberry Pi / MQTT / Home Assistant / AIoT work now.
+
+A real long-term chat-recall pain point has been acknowledged, but **full External Memory infrastructure is deferred**. Phase 0 is only to preserve concise strategy / decision notes when naturally useful. No new memory repository, vector database, embeddings, MCP layer or agent orchestration is authorized. Escalate only after materially costly recall failure becomes recurrent enough to justify a minimal searchable-text pilot.
+
+Detailed decision record: `00_Strategy/HORIZON_AI_EXECUTION_MEMORY_DECISION_2026-09-05.md`.
+
 ### Life / Academic
 
 Academic, Finance and Nutrition / Recovery remain maintenance systems. Their purpose is to protect GPA, evidence, financial resilience and sustainable daily operation without becoming additional main lines.
@@ -192,6 +202,7 @@ Legacy cleanup may happen only after verification; Git history is not rewritten.
 - **Academic:** first Data Structures mastery-evidence link + Year 2 Fall Academic Baseline v1 maintenance
 - **Finance:** Personal Finance Baseline v1
 - **Life:** Nutrition & Recovery Baseline v1 after first real-environment trial
+- **Work Pilot v0:** review after several natural bounded uses or earlier if a material reliability / boundary failure appears
 - **Multi-repo architecture:** verify canonical links and then stop architecture work unless real friction appears
 
 ---
