@@ -1,6 +1,6 @@
 # Project Horizon — Thread Protocol
 
-Last Updated: 2026-09-04
+Last Updated: 2026-09-05
 Version: V2.3 — Multi-Repository Efficiency Edition
 
 ## Purpose
@@ -31,6 +31,7 @@ Current canonical detailed state includes:
 | C++ | `Horizon_Learning/CPP/STATUS.md` |
 | Linux | `Horizon_Learning/Linux/STATUS.md` |
 | Algorithm | `Horizon_Learning/Algorithm/STATUS.md` |
+| Data Structures | `Horizon_Learning/Data_Structures/STATUS.md` |
 | Embedded | `Horizon_Learning/Embedded/STATUS.md` |
 | Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` |
 | Academic Operations & Evidence | `Horizon_Academic/Academic_Operations/STATUS.md` |
