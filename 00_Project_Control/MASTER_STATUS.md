@@ -49,7 +49,7 @@ Data Structures is intentionally **not** a second main technical line. When it o
 | C++ | `Horizon_Learning/CPP/STATUS.md` | Support | Standalone preheat complete; readiness gate passed | Patch only real C++ / STL gaps from current work |
 | Linux | `Horizon_Learning/Linux/STATUS.md` | Support | No verified standalone milestone yet | One real practical workflow milestone when needed |
 | Career / Internship | `Project_Horizon/09_Career/STATUS.md` | Bounded support | Readiness Baseline v1 complete; on-demand review active | Re-review after materially stronger project / Linux / Algorithm evidence or a high-fit opportunity |
-| Academic Operations | `Horizon_Academic/Academic_Operations/STATUS.md` | Maintenance | Year 2 Fall Academic Baseline v1 in progress | Verified course / assessment / evidence baseline |
+| Academic Operations | `Horizon_Academic/Academic_Operations/STATUS.md` | Maintenance | Year 2 Fall Academic Baseline v1 active; Course Mastery & Evidence v1 bridge initialized with Data Structures pilot | First linked mastery-evidence cycle + continued baseline maintenance |
 | Personal Finance | `Horizon_Life/Finance/STATUS.md` | Maintenance | Personal Finance Baseline v1 in progress | Complete concise baseline, then monthly / event-driven maintenance |
 | Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` | Maintenance | Approved — pending Specialist initialization | Nutrition & Recovery Baseline v1 |
 | Earth Flywheel | `Earth_Flywheel/` | Research seed | Sprint v0 preserved; not current execution priority | Resume only when current foundations / capacity justify it |
@@ -114,6 +114,17 @@ Career remains event-driven support, not a technical curriculum. Summer 2027 rem
 
 Academic, Finance and Nutrition / Recovery remain maintenance systems. Their purpose is to protect GPA, evidence, financial resilience and sustainable daily operation without becoming additional main lines.
 
+Academic coursework now follows a **Course Mastery & Evidence** separation for important courses:
+
+- `Horizon_Academic` records what the institution can formally prove: course identity, credits / hours, assessment, syllabus, grades and other useful official evidence when verified;
+- the relevant `Horizon_Learning` Specialist owns what the learner can actually understand, implement, debug, derive or transfer;
+- a course grade is not treated as equivalent to deep mastery;
+- APS, MSc prerequisite mapping and similar application processes reuse the evidence later rather than defining the learning route;
+- university pacing and curriculum are inputs, not the default personal growth ceiling;
+- only strategically important courses receive a durable mastery-evidence record, and evidence should be linked rather than duplicated.
+
+Data Structures is the first pilot of this model.
+
 ---
 
 ## Skills State
@@ -170,7 +181,7 @@ Legacy cleanup may happen only after verification; Git history is not rewritten.
 - **Algorithm:** first Prefix Sums milestone
 - **Data Structures:** Linear Structure Foundation v1 or the first verified course-aligned block
 - **Embedded:** Phase 0 real-board bring-up
-- **Academic:** Year 2 Fall Academic Baseline v1
+- **Academic:** first Data Structures mastery-evidence link + Year 2 Fall Academic Baseline v1 maintenance
 - **Finance:** Personal Finance Baseline v1
 - **Life:** Nutrition & Recovery Baseline v1 after Specialist initialization
 - **Multi-repo architecture:** verify canonical links and then stop architecture work unless real friction appears
