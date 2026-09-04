@@ -2,101 +2,128 @@
 
 Date: 2026-09-04
 Owner: Horizon Core
-Status: Active Migration
+Status: **Control-Plane Cutover Complete — Legacy Cleanup Pending**
 
 ## Decision
 
-Project Horizon is separating its internal governance/control plane from capability-building evidence, real projects, academic operations and life operations.
+Project Horizon separated its control/governance plane from capability-building evidence, real projects, academic operations and life operations.
 
-The migration is intended to reduce repository clutter, make ownership clearer, protect private operational material, and allow major engineering projects to mature independently.
+The purpose is to reduce context cost, clarify ownership, protect private operational material and let real engineering projects mature independently.
 
-This migration does **not** change the Charter mission, Horizon Core / Specialist authority model, current priorities, or the meaning of existing verified milestones.
+This migration does **not** change the Charter mission or the Horizon Core / Specialist authority model.
 
 ## Target Architecture
 
-- `Project_Horizon` — control plane: Charter, protocol, MASTER, strategy, registry.
-- `Horizon_Skills` — reusable Horizon / engineering operating procedures.
-- `Horizon_Learning` — technical learning and capability evidence.
-- `Earth_Flywheel` — independent flagship robotics/research project.
-- `Horizon_projects` — bounded competitions and smaller real projects.
-- `Horizon_Academic` — private academic operations and application evidence.
-- `Horizon_Life` — private finance / nutrition / recovery / life operations.
-- `Horizon_Opportunity_Radar` — existing private bounded opportunity-support repository.
+- `Project_Horizon` — control plane: Charter, Protocol, MASTER, strategy, repository registry
+- `Horizon_Skills` — reusable Horizon / engineering methods
+- `Horizon_Learning` — technical learning and capability evidence
+- `Earth_Flywheel` — flagship robotics / research project
+- `Horizon_projects` — bounded competitions and smaller real projects
+- `Horizon_Academic` — private academic operations / application evidence
+- `Horizon_Life` — private Finance / Nutrition / Recovery / life operations
+- `Horizon_Opportunity_Radar` — existing private bounded opportunity-support repository
 
-Personal showcase/profile repositories are explicitly human-only and outside Horizon AI operation.
+Personal showcase/profile repositories remain explicitly Human-only and outside Horizon AI operation.
 
 ## Migration Safety Rules
 
-1. **Copy before delete.** No legacy artifact is removed until its target copy is verified.
-2. **One canonical owner after cutover.** Temporary duplicates are migration artifacts, not two live sources of truth.
-3. **Preserve evidence.** Existing real code and learning artifacts are copied without rewriting them for cosmetic consistency.
-4. **Preserve history.** The old `Project_Horizon` Git history remains the historical record of pre-separation work.
-5. **No plan-as-completion.** A target repository being initialized does not mean all historical content has been migrated.
-6. **Private stays private.** Academic and life operational content moves only into private repositories.
-7. **Human-only showcase boundary.** No Horizon agent reads or writes the user's manually maintained showcase/profile repositories.
+1. **Copy before delete.**
+2. **One canonical owner after cutover.**
+3. **Preserve real evidence without cosmetic rewrites.**
+4. **Preserve pre-separation Git history.**
+5. **Never record a plan as completed work.**
+6. **Private operational material stays in private repositories.**
+7. **Human-only showcase boundary is absolute unless the user explicitly revokes it.**
 
-## Phase Plan
+## Phase State
 
 ### Phase 1 — Registry and destination initialization
 
-Status: In progress.
+**Complete.**
 
-- verify repository access and visibility;
-- add canonical repository registry;
-- initialize destination README / provenance files;
-- define new ownership paths.
+- repository access / visibility checked;
+- target repositories initialized;
+- canonical ownership defined;
+- `Horizon_Life` verified Private before life content migration.
 
 ### Phase 2 — Copy active canonical content
 
-Status: In progress.
+**Substantially complete for active state.**
 
-Priority order:
+Migrated active canonical state/evidence includes:
 
-1. Skills;
-2. active Learning tracks;
-3. active Qingdao competition project;
-4. Earth Flywheel;
-5. Academic Operations;
-6. Life Operations.
+- Horizon Skills;
+- Python, C++, Linux, Algorithm and Embedded active learning state/evidence;
+- Qingdao Agri Data Competition active workspace / state;
+- Earth Flywheel seed artifact;
+- Academic Operations state;
+- Finance and Nutrition / Recovery life-operation artifacts.
+
+Historical material may remain in `Project_Horizon`; the objective is not to duplicate every old artifact merely for symmetry.
 
 ### Phase 3 — Control-plane cutover
 
-Status: Pending.
+**Complete — 2026-09-04.**
 
-- update `THREAD_PROTOCOL.md` path rules;
-- update `MASTER_STATUS.md` links/workspaces;
-- mark new repositories as canonical detailed state owners.
+- `THREAD_PROTOCOL.md` updated to V2.3 multi-repo local-first operation;
+- `MASTER_STATUS.md` reduced to a control summary and repointed to canonical repositories;
+- `REPOSITORIES.md` established as the single canonical registry;
+- `HZN-001 horizon-context-sync` updated to v0.6 local-first multi-repo routing;
+- `Project_Horizon/README.md` updated to describe the control-plane role.
+
+After this point, legacy execution copies inside `Project_Horizon` are not live second sources.
 
 ### Phase 4 — Verification
 
-Status: Pending.
+**Core verification complete; ongoing naturally through use.**
 
-- verify destination files and key code artifacts;
-- check cross-repository references;
-- confirm privacy boundaries;
-- confirm active Specialist startup rules resolve to the new locations.
+Verified canonical state paths exist for:
+
+- Python;
+- C++;
+- Linux;
+- Algorithm;
+- Embedded;
+- Qingdao competition;
+- Academic Operations;
+- Finance;
+- Nutrition / Recovery base artifact;
+- Skills.
+
+Future Specialist sessions should naturally validate local-first startup as they resume work. Do not manufacture test sessions merely to generate migration evidence.
 
 ### Phase 5 — Legacy cleanup
 
-Status: Pending.
+**Pending — low priority.**
 
-Only after verification:
+Legacy execution folders may be frozen or removed only when doing so reduces real confusion or repository clutter.
 
-- freeze or remove duplicated execution folders from `Project_Horizon`;
-- retain governance, strategy and migration/history records;
-- do not rewrite old Git history.
+Do not spend prime learning / project time on cosmetic cleanup. Pre-separation Git history already preserves the evidence.
 
-## Known Naming Detail
+## Efficiency Changes Produced by the Migration
 
-The projects repository currently exists as `Horizon_projects` with a lowercase `p`. Horizon will use the repository's actual name during migration. A cosmetic rename is optional and is not required for the architecture to work.
+Default Specialist startup is now:
+
+`task → owner → canonical repo → local STATUS → execute`
+
+`MASTER_STATUS.md` is loaded only when Horizon-wide context matters.
+
+Repository routing is canonicalized in one file, and duplicate repository registry files are retired.
 
 ## Success Test
 
-Migration is complete when:
+The architecture is successful when:
 
-- opening `Project_Horizon` primarily shows governance/control/strategy rather than all execution artifacts;
-- each active Specialist or project has one clear detailed source of truth;
-- private academic/life material is no longer expected to live in the public control repo;
-- Skills have a normal dedicated home rather than a retired `Voyage_Room` path;
-- cross-repository startup and write ownership are unambiguous;
-- the user's human-only showcase repositories remain untouched by Horizon agents.
+- `Project_Horizon` is primarily a control / strategy repository;
+- each active execution area has one canonical detailed state owner;
+- Specialist startup normally requires one local state read;
+- private academic/life material is not expected in the public control repo;
+- Skills have a dedicated home;
+- the user does not need to act as a message bus;
+- the architecture becomes boring enough that attention returns to learning and building.
+
+## Next Architecture Rule
+
+**Stop expanding infrastructure by default.**
+
+Add new repository machinery, dashboards, task systems, message buses or orchestration only after repeated real friction demonstrates that the expected reduction in coordination cost is worth the maintenance burden.
