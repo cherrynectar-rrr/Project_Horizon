@@ -39,7 +39,7 @@ This file is the **single canonical repository registry**.
 | Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` |
 | Academic Operations & Evidence | `Horizon_Academic/Academic_Operations/STATUS.md` |
 | Personal Finance & Capital | `Horizon_Life/Finance/STATUS.md` |
-| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` until Specialist STATUS initialization |
+| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/STATUS.md` |
 | Career / Internship | `Project_Horizon/09_Career/STATUS.md` |
 | Horizon Skills | `Horizon_Skills/` |
 | Earth Flywheel | `Earth_Flywheel/` |
