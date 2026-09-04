@@ -1,422 +1,148 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-08-31
+Last Updated: 2026-09-04
 Status: Active
 Authority: Horizon Core only
 
-## Current Operating Model
+## Operating Model
 
-Project Horizon now operates through two layers under `Project_Horizon_Charter_v4.0.md`:
+Project Horizon uses two layers:
 
 - **Horizon Core / 核心舱 = Explore + Decide & Coordinate**
 - **Specialist Threads = Execute**
 
-The former Voyage Room / Main Control split is retired. The existing Main Control chat evolves into Horizon Core and absorbs the Voyage Room's strategic exploration function.
+`cherrynectar-rrr/Project_Horizon` is the control plane. Detailed execution state is distributed across canonical repositories defined in `00_Project_Control/REPOSITORIES.md`.
 
-For major decisions, Core preserves an internal two-pass discipline:
-
-1. **Explore** — alternatives, uncertainty, counter-cases, external evidence and missing information.
-2. **Decide & Coordinate** — temporary decision, resource implication, opportunity cost and review trigger.
-
-The former Voyage strategy directory remains preserved as a strategy library; the two Voyage–Control bridge files become historical records after merger handoff.
-
-See `00_Project_Control/THREAD_PROTOCOL.md` v2.1 for current read/write and project-activation rules.
+`MASTER_STATUS.md` is intentionally a **control summary**. Detailed history, curriculum and project implementation belong in their owning repositories.
 
 ---
 
-## Current Priority / Capacity Structure
+## Current Priority / Capacity
 
-1. Python — main technical capability line
-2. Qingdao Agri Data Competition Project — Active — Bounded Short-Term Project; end-to-end delivery authorized through the 2026-09-30 competition deadline
-3. Algorithm — active structured line
-4. Linux — support line
-5. C++ — support for algorithm implementation
-6. Embedded — Active — Bounded Exploration; project-first Sprint v1
-7. Career / Internship — Active — Bounded Support; event-driven
-8. Personal Finance & Capital — Active — Bounded Support / Maintenance; low-frequency standing support
-9. Academic Operations & Evidence — Active — Bounded Support / Maintenance; semester/event-driven
+1. **Python** — Main technical capability line
+2. **2026 Qingdao Agri Data Competition** — Active, bounded short-term project through 2026-09-30
+3. **Algorithm** — Active structured line
+4. **Embedded** — Active, bounded exploration
+5. **C++** — Support for Algorithm / systems work
+6. **Linux** — Support, activated by real workflow needs
+7. **Career / Internship** — Active, bounded support; event-driven
+8. **Academic Operations & Evidence** — Maintenance / bounded support
+9. **Personal Finance & Capital** — Maintenance / bounded support
+10. **Life Operations — Nutrition & Recovery** — Maintenance; baseline not yet initialized as a Specialist STATUS
 
-The Qingdao Agri Data Competition project is **not** a new permanent main line. It is a deadline-bounded application project that primarily consumes Python application time. **Bounded refers to scope and resource protection, not partial execution permission:** the Project Specialist is authorized to complete the approved project end-to-end without recurring Core approval at each internal phase. Python remains the main technical capability line; Algorithm and Embedded remain active within their existing scopes but should not expand while the competition project is in its delivery window. Academic obligations and GPA-sensitive work remain higher priority than competition polish.
-
----
-
-## Track Overview
-
-| Track | Role | Current State | Next Gate |
-| --- | --- | --- | --- |
-| [Python](../01_Python/STATUS.md) | Main capability line | Foundation complete through Week03; OOP / Student Manager V2 remains open | Student Manager V2 or equivalent evidence that Python foundation can support real project work |
-| [Qingdao Agri Data Competition](../13_Projects/2026_Qingdao_Agri_Data_Competition/STATUS.md) | Bounded short-term project | GO; egg-price topic authorized; end-to-end delivery active | Final submission, material blocker, major scope/resource conflict, or competition result |
-| [Algorithm](../05_Algorithm/STATUS.md) | Active structured line | Block 01 active; binary search and two pointers complete; prefix sums is current | First verifiable prefix-sums milestone |
-| [Linux](../03_Linux/STATUS.md) | Support | No verified standalone Linux milestone yet | One bounded practical workflow milestone when a real programming need or capacity permits |
-| [C++](../02_CPP/STATUS.md) | Support | Standalone preheat complete; Algorithm Readiness Gate passed | Support Algorithm and patch only real C++/STL gaps |
-| [Embedded](../04_Embedded/STATUS.md) | Bounded exploration | Specialist STATUS active; Phase 0 bring-up in progress; NUCLEO-G071RB remains the authorized first board | Phase 0: verify toolchain, build, flash and debug loop on real board |
-| [Career / Internship](../09_Career/STATUS.md) | Bounded support | Internship Readiness Baseline v1 complete; on-demand opportunity review active | New readiness evidence, high-fit opportunity, or seasonal application decision |
-| [Personal Finance & Capital](../10_Finance/STATUS.md) | Bounded support / maintenance | Personal Finance Baseline v1 in progress | Complete Personal Finance Baseline v1 |
-| [Academic Operations & Evidence](../11_Academic/STATUS.md) | Bounded support / maintenance | Year 2 Fall Academic Baseline v1 in progress | Complete Year 2 Fall Academic Baseline v1 |
+Academic obligations and GPA-sensitive work outrank competition polish and optional project expansion.
 
 ---
 
-## Current Main-Line Decision
+## Active Tracks
 
-Python remains the Horizon main technical capability line. Its immediate curriculum milestone remains OOP through Student Manager V2, but during the Qingdao competition delivery window, bounded Python learning may be driven directly by the real project when that produces stronger evidence than isolated curriculum exercises.
-
-Algorithm remains active as a structured line and must not displace Python or the authorized short-term project without a separate Core decision. Binary search and two pointers foundations are complete; prefix sums is the current topic.
-
-Linux and C++ remain support lines. C++ standalone preheat is complete; Linux should be learned through real development needs rather than through a broad standalone curriculum.
-
-Embedded is activated only as **bounded exploration**. Its job is to collect real evidence about fit with MCU / hardware-software engineering through one small STM32 project-first sprint. It is not authorized to become a parallel full curriculum, and it may not expand into ESP32, 51, FPGA, FreeRTOS, Embedded Linux, CAN or ROS 2 during Sprint v1 without a separate Core decision.
-
-Career / Internship remains bounded support. It may evaluate concrete opportunities and capture market feedback, but it may not create technical curricula or continuous high-volume application work without Core approval.
-
-Personal Finance & Capital remains low-frequency bounded maintenance. It must not displace GPA/core coursework, Python, Algorithm or justified Career work.
-
-Academic Operations & Evidence owns factual academic operations and course-evidence maintenance, not subject-matter teaching or strategic academic decisions.
-
----
-
-## Qingdao Agri Data Competition Project
-
-Status: **GO — Active — Bounded Short-Term Project / End-to-End Delivery**.
-
-Core decision date: **2026-08-31**.
-
-Target competition: `2026 青岛市农业农村领域数据驱动创新应用竞赛`.
-
-Current authorized route:
-
-- track: **赛道二 — 农业大数据挖掘分析**;
-- working topic: **青岛蛋鸡行情波动风险提示系统**;
-- fallback topic: **青岛蔬菜价格—上市量波动监测** if egg-price data becomes materially inadequate;
-- submission deadline: **2026-09-30**.
-
-Phase 0 exit decision: **GO**.
-
-**Execution authorization:** GO authorizes the Project Specialist to carry this approved project from data and MVP work through implementation, testing, debugging, documentation, competition-ready refinement and final submission preparation. Internal Phase 1 / Phase 2 / Phase 3 labels are milestones for organizing work, not additional permission gates. The project does not need to return to Horizon Core merely to ask whether it may continue to the next normal phase.
-
-Evidence supporting GO:
-
-- real Qingdao egg-price observations have been stored locally, read successfully with `pandas`, and plotted with `matplotlib`;
-- the user correctly interpreted the first real time-series chart;
-- official Qingdao weekly reports provide historical egg-price observations beyond a one-off July sample;
-- official local reporting supports a real problem around cyclical egg-price volatility, producer market-warning needs and income-risk protection;
-- MVP buildability has been demonstrated using current Python plus bounded just-in-time additions;
-- one July sample point still requires source reconciliation, but this is a data-cleaning task rather than a project-feasibility blocker.
-
-Minimum project foundation:
-
-1. one reproducible historical dataset with cited sources;
-2. Python loading / cleaning pipeline;
-3. basic indicators such as latest value, week-to-week change, recent average and recent volatility;
-4. one clear time-series chart;
-5. one simple, explainable trend / risk rule;
-6. README that separates observed facts from forecasts and states limitations.
-
-After that foundation works, the Project Specialist may continue within the approved scope toward a competition-ready version, including clearer visualization, defensible local context, improved presentation, limitations, reproducibility, submission materials and justified incremental analysis. No separate Core approval is required for normal end-to-end completion.
-
-Resource allocation through the competition window:
-
-- the project receives bounded short-term delivery priority and may use Python learning time as direct application work;
-- Python foundation is not abandoned; project-driven gaps should be learned just in time rather than opening a second curriculum;
-- Algorithm remains active but receives no expansion of scope because of this competition;
-- Embedded remains bounded exploration and receives no scope expansion during the competition delivery window;
-- academic/GPA-sensitive obligations override competition polish or optional features;
-- no deep-learning, mobile-app, generic smart-agriculture-platform or unrelated feature expansion is authorized unless a later evidence-based Core decision changes scope.
-
-Escalation / stop triggers are limited to decisions that materially exceed or threaten the approved project:
-
-- the project cannot be made reproducible from real data;
-- project workload begins materially damaging academic obligations or the main capability line;
-- the agricultural story requires fabricated evidence or unsupported claims;
-- the project proposes a major track/topic change;
-- a substantial new technical stack or feature family outside the approved route becomes necessary;
-- a high-cost, irreversible or otherwise strategically significant commitment appears;
-- submission / competition result creates meaningful new evidence requiring Core review.
-
-Project workspace: `13_Projects/2026_Qingdao_Agri_Data_Competition/`.
-
-The Project Specialist owns its `STATUS.md` and project files. Horizon Core owns cross-thread resource decisions and MASTER state.
+| Track | Canonical State | Role | Current State | Next Gate |
+| --- | --- | --- | --- | --- |
+| Python | `Horizon_Learning/Python/STATUS.md` | Main | Foundation through Week03 complete; OOP transition active | Student Manager V2 or equivalent foundation evidence |
+| Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` | Bounded project | Phase 1 MVP active; egg-price route GO | Reproducible historical dataset with cited sources, then indicators / risk rule |
+| Algorithm | `Horizon_Learning/Algorithm/STATUS.md` | Active | Block 01 active; current topic Prefix Sums | First verifiable prefix-sums milestone |
+| Embedded | `Horizon_Learning/Embedded/STATUS.md` | Bounded exploration | Phase 0 bring-up | Build → Flash → Debug → onboard LED on approved board |
+| C++ | `Horizon_Learning/CPP/STATUS.md` | Support | Standalone preheat complete; readiness gate passed | Patch only real C++ / STL gaps from current work |
+| Linux | `Horizon_Learning/Linux/STATUS.md` | Support | No verified standalone milestone yet | One real practical workflow milestone when needed |
+| Career / Internship | `Project_Horizon/09_Career/STATUS.md` | Bounded support | Readiness Baseline v1 complete; on-demand review active | Re-review after materially stronger project / Linux / Algorithm evidence or a high-fit opportunity |
+| Academic Operations | `Horizon_Academic/Academic_Operations/STATUS.md` | Maintenance | Year 2 Fall Academic Baseline v1 in progress | Verified course / assessment / evidence baseline |
+| Personal Finance | `Horizon_Life/Finance/STATUS.md` | Maintenance | Personal Finance Baseline v1 in progress | Complete concise baseline, then monthly / event-driven maintenance |
+| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` | Maintenance | Approved — pending Specialist initialization | Nutrition & Recovery Baseline v1 |
+| Earth Flywheel | `Earth_Flywheel/` | Research seed | Sprint v0 preserved; not current execution priority | Resume only when current foundations / capacity justify it |
 
 ---
 
-## Embedded Exploration Sprint v1
+## Current Core Decisions / Guardrails
 
-Status: **Active — Bounded Exploration**.
+### Python
 
-Purpose: use one small project-first STM32 sprint to determine whether Embedded deserves a larger long-term role in Horizon.
+Python remains the main technical capability line. The immediate curriculum gate is OOP → Student Manager V2 or equivalent evidence. During the Qingdao competition window, real project-driven Python may count toward foundation growth when it produces stronger evidence than isolated exercises.
 
-Current platform decision:
+### Qingdao Competition
 
-- board: `NUCLEO-G071RB`;
-- toolchain: current official `STM32CubeIDE` at setup time;
-- Core startup artifact: `04_Embedded/README.md`;
-- Specialist-owned state: `04_Embedded/STATUS.md`.
+Status: **GO — Active — Bounded Short-Term / End-to-End Delivery**.
 
-Sprint route:
+- Deadline: **2026-09-30**
+- Track: **赛道二 — 农业大数据挖掘分析**
+- Working topic: **青岛蛋鸡行情波动风险提示系统**
+- Fallback: Qingdao vegetable price / market-volume monitoring if egg-price data becomes materially inadequate
+- No deep-learning, mobile-app or generic platform expansion without a new Core decision
+- Academic / GPA-sensitive obligations override optional competition polish
 
-1. **Phase 0 — Bring-up:** install / verify toolchain, connect ST-LINK, create/build/flash/debug a minimal project and control the onboard LED.
-2. **Phase 1 — MCU interaction:** GPIO, button input, EXTI, timer, PWM and UART, patching embedded-C gaps only when the hardware task requires them.
-3. **Phase 2 — First integrated project:** `STM32 Interactive Controller v1` with button input, interrupts, timer/PWM, UART, simple state-machine behavior, README, wiring / pin explanation, demo evidence and meaningful Git history.
+### Algorithm
 
-Sprint exit review asks:
+Algorithm remains active and structured. Current topic: **Prefix Sums**. It must not expand into a second independent main line.
 
-- is real hardware debugging genuinely engaging after friction appears?
-- can the user explain the system rather than only reproduce tutorial steps?
-- did Embedded materially disrupt Python / Algorithm or academic priorities?
-- did the sprint produce a reproducible project artifact worth keeping in a future portfolio?
+### Embedded
 
-Possible exit decisions: Promote / Continue Bounded Exploration / Pause.
+Embedded remains **Active — Bounded Exploration**.
 
----
+- Authorized first board: `NUCLEO-G071RB`
+- Toolchain: STM32CubeIDE
+- Current gate: Phase 0 bring-up
+- No ESP32 / FPGA / FreeRTOS / Embedded Linux / CAN / ROS2 scope expansion during Sprint v1 without Core decision
 
-## Horizon Core Governance Transition
+### Career
 
-### Adopted merger
+Career remains event-driven support, not a technical curriculum. Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
 
-`VTC-20260829-01 — Merge Voyage Room and Main Control into Horizon Core` is adopted.
+### Life / Academic
 
-Reason:
-
-- the separate top-level chats created recurring user-visible coordination cost;
-- the user was repeatedly required to relay messages between Voyage and Control;
-- a proposed Liaison / OUTBOX / INBOX system would add machinery around a split the user no longer wants;
-- strategic independence can be preserved cognitively through Explore mode without preserving separate chats.
-
-### Surviving top-level role
-
-The existing Main Control chat becomes **Horizon Core / 核心舱**.
-
-The former Voyage Room chat becomes historical / retired after handoff. Its function survives as Core Explore mode.
-
-### Historical bridge
-
-After handoff:
-
-- `00_Strategy/Voyage_Room/VOYAGE_TO_CONTROL.md` — historical, frozen;
-- `00_Project_Control/CONTROL_TO_VOYAGE.md` — final merger response then historical, frozen.
-
-No future Core work should require the user to relay information between these two former roles.
-
-### Liaison consequence
-
-The proposed top-level `Horizon Liaison` / OUTBOX / INBOX architecture is withdrawn as unnecessary for Voyage ↔ Control communication.
-
-Do not create a Specialist → Core message bus unless real post-merger evidence later shows a persistent problem.
+Academic, Finance and Nutrition / Recovery remain maintenance systems. Their purpose is to protect GPA, evidence, financial resilience and sustainable daily operation without becoming additional main lines.
 
 ---
 
-## HZN-001 Skill State
+## Skills State
 
-`HZN-001 — horizon-context-sync v0.5` is the current **Adopted — Active** shared Horizon Skill.
+Canonical Skill repository: `cherrynectar-rrr/Horizon_Skills`.
 
-v0.5 supersedes v0.4 for current operation and is aligned with Charter v4.0 / `THREAD_PROTOCOL.md` v2.0:
+- `HZN-001 horizon-context-sync v0.6` — **Adopted — Active**; multi-repo local-first routing
+- `horizon-learning-loop v0.2` — **Adopted — Active**; Self-Study + Assessment default
+- `HZN-002 status-update v0.1` — **Candidate — Trial**
+- `engineering-debug-loop v0.1` — **Candidate — Trial**
+- `behavior-first-testing v0.1` — **Candidate — Trial**
+- `design-grill v0.1` — **Candidate — Trial**
 
-- roles simplified to `Horizon Core` + `Specialist Thread`;
-- frozen Voyage–Control bridges are no longer read as live state;
-- fresh authoritative state may be safely reused in the same conversation;
-- Specialist threads read their own STATUS first and only load MASTER / strategic context when materially required;
-- evidence, write-boundary and external-freshness protections remain active.
-
-Adoption evidence:
-
-- Trial 005 — clean Horizon Core migration/self-preflight;
-- Trial 006 — real Algorithm Specialist invocation with repository-verified clean state, no artificial STATUS churn and no cross-thread write leakage;
-- v0.4 historical trials remain preserved as prior evidence for the underlying context-sync method.
-
-Adoption commit: `4d4ad680febc8194d735ad3874902ef0952686c5`.
-Adoption-time Skill blob SHA: `c501100aef77dc488a98badddcb566c2ab55cf7e`.
-
-Evidence limitation: GitHub does not expose chat-side read telemetry, so exact internal read sequences are not claimed as independently verified.
-
-`HZN-001 v0.4` remains preserved as the first adopted historical baseline under `CTV-20260828-04`.
+Skills support execution; they do not create new authority or a new workload.
 
 ---
 
-## HZN-002 Skill State
+## Multi-Repository Cutover
 
-`HZN-002 — status-update v0.1` is **Candidate — Trial**.
+Decision date: **2026-09-04**.
 
-Purpose:
+Canonical detailed state has moved to the repositories listed in `00_Project_Control/REPOSITORIES.md`.
 
-- apply a meaningful-change gate before any STATUS / MASTER write;
-- route updates to the correct single owner;
-- fetch the latest target + SHA before writing;
-- make the minimum evidence-justified patch;
-- prevent plans, tiny exercises and communication-only events from becoming formal state churn;
-- opportunistically migrate legacy governance terminology only when a meaningful update already touches the file.
+After cutover:
 
-Current artifact:
+- new detailed execution updates go only to the canonical destination;
+- old execution folders inside `Project_Horizon` are legacy migration/history copies, not live second sources;
+- `Project_Horizon` remains the control / strategy plane;
+- human-only showcase/profile repositories remain outside Horizon AI operation.
 
-`00_Strategy/Voyage_Room/skills/status-update/SKILL.md`
-
-Trial gate:
-
-1. at least one real **No formal update** case that correctly prevents churn;
-2. at least one real meaningful update that produces a minimal evidence-based patch;
-3. no authority leakage or evidence inflation.
-
-The Embedded Sprint activation is an additional real Core-state update governed by HZN-002: Core changes MASTER / Protocol while leaving the future Specialist-owned `04_Embedded/STATUS.md` untouched.
-
-`HZN-003` through `HZN-005` remain frozen. HZN-002 trial authorization does not unlock them.
+Legacy cleanup may happen only after verification; Git history is not rewritten.
 
 ---
 
-## First-Internship Readiness Framework
+## Review Gates
 
-Before a serious application push, Core should look for approximately:
-
-1. one presentable engineering project with clear README and explainable design/debugging/limitations;
-2. practical C/C++ fluency;
-3. verified practical Linux workflow evidence;
-4. baseline algorithm/data-structure competence from the approved Algorithm route;
-5. ability to explain projects, reproduce bugs, document work and communicate technical decisions;
-6. a credible continuous availability window.
-
-Current Career evidence: C++ readiness demonstrated; project evidence partial; Linux evidence missing; Algorithm Block 01 in progress; communication/documentation partial; internship availability unverified.
-
-Summer 2027 remains the default primary serious first-internship window unless stronger evidence changes the plan.
+- **Python:** Student Manager V2 / equivalent evidence
+- **Competition:** 2026-09-30 submission or earlier material blocker / scope conflict
+- **Algorithm:** first Prefix Sums milestone
+- **Embedded:** Phase 0 real-board bring-up
+- **Academic:** Year 2 Fall Academic Baseline v1
+- **Finance:** Personal Finance Baseline v1
+- **Life:** Nutrition & Recovery Baseline v1 after Specialist initialization
+- **Multi-repo architecture:** verify canonical links and then stop architecture work unless real friction appears
 
 ---
 
-## Personal Finance & Capital Framework
+## Efficiency Rule
 
-Financial Freedom / Capital Formation remains a first-order long-horizon strategic pillar with deliberately bounded undergraduate execution.
+New Horizon infrastructure must solve a recurring real problem or measurably reduce context / coordination cost.
 
-Current objective: `Personal Finance Baseline v1` covering cash inflow/support, spending floor, discretionary/growth/irregular spending, liquid reserve, investable-money boundary, asset categories and lightweight monthly review.
+Do not add dashboards, message buses, task systems, agent orchestration or additional repositories merely because they look organized.
 
-Guardrails remain:
+**Default execution question:**
 
-- no borrowed-money investing merely to accelerate returns;
-- no speculative use of tuition, essential living money or emergency reserves;
-- no guaranteed-return assumptions;
-- no default high-frequency trading roadmap;
-- no finance workload that materially displaces core academic/technical priorities;
-- verify current tax/legal/regulated-product rules when material.
-
----
-
-## Academic Operations & Evidence Framework
-
-Current objective: `Year 2 Fall Academic Baseline v1`.
-
-It should establish:
-
-1. verified actual-semester course register rather than assuming the generic培养方案;
-2. assessment methods and important deadlines when verified;
-3. evidence baseline for textbooks, syllabi, lecture coverage, labs/projects and grades;
-4. lightweight Notion `University Course Evidence` maintenance workflow;
-5. semester-end archival supporting later APS / prerequisite / MSc review.
-
-Notion may be an operational workspace; GitHub remains formal Horizon governance/state.
-
----
-
-## Algorithm Learning Architecture
-
-Algorithm proceeds one block at a time with verifiable evidence.
-
-| Block | Scope |
-| --- | --- |
-| Block 01 — Foundation | Complexity, arrays, strings, sorting, binary search, two pointers, prefix sums, basic algorithmic thinking |
-| Block 02 — Linear Structures | Linked lists, stacks, queues, deques, hash tables |
-| Block 03 — Search | Recursion, enumeration, DFS, BFS, backtracking, basic pruning |
-| Block 04 — Trees & Priority Structures | Binary trees, traversals, BST concepts, heap / `priority_queue`, disjoint set union |
-| Block 05 — Graphs | Representation, DFS/BFS, connectivity, topological sort, shortest paths, minimum spanning trees |
-| Block 06 — Greedy | Sorting-based greedy, intervals, proof intuition, common patterns |
-| Block 07 — Dynamic Programming | State design, transitions, initialization, iteration order, 1D/2D DP, knapsack, sequence DP |
-| Block 08 — Toolbox | Bits, basic number theory, GCD, primes, fast power, monotonic stack/queue, Trie, KMP, recurring tools |
-| Advanced — On Demand | Fenwick tree, segment tree, harder graphs, advanced DP/string algorithms when evidence justifies them |
-
-External problem sets support the active topic and must not become a second roadmap.
-
----
-
-## Competition Strategy
-
-| Competition | Position | Current Strategy |
-| --- | --- | --- |
-| Mathematics competition | Primary | Main competition focus |
-| Qingdao Agri Data Competition | Active bounded project | GO; end-to-end delivery authorized for Track 2 before 2026-09-30; no recurring phase approval inside scope |
-| Physics theory competition | Secondary / interest validation | Secondary participation and evidence of sustained interest |
-| Lanqiao Cup campus selection | Baseline attempt | No dedicated preparation; only low-cost topic-aligned exposure until later review gates |
-
-Review systematic Lanqiao past papers after Algorithm Block 03; review full simulations only after substantial Block 07 completion and a separate upgrade decision.
-
----
-
-## Strategic Handoff Backlog from Retired Voyage Room
-
-The following unresolved strategic items are now **Horizon Core's own backlog**; they no longer require Voyage → Control relay:
-
-1. `VTC-20260828-03` — Germany–Japan Strategic Gate / preserve both candidates without parallel high-intensity language execution.
-2. `VTC-20260828-02` — Japan as a high-potential 2029 MSc strategic candidate; Science Tokyo IGP(C) benchmark; do not activate Japanese yet.
-3. `VTC-20260825-01` — 2029 MSc Application Exams & Gates Master Map.
-4. `VTC-20260822-04` — broader affordable robotics/control/intelligent-systems MSc target-pool framework under the current all-in affordability band.
-5. `VTC-20260822-01` — TUM RCI control-engineering prerequisite evidence audit.
-6. `VTC-20260821-04` — durable strategic-input / life-route ledger proposal.
-
-These remain pending until Horizon Core reviews them one at a time. They are not silently adopted by the governance merger.
-
----
-
-## Active Strategic Constraints
-
-- Overseas MSc country pool remains open.
-- Current working affordability band is approximately RMB 100,000/year realistic all-in cost, not a precise hard ceiling.
-- Zero tuition is not mandatory.
-- High-cost self-funded routes are non-default.
-- TUM remains financially conditional under currently known conditions unless reliable funding changes the net cost.
-- Astronomy remains outside the current strategic route unless explicitly reopened; Physics remains a separate open academic interest.
-
-Mutable external facts must be reverified when used for a high-impact decision.
-
----
-
-## External Systems
-
-### Horizon Opportunity Radar
-
-Status: Active  
-Source: `cherrynectar-rrr/Horizon_Opportunity_Radar`  
-Role: external opportunity intake  
-Cadence: GitHub Actions every 6 hours  
-Decision owner: Horizon Core
-
-Radar collects factual opportunities only. Horizon Core owns `APPLY / WATCH / SKIP / URGENT` decisions.
-
----
-
-## Cross-Thread Blockers
-
-None reported.
-
-## Decisions Needed
-
-The Qingdao Agri Data Competition project is fully activated within its approved scope: **GO — end-to-end delivery authorized through submission preparation.** No recurring Core approval is required merely to move from one internal project phase to the next.
-
-No governance decision remains for the Voyage/Main Control merger; it is adopted through Charter v4.0 and THREAD_PROTOCOL v2.1.
-
-Embedded Sprint v1 is authorized. The next Embedded decision is the Sprint exit review after real project evidence, not an immediate promotion to a full line.
-
-The strategic handoff backlog above remains to be reviewed one item at a time.
-
-## Next Core Review
-
-Review on meaningful changes including:
-
-- Qingdao Agri Data Competition material blocker, major scope/resource conflict, submission decision or competition result;
-- Student Manager V2 completion;
-- a material Algorithm milestone;
-- Embedded Phase 0 bring-up completion or a material hardware/toolchain blocker;
-- Embedded `STM32 Interactive Controller v1` completion and Sprint exit review;
-- first verified Linux milestone;
-- concrete high-fit internship opportunity or seasonal application decision;
-- Personal Finance Baseline v1 completion;
-- Year 2 Fall Academic Baseline v1 completion or a major academic workload issue;
-- competition result;
-- `Needs Core Decision: Yes` from a specialist;
-- one of the inherited strategic backlog items being ready for decision;
-- a material HZN-001 failure / authority ambiguity;
-- HZN-002 producing a clean Specialist real-write case or exposing material friction;
-- a material failure showing the Horizon Core merger created strategic tunnel vision or new communication friction.
-
-This file is a Core summary, not a daily journal.
+> What capability or evidence gets stronger if we spend time on this, and what will temporarily not be done?
