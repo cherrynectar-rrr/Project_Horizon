@@ -29,7 +29,7 @@ Project Horizon uses two layers:
 8. **Career / Internship** — Active, bounded support; event-driven
 9. **Academic Operations & Evidence** — Maintenance / bounded support
 10. **Personal Finance & Capital** — Maintenance / bounded support
-11. **Life Operations — Nutrition & Recovery** — Maintenance; baseline not yet initialized as a Specialist STATUS
+11. **Life Operations — Nutrition & Recovery** — Active maintenance; Baseline v1 initialized
 
 Academic obligations and GPA-sensitive work outrank competition polish and optional project expansion.
 
@@ -51,7 +51,7 @@ Data Structures is intentionally **not** a second main technical line. When it o
 | Career / Internship | `Project_Horizon/09_Career/STATUS.md` | Bounded support | Readiness Baseline v1 complete; on-demand review active | Re-review after materially stronger project / Linux / Algorithm evidence or a high-fit opportunity |
 | Academic Operations | `Horizon_Academic/Academic_Operations/STATUS.md` | Maintenance | Year 2 Fall Academic Baseline v1 active; Course Mastery & Evidence v1 bridge initialized with Data Structures pilot | First linked mastery-evidence cycle + continued baseline maintenance |
 | Personal Finance | `Horizon_Life/Finance/STATUS.md` | Maintenance | Personal Finance Baseline v1 in progress | Complete concise baseline, then monthly / event-driven maintenance |
-| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/README.md` | Maintenance | Approved — pending Specialist initialization | Nutrition & Recovery Baseline v1 |
+| Nutrition & Recovery | `Horizon_Life/Nutrition_Recovery/STATUS.md` | Maintenance | Baseline v1 initialized; real-life constraints pending intake | Practical meal architecture + recovery guardrails + at most 1–2 behavior-change experiments |
 | Earth Flywheel | `Earth_Flywheel/` | Research seed | Sprint v0 preserved; not current execution priority | Resume only when current foundations / capacity justify it |
 
 ---
@@ -114,7 +114,7 @@ Career remains event-driven support, not a technical curriculum. Summer 2027 rem
 
 Academic, Finance and Nutrition / Recovery remain maintenance systems. Their purpose is to protect GPA, evidence, financial resilience and sustainable daily operation without becoming additional main lines.
 
-Academic coursework now follows a **Course Mastery & Evidence** separation for important courses:
+Academic coursework follows a **Course Mastery & Evidence** separation for important courses:
 
 - `Horizon_Academic` records what the institution can formally prove: course identity, credits / hours, assessment, syllabus, grades and other useful official evidence when verified;
 - the relevant `Horizon_Learning` Specialist owns what the learner can actually understand, implement, debug, derive or transfer;
@@ -124,6 +124,8 @@ Academic coursework now follows a **Course Mastery & Evidence** separation for i
 - only strategically important courses receive a durable mastery-evidence record, and evidence should be linked rather than duplicated.
 
 Data Structures is the first pilot of this model.
+
+Nutrition & Recovery has now moved from approved-pending initialization into an active maintenance baseline. Its first version should remain deliberately boring and low-friction: real-environment meal architecture, simple campus / takeout rules, recovery guardrails and no more than one or two useful behavior experiments at a time.
 
 ---
 
@@ -148,10 +150,16 @@ Canonical Skill repository: `cherrynectar-rrr/Horizon_Skills`.
 - `source-grounded-research v0.1`
 - `experiment-design v0.1`
 - `adaptive-guided-learning v0.1` — high-efficiency guided learning trial using dynamic step size, meaningful tasks and minimal unnecessary interaction
+- `nutrition-planning v0.1` — practical campus / budget / everyday nutrition planning; medical and quantitative claims require stricter evidence boundaries
+- `habit-change v0.1` — small behavior-change experiments using environment, action / coping plans and minimal monitoring
 
-On 2026-09-04, Horizon Core completed a broad external Agent Skill scan and **selectively absorbed methods rather than bulk-installing repositories**. Candidate Skills consume no scheduled study time and gain value only through natural real-task trials.
+On 2026-09-04, Horizon Core completed a broad external Agent Skill scan and **selectively absorbed methods rather than bulk-installing repositories**. On 2026-09-05, a separate Life & Health intake added only the two smallest currently useful Candidate procedures and deferred workout / dedicated recovery Skills until real use justifies them.
+
+Candidate Skills consume no scheduled study time and gain value only through natural real-task trials.
 
 `adaptive-guided-learning v0.1` was added after repeated evidence that long passive prereading and overly fragmented simple-question tutoring can waste time. Data Structures is an approved natural trial environment; trial results should be judged by time-to-independent-capability and real transfer, not conversation volume.
+
+Life / health Skill trials use a stricter safety rule: community Skills contribute workflow ideas, while quantitative or mutable health claims must be checked against current authoritative guidance when material. Clinical diagnosis / treatment remains outside ordinary Life Operations optimization.
 
 Skills support execution; they do not create new authority, priorities or learning lines.
 
@@ -183,7 +191,7 @@ Legacy cleanup may happen only after verification; Git history is not rewritten.
 - **Embedded:** Phase 0 real-board bring-up
 - **Academic:** first Data Structures mastery-evidence link + Year 2 Fall Academic Baseline v1 maintenance
 - **Finance:** Personal Finance Baseline v1
-- **Life:** Nutrition & Recovery Baseline v1 after Specialist initialization
+- **Life:** Nutrition & Recovery Baseline v1 after first real-environment trial
 - **Multi-repo architecture:** verify canonical links and then stop architecture work unless real friction appears
 
 ---
