@@ -1,6 +1,6 @@
 # Project Horizon — Master Status
 
-Last Updated: 2026-09-04
+Last Updated: 2026-09-05
 Status: Active
 Authority: Horizon Core only
 
@@ -22,15 +22,18 @@ Project Horizon uses two layers:
 1. **Python** — Main technical capability line
 2. **2026 Qingdao Agri Data Competition** — Active, bounded short-term project through 2026-09-30
 3. **Algorithm** — Active structured line
-4. **Embedded** — Active, bounded exploration
-5. **C++** — Support for Algorithm / systems work
-6. **Linux** — Support, activated by real workflow needs
-7. **Career / Internship** — Active, bounded support; event-driven
-8. **Academic Operations & Evidence** — Maintenance / bounded support
-9. **Personal Finance & Capital** — Maintenance / bounded support
-10. **Life Operations — Nutrition & Recovery** — Maintenance; baseline not yet initialized as a Specialist STATUS
+4. **Data Structures** — Active academic-acceleration support; shares mastery / capacity with Algorithm and coursework rather than adding a separate fixed study line
+5. **Embedded** — Active, bounded exploration
+6. **C++** — Support for Algorithm / systems work
+7. **Linux** — Support, activated by real workflow needs
+8. **Career / Internship** — Active, bounded support; event-driven
+9. **Academic Operations & Evidence** — Maintenance / bounded support
+10. **Personal Finance & Capital** — Maintenance / bounded support
+11. **Life Operations — Nutrition & Recovery** — Maintenance; baseline not yet initialized as a Specialist STATUS
 
 Academic obligations and GPA-sensitive work outrank competition polish and optional project expansion.
+
+Data Structures is intentionally **not** a second main technical line. When it overlaps Algorithm or university coursework, the same verified learning evidence should be reused and the study time should replace duplicate work rather than stack on top of it.
 
 ---
 
@@ -41,6 +44,7 @@ Academic obligations and GPA-sensitive work outrank competition polish and optio
 | Python | `Horizon_Learning/Python/STATUS.md` | Main | Foundation through Week03 complete; OOP transition active | Student Manager V2 or equivalent foundation evidence |
 | Qingdao Agri Data Competition | `Horizon_projects/2026_Qingdao_Agri_Data_Competition/STATUS.md` | Bounded project | Phase 1 MVP active; egg-price route GO | Reproducible historical dataset with cited sources, then indicators / risk rule |
 | Algorithm | `Horizon_Learning/Algorithm/STATUS.md` | Active | Block 01 active; current topic Prefix Sums | First verifiable prefix-sums milestone |
+| Data Structures | `Horizon_Learning/Data_Structures/STATUS.md` | Academic acceleration support | Initialized; course-specific syllabus / language not yet verified | Linear Structure Foundation v1 or course-aligned first block if official materials differ |
 | Embedded | `Horizon_Learning/Embedded/STATUS.md` | Bounded exploration | Phase 0 bring-up | Build → Flash → Debug → onboard LED on approved board |
 | C++ | `Horizon_Learning/CPP/STATUS.md` | Support | Standalone preheat complete; readiness gate passed | Patch only real C++ / STL gaps from current work |
 | Linux | `Horizon_Learning/Linux/STATUS.md` | Support | No verified standalone milestone yet | One real practical workflow milestone when needed |
@@ -72,6 +76,26 @@ Status: **GO — Active — Bounded Short-Term / End-to-End Delivery**.
 ### Algorithm
 
 Algorithm remains active and structured. Current topic: **Prefix Sums**. It must not expand into a second independent main line.
+
+### Data Structures
+
+Data Structures is activated as **Active — Academic Acceleration Support**.
+
+Purpose:
+
+- master important prerequisites before or alongside the university course when doing so reduces later learning friction;
+- improve engineering / algorithm foundations without waiting for classroom pacing;
+- preserve a dedicated subject-matter thread without turning Academic Operations into a tutoring line.
+
+Guardrails:
+
+- **shared mastery, not duplicate study** with Algorithm;
+- Data Structures owns structure representation, implementation, invariants, operation cost and course-facing understanding;
+- Algorithm owns algorithmic problem solving and its existing Block roadmap;
+- strong evidence from one thread should be reused by the other, with only genuinely new capability retested;
+- Data Structures does not receive a separate fixed study budget on top of Algorithm / coursework by default;
+- official syllabus, textbook, language and teacher materials take precedence for course-specific claims once supplied;
+- current initial gate is **Linear Structure Foundation v1**, unless real course materials justify a different first block.
 
 ### Embedded
 
@@ -112,8 +136,11 @@ Canonical Skill repository: `cherrynectar-rrr/Horizon_Skills`.
 - `codebase-orientation v0.1`
 - `source-grounded-research v0.1`
 - `experiment-design v0.1`
+- `adaptive-guided-learning v0.1` — high-efficiency guided learning trial using dynamic step size, meaningful tasks and minimal unnecessary interaction
 
-On 2026-09-04, Horizon Core completed a broad external Agent Skill scan and **selectively absorbed methods rather than bulk-installing repositories**. The new Candidates consume no scheduled study time and gain value only through natural real-task trials.
+On 2026-09-04, Horizon Core completed a broad external Agent Skill scan and **selectively absorbed methods rather than bulk-installing repositories**. Candidate Skills consume no scheduled study time and gain value only through natural real-task trials.
+
+`adaptive-guided-learning v0.1` was added after repeated evidence that long passive prereading and overly fragmented simple-question tutoring can waste time. Data Structures is an approved natural trial environment; trial results should be judged by time-to-independent-capability and real transfer, not conversation volume.
 
 Skills support execution; they do not create new authority, priorities or learning lines.
 
@@ -141,6 +168,7 @@ Legacy cleanup may happen only after verification; Git history is not rewritten.
 - **Python:** Student Manager V2 / equivalent evidence
 - **Competition:** 2026-09-30 submission or earlier material blocker / scope conflict
 - **Algorithm:** first Prefix Sums milestone
+- **Data Structures:** Linear Structure Foundation v1 or the first verified course-aligned block
 - **Embedded:** Phase 0 real-board bring-up
 - **Academic:** Year 2 Fall Academic Baseline v1
 - **Finance:** Personal Finance Baseline v1
