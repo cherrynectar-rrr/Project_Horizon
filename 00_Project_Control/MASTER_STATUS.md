@@ -96,14 +96,26 @@ Academic, Finance and Nutrition / Recovery remain maintenance systems. Their pur
 
 Canonical Skill repository: `cherrynectar-rrr/Horizon_Skills`.
 
-- `HZN-001 horizon-context-sync v0.6` — **Adopted — Active**; multi-repo local-first routing
-- `horizon-learning-loop v0.2` — **Adopted — Active**; Self-Study + Assessment default
-- `HZN-002 status-update v0.1` — **Candidate — Trial**
-- `engineering-debug-loop v0.1` — **Candidate — Trial**
-- `behavior-first-testing v0.1` — **Candidate — Trial**
-- `design-grill v0.1` — **Candidate — Trial**
+### Adopted — Active
 
-Skills support execution; they do not create new authority or a new workload.
+- `HZN-001 horizon-context-sync v0.6` — multi-repo local-first routing
+- `horizon-learning-loop v0.2` — Self-Study + Assessment default
+
+### Candidate — Trial
+
+- `HZN-002 status-update v0.1`
+- `engineering-debug-loop v0.2`
+- `behavior-first-testing v0.1`
+- `design-grill v0.2`
+- `completion-verification v0.1`
+- `change-review v0.1`
+- `codebase-orientation v0.1`
+- `source-grounded-research v0.1`
+- `experiment-design v0.1`
+
+On 2026-09-04, Horizon Core completed a broad external Agent Skill scan and **selectively absorbed methods rather than bulk-installing repositories**. The new Candidates consume no scheduled study time and gain value only through natural real-task trials.
+
+Skills support execution; they do not create new authority, priorities or learning lines.
 
 ---
 
