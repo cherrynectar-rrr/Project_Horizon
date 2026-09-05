@@ -1,7 +1,7 @@
 # Project Horizon — Thread Protocol
 
 Last Updated: 2026-09-05
-Version: V2.3 — Multi-Repository Efficiency Edition
+Version: V2.4 — Multi-Repository Efficiency + Thread Handoff Edition
 
 ## Purpose
 
@@ -78,6 +78,29 @@ Read `MASTER_STATUS.md` only when the task involves:
 Read README / course architecture only when long-scope context is needed. Read Charter / Protocol only when authority or write ownership is unclear.
 
 Routine low-impact questions do not require a full Horizon sync.
+
+### Mandatory New-Thread Handoff Standard
+
+Whenever Horizon Core or a Specialist recommends, authorizes or creates a **new chat thread** for a Specialist, bounded project, Sprint, maintenance line or other Horizon-owned execution context, the handoff must include a **ready-to-paste starter prompt in the same response**.
+
+Do not merely say "open a new thread" or provide only a repository path. The user should not have to reconstruct startup instructions manually.
+
+The starter prompt should include only the minimum useful context, normally:
+
+1. **Role / owner** — what thread or project the new chat is responsible for;
+2. **Canonical repository / path** — where current state lives;
+3. **Startup reads** — local `STATUS.md` first, plus README / MASTER / Protocol only when materially required;
+4. **Current status and one current goal**;
+5. **Scope / authority boundaries** — especially what the thread must not decide or modify;
+6. **Relevant Skills / methods** when they materially affect execution;
+7. **Known hard constraints** — deadlines, capacity limits, verified deliverables or hardware / data dependencies;
+8. **First action** — what the new thread should do immediately after reading state.
+
+The prompt must be directly usable without the user needing to rewrite it. Avoid loading it with full Horizon history that the new thread can retrieve from canonical state itself.
+
+If the new thread has already been formally initialized in GitHub, reference its canonical `STATUS.md` and instruct the new chat to continue from there rather than recreating planning state.
+
+This is a **user-experience and coordination rule**, not a new governance layer or message bus.
 
 ---
 
